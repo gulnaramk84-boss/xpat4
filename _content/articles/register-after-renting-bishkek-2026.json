@@ -1,0 +1,106 @@
+{
+  "slug": "register-after-renting-bishkek-2026",
+  "date": "2026-10-14",
+  "checked": "2026-10-14",
+  "category": "residence",
+  "title": {
+    "ru": "Сняли квартиру в Бишкеке: как оформить регистрацию по новым правилам",
+    "en": "Rented a flat in Bishkek: how to register under the new rules"
+  },
+  "summary": {
+    "ru": "Сроки, адрес, согласие собственника, 12 м² на человека и что делать при отъезде. По порядку, который действует с 23 сентября 2026 года.",
+    "en": "Deadlines, address, the owner's consent, 12 m² per person and what to do when you leave. Based on the procedure in force since September 23, 2026."
+  },
+  "blocks": [
+    { "p": {
+      "ru": "Новый порядок регистрации иностранцев утверждён постановлением № 600 от 4 сентября 2026 года. По словам главы миграционного департамента «Кызмат», он начал действовать 23 сентября. Ниже то, что важно, если вы живёте в съёмной квартире.",
+      "en": "The new procedure for registering foreigners was set by resolution No. 600 of September 4, 2026. According to the head of the migration department at Kyzmat, it took effect on September 23. Below is what matters if you live in a rented flat."
+    } },
+
+    { "h2": { "ru": "Сколько у вас времени", "en": "How much time you have" } },
+    { "p": {
+      "ru": "Регистрироваться нужно после въезда и не позже последнего дня, когда можно находиться в стране без регистрации. Для граждан ряда стран этот срок — 30 дней. Вот список, который приводит «Экономист.kg» со ссылкой на «Кызмат»:",
+      "en": "You register after you enter the country, and no later than the last day you are allowed to stay without registration. For citizens of a number of countries this is 30 days. Here is the list given by Economist.kg, citing Kyzmat:"
+    } },
+    { "p": {
+      "ru": "Австралия, Австрия, Бельгия, Великобритания, Германия, Греция, Дания, Испания, Италия, Канада, Нидерланды, Новая Зеландия, Норвегия, Польша, Португалия, Республика Корея, Сингапур, США, Финляндия, Франция, Швейцария, Швеция, Япония.",
+      "en": "Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Greece, Italy, Japan, the Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Korea, Spain, Sweden, Switzerland, the UK, the USA."
+    } },
+    { "p": {
+      "ru": "Если вашей страны в списке нет, срок может быть другим. Уточните в «Кызмат», прежде чем считать дни самостоятельно.",
+      "en": "If your country is not on the list, the period may be different. Ask Kyzmat before you count the days yourself."
+    } },
+
+    { "h2": { "ru": "Где и как", "en": "Where and how" } },
+    { "p": {
+      "ru": "Регистрируют по адресу, где вы на самом деле живёте. Документы можно подать лично или онлайн. Для первой регистрации нужен паспорт, с которым вы въехали.",
+      "en": "You are registered at the address where you actually live. You can file the documents in person or online. For the first registration you need the passport you entered with."
+    } },
+    { "p": {
+      "ru": "Если тот, кто вас принимает, не собственник квартиры, нужно нотариально заверенное согласие собственника или доверенность, где регистрация прямо разрешена.",
+      "en": "If the person hosting you is not the owner of the flat, you need a notarized consent from the owner, or a power of attorney that explicitly allows registration."
+    } },
+
+    { "h2": { "ru": "Сколько места нужно на человека", "en": "How much space per person" } },
+    { "p": {
+      "ru": "Для квартиры или дома считают не меньше 12 м² жилой площади на человека. Близких родственников это правило не касается. Если снимаете комнату или живёте вдвоём-втроём на небольшой площади, проверьте метраж до подписания договора.",
+      "en": "For a flat or house the rule is at least 12 m² of living space per person. It does not apply to close relatives. If you rent a room, or share a small flat with one or two other people, check the floor area before you sign the contract."
+    } },
+
+    { "h2": { "ru": "Когда регистрацию нужно менять", "en": "When the registration has to change" } },
+    { "ul": [
+      {
+        "ru": "Сменили адрес, паспорт или личные данные, изменился срок или цель пребывания: перерегистрируйтесь в течение 10 рабочих дней.",
+        "en": "You changed address, passport or personal data, or your period or purpose of stay changed: re-register within 10 working days."
+      },
+      {
+        "ru": "Уехали из Кыргызстана на 30 календарных дней и больше: регистрация сама становится недействительной. После возвращения оформляйте заново.",
+        "en": "You left Kyrgyzstan for 30 calendar days or more: the registration becomes invalid on its own. Register again after you come back."
+      },
+      {
+        "ru": "Продлеваете регистрацию: нужен документ, который подтверждает право находиться в стране, например виза, вид на жительство или резидент-карта.",
+        "en": "You extend the registration: you need a document that confirms your right to stay, such as a visa, a residence permit or a resident card."
+      }
+    ] },
+
+    { "h2": { "ru": "Что спросить у хозяина до договора", "en": "What to ask the landlord before the contract" } },
+    { "ul": [
+      {
+        "ru": "Готов ли он вас регистрировать. Лучше узнать это до того, как вы заплатили.",
+        "en": "Whether the landlord is ready to register you. Better to find out before you pay anything."
+      },
+      {
+        "ru": "Собственник ли он. Попросите документ на квартиру и паспорт.",
+        "en": "Whether the landlord owns the flat. Ask to see the ownership document and a passport."
+      },
+      {
+        "ru": "Сколько в квартире жилой площади и сколько человек будет там жить.",
+        "en": "How much living space the flat has and how many people will live there."
+      },
+      {
+        "ru": "Запишите в договор адрес, срок, сумму и залог. При заселении сфотографируйте состояние квартиры.",
+        "en": "Put the address, term, amount and deposit in the contract. Take photos of the flat when you move in."
+      }
+    ] },
+
+    { "note": {
+      "ru": "Порядок новый, и на практике что-то может отличаться. Если у вас просят документы, которых нет в этой статье, или называют другой срок, уточните в «Кызмат».",
+      "en": "The procedure is new and practice may differ in places. If you are asked for documents that are not mentioned here, or told a different period, check with Kyzmat."
+    } }
+  ],
+  "sources": [
+    {
+      "title": "Экономист.kg: в Кыргызстане изменили порядок регистрации иностранных граждан (21 сентября 2026)",
+      "url": "https://economist.kg/pravo-znat/2026/09/21/v-kyrgyzstane-izmenili-poriadok-registratsii-inostrannykh-grazhdan-chto-nuzhno-znat/"
+    },
+    {
+      "title": "Экономист.kg: постановление № 602 и упоминание постановления № 600 (8 сентября 2026)",
+      "url": "https://economist.kg/society/2026/09/08/inostrantsy-prosrochka-ogranichenie-vezda/"
+    },
+    {
+      "title": "AKIpress: Kyrgyzstan changes rules for registration of foreign nationals (22 сентября 2026)",
+      "url": "https://akipress.com/news:920432:Kyrgyzstan_changes_rules_for_registration_of_foreign_nationals/",
+      "note": "полный текст за платным доступом"
+    }
+  ]
+}

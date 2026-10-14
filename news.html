@@ -70,6 +70,9 @@
     .news-read{font-size:12px;font-weight:500;color:var(--accent);text-decoration:none;display:inline-flex;align-items:center;gap:4px}
     .news-read::after{content:'→'}
     .news-count{font-size:12px;color:var(--ink-30);padding:16px 0 0;text-align:right}
+    .own-cat{color:var(--accent)!important}
+    .own-body{font-size:14px;color:var(--ink-60);font-weight:300;line-height:1.7;margin-bottom:10px}
+    .own-body a{color:var(--accent)}
 
     /* EVENTS */
     .events-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
@@ -168,6 +171,7 @@
 
 <div class="tabs">
   <button class="tab-btn active" id="tab-news-btn" onclick="showTab('news')" data-ru="📰 Новости" data-en="📰 News">📰 Новости</button>
+  <button class="tab-btn" id="tab-articles-btn" onclick="showTab('articles')" data-ru="📝 Статьи" data-en="📝 Articles">📝 Статьи</button>
   <button class="tab-btn" id="tab-events-btn" onclick="showTab('events')" data-ru="📅 Мероприятия" data-en="📅 Events">📅 Мероприятия</button>
 </div>
 
@@ -175,6 +179,11 @@
 
   <!-- NEWS TAB -->
   <div id="panel-news">
+    <div class="section-header">
+      <div class="section-label" data-ru="Новости xpat4" data-en="xpat4 news">Новости xpat4</div>
+    </div>
+    <div class="news-list" id="own-news"></div>
+
     <div class="section-header">
       <div class="section-label">
         <span class="en-badge"><span class="live-dot"></span> English</span>
@@ -186,6 +195,14 @@
       <div class="state-msg"><span class="spinner"></span> Loading...</div>
     </div>
     <div class="news-count" id="news-count"></div>
+  </div>
+
+  <!-- ARTICLES TAB -->
+  <div id="panel-articles" style="display:none">
+    <div class="section-header">
+      <div class="section-label" data-ru="Статьи для тех, кто живёт в Кыргызстане или переезжает" data-en="Articles for people living in or moving to Kyrgyzstan">Статьи для тех, кто живёт в Кыргызстане или переезжает</div>
+    </div>
+    <div class="news-list" id="articles-list"></div>
   </div>
 
   <!-- EVENTS TAB -->
@@ -266,13 +283,75 @@
 <script>
 // ── TABS ──
 function showTab(tab) {
-  ['news','events'].forEach(function(t) {
+  ['news','articles','events'].forEach(function(t) {
     document.getElementById('panel-'+t).style.display = 'none';
     document.getElementById('tab-'+t+'-btn').classList.remove('active');
   });
   document.getElementById('panel-'+tab).style.display = 'block';
   document.getElementById('tab-'+tab+'-btn').classList.add('active');
   if (tab === 'events' && !eventsLoaded) loadEvents();
+  if (tab === 'articles') { articlesShown = true; renderArticles(); }
+}
+
+// ── OWN NEWS (news.json) AND ARTICLES (articles.json) ──
+var articlesShown = false, ownP = null, articlesP = null;
+function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+// text with [label](url) -> safe html with links
+function mdLinks(s){
+  var re=/\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]*)\)/g, out='', last=0, m;
+  while((m=re.exec(s))){
+    out+=esc(s.slice(last,m.index));
+    var ext=m[2].indexOf('http')===0;
+    out+='<a href="'+esc(m[2])+'"'+(ext?' target="_blank" rel="noopener"':'')+'>'+esc(m[1])+'</a>';
+    last=re.lastIndex;
+  }
+  return out+esc(s.slice(last));
+}
+function fmtDateLong(ds, lang){
+  var d=new Date(ds); if(isNaN(d)) return '';
+  return d.toLocaleDateString(lang==='ru'?'ru-RU':'en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+}
+var CAT_LABEL={
+  visa:{ru:'Виза и въезд',en:'Visa and entry'},
+  residence:{ru:'ВНЖ и регистрация',en:'Residence and registration'},
+  work:{ru:'Работа',en:'Work'},
+  business:{ru:'Бизнес',en:'Business'},
+  living:{ru:'Жильё',en:'Housing'},
+  life:{ru:'Жизнь в КР',en:'Life in KG'}
+};
+function catLabel(c,lang){ var x=CAT_LABEL[c]; return x?x[lang]:''; }
+function getJson(url){
+  return fetch(url+'?v='+Date.now()).then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); }).catch(function(){ return []; });
+}
+async function renderOwnNews(){
+  var box=document.getElementById('own-news'); if(!box) return;
+  var lang=XPAT4.currentLang==='ru'?'ru':'en';
+  ownP = ownP || getJson('news.json');
+  var items=(await ownP).slice().sort(function(a,b){ return (b.date||'').localeCompare(a.date||''); }).slice(0,10);
+  if(!items.length){ box.innerHTML=''; return; }
+  box.innerHTML=items.map(function(n){
+    var title=n['title_'+lang]||n.title_ru||'', body=n['body_'+lang]||n.body_ru||'';
+    var src=n.source_url?'<a class="news-read" href="'+esc(n.source_url)+'" target="_blank" rel="noopener">'+(lang==='ru'?'Источник: ':'Source: ')+esc(n.source_name||'')+'</a>':'';
+    return '<div class="news-item">'+
+      '<div class="news-meta"><div class="news-source own-cat">'+esc(catLabel(n.category,lang))+'</div>'+esc(fmtDateLong(n.date,lang))+'</div>'+
+      '<div><div class="news-title">'+esc(title)+'</div><div class="own-body">'+mdLinks(body)+'</div>'+src+'</div>'+
+    '</div>';
+  }).join('');
+}
+async function renderArticles(){
+  var box=document.getElementById('articles-list'); if(!box) return;
+  var lang=XPAT4.currentLang==='ru'?'ru':'en';
+  articlesP = articlesP || getJson('articles.json');
+  var items=(await articlesP).slice().sort(function(a,b){ return (b.date||'').localeCompare(a.date||''); });
+  if(!items.length){ box.innerHTML='<div class="state-msg">'+(lang==='ru'?'Статей пока нет.':'No articles yet.')+'</div>'; return; }
+  box.innerHTML=items.map(function(a){
+    var title=a['title_'+lang]||a.title_ru||'', sum=a['summary_'+lang]||a.summary_ru||'', url='/'+encodeURIComponent(a.slug);
+    return '<div class="news-item">'+
+      '<div class="news-meta"><div class="news-source own-cat">'+esc(catLabel(a.category,lang))+'</div>'+esc(fmtDateLong(a.date,lang))+'</div>'+
+      '<div><div class="news-title"><a href="'+url+'">'+esc(title)+'</a></div><div class="own-body">'+esc(sum)+'</div>'+
+      '<a class="news-read" href="'+url+'">'+(lang==='ru'?'Читать':'Read')+'</a></div>'+
+    '</div>';
+  }).join('');
 }
 
 // ── NEWS (RSS via rss2json) ──
@@ -470,6 +549,8 @@ document.addEventListener('xpat4-lang-change', function(e) {
   }
   var cnt = document.getElementById('news-count');
   if(cnt && cnt.textContent) loadNews();
+  renderOwnNews();
+  if(articlesShown) renderArticles();
 });
 
 // ── BURGER ──
@@ -482,7 +563,9 @@ document.addEventListener('xpat4-lang-change', function(e) {
   document.addEventListener('click',function(e){if(!b.contains(e.target)&&!m.contains(e.target))m.classList.remove('open');});
 })();
 
+renderOwnNews();
 loadNews();
+if (location.hash === '#articles') showTab('articles');
 </script>
 </body>
 </html>

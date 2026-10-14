@@ -1,5 +1,44 @@
 [
   {
+    "id": 4,
+    "title_zh": "",
+    "body_zh": "",
+    "date": "2026-09-28",
+    "category": "residence",
+    "title_ru": "Вид на жительство и регистрацию иностранцев передают Минтруда",
+    "title_en": "Residence permits and foreigner registration move to the Labor Ministry",
+    "body_ru": "Президент подписал указ: Министерство труда, социального обеспечения и миграции возьмёт на себя выдачу вида на жительство, регистрацию иностранцев, а также единое разрешение и резидент-карту. Раньше этим занимались МИД и «Кызмат». В министерстве создадут департамент по вопросам миграции, а сами услуги планируют передать на аутсорсинг. Когда начнётся переход и куда подавать документы, пока не сказано: правительству дали два месяца, чтобы привести свои решения в соответствие с указом. Пока не объявили иначе, обращайтесь туда, куда обращались раньше.",
+    "body_en": "The president signed a decree: the Ministry of Labor, Social Security and Migration will take over issuing residence permits, registering foreigners, and handling the unified permit and the resident card. Until now this was done by the Ministry of Foreign Affairs and Kyzmat. The ministry will set up a migration department and plans to outsource the services themselves. It is not yet said when the transition starts or where to apply: the government has two months to bring its own decisions in line with the decree. Until something else is announced, go to the office you used before.",
+    "source_name": "Экономист.kg",
+    "source_url": "https://economist.kg/society/2026/09/28/minsotstruda-vnzh-registratsiya-inostrantsev/"
+  },
+  {
+    "id": 3,
+    "title_zh": "",
+    "body_zh": "",
+    "date": "2026-09-23",
+    "category": "visa",
+    "title_ru": "Новые правила регистрации иностранцев начали действовать",
+    "title_en": "New registration rules for foreigners are in force",
+    "body_ru": "С 23 сентября действует новый порядок регистрации иностранцев. Регистрироваться нужно после въезда и не позже последнего дня, когда можно жить без регистрации. Для граждан США, Великобритании, Канады, Японии, Южной Кореи и ряда европейских стран этот срок — 30 дней. Если уехать из Кыргызстана на 30 дней и больше, регистрация перестаёт действовать, и после возвращения её оформляют заново. При смене адреса или паспорта перерегистрироваться нужно в течение 10 рабочих дней. Для квартиры или дома считают не меньше 12 м² жилой площади на человека, близких родственников это не касается. [Подробно для арендаторов](/register-after-renting-bishkek-2026).",
+    "body_en": "A new procedure for registering foreigners has been in force since September 23. You register after you enter the country, and no later than the last day you may stay without registration. For citizens of the USA, the UK, Canada, Japan, South Korea and a number of European countries this is 30 days. If you leave Kyrgyzstan for 30 days or more, the registration stops being valid and you register again after you return. If you change address or passport, you have to re-register within 10 working days. For a flat or house the rule is at least 12 m² of living space per person, and it does not apply to close relatives. [More for tenants](/register-after-renting-bishkek-2026).",
+    "source_name": "Экономист.kg",
+    "source_url": "https://economist.kg/pravo-znat/2026/09/21/v-kyrgyzstane-izmenili-poriadok-registratsii-inostrannykh-grazhdan-chto-nuzhno-znat/"
+  },
+  {
+    "id": 5,
+    "title_zh": "",
+    "body_zh": "",
+    "date": "2026-09-08",
+    "category": "visa",
+    "title_ru": "Просрочили срок пребывания — в следующий раз без визы не впустят",
+    "title_en": "Overstayed? You can be refused visa-free entry next time",
+    "body_ru": "Постановление № 602 от 7 сентября: иностранцу, который превысил срок пребывания, при следующем въезде откажут во въезде по безвизовому режиму. Срок пребывания теперь считает автоматическая система ЕИСУМ. Супруги и несовершеннолетние дети граждан Кыргызстана могут въехать один раз по документам о родстве и получают 30 рабочих дней, чтобы оформить статус. На какой срок закрывается въезд, в публикации не сказано. Постановление вступает в силу через 10 дней после публикации, она вышла 8 сентября. [Что делать до и после просрочки](/overstay-kyrgyzstan-2026).",
+    "body_en": "Resolution No. 602 of September 7: a foreigner who stayed longer than allowed will be refused entry under the visa-free regime next time. The length of stay is now counted by an automated system (EISUM). Spouses and minor children of Kyrgyz citizens can enter once with documents proving the relationship, and they get 30 working days to sort out their status. The article does not say for how long entry is closed. The resolution takes effect 10 days after publication, which was on September 8. [What to do before and after an overstay](/overstay-kyrgyzstan-2026).",
+    "source_name": "Экономист.kg",
+    "source_url": "https://economist.kg/society/2026/09/08/inostrantsy-prosrochka-ogranichenie-vezda/"
+  },
+  {
     "id": 1,
     "date": "2025-04-10",
     "category": "visa",

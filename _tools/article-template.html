@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{TITLE_RU_TEXT}} — xpat4.org</title>
+  <meta name="description" content="{{DESC_RU_ATTR}}">
+  <meta property="og:title" content="{{TITLE_RU_ATTR}}" />
+  <meta property="og:description" content="{{DESC_RU_ATTR}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://xpat4.org/{{SLUG}}" />
+  <link rel="canonical" href="https://xpat4.org/{{SLUG}}" />
+  <script type="application/ld+json">{{JSONLD}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--sand:#f5f0e8;--warm-white:#faf8f4;--ink:#1a1814;--ink-60:rgba(26,24,20,0.6);--ink-30:rgba(26,24,20,0.3);--ink-10:rgba(26,24,20,0.08);--accent:#2d5a3d;--accent-light:#e8f0ea;--line:rgba(26,24,20,0.12)}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--warm-white);color:var(--ink);-webkit-font-smoothing:antialiased}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;background:rgba(250,248,244,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);text-decoration:none}.logo span{color:var(--accent)}
+    .nav-right{display:flex;align-items:center;gap:16px}
+    .lang-switch{display:flex;gap:2px;background:var(--ink-10);border-radius:3px;padding:3px}
+    .lang-btn{font-size:11px;font-weight:500;padding:5px 10px;border:none;background:transparent;cursor:pointer;color:var(--ink-60);border-radius:2px;transition:background .15s,color .15s}
+    .lang-btn.active{background:var(--warm-white);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+    .back{font-size:13px;color:var(--ink-60);text-decoration:none}.back::before{content:'← '}.back:hover{color:var(--ink)}
+    .page-hero{padding:140px 48px 48px;max-width:800px;margin:0 auto;border-bottom:1px solid var(--line)}
+    .eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+    .eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--accent)}
+    h1{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,5vw,54px);font-weight:300;line-height:1.12;margin-bottom:18px}
+    .page-desc{font-size:17px;color:var(--ink-60);font-weight:300;line-height:1.7;max-width:640px}
+    .meta{font-size:12px;color:var(--ink-30);margin-top:18px}
+    .content{max-width:800px;margin:0 auto;padding:48px 48px 72px}
+    .prose h2{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:400;line-height:1.25;margin:44px 0 14px}
+    .prose h2:first-child{margin-top:0}
+    .prose p{font-size:17px;line-height:1.8;color:var(--ink);font-weight:300;margin:0 0 18px}
+    .prose ul,.prose ol{margin:0 0 20px 22px}
+    .prose li{font-size:17px;line-height:1.75;color:var(--ink);font-weight:300;margin-bottom:10px}
+    .prose a{color:var(--accent);text-underline-offset:3px}
+    .note{border-left:3px solid var(--accent);background:var(--accent-light);padding:16px 20px;margin:28px 0;font-size:16px;line-height:1.7;font-weight:300}
+    .sources{margin-top:52px;padding-top:24px;border-top:1px solid var(--line)}
+    .sources-title{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+    .sources ul{list-style:none;margin:0}
+    .sources li{font-size:14px;line-height:1.6;color:var(--ink-60);margin-bottom:8px}
+    .sources a{color:var(--ink-60);text-underline-offset:3px}
+    .checked{font-size:13px;color:var(--ink-30);margin-top:14px}
+    .bottom-cta{background:var(--ink);padding:60px 48px;text-align:center}
+    .bottom-cta h3{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;color:var(--sand);margin-bottom:14px}
+    .bottom-cta p{font-size:15px;color:rgba(245,240,232,.55);font-weight:300;margin-bottom:28px;line-height:1.7}
+    .btn-light{background:var(--sand);color:var(--ink);font-size:14px;font-weight:500;padding:13px 32px;border-radius:2px;text-decoration:none;display:inline-block;transition:opacity .2s;margin:6px}
+    .btn-light:hover{opacity:.85}
+    .btn-wa{background:#25d366;color:#fff;font-size:14px;font-weight:500;padding:13px 32px;border-radius:2px;text-decoration:none;display:inline-block;transition:opacity .2s;margin:6px}
+    .btn-wa:hover{opacity:.88}
+    .breadcrumb{font-size:12px;color:var(--ink-30);margin-bottom:18px}
+    .breadcrumb a{color:var(--ink-30);text-decoration:none}.breadcrumb a:hover{color:var(--ink-60)}
+    .breadcrumb span{margin:0 6px}
+    footer{padding:36px 48px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+    .footer-logo{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--ink-60);text-decoration:none}.footer-logo span{color:var(--accent)}
+    .footer-copy{font-size:12px;color:var(--ink-30)}
+    @media(max-width:700px){nav,footer{padding:16px 20px}.page-hero,.content,.bottom-cta{padding-left:24px;padding-right:24px}.prose p,.prose li{font-size:16px}}
+  </style>
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:site_name" content="xpat4.org">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="https://xpat4.org/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
+</head>
+<body>
+<nav>
+  <a class="logo" href="/">xpat<span>4</span>.org</a>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <button class="lang-btn" data-lang="ru" onclick="XPAT4.setLang('ru')">RU</button>
+      <button class="lang-btn" data-lang="en" onclick="XPAT4.setLang('en')">EN</button>
+    </div>
+    <a class="back" href="/news" data-ru="Новости и статьи" data-en="News and articles">Новости и статьи</a>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="breadcrumb">
+    <a href="/" data-ru="Главная" data-en="Home">Главная</a>
+    <span>›</span>
+    <a href="/news#articles" data-ru="Статьи" data-en="Articles">Статьи</a>
+  </div>
+  <div class="eyebrow" data-ru="Статья" data-en="Article">Статья</div>
+  <h1 data-ru="{{TITLE_RU_ATTR}}" data-en="{{TITLE_EN_ATTR}}">{{TITLE_RU_HTML}}</h1>
+  <p class="page-desc" data-ru="{{DESC_RU_ATTR}}" data-en="{{DESC_EN_ATTR}}">{{DESC_RU_HTML}}</p>
+  <div class="meta" data-ru="Опубликовано {{DATE_RU}}. Проверено {{CHECKED_RU}}." data-en="Published {{DATE_EN}}. Checked {{CHECKED_EN}}.">Опубликовано {{DATE_RU}}. Проверено {{CHECKED_RU}}.</div>
+</div>
+
+<div class="content">
+  <div class="prose">
+{{BODY}}
+  </div>
+{{SOURCES}}
+</div>
+
+<div class="bottom-cta">
+  <h3 data-ru="Остались вопросы по вашей ситуации?" data-en="Questions about your own case?">Остались вопросы по вашей ситуации?</h3>
+  <p data-ru="Гульнара Мамбеталиева помогает иностранцам с визой, регистрацией и переездом в Кыргызстан." data-en="Gulnara Mambetaliyeva helps foreigners with visas, registration and relocating to Kyrgyzstan.">Гульнара Мамбеталиева помогает иностранцам с визой, регистрацией и переездом в Кыргызстан.</p>
+  <a class="btn-wa" href="https://wa.me/996700522667" target="_blank" rel="noopener">💬 <span data-ru="Написать в WhatsApp" data-en="WhatsApp Gulnara">Написать в WhatsApp</span></a>
+  <a class="btn-light" href="/contact" data-ru="Или задать вопрос на сайте" data-en="Or ask on the website">Или задать вопрос на сайте</a>
+</div>
+
+<footer>
+  <a class="footer-logo" href="/">xpat<span>4</span>.org</a>
+  <span class="footer-copy">© 2026 xpat4.org</span>
+</footer>
+
+<script src="xpat4.js"></script>
+</body>
+</html>

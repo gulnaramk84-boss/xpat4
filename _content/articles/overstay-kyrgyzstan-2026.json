@@ -1,0 +1,78 @@
+{
+  "slug": "overstay-kyrgyzstan-2026",
+  "date": "2026-10-14",
+  "checked": "2026-10-14",
+  "category": "visa",
+  "title": {
+    "ru": "Срок пребывания заканчивается: что делать до просрочки и после",
+    "en": "Your stay is running out: what to do before and after an overstay"
+  },
+  "summary": {
+    "ru": "С сентября за просрочку можно не получить безвизовый въезд в следующий раз. Что известно о новом постановлении и куда обращаться.",
+    "en": "Since September, an overstay can cost you visa-free entry next time. What the new resolution says and who to contact."
+  },
+  "blocks": [
+    { "h2": { "ru": "Что изменилось в сентябре", "en": "What changed in September" } },
+    { "p": {
+      "ru": "7 сентября правительство приняло постановление № 602. Главное в нём: если вы превысили разрешённый срок пребывания, в следующий раз вас не пустят в страну по безвизовому режиму. Документы на въезд и пребывание вам тоже не выдадут.",
+      "en": "On September 7 the government passed resolution No. 602. The main point: if you stay longer than allowed, you will be refused entry under the visa-free regime next time. You will also not be given documents for entry and stay."
+    } },
+    { "p": {
+      "ru": "Дни пребывания теперь считает автоматическая система ЕИСУМ. Прошлое пребывание заканчивается в день вашего последнего выезда из Кыргызстана.",
+      "en": "The days of your stay are now counted by an automated system (EISUM). Your previous stay ends on the day you last left Kyrgyzstan."
+    } },
+    { "p": {
+      "ru": "На какой срок закрывается въезд, в публикации «Экономист.kg» не сказано. Постановление вступает в силу через 10 дней после публикации, а она вышла 8 сентября.",
+      "en": "The Economist.kg article does not say for how long entry is closed. The resolution takes effect 10 days after publication, and it was published on September 8."
+    } },
+
+    { "h2": { "ru": "Если вы супруг или ребёнок гражданина Кыргызстана", "en": "If you are the spouse or child of a Kyrgyz citizen" } },
+    { "p": {
+      "ru": "Для супругов и несовершеннолетних детей граждан Кыргызстана сделали исключение. Они могут въехать один раз, если покажут документы, подтверждающие родство. После въезда у них есть 30 рабочих дней, чтобы оформить статус и получить нужные разрешения.",
+      "en": "There is an exception for spouses and minor children of Kyrgyz citizens. They can enter once if they show documents proving the family relationship. After entry they have 30 working days to sort out their status and get the permits they need."
+    } },
+    { "p": {
+      "ru": "Тем, кто уже просрочил, постановление оставляет возможность подать заявление на вид на жительство по общим правилам. Какие там условия, в публикации не объясняется.",
+      "en": "For people who have already overstayed, the resolution leaves the option of applying for a residence permit under the general rules. The article does not explain the conditions."
+    } },
+
+    { "h2": { "ru": "Как не попасть в просрочку", "en": "How to avoid an overstay" } },
+    { "p": {
+      "ru": "Сначала выясните, сколько дней вам можно по вашему паспорту. Это зависит от страны. Проверьте на портале электронной визы [evisa.e-gov.kg](https://evisa.e-gov.kg) или спросите в МИД.",
+      "en": "First find out how many days your passport allows. It depends on the country. Check the e-visa portal [evisa.e-gov.kg](https://evisa.e-gov.kg) or ask the Ministry of Foreign Affairs."
+    } },
+    { "p": {
+      "ru": "Если хотите остаться дольше, оформляйте документы заранее, пока срок не истёк. Про электронную визу у нас есть [отдельная статья](/evisa-kyrgyzstan), про вид на жительство — [вот эта](/residence-permit-kyrgyzstan).",
+      "en": "If you want to stay longer, sort out the documents before your time runs out. We have a separate article on the [e-visa](/evisa-kyrgyzstan) and one on the [residence permit](/residence-permit-kyrgyzstan)."
+    } },
+    { "p": {
+      "ru": "Запишите в телефон дату, до которой можно оставаться, и поставьте напоминание за неделю. Закон этого не требует, но так проще.",
+      "en": "Put the last day of your stay in your phone and set a reminder a week before. The law does not ask for this, but it makes life easier."
+    } },
+
+    { "h2": { "ru": "Если вы уже просрочили", "en": "If you have already overstayed" } },
+    { "p": {
+      "ru": "Посольство США на своей странице советует не ждать выезда: если вы знаете, что просрочили, заранее свяжитесь с консульским департаментом МИД Кыргызстана. По словам посольства, придётся заплатить административный штраф и оформить выездную визу.",
+      "en": "The US Embassy page says not to wait until you leave: if you know you overstayed, contact the Consular Department of the Kyrgyz Ministry of Foreign Affairs in advance. According to the embassy, you will have to pay an administrative fine and apply for an exit visa."
+    } },
+    { "p": {
+      "ru": "У консульского департамента есть круглосуточный центр, куда можно написать или позвонить: сайт [e-consul.gov.kg](https://e-consul.gov.kg), телефон и WhatsApp +996 999 312 002.",
+      "en": "The consular department runs a 24-hour inquiry center: website [e-consul.gov.kg](https://e-consul.gov.kg), phone and WhatsApp +996 999 312 002."
+    } },
+    { "note": {
+      "ru": "Страница посольства не датирована, а правила в сентябре менялись. Поэтому сверьте всё с МИД. Суммы штрафов мы не называем: в публикации о новом порядке их нет, а в других источниках цифры разные.",
+      "en": "The embassy page has no date, and the rules changed in September, so check everything with the Ministry of Foreign Affairs. We do not give fine amounts: the article about the new rules does not mention them, and other sources give different figures."
+    } }
+  ],
+  "sources": [
+    {
+      "title": "Экономист.kg: ограничение въезда для тех, кто просрочил срок пребывания (8 сентября 2026)",
+      "url": "https://economist.kg/society/2026/09/08/inostrantsy-prosrochka-ogranichenie-vezda/"
+    },
+    {
+      "title": "Посольство США в Бишкеке: Registration for Foreigners",
+      "url": "https://kg.usembassy.gov/registration-for-foreigners/",
+      "note": "на странице нет даты"
+    }
+  ]
+}
