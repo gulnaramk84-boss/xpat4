@@ -1,0 +1,67 @@
+{
+  "slug": "mobile-internet-kyrgyzstan-2026",
+  "date": "2026-10-19",
+  "checked": "2026-10-19",
+  "category": "life",
+  "title": {
+    "ru": "Мобильная связь и интернет в Кыргызстане: что нужно приезжему",
+    "en": "Mobile service and internet in Kyrgyzstan: what newcomers need to know"
+  },
+  "summary": {
+    "ru": "Паспорт для SIM-карты, регистрация телефона на imei.kg и что происходит со спутниковым интернетом после окончания пилота Starlink.",
+    "en": "A passport for a SIM card, registering your phone on imei.kg, and what happens to satellite internet now that Starlink's pilot has ended."
+  },
+  "blocks": [
+    { "h2": { "ru": "Как купить и зарегистрировать SIM-карту", "en": "Buying and registering a SIM card" } },
+    { "p": {
+      "ru": "SIM-карту любого оператора — О!, Beeline или MegaCom — продают только по паспорту. Загранпаспорт подходит: правила кабмина не выделяют иностранцев отдельно, регистрация идёт по тому же документу, которым вы оформляете другие дела в стране.",
+      "en": "A SIM card from any operator — O!, Beeline or MegaCom — is sold only with a passport. A foreign passport works: the Cabinet's rules do not single out foreigners, so you register with the same document you use for anything else in the country."
+    } },
+    { "p": {
+      "ru": "С 26 марта 2024 года действуют «Правила оказания услуг подвижной радиотелефонной связи», утверждённые постановлением кабмина от 25 сентября 2023 года. Пока новый номер не зарегистрирован на владельца, он работает ограниченно: доступны только звонки в контакт-центр оператора и подключение, нужное, чтобы скачать приложение оператора. Зарегистрировать номер на себя можно удалённо, в мобильном приложении оператора, без визита в офис — для этого достаточно паспорта.",
+      "en": "Since March 26, 2024, the \"Rules for Providing Mobile Radiotelephone Services,\" approved by a Cabinet resolution of September 25, 2023, have been in force. Until a new number is registered to its owner, it works only in a limited way: you can call the operator's own support line and connect just enough to download the operator's app. You can register the number to yourself remotely, through the operator's app, without visiting an office — a passport is all you need."
+    } },
+    { "p": {
+      "ru": "Если возиться с приложением не хочется или телефон не поддерживает нужные функции, зарегистрировать номер можно в офисе продаж оператора — тоже по паспорту.",
+      "en": "If you'd rather not deal with the app, or your phone can't handle it, you can register the number at the operator's sales office instead — again, just bring your passport."
+    } },
+    { "p": {
+      "ru": "Привязка номера к паспорту — это не просто формальность. К номеру телефона часто привязаны вход в онлайн-банкинг, портал цифровых госуслуг и аккаунты в соцсетях, поэтому если номер оформлен на ваше имя, восстановить его при потере телефона или SIM-карты проще.",
+      "en": "Tying the number to a passport isn't just paperwork. A phone number is often linked to online banking, the government services portal and social media accounts, so if it's registered in your name, it's easier to recover after losing your phone or SIM card."
+    } },
+
+    { "h2": { "ru": "Если привезли телефон из-за границы", "en": "If you brought your phone from abroad" } },
+    { "p": {
+      "ru": "Устройство, купленное за пределами Кыргызстана, нужно зарегистрировать по IMEI-коду на официальном портале imei.kg — это касается граждан КР и других стран одинаково. Срок — 30 дней с момента первого подключения телефона к сети кыргызстанского оператора. При регистрации в этот срок сбор составляет 500 сомов с учётом всех налогов, после 30 дней — вдвое больше, 1000 сомов.",
+      "en": "A device bought outside Kyrgyzstan has to be registered by its IMEI code on the official portal imei.kg — the rule applies equally to citizens of Kyrgyzstan and of other countries. You have 30 days from the first time the phone connects to a Kyrgyz operator's network. Register within that window and the fee is 500 som including all taxes; register after 30 days and it doubles to 1,000 som."
+    } },
+    { "p": {
+      "ru": "Если вы просто пользуетесь роумингом — то есть SIM-картой своего домашнего оператора — регистрация не нужна вообще. Она требуется только тому, кто вставляет в телефон местную SIM-карту.",
+      "en": "If you're simply roaming — using your home operator's SIM card — no registration is needed at all. It's only required once you put a local SIM card into the phone."
+    } },
+
+    { "h2": { "ru": "Спутниковый интернет: Starlink в переходном статусе", "en": "Satellite internet: Starlink in limbo" } },
+    { "p": {
+      "ru": "Starlink работает в Кыргызстане с мая 2026 года, но действовал в режиме годового пилота по указу президента, который закончился 5 октября. Сервис не остановился и продолжает принимать заказы, однако власти пока не опубликовали ни итогов пилота, ни документа о том, в каком правовом режиме спутниковый интернет работает дальше. Если планируете подключить Starlink, учитывайте, что его статус после 5 октября 2026 года официально не разъяснён — подробнее мы писали об этом в новостях.",
+      "en": "Starlink has operated in Kyrgyzstan since May 2026, but it ran under a one-year pilot set by presidential decree, which ended on October 5. The service hasn't stopped and is still taking orders, but the authorities have not yet published either a summary of the pilot or any document spelling out what legal regime satellite internet now operates under. If you're planning to sign up for Starlink, keep in mind that its status after October 5, 2026 hasn't been officially clarified — we covered this in more detail in this week's news."
+    } },
+    { "note": {
+      "ru": "Если вы оформляете статус цифрового кочевника и работаете удалённо, смотрите также нашу [статью о цифровом номадстве](/digital-nomad-kyrgyzstan) в Кыргызстане — там отдельно про легализацию, а не про связь.",
+      "en": "If you're applying for digital nomad status and working remotely, see our separate [article on digital nomad life](/digital-nomad-kyrgyzstan) in Kyrgyzstan — it covers legal status, not connectivity."
+    } }
+  ],
+  "sources": [
+    {
+      "title": "Kaktus.media: новые правила регистрации SIM-карт в Кыргызстане (18 марта 2024)",
+      "url": "https://kaktus.media/doc/497733_novye_pravila_registracii_sim_kart_v_kyrgyzstane._otvety_na_popyliarnye_voprosy_abonentov.html"
+    },
+    {
+      "title": "imei.kg — официальный портал регистрации IMEI-кодов",
+      "url": "https://imei.kg/ru"
+    },
+    {
+      "title": "Economist.kg: пилот Starlink в Кыргызстане завершился (6 октября 2026)",
+      "url": "https://economist.kg/technology/2026/10/06/starlink-kyrgyzstan-posle-pilota/"
+    }
+  ]
+}
