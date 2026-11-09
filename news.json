@@ -1,5 +1,44 @@
 [
   {
+    "id": 13,
+    "title_zh": "",
+    "body_zh": "",
+    "date": "2026-11-02",
+    "category": "life",
+    "title_ru": "В обменных бюро теперь спросят документ при любой сумме обмена валюты",
+    "title_en": "Currency exchange offices now ID you for any amount, big or small",
+    "body_ru": "С 16 октября 2026 года обменные бюро Кыргызстана обязаны устанавливать личность клиента при каждой операции с наличной иностранной валютой — независимо от суммы. Подходит не только паспорт: вид на жительство, водительское удостоверение или военный билет тоже принимают. При сумме от 100 тысяч сомов данные о клиенте и сделке заносят в журнал, при сумме от 1 млн сомов проверяют глубже, вплоть до бенефициарного владельца. По данным Нацбанка, обменное бюро хранит эти данные у себя не менее пяти лет и само отвечает за их сохранность; клиент может запросить, какие данные о нём обрабатывают. Если вы меняете валюту в Кыргызстане, берите с собой паспорт или ВНЖ даже для небольшой суммы.",
+    "body_en": "Since October 16, 2026, currency exchange offices in Kyrgyzstan must verify a customer's identity for every cash foreign-currency transaction, regardless of the amount. A passport isn't the only option — a Kyrgyz residence permit, driver's license or military ID also work. For deals of 100,000 som and up, the office logs the customer's details and the transaction; for 1 million som and up, the check goes deeper, including who actually owns the money. The National Bank says each exchange office stores this data itself for at least five years and is responsible for keeping it safe; customers can ask what data about them is held. If you exchange currency in Kyrgyzstan, bring your passport or residence permit even for a small amount.",
+    "source_name": "Economist.kg",
+    "source_url": "https://economist.kg/dengi/2026/11/02/obmen-valyut-pasport-dannye/"
+  },
+  {
+    "id": 16,
+    "title_zh": "",
+    "body_zh": "",
+    "date": "2026-11-01",
+    "category": "visa",
+    "title_ru": "Казахстан поэтапно вводит электронное разрешение на въезд QazETA — пока не обязательно",
+    "title_en": "Kazakhstan phases in its QazETA entry permit — not mandatory yet",
+    "body_ru": "С 1 ноября 2026 года Казахстан начал поэтапно внедрять систему электронных разрешений на въезд QazETA: на первом этапе её проверяют в аэропорту Актау и на пунктах пропуска «Урлютобе», «Аухатты», «Атамекен» и «Нурлы Жол». Правило касается иностранцев с безвизовым въездом, в том числе граждан Кыргызстана. До 1 июля 2027 года оформление остаётся рекомендательным: отсутствие QazETA само по себе не повод для отказа во въезде. Подать заявление нужно через приложение QazETA не позже чем за 72 часа до поездки; оформление бесплатное, разрешение действует 180 дней. С 1 января 2027 года систему подключат в аэропортах Астаны и Алматы, с 1 марта — на остальных пунктах пропуска, а с 1 июля сделают обязательной. Если планируете поездку в Казахстан, оформить QazETA заранее не помешает, хотя пока это не требование.",
+    "body_en": "Starting November 1, 2026, Kazakhstan began phasing in QazETA, its electronic entry permit: the first stage covers Aktau airport and the Urlyutobe, Aukhatty, Atameken and Nurly Zhol border crossings. The rule applies to foreigners entering visa-free, including Kyrgyzstani citizens. Until July 1, 2027, it's only recommended — not having a QazETA isn't by itself grounds for refusal. You apply through the QazETA app up to 72 hours before travel; it's free and valid for 180 days. Astana and Almaty airports join on January 1, 2027, the remaining crossings on March 1, and it becomes mandatory on July 1. If you're planning a trip to Kazakhstan, getting a QazETA in advance doesn't hurt, even though it isn't required yet.",
+    "source_name": "Economist.kg",
+    "source_url": "https://economist.kg/exclusive/2026/10/30/izmeneniya-1-noyabrya-2026/#qazeta"
+  },
+  {
+    "id": 15,
+    "title_zh": "",
+    "body_zh": "",
+    "date": "2026-11-01",
+    "category": "business",
+    "title_ru": "Норма о сборе за аккредитацию счетов иностранных компаний вступила в силу — сумму пока не утвердили",
+    "title_en": "The fee rule for foreign companies' bank-account accreditation is now in force — the amount isn't set yet",
+    "body_ru": "С 1 ноября 2026 года вступили в силу положения закона №145 от 6 августа: юридические лица-нерезиденты, которые хотят открыть или вести счёт в банке Кыргызстана, должны будут платить сбор за разрешение или аккредитацию. Размер сбора и порядок уплаты должен определить кабинет министров отдельным постановлением. Минэкономики ранее предложило сумму в 200 тысяч сомов, но этот проект ещё обсуждается, и вступление закона в силу не означает, что сумму уже утвердили. По проекту, вести аккредитацию и реестр планируют поручить государственному учреждению «Кыргыз Экспорт». Если ваша компания-нерезидент работает со счетами в кыргызских банках, следите за постановлением о размере сбора отдельно от уже действующей нормы закона.",
+    "body_en": "As of November 1, 2026, provisions of Law No. 145 of August 6 are in force: non-resident companies that want to open or keep an account at a Kyrgyz bank will have to pay a fee for a permit or accreditation. The Cabinet of Ministers still has to set the fee amount and payment procedure in a separate resolution. The Ministry of Economy earlier proposed 200,000 som, but that draft is still under discussion, and the law taking effect doesn't mean the amount is approved. Under the draft, the accreditation and registry would be run by the state agency Kyrgyz Export. If your non-resident company uses accounts at Kyrgyz banks, watch for the resolution on the fee amount separately from the law provision already in force.",
+    "source_name": "Economist.kg",
+    "source_url": "https://economist.kg/exclusive/2026/10/30/izmeneniya-1-noyabrya-2026/"
+  },
+  {
     "id": 12,
     "title_zh": "",
     "body_zh": "",
@@ -24,6 +63,19 @@
     "body_en": "The Consular Department of the Foreign Ministry clarified that citizens of 67 countries under the simplified stay regime who overstayed can get an exit visa right at Manas airport before their flight. This express service costs three times the normal fee. For citizens of other countries, the clarification does not cover getting a visa at the airport — they need to sort it out in advance. You can apply for an exit visa ahead of time, without the markup, through the e-Visa portal. The Foreign Ministry did not give the exact fee amount, so check it on the portal or with the Consular Department before you travel.",
     "source_name": "Economist.kg",
     "source_url": "https://economist.kg/pravo-znat/2026/10/25/manas-vyezdnaya-viza-troynoy-tarif/"
+  },
+  {
+    "id": 14,
+    "title_zh": "",
+    "body_zh": "",
+    "date": "2026-10-23",
+    "category": "life",
+    "title_ru": "В Кыргызстане на 90 дней ограничили цены на уголь для населения",
+    "title_en": "Kyrgyzstan caps coal prices for households for 90 days",
+    "body_ru": "С 22 октября 2026 года в Кыргызстане действует государственное регулирование розничных цен на уголь для населения — на 90 дней, с возможностью продления. Решение закрепил приказ Минэкономики и коммерции №219. Предельные цены для каждой области, а также отдельно для Бишкека и Оша, устанавливает Служба антимонопольного регулирования; на момент приказа уголь «Кара-Кече» в Бишкеке продавали по 7 тысяч сомов за тонну, «Шабыркуль» — по 7,8 тысячи. За превышение цены продавцу грозит штраф: 3 тысячи сомов физическому лицу и 13 тысяч юридическому. Если топите углём, просите чек и проверяйте, что цена на ценнике совпадает с той, что называют на базе — это тоже проверяют инспекторы.",
+    "body_en": "Since October 22, 2026, Kyrgyzstan has capped retail coal prices for households for 90 days, with the option to extend. The rule comes from Order No. 219 of the Ministry of Economy and Commerce. The Anti-Monopoly Service sets a separate ceiling price for each region plus Bishkek and Osh; when the order was issued, Bishkek was selling Kara-Kече coal at 7,000 som a ton and Shabyrkul at 7,800. Sellers who charge more face fines: 3,000 som for an individual, 13,000 for a company. If you heat with coal, ask for a receipt and check the price tag matches what you're quoted — inspectors check for that too.",
+    "source_name": "Economist.kg",
+    "source_url": "https://economist.kg/enierghietika/2026/10/23/ugol-gosregulirovanie-90-dney/"
   },
   {
     "id": 10,
