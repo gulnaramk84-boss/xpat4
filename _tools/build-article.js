@@ -77,7 +77,25 @@ const jsonld = JSON.stringify({
   publisher: { '@type': 'Organization', name: 'xpat4.org', url: 'https://xpat4.org' },
 }, null, 2);
 
+const g = art.guide || null;
+const guides = fs.existsSync(path.join(root, 'articles.json')) ? JSON.parse(read(path.join(root, 'articles.json'))).filter((a) => a.guide && a.slug !== slug).concat(g ? [{ slug, guide: g, title_ru: plain(title.ru), title_en: plain(title.en) }] : []).sort((a, b) => a.guide.num - b.guide.num) : [];
+const nextG = g ? guides.find((a) => a.guide.num > g.num) || guides[0] : null;
+const shortBox = (g && g.short && g.short.length)
+  ? `  <div class="short">
+    <div class="short-title" data-ru="Коротко" data-en="In short">Коротко</div>
+    <ul>
+${g.short.map((s) => '      ' + el('li', s)).join('\n')}
+    </ul>
+  </div>`
+  : '';
+const nextBox = (nextG && nextG.slug !== slug)
+  ? `<div class="next"><a href="/${nextG.slug}"><small data-ru="Следующий гайд" data-en="Next guide">Следующий гайд</small><span>${escHtml(nextG.title_ru)}</span></a></div>`
+  : '';
 const map = {
+  EYEBROW_RU: g ? 'Гайд · ' + String(g.num).padStart(2, '0') : 'Статья', EYEBROW_EN: g ? 'Guide · ' + String(g.num).padStart(2, '0') : 'Article',
+  CRUMB_URL: g ? '/guides' : '/news#articles', CRUMB_RU: g ? 'Гайды' : 'Статьи', CRUMB_EN: g ? 'Guides' : 'Articles',
+  BACK_URL: g ? '/guides' : '/news', BACK_RU: g ? 'Все гайды' : 'Новости и статьи', BACK_EN: g ? 'All guides' : 'News and articles',
+  SHORT: shortBox, NEXT: nextBox,
   SLUG: slug,
   TITLE_RU_TEXT: escHtml(plain(title.ru)),
   TITLE_RU_ATTR: escAttr(toHtml(title.ru)),
@@ -105,6 +123,7 @@ list.push({
   slug, date: art.date, category: art.category || 'life',
   title_ru: plain(title.ru), title_en: plain(title.en),
   summary_ru: plain(summary.ru), summary_en: plain(summary.en),
+  ...(art.guide ? { guide: art.guide, checked: art.checked || art.date, sources: (art.sources || []).length } : {}),
 });
 list.sort((a, b) => b.date.localeCompare(a.date));
 fs.writeFileSync(aPath, JSON.stringify(list, null, 2) + '\n', 'utf8');
@@ -132,3 +151,5 @@ if (!llms.includes(`https://xpat4.org/${slug})`)) {
 }
 
 console.log(`Built ${slug}.html, updated articles.json, sitemap.xml, llms.txt`);
+
+if (art.guide) require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'build-guides.js')], { stdio: 'inherit' });

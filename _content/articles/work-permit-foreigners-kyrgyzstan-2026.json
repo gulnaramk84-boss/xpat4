@@ -1,0 +1,164 @@
+{
+  "slug": "work-permit-foreigners-kyrgyzstan-2026",
+  "date": "2026-11-19",
+  "checked": "2026-11-19",
+  "category": "work",
+  "title": {
+    "ru": "Хочу работать в Кыргызстане: кто выдаёт разрешение и что известно о правилах",
+    "en": "I want to work in Kyrgyzstan: who issues the permit and what we know"
+  },
+  "summary": {
+    "ru": "Разрешения на работу сейчас оформляет МИД по временному порядку до конца 2026 года, потом дело переходит к Минтруда. Что подтверждено, а чего в открытых источниках нет.",
+    "en": "Work permits are currently issued by the Foreign Ministry under a temporary procedure until the end of 2026, then move to the Labour Ministry. What is confirmed and what the open sources do not say."
+  },
+  "guide": {
+    "num": 5,
+    "group": "work",
+    "status": "soon",
+    "situation": {
+      "ru": "Я хочу работать в Кыргызстане",
+      "en": "I want to work in Kyrgyzstan"
+    },
+    "who": {
+      "ru": "Иностранцам, которые ищут работу, и работодателям, которые их нанимают.",
+      "en": "For foreigners looking for work and the employers hiring them."
+    },
+    "short": [
+      {
+        "ru": "До 31 декабря 2026 года документы для работы иностранцев оформляет МИД по временному порядку.",
+        "en": "Until 31 December 2026 the Foreign Ministry issues work documents under a temporary procedure."
+      },
+      {
+        "ru": "Указом от 28 сентября функции передают Минтруда, дату перехода не назвали.",
+        "en": "A 28 September decree moves the functions to the Labour Ministry; no date was named."
+      },
+      {
+        "ru": "Работа без разрешения — штраф по статье 431 и выдворение, если предписание не выполнено за 30 дней.",
+        "en": "Working without a permit means a fine under Article 431 and expulsion if an order is not carried out within 30 days."
+      },
+      {
+        "ru": "Обычные сборы и полный список документов мы в открытых источниках не нашли.",
+        "en": "We found no regular fees or a full document list in open sources."
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "h2": {
+        "ru": "Кто выдаёт разрешение сейчас",
+        "en": "Who issues the permit now"
+      }
+    },
+    {
+      "p": {
+        "ru": "До 31 декабря 2026 года действует временное положение: оформлением виз, единого разрешения на пребывание и работу и резидент-карт занимается Министерство иностранных дел. Об этом писал 24.kg в мае 2026 года. Подробнее про временный порядок — в [отдельном гайде](/temporary-rules-foreigners-kyrgyzstan-2026).",
+        "en": "A temporary regulation runs until 31 December 2026: the Ministry of Foreign Affairs handles visas, the single permit for stay and work, and resident cards. 24.kg reported this in May 2026. More on the temporary procedure in a [separate guide](/temporary-rules-foreigners-kyrgyzstan-2026)."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Что будет после Нового года",
+        "en": "What happens after New Year"
+      }
+    },
+    {
+      "p": {
+        "ru": "28 сентября 2026 года президент подписал указ: функции по единому разрешению и резидент-карте переходят от МИД к Министерству труда, социального обеспечения и миграции. В министерстве создают департамент по вопросам миграции. Правительству дали два месяца, чтобы привести свои решения в соответствие с указом. Дату, с которой документы нужно подавать в новое ведомство, в публикации не назвали.",
+        "en": "On 28 September 2026 the president signed a decree: functions on the single permit and the resident card move from the Foreign Ministry to the Ministry of Labour, Social Welfare and Migration, which is setting up a migration department. The government was given two months to bring its decisions into line. The publication did not name the date from which documents should go to the new body."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Что сняли",
+        "en": "What was lifted"
+      }
+    },
+    {
+      "p": {
+        "ru": "По сообщению МВД, опубликованному 2 июня 2025 года, ограничение в 20% иностранных работников в штате компании отменено: «сейчас ограничений по числу иностранных сотрудников нет».",
+        "en": "According to an Interior Ministry statement published on 2 June 2025, the 20% cap on foreign employees in a company was lifted: there is now no limit on the number of foreign staff."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Что грозит за работу без разрешения",
+        "en": "What working without a permit costs"
+      }
+    },
+    {
+      "p": {
+        "ru": "Статья 431 Кодекса о правонарушениях называет разрешение на трудовую деятельность среди документов, без которых иностранцу нельзя находиться и работать в стране. Штраф зависит от срока нарушения: от 55 до 200 расчётных показателей. По публикациям один показатель равен 100 сомам, то есть от 5 500 до 20 000 сом. Если иностранец не выполнил предписание об устранении нарушения за 30 дней, его выдворяют.",
+        "en": "Article 431 of the Code of Offences lists the work permit among the documents a foreigner needs to stay and work in the country. The fine depends on how long the violation lasts: 55 to 200 calculation indices. According to press reports one index equals 100 som, so 5,500 to 20,000 som. If a foreigner does not carry out an order to fix the violation within 30 days, they are expelled."
+      }
+    },
+    {
+      "p": {
+        "ru": "Ответственность лежит и на работодателе: на это указывали в МВД в 2025 году. Суммы для работодателей мы в прочитанных источниках не нашли.",
+        "en": "The employer is liable too, as the Interior Ministry pointed out in 2025. We did not find employer fine amounts in the sources we read."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Чего в открытых источниках нет",
+        "en": "What the open sources do not say"
+      }
+    },
+    {
+      "ul": [
+        {
+          "ru": "Обычных, не льготных сборов за единое разрешение. Льготные тарифы для швейной отрасли действовали до 1 ноября 2026 года.",
+          "en": "Regular, non-preferential fees for the single permit. Preferential rates for the garment industry ran until 1 November 2026."
+        },
+        {
+          "ru": "Полного списка документов и срока действия разрешения.",
+          "en": "The full document list and the permit validity period."
+        },
+        {
+          "ru": "Что требуется гражданам стран ЕАЭС: в прочитанных нами материалах об этом ничего нет.",
+          "en": "What EAEU citizens need: the materials we read say nothing about it."
+        }
+      ]
+    },
+    {
+      "h2": {
+        "ru": "Что делать",
+        "en": "What to do"
+      }
+    },
+    {
+      "ol": [
+        {
+          "ru": "Узнайте в МИД или в консульском департаменте, куда подавать документы сейчас, и сохраните подтверждение подачи.",
+          "en": "Ask the Foreign Ministry or its consular department where to file now, and keep proof of filing."
+        },
+        {
+          "ru": "Если подаёте или продлеваете в декабре, начните раньше: ведомства меняются, возможны паузы.",
+          "en": "If you file or renew in December, start early: the bodies are changing and pauses are possible."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "24.kg: Кыргызстан меняет правила для иностранцев и трудовых мигрантов (12.05.2026)",
+      "url": "https://www.24.kg/obschestvo/373450_kyirgyizstan_menyaet_pravila_dlya_inostrantsev_itrudovyih_migrantov/"
+    },
+    {
+      "title": "Economist.kg: указ о передаче функций Минсоцтруда (28.09.2026)",
+      "url": "https://economist.kg/society/2026/09/28/minsotstruda-vnzh-registratsiya-inostrantsev/"
+    },
+    {
+      "title": "Economist.kg: льготы швейникам и новые визы (26.07.2026)",
+      "url": "https://economist.kg/biznes/2026/07/26/visy-inostrancam/"
+    },
+    {
+      "title": "Economist.kg: работодателям сняли ограничение в 20% (02.06.2025)",
+      "url": "https://economist.kg/ekonomika/2025/06/02/rabotodatieliam-v-kyrghyzstanie-sniali-oghranichieniie-v-20-po-chislu-inostrannykh-rabotnikov/"
+    },
+    {
+      "title": "Кодекс КР о правонарушениях № 128, статьи 430 и 431 (база Минюста)",
+      "url": "https://cbd.minjust.gov.kg/112306/edition/1247867/ru",
+      "note": "официальный текст, сверено 19.11.2026"
+    }
+  ]
+}

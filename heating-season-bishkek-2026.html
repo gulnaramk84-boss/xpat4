@@ -58,6 +58,18 @@
     .sources li{font-size:14px;line-height:1.6;color:var(--ink-60);margin-bottom:8px}
     .sources a{color:var(--ink-60);text-underline-offset:3px}
     .checked{font-size:13px;color:var(--ink-30);margin-top:14px}
+    .short{border:1px solid var(--line);background:var(--sand);padding:26px 30px;margin:0 0 40px}
+    .short-title{font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+    .short ul{list-style:none;margin:0}
+    .short li{position:relative;padding-left:22px;font-size:16px;line-height:1.7;font-weight:300;margin-bottom:8px}
+    .short li::before{content:"";position:absolute;left:0;top:.72em;width:10px;height:1px;background:var(--accent)}
+    .short li:last-child{margin-bottom:0}
+    .next{max-width:800px;margin:0 auto;padding:0 48px 56px}
+    .next a{display:block;border:1px solid var(--line);padding:22px 26px;text-decoration:none;color:var(--ink);transition:border-color .2s,background .2s}
+    .next a:hover{border-color:var(--accent);background:var(--sand)}
+    .next small{display:block;font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+    .next span{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.3}
+    @media(max-width:700px){.short{padding:20px}.next{padding:0 24px 40px}}
     .bottom-cta{background:var(--ink);padding:60px 48px;text-align:center}
     .bottom-cta h3{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;color:var(--sand);margin-bottom:14px}
     .bottom-cta p{font-size:15px;color:rgba(245,240,232,.55);font-weight:300;margin-bottom:28px;line-height:1.7}
@@ -90,7 +102,7 @@
       <button class="lang-btn" data-lang="ru" onclick="XPAT4.setLang('ru')">RU</button>
       <button class="lang-btn" data-lang="en" onclick="XPAT4.setLang('en')">EN</button>
     </div>
-    <a class="back" href="/news" data-ru="Новости и статьи" data-en="News and articles">Новости и статьи</a>
+    <a class="back" href="/guides" data-ru="Все гайды" data-en="All guides">Все гайды</a>
   </div>
 </nav>
 
@@ -98,15 +110,23 @@
   <div class="breadcrumb">
     <a href="/" data-ru="Главная" data-en="Home">Главная</a>
     <span>›</span>
-    <a href="/news#articles" data-ru="Статьи" data-en="Articles">Статьи</a>
+    <a href="/guides" data-ru="Гайды" data-en="Guides">Гайды</a>
   </div>
-  <div class="eyebrow" data-ru="Статья" data-en="Article">Статья</div>
+  <div class="eyebrow" data-ru="Гайд · 10" data-en="Guide · 10">Гайд · 10</div>
   <h1 data-ru="Отопительный сезон в Бишкеке 2026: когда дали тепло и что в квитанции" data-en="Bishkek's 2026 heating season: when the heat came on and what's on the bill">Отопительный сезон в Бишкеке 2026: когда дали тепло и что в квитанции</h1>
   <p class="page-desc" data-ru="Отопление в Бишкеке включили 28 октября. Сколько домов уже подключено, из чего состоит счёт за тепло и что делать, если радиаторы всё ещё холодные." data-en="Bishkek turned the heat on October 28. How many buildings are connected, what the heating bill is made of, and what to do if your radiators are still cold.">Отопление в Бишкеке включили 28 октября. Сколько домов уже подключено, из чего состоит счёт за тепло и что делать, если радиаторы всё ещё холодные.</p>
   <div class="meta" data-ru="Опубликовано 2 ноября 2026. Проверено 2 ноября 2026." data-en="Published November 2, 2026. Checked November 2, 2026.">Опубликовано 2 ноября 2026. Проверено 2 ноября 2026.</div>
 </div>
 
 <div class="content">
+  <div class="short">
+    <div class="short-title" data-ru="Коротко" data-en="In short">Коротко</div>
+    <ul>
+      <li data-ru="Отопительный сезон 2026 года начался 28 октября." data-en="The 2026 heating season began on 28 October.">Отопительный сезон 2026 года начался 28 октября.</li>
+      <li data-ru="Счёт состоит из техобслуживания (по площади) и самой тепловой энергии (в гигакалориях)." data-en="The bill has a maintenance part (by floor area) and the heat itself (in gigacalories).">Счёт состоит из техобслуживания (по площади) и самой тепловой энергии (в гигакалориях).</li>
+      <li data-ru="Если радиаторы холодные несколько дней, обращайтесь в управляющую компанию." data-en="If radiators stay cold for several days, contact your management company.">Если радиаторы холодные несколько дней, обращайтесь в управляющую компанию.</li>
+    </ul>
+  </div>
   <div class="prose">
     <h2 data-ru="Когда дали отопление" data-en="When the heat came on">Когда дали отопление</h2>
     <p data-ru="Отопительный сезон в Бишкеке начался 28 октября 2026 года. Решение приняла коллегия мэрии: учли прогноз Кыргызгидромета о похолодании и желание снизить нагрузку на электросети, пока люди не начали греться обогревателями. Правило простое: отопление включают, когда среднесуточная температура держится на уровне +8°C и ниже пять дней подряд." data-en="Bishkek's 2026 heating season started on October 28. The city hall's board made the call, citing a Kyrgyzhydromet forecast of colder weather and a wish to ease the load on the power grid before people turned to electric heaters. The rule is simple: heat goes on once the average daily temperature holds at +8°C or below for five days running.">Отопительный сезон в Бишкеке начался 28 октября 2026 года. Решение приняла коллегия мэрии: учли прогноз Кыргызгидромета о похолодании и желание снизить нагрузку на электросети, пока люди не начали греться обогревателями. Правило простое: отопление включают, когда среднесуточная температура держится на уровне +8°C и ниже пять дней подряд.</p>
@@ -133,6 +153,7 @@
   </div>
 </div>
 
+<div class="next"><a href="/stay-longer-than-30-days-kyrgyzstan"><small data-ru="Следующий гайд" data-en="Next guide">Следующий гайд</small><span>Приехал по безвизу и хочу остаться дольше: что делать с регистрацией</span></a></div>
 <div class="bottom-cta">
   <h3 data-ru="Остались вопросы по вашей ситуации?" data-en="Questions about your own case?">Остались вопросы по вашей ситуации?</h3>
   <p data-ru="Гульнара Мамбеталиева помогает иностранцам с визой, регистрацией и переездом в Кыргызстан." data-en="Gulnara Mambetaliyeva helps foreigners with visas, registration and relocating to Kyrgyzstan.">Гульнара Мамбеталиева помогает иностранцам с визой, регистрацией и переездом в Кыргызстан.</p>

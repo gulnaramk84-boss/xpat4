@@ -1,0 +1,168 @@
+{
+  "slug": "digital-nomad-status-kyrgyzstan-2026",
+  "date": "2026-11-19",
+  "checked": "2026-11-19",
+  "category": "work",
+  "title": {
+    "ru": "Работаю удалённо: как получить статус «цифровой кочевник» в Кыргызстане",
+    "en": "I work remotely: how to get the Digital Nomad status in Kyrgyzstan"
+  },
+  "summary": {
+    "ru": "Что известно о статусе по постановлению № 241: два этапа, документы, продление. И что мы не смогли подтвердить.",
+    "en": "What is known about the status under resolution No. 241: two stages, documents, renewal. And what we could not confirm."
+  },
+  "guide": {
+    "num": 6,
+    "group": "work",
+    "status": "in_force",
+    "situation": {
+      "ru": "Я работаю удалённо на иностранного работодателя",
+      "en": "I work remotely for a foreign employer"
+    },
+    "who": {
+      "ru": "Фрилансерам и сотрудникам иностранных компаний, которые хотят жить в Кыргызстане легально.",
+      "en": "For freelancers and employees of foreign companies who want to live in Kyrgyzstan legally."
+    },
+    "short": [
+      {
+        "ru": "Статус ввело постановление № 241 от 30 апреля 2025 года, ответственное ведомство — Минтруда, соцобеспечения и миграции.",
+        "en": "The status was introduced by resolution No. 241 of 30 April 2025; the responsible body is the Ministry of Labour, Social Welfare and Migration."
+      },
+      {
+        "ru": "Заявку подают онлайн на dnomad.e-gov.kg в два шага: личный кабинет, затем заявление.",
+        "en": "You apply online at dnomad.e-gov.kg in two steps: a personal account, then the application."
+      },
+      {
+        "ru": "Сначала статус дают на 60 дней, потом продлевают на год и далее ежегодно, до 10 лет.",
+        "en": "The status is first given for 60 days, then extended for a year and renewed yearly, up to 10 years."
+      },
+      {
+        "ru": "Размер пошлины и налоговые последствия мы в открытых источниках не нашли.",
+        "en": "We found neither the fee nor the tax consequences in open sources."
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "h2": {
+        "ru": "Что это такое",
+        "en": "What it is"
+      }
+    },
+    {
+      "p": {
+        "ru": "Статус «цифровой кочевник» ввело постановление правительства № 241 от 30 апреля 2025 года. По тексту постановления ответственное ведомство — Министерство труда, социального обеспечения и миграции. Налоговая служба ведёт учёт обладателей статуса, которые зарегистрированы как ИП.",
+        "en": "The Digital Nomad status was introduced by government resolution No. 241 of 30 April 2025. According to the resolution, the responsible body is the Ministry of Labour, Social Welfare and Migration. The tax service keeps a record of status holders registered as sole proprietors."
+      }
+    },
+    {
+      "p": {
+        "ru": "По данным Economist.kg, статус даёт право легально жить в стране и работать удалённо без дополнительных разрешений.",
+        "en": "According to Economist.kg, the status gives the right to live in the country legally and work remotely without additional permits."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Как подают заявку",
+        "en": "How to apply"
+      }
+    },
+    {
+      "p": {
+        "ru": "Заявку подают онлайн на портале dnomad.e-gov.kg. Сначала нужно подать заявку на активацию личного кабинета, затем, после получения доступа, загрузить основное заявление. Сервис принимает заявки только с полным пакетом сканов.",
+        "en": "Applications go through the dnomad.e-gov.kg portal. First you apply to activate a personal account, then, once you have access, you upload the main application. The service only accepts applications with a full set of scans."
+      }
+    },
+    {
+      "p": {
+        "ru": "С июля 2025 года документы можно подать и проверить в электронном виде через АИС ЗАГС и по ПИН, без нотариального заверения и апостиля, если данные приходят от компетентных органов стран, у которых есть соглашения о правовой помощи.",
+        "en": "Since July 2025 documents can be submitted and checked electronically through the AIS ZAGS system and by PIN, without notarisation or an apostille, if the data comes from the competent bodies of countries with legal-assistance agreements."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Какие документы нужны",
+        "en": "Which documents you need"
+      }
+    },
+    {
+      "ul": [
+        {
+          "ru": "Паспорт и цифровое фото.",
+          "en": "Passport and digital photo."
+        },
+        {
+          "ru": "Действующие трудовые контракты или договоры об оказании услуг.",
+          "en": "Valid employment contracts or service agreements."
+        },
+        {
+          "ru": "Банковская выписка о доходе за год не меньше $5 тысяч.",
+          "en": "Bank statement showing at least $5,000 of income for the year."
+        },
+        {
+          "ru": "Справка банка о сумме на текущем счёте не меньше $3 тысяч.",
+          "en": "Bank certificate showing at least $3,000 on a current account."
+        },
+        {
+          "ru": "Диплом, сертификаты или рекомендательные письма, которые подтверждают работу в IT или креативной сфере.",
+          "en": "A diploma, certificates or reference letters confirming work in IT or the creative industries."
+        }
+      ]
+    },
+    {
+      "note": {
+        "ru": "Этот перечень мы знаем из одной публикации (Economist.kg, 16 декабря 2025 года). Полный текст положения закрыт авторизацией на prg.kz, поэтому сверьте перечень на портале.",
+        "en": "We know this list from a single publication (Economist.kg, 16 December 2025). The full text of the regulation is behind a login on prg.kz, so check the list on the portal."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Сроки и продление",
+        "en": "Duration and renewal"
+      }
+    },
+    {
+      "p": {
+        "ru": "Сначала статус дают на 60 дней. Затем его продлевают на год и далее ежегодно, всего до 10 лет. Для продления в течение 60 дней нужно представить медицинское заключение об отсутствии ВИЧ, справку о врачебном осмотре и свидетельство о регистрации ИП или юридического лица в Кыргызстане. Это тоже по данным Economist.kg.",
+        "en": "The status is first given for 60 days. Then it is extended for a year and renewed yearly, up to 10 years in total. For the extension, within 60 days you must submit a medical certificate of no HIV, a medical examination certificate and a certificate of registration as a sole proprietor or legal entity in Kyrgyzstan. This is also according to Economist.kg."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Чего мы не нашли",
+        "en": "What we did not find"
+      }
+    },
+    {
+      "ul": [
+        {
+          "ru": "Размера пошлины: ни в одной из прочитанных публикаций он не указан.",
+          "en": "The fee amount: none of the publications we read states it."
+        },
+        {
+          "ru": "Разъяснения налоговой службы о том, как облагается доход из-за рубежа у обладателя статуса. Это вопрос к бухгалтеру, а не повод гадать по статье без источника.",
+          "en": "Any tax-service explanation of how foreign-sourced income is taxed for a status holder. That is a question for an accountant, not something to guess from an unsourced article."
+        },
+        {
+          "ru": "Изменений после июля 2025 года: на прочитанных страницах более поздних правок не видно.",
+          "en": "Changes after July 2025: the pages we read show no later amendments."
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Постановление Кабмина КР от 30.04.2025 № 241 (prg.kz, преамбула и пп. 1–8)",
+      "url": "https://prg.kz/m/amp/document/38934010",
+      "note": "официальный текст, само положение закрыто авторизацией"
+    },
+    {
+      "title": "Economist.kg: как получить статус «Цифровой кочевник» — пошаговый гайд (16.12.2025)",
+      "url": "https://economist.kg/society/2025/12/16/kak-poluchit-status-tsifrovoi-kochievnik-v-kyrghyzstanie-poshaghovyi-ghaid/"
+    },
+    {
+      "title": "Economist.kg: иностранцам упростили процесс оформления статуса (25.07.2025)",
+      "url": "https://economist.kg/society/2025/07/25/inostrantsam-uprostili-protsiess-oformlieniia-statusa-tsifrovogho-kochievnika-v-kr/"
+    }
+  ]
+}

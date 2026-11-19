@@ -12,57 +12,102 @@
     "en": "A draft bill spells out what happens to the land plot when a foreigner buys a house, flat or non-residential space: up to 50 years of temporary use instead of private ownership. What already applies, and what's only a proposal."
   },
   "blocks": [
-    { "h2": { "ru": "Как сейчас оформляют землю", "en": "How the land is registered now" } },
-    { "p": {
-      "ru": "Конституция Кыргызстана не разрешает иностранным гражданам и компаниям с иностранным участием иметь землю в частной собственности. Дом, квартиру или нежилое помещение иностранец купить может — здание оформляют на него как обычно. А вот участок под зданием оформляют не в собственность, а во временное пользование, и так — до 50 лет. Это летом 2026 года на заседании Жогорку Кенеша подтвердил глава Госагентства по земельным ресурсам Эрнисбек Зарнаев.",
-      "en": "Kyrgyzstan's Constitution doesn't let foreign citizens or companies with foreign ownership hold land as private property. A foreigner can still buy a house, flat or non-residential space — the building itself is registered to them as usual. But the plot under it is registered not as ownership, just as temporary use, for up to 50 years. The head of the State Agency for Land Resources, Ernisbek Zarnaev, confirmed this at a parliamentary session in 2026."
-    } },
-    { "p": {
-      "ru": "Проблема в том, что закон не до конца описывает механику: кто формально считается собственником участка на время, кто отвечает за него, что происходит, если недвижимость перепродают. Депутат Дастан Бекешев назвал статус такой земли неопределённым. Чтобы закрыть этот пробел, группа депутатов 3 ноября 2026 года вынесла на общественное обсуждение законопроект с подробным механизмом.",
-      "en": "The problem is that the law doesn't fully spell out the mechanics — who formally owns the plot in the meantime, who is responsible for it, what happens when the property is resold. MP Dastan Bekeshev called the land's status unclear. To close that gap, a group of MPs put a detailed bill out for public discussion on November 3, 2026."
-    } },
-
-    { "h2": { "ru": "Что предлагает законопроект", "en": "What the bill proposes" } },
-    { "p": {
-      "ru": "По проекту, при продаже недвижимости иностранному покупателю прежний владелец одновременно и безвозмездно передаёт участок под ней государству или муниципалитету: в черте города или села — муниципалитету, за её пределами — государству. Оба перехода регистрируют одновременно — право прежнего владельца на землю прекращается, а иностранный покупатель получает недвижимость и право временного пользования землёй под ней. Отдельное решение госоргана, торги или договор для этого не нужны: достаточно акта о добровольной передаче участка, письменного или электронного.",
-      "en": "Under the bill, when property is sold to a foreign buyer, the previous owner transfers the plot under it to the state or a municipality at the same time, free of charge — to the municipality if it's within a town or village, to the state outside it. Both transfers are registered simultaneously: the previous owner's right to the land ends, and the foreign buyer gets the property plus a right of temporary use of the land beneath it. No separate government decision, auction or contract is needed — just a written or electronic act of voluntary transfer."
-    } },
-    { "p": {
-      "ru": "Срок временного пользования — сначала 20 лет. Если иностранец продолжает владеть недвижимостью и нет законных оснований прекратить его право, срок продлевают ещё на 20 лет, а затем на 10 — в сумме не больше 50 лет. Пока участок в такой публичной собственности, государство или муниципалитет не могут продать его отдельно от здания, заложить, отдать в пользование третьим лицам, разделить или сменить назначение, если это мешает владельцу недвижимости.",
-      "en": "The temporary-use term starts at 20 years. If the foreigner still owns the property and there's no legal reason to end the right, it's extended by another 20 years, then 10 more — 50 years total at most. While the plot is in this public ownership, the state or municipality can't sell it separately from the building, mortgage it, hand it to a third party, split it, or change its designated use in a way that gets in the property owner's way."
-    } },
-    { "p": {
-      "ru": "Для квартир и нежилых помещений в многоквартирных домах в публичную собственность перейдёт только соответствующая доля в общем участке — остальное общее имущество дома останется у владельцев помещений как есть. При этом у государства или муниципалитета как собственника доли земли не будет права голоса на общем собрании жильцов.",
-      "en": "For flats and non-residential units in apartment buildings, only the matching share of the shared plot would go into public ownership — the rest of the building's common property stays with the unit owners as it is now. The state or municipality, as owner of that land share, would not get a vote at residents' meetings."
-    } },
-
-    { "h2": { "ru": "Если недвижимость продают дальше", "en": "If the property changes hands again" } },
-    { "p": {
-      "ru": "Если такую недвижимость купит другой иностранец, право временного пользования землёй перейдёт к нему на оставшийся срок — отсчёт заново не начнётся. Если же покупателем станет гражданин или организация, которые по закону могут владеть этой землёй в частной собственности, публичная собственность на участок прекратится, и земля перейдёт новому владельцу уже в собственность.",
-      "en": "If another foreigner buys the property, the right of temporary land use passes to them for whatever term is left — the clock doesn't restart. If the buyer is a citizen or organization legally entitled to own that land privately, the public ownership ends and the land becomes that buyer's private property."
-    } },
-
-    { "h2": { "ru": "Что будет с землёй, уже оформленной на иностранцев", "en": "What happens to land already registered to foreigners" } },
-    { "p": {
-      "ru": "Для участков, которые иностранцы уже успели оформить в собственность до поправок, законопроект предлагает переходный механизм: в течение 12 месяцев провести инвентаризацию такой недвижимости, земли и долей в общей собственности, а заодно проверить обременения. После этого собственникам направят уведомление и дадут полгода на добровольную передачу земли государству или муниципалитету с одновременным оформлением права временного пользования. Если собственник откажется, регистрационный орган не сможет прекратить его право сам — потребуется решение суда.",
-      "en": "For plots foreigners already own, registered before the amendment, the bill proposes a transition: a 12-month inventory of such property, land and ownership shares, plus a check for any liens. Owners would then get a notice and six months to voluntarily hand the land to the state or municipality while registering a right of temporary use. If an owner refuses, the registration authority can't end their ownership on its own — a court would have to decide."
-    } },
-
-    { "h2": { "ru": "Защита банков и ипотечных заёмщиков", "en": "Protection for banks and mortgage holders" } },
-    { "p": {
-      "ru": "Если участок в залоге, например по ипотеке, его передачу при добровольной сделке проведут только с письменного согласия каждого залогодержателя. Условия замены залогового обеспечения должны согласовать залогодержатель, прежний собственник и иностранный покупатель, а все изменения зарегистрируют одновременно с переходом прав на недвижимость и землю, сохранив прежнюю очередность залога.",
-      "en": "If a plot is mortgaged, its transfer in a voluntary deal would need the written consent of every lienholder. The terms for replacing the collateral would have to be agreed between the lienholder, the previous owner and the foreign buyer, with all the changes registered at the same time as the transfer of the property and land, keeping the original lien priority."
-    } },
-
-    { "h2": { "ru": "Что это значит для вас сейчас", "en": "What this means for you right now" } },
-    { "p": {
-      "ru": "Пока это только проект, вынесенный на общественное обсуждение, а не принятый закон — сроки, формулировки и даже сама судьба инициативы могут измениться. Покупать недвижимость в Кыргызстане иностранцам закон не запрещает ни сейчас, ни по проекту: меняется только порядок оформления земли под ней. Если вы уже купили или планируете купить дом или квартиру, оформление земли во временное пользование — до 50 лет — пока идёт по действующим правилам, которые мы разбирали в [статье о покупке недвижимости](/property-purchase-kyrgyzstan). Следите за ходом законопроекта: если его примут, мы напишем, что меняется и с какой даты.",
-      "en": "For now this is only a draft put out for public discussion, not an adopted law — the terms, wording and even the fate of the bill itself could still change. Kyrgyzstan's law doesn't ban foreigners from buying property, either now or under the draft — only how the land underneath is registered would change. If you've already bought, or are planning to buy, a house or flat, registering the land as temporary use — up to 50 years — still runs under the current rules, which we cover in our [article on buying property](/property-purchase-kyrgyzstan). Watch how the bill moves forward: if it passes, we'll write up what changes and from when."
-    } },
-    { "note": {
-      "ru": "Законопроект внесён группой депутатов и по состоянию на 16 ноября 2026 года проходит общественное обсуждение на сайте Жогорку Кенеша. Номер проекта и даты чтений в публикациях не указаны — перед тем как на него полагаться, проверьте текущий статус на сайте парламента.",
-      "en": "The bill was submitted by a group of MPs and, as of November 16, 2026, is in public discussion on the parliament's website. The draft's registration number and reading dates aren't given in the coverage — check its current status on parliament's site before relying on it."
-    } }
+    {
+      "h2": {
+        "ru": "Как сейчас оформляют землю",
+        "en": "How the land is registered now"
+      }
+    },
+    {
+      "p": {
+        "ru": "Конституция Кыргызстана не разрешает иностранным гражданам и компаниям с иностранным участием иметь землю в частной собственности. Дом, квартиру или нежилое помещение иностранец купить может — здание оформляют на него как обычно. А вот участок под зданием оформляют не в собственность, а во временное пользование, и так — до 50 лет. Это летом 2026 года на заседании Жогорку Кенеша подтвердил глава Госагентства по земельным ресурсам Эрнисбек Зарнаев.",
+        "en": "Kyrgyzstan's Constitution doesn't let foreign citizens or companies with foreign ownership hold land as private property. A foreigner can still buy a house, flat or non-residential space — the building itself is registered to them as usual. But the plot under it is registered not as ownership, just as temporary use, for up to 50 years. The head of the State Agency for Land Resources, Ernisbek Zarnaev, confirmed this at a parliamentary session in 2026."
+      }
+    },
+    {
+      "p": {
+        "ru": "Проблема в том, что закон не до конца описывает механику: кто формально считается собственником участка на время, кто отвечает за него, что происходит, если недвижимость перепродают. Депутат Дастан Бекешев назвал статус такой земли неопределённым. Чтобы закрыть этот пробел, группа депутатов 3 ноября 2026 года вынесла на общественное обсуждение законопроект с подробным механизмом.",
+        "en": "The problem is that the law doesn't fully spell out the mechanics — who formally owns the plot in the meantime, who is responsible for it, what happens when the property is resold. MP Dastan Bekeshev called the land's status unclear. To close that gap, a group of MPs put a detailed bill out for public discussion on November 3, 2026."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Что предлагает законопроект",
+        "en": "What the bill proposes"
+      }
+    },
+    {
+      "p": {
+        "ru": "По проекту, при продаже недвижимости иностранному покупателю прежний владелец одновременно и безвозмездно передаёт участок под ней государству или муниципалитету: в черте города или села — муниципалитету, за её пределами — государству. Оба перехода регистрируют одновременно — право прежнего владельца на землю прекращается, а иностранный покупатель получает недвижимость и право временного пользования землёй под ней. Отдельное решение госоргана, торги или договор для этого не нужны: достаточно акта о добровольной передаче участка, письменного или электронного.",
+        "en": "Under the bill, when property is sold to a foreign buyer, the previous owner transfers the plot under it to the state or a municipality at the same time, free of charge — to the municipality if it's within a town or village, to the state outside it. Both transfers are registered simultaneously: the previous owner's right to the land ends, and the foreign buyer gets the property plus a right of temporary use of the land beneath it. No separate government decision, auction or contract is needed — just a written or electronic act of voluntary transfer."
+      }
+    },
+    {
+      "p": {
+        "ru": "Срок временного пользования — сначала 20 лет. Если иностранец продолжает владеть недвижимостью и нет законных оснований прекратить его право, срок продлевают ещё на 20 лет, а затем на 10 — в сумме не больше 50 лет. Пока участок в такой публичной собственности, государство или муниципалитет не могут продать его отдельно от здания, заложить, отдать в пользование третьим лицам, разделить или сменить назначение, если это мешает владельцу недвижимости.",
+        "en": "The temporary-use term starts at 20 years. If the foreigner still owns the property and there's no legal reason to end the right, it's extended by another 20 years, then 10 more — 50 years total at most. While the plot is in this public ownership, the state or municipality can't sell it separately from the building, mortgage it, hand it to a third party, split it, or change its designated use in a way that gets in the property owner's way."
+      }
+    },
+    {
+      "p": {
+        "ru": "Для квартир и нежилых помещений в многоквартирных домах в публичную собственность перейдёт только соответствующая доля в общем участке — остальное общее имущество дома останется у владельцев помещений как есть. При этом у государства или муниципалитета как собственника доли земли не будет права голоса на общем собрании жильцов.",
+        "en": "For flats and non-residential units in apartment buildings, only the matching share of the shared plot would go into public ownership — the rest of the building's common property stays with the unit owners as it is now. The state or municipality, as owner of that land share, would not get a vote at residents' meetings."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Если недвижимость продают дальше",
+        "en": "If the property changes hands again"
+      }
+    },
+    {
+      "p": {
+        "ru": "Если такую недвижимость купит другой иностранец, право временного пользования землёй перейдёт к нему на оставшийся срок — отсчёт заново не начнётся. Если же покупателем станет гражданин или организация, которые по закону могут владеть этой землёй в частной собственности, публичная собственность на участок прекратится, и земля перейдёт новому владельцу уже в собственность.",
+        "en": "If another foreigner buys the property, the right of temporary land use passes to them for whatever term is left — the clock doesn't restart. If the buyer is a citizen or organization legally entitled to own that land privately, the public ownership ends and the land becomes that buyer's private property."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Что будет с землёй, уже оформленной на иностранцев",
+        "en": "What happens to land already registered to foreigners"
+      }
+    },
+    {
+      "p": {
+        "ru": "Для участков, которые иностранцы уже успели оформить в собственность до поправок, законопроект предлагает переходный механизм: в течение 12 месяцев провести инвентаризацию такой недвижимости, земли и долей в общей собственности, а заодно проверить обременения. После этого собственникам направят уведомление и дадут полгода на добровольную передачу земли государству или муниципалитету с одновременным оформлением права временного пользования. Если собственник откажется, регистрационный орган не сможет прекратить его право сам — потребуется решение суда.",
+        "en": "For plots foreigners already own, registered before the amendment, the bill proposes a transition: a 12-month inventory of such property, land and ownership shares, plus a check for any liens. Owners would then get a notice and six months to voluntarily hand the land to the state or municipality while registering a right of temporary use. If an owner refuses, the registration authority can't end their ownership on its own — a court would have to decide."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Защита банков и ипотечных заёмщиков",
+        "en": "Protection for banks and mortgage holders"
+      }
+    },
+    {
+      "p": {
+        "ru": "Если участок в залоге, например по ипотеке, его передачу при добровольной сделке проведут только с письменного согласия каждого залогодержателя. Условия замены залогового обеспечения должны согласовать залогодержатель, прежний собственник и иностранный покупатель, а все изменения зарегистрируют одновременно с переходом прав на недвижимость и землю, сохранив прежнюю очередность залога.",
+        "en": "If a plot is mortgaged, its transfer in a voluntary deal would need the written consent of every lienholder. The terms for replacing the collateral would have to be agreed between the lienholder, the previous owner and the foreign buyer, with all the changes registered at the same time as the transfer of the property and land, keeping the original lien priority."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Что это значит для вас сейчас",
+        "en": "What this means for you right now"
+      }
+    },
+    {
+      "p": {
+        "ru": "Пока это только проект, вынесенный на общественное обсуждение, а не принятый закон — сроки, формулировки и даже сама судьба инициативы могут измениться. Покупать недвижимость в Кыргызстане иностранцам закон не запрещает ни сейчас, ни по проекту: меняется только порядок оформления земли под ней. Если вы уже купили или планируете купить дом или квартиру, оформление земли во временное пользование — до 50 лет — пока идёт по действующим правилам, которые мы разбирали в [статье о покупке недвижимости](/property-purchase-kyrgyzstan). Следите за ходом законопроекта: если его примут, мы напишем, что меняется и с какой даты.",
+        "en": "For now this is only a draft put out for public discussion, not an adopted law — the terms, wording and even the fate of the bill itself could still change. Kyrgyzstan's law doesn't ban foreigners from buying property, either now or under the draft — only how the land underneath is registered would change. If you've already bought, or are planning to buy, a house or flat, registering the land as temporary use — up to 50 years — still runs under the current rules, which we cover in our [article on buying property](/property-purchase-kyrgyzstan). Watch how the bill moves forward: if it passes, we'll write up what changes and from when."
+      }
+    },
+    {
+      "note": {
+        "ru": "Законопроект внесён группой депутатов и по состоянию на 16 ноября 2026 года проходит общественное обсуждение на сайте Жогорку Кенеша. Номер проекта и даты чтений в публикациях не указаны — перед тем как на него полагаться, проверьте текущий статус на сайте парламента.",
+        "en": "The bill was submitted by a group of MPs and, as of November 16, 2026, is in public discussion on the parliament's website. The draft's registration number and reading dates aren't given in the coverage — check its current status on parliament's site before relying on it."
+      }
+    }
   ],
   "sources": [
     {
@@ -73,5 +118,32 @@
       "title": "24.kg: Иностранцам при покупке домов в КР землю дают только во временное пользование (7 октября 2026)",
       "url": "https://24.kg/article/inostrancam-pri-pokupke-domov-v-kr-zemlyu-dayut-tolko-vo-vremennoe-polzovanie"
     }
-  ]
+  ],
+  "guide": {
+    "num": 8,
+    "group": "life",
+    "status": "draft",
+    "situation": {
+      "ru": "Я купил или хочу купить дом или квартиру",
+      "en": "I bought, or want to buy, a house or flat"
+    },
+    "who": {
+      "ru": "Иностранцам, которые покупают недвижимость или уже владеют ею.",
+      "en": "For foreigners buying or already owning property."
+    },
+    "short": [
+      {
+        "ru": "Недвижимость иностранец купить может. Землю под ней в частную собственность — нет, так сказано в Конституции.",
+        "en": "A foreigner can buy property but not own the land under it privately; the Constitution forbids it."
+      },
+      {
+        "ru": "Законопроект предлагает временное пользование землёй: 20 лет, затем ещё 20 и 10, всего до 50.",
+        "en": "The bill proposes temporary use of the land: 20 years, then 20 and 10 more, up to 50 in total."
+      },
+      {
+        "ru": "Это пока только проект на общественном обсуждении, не принятый закон.",
+        "en": "This is still only a draft under public discussion, not an adopted law."
+      }
+    ]
+  }
 }

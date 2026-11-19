@@ -1,12 +1,209 @@
 [
   {
+    "slug": "stay-longer-than-30-days-kyrgyzstan",
+    "date": "2026-11-19",
+    "category": "visa",
+    "title_ru": "Приехал по безвизу и хочу остаться дольше: что делать с регистрацией",
+    "title_en": "Arrived visa-free and want to stay longer: what to do about registration",
+    "summary_ru": "Сколько дней можно жить без регистрации, когда она перестаёт действовать и что грозит за нарушение. По порядку, который действует с 23 сентября 2026 года.",
+    "summary_en": "How many days you can live without registration, when it stops being valid and what a violation costs. Under the procedure in force since 23 September 2026.",
+    "guide": {
+      "num": 1,
+      "group": "stay",
+      "status": "in_force",
+      "situation": {
+        "ru": "Я приехал по безвизу и хочу остаться дольше 30 дней",
+        "en": "I came visa-free and want to stay longer than 30 days"
+      },
+      "who": {
+        "ru": "Тем, кто въехал без визы и планирует остаться надолго.",
+        "en": "For anyone who entered visa-free and plans a longer stay."
+      },
+      "short": [
+        {
+          "ru": "С 23 сентября 2026 года для граждан США, ЕС, Великобритании, Японии, Кореи и ряда других стран срок без регистрации — 30 дней вместо 60.",
+          "en": "Since 23 September 2026 the registration-free period for citizens of the USA, EU, UK, Japan, Korea and several others is 30 days instead of 60."
+        },
+        {
+          "ru": "Регистрацию подают после въезда и не позже последнего дня этого срока.",
+          "en": "Register after entering and no later than the last day of that period."
+        },
+        {
+          "ru": "Выезд на 30 дней и больше аннулирует регистрацию, после возвращения нужна новая.",
+          "en": "Leaving for 30 days or more cancels the registration; you need a new one on return."
+        },
+        {
+          "ru": "Без документов на пребывание штраф по статье 431: от 55 до 200 расчётных показателей.",
+          "en": "Without documents for your stay the fine under Article 431 is 55 to 200 calculation indices."
+        }
+      ]
+    },
+    "checked": "2026-11-19",
+    "sources": 5
+  },
+  {
+    "slug": "work-permit-foreigners-kyrgyzstan-2026",
+    "date": "2026-11-19",
+    "category": "work",
+    "title_ru": "Хочу работать в Кыргызстане: кто выдаёт разрешение и что известно о правилах",
+    "title_en": "I want to work in Kyrgyzstan: who issues the permit and what we know",
+    "summary_ru": "Разрешения на работу сейчас оформляет МИД по временному порядку до конца 2026 года, потом дело переходит к Минтруда. Что подтверждено, а чего в открытых источниках нет.",
+    "summary_en": "Work permits are currently issued by the Foreign Ministry under a temporary procedure until the end of 2026, then move to the Labour Ministry. What is confirmed and what the open sources do not say.",
+    "guide": {
+      "num": 5,
+      "group": "work",
+      "status": "soon",
+      "situation": {
+        "ru": "Я хочу работать в Кыргызстане",
+        "en": "I want to work in Kyrgyzstan"
+      },
+      "who": {
+        "ru": "Иностранцам, которые ищут работу, и работодателям, которые их нанимают.",
+        "en": "For foreigners looking for work and the employers hiring them."
+      },
+      "short": [
+        {
+          "ru": "До 31 декабря 2026 года документы для работы иностранцев оформляет МИД по временному порядку.",
+          "en": "Until 31 December 2026 the Foreign Ministry issues work documents under a temporary procedure."
+        },
+        {
+          "ru": "Указом от 28 сентября функции передают Минтруда, дату перехода не назвали.",
+          "en": "A 28 September decree moves the functions to the Labour Ministry; no date was named."
+        },
+        {
+          "ru": "Работа без разрешения — штраф по статье 431 и выдворение, если предписание не выполнено за 30 дней.",
+          "en": "Working without a permit means a fine under Article 431 and expulsion if an order is not carried out within 30 days."
+        },
+        {
+          "ru": "Обычные сборы и полный список документов мы в открытых источниках не нашли.",
+          "en": "We found no regular fees or a full document list in open sources."
+        }
+      ]
+    },
+    "checked": "2026-11-19",
+    "sources": 5
+  },
+  {
+    "slug": "digital-nomad-status-kyrgyzstan-2026",
+    "date": "2026-11-19",
+    "category": "work",
+    "title_ru": "Работаю удалённо: как получить статус «цифровой кочевник» в Кыргызстане",
+    "title_en": "I work remotely: how to get the Digital Nomad status in Kyrgyzstan",
+    "summary_ru": "Что известно о статусе по постановлению № 241: два этапа, документы, продление. И что мы не смогли подтвердить.",
+    "summary_en": "What is known about the status under resolution No. 241: two stages, documents, renewal. And what we could not confirm.",
+    "guide": {
+      "num": 6,
+      "group": "work",
+      "status": "in_force",
+      "situation": {
+        "ru": "Я работаю удалённо на иностранного работодателя",
+        "en": "I work remotely for a foreign employer"
+      },
+      "who": {
+        "ru": "Фрилансерам и сотрудникам иностранных компаний, которые хотят жить в Кыргызстане легально.",
+        "en": "For freelancers and employees of foreign companies who want to live in Kyrgyzstan legally."
+      },
+      "short": [
+        {
+          "ru": "Статус ввело постановление № 241 от 30 апреля 2025 года, ответственное ведомство — Минтруда, соцобеспечения и миграции.",
+          "en": "The status was introduced by resolution No. 241 of 30 April 2025; the responsible body is the Ministry of Labour, Social Welfare and Migration."
+        },
+        {
+          "ru": "Заявку подают онлайн на dnomad.e-gov.kg в два шага: личный кабинет, затем заявление.",
+          "en": "You apply online at dnomad.e-gov.kg in two steps: a personal account, then the application."
+        },
+        {
+          "ru": "Сначала статус дают на 60 дней, потом продлевают на год и далее ежегодно, до 10 лет.",
+          "en": "The status is first given for 60 days, then extended for a year and renewed yearly, up to 10 years."
+        },
+        {
+          "ru": "Размер пошлины и налоговые последствия мы в открытых источниках не нашли.",
+          "en": "We found neither the fee nor the tax consequences in open sources."
+        }
+      ]
+    },
+    "checked": "2026-11-19",
+    "sources": 3
+  },
+  {
+    "slug": "open-osoo-foreigner-kyrgyzstan-2026",
+    "date": "2026-11-19",
+    "category": "business",
+    "title_ru": "Открываю ОсОО в Кыргызстане иностранцем: что известно о регистрации",
+    "title_en": "Opening an LLC (OsOO) in Kyrgyzstan as a foreigner: what we know about registration",
+    "summary_ru": "Кто может быть учредителем, сколько занимает регистрация, что поменялось в ноябре и что с банковским счётом. Без суммы пошлины: в проверенных источниках её нет.",
+    "summary_en": "Who can be a founder, how long registration takes, what changed in November and what about the bank account. No state fee figure: the sources we checked do not give one.",
+    "guide": {
+      "num": 7,
+      "group": "work",
+      "status": "in_force",
+      "situation": {
+        "ru": "Я открываю компанию в Кыргызстане как иностранец",
+        "en": "I am opening a company in Kyrgyzstan as a foreigner"
+      },
+      "who": {
+        "ru": "Иностранным предпринимателям, которые регистрируют ОсОО.",
+        "en": "For foreign entrepreneurs registering an LLC."
+      },
+      "short": [
+        {
+          "ru": "Учредителями ОсОО могут быть и иностранные физические и юридические лица; минимального капитала нет.",
+          "en": "Founders of an LLC can be foreign individuals and companies; there is no minimum capital."
+        },
+        {
+          "ru": "Регистрация идёт через «единое окно», стандартный срок — 3–5 рабочих дней, онлайн можно быстрее.",
+          "en": "Registration goes through a one-stop shop; the standard time is 3–5 working days, and online it can be faster."
+        },
+        {
+          "ru": "С 20 ноября 2026 года вступают новые правила регистрации и ликвидации компаний (постановление № 746).",
+          "en": "New rules on company registration and liquidation (resolution No. 746) take effect on 20 November 2026."
+        },
+        {
+          "ru": "Размер пошлины и правила для ИП иностранца мы в проверенных источниках не нашли.",
+          "en": "We found neither the state fee nor the rules for a foreign sole proprietor in the sources we checked."
+        }
+      ]
+    },
+    "checked": "2026-11-19",
+    "sources": 4
+  },
+  {
     "slug": "land-under-foreigner-property-2026",
     "date": "2026-11-16",
     "category": "residence",
     "title_ru": "Купили дом в Кыргызстане: депутаты готовят новый порядок для земли под ним",
     "title_en": "Bought a house in Kyrgyzstan: MPs are drafting new rules for the land underneath",
     "summary_ru": "Законопроект описывает, что будет с земельным участком, когда иностранец покупает дом, квартиру или нежилое помещение: до 50 лет временного пользования вместо частной собственности. Что действует сейчас и что пока только предлагают.",
-    "summary_en": "A draft bill spells out what happens to the land plot when a foreigner buys a house, flat or non-residential space: up to 50 years of temporary use instead of private ownership. What already applies, and what's only a proposal."
+    "summary_en": "A draft bill spells out what happens to the land plot when a foreigner buys a house, flat or non-residential space: up to 50 years of temporary use instead of private ownership. What already applies, and what's only a proposal.",
+    "guide": {
+      "num": 8,
+      "group": "life",
+      "status": "draft",
+      "situation": {
+        "ru": "Я купил или хочу купить дом или квартиру",
+        "en": "I bought, or want to buy, a house or flat"
+      },
+      "who": {
+        "ru": "Иностранцам, которые покупают недвижимость или уже владеют ею.",
+        "en": "For foreigners buying or already owning property."
+      },
+      "short": [
+        {
+          "ru": "Недвижимость иностранец купить может. Землю под ней в частную собственность — нет, так сказано в Конституции.",
+          "en": "A foreigner can buy property but not own the land under it privately; the Constitution forbids it."
+        },
+        {
+          "ru": "Законопроект предлагает временное пользование землёй: 20 лет, затем ещё 20 и 10, всего до 50.",
+          "en": "The bill proposes temporary use of the land: 20 years, then 20 and 10 more, up to 50 in total."
+        },
+        {
+          "ru": "Это пока только проект на общественном обсуждении, не принятый закон.",
+          "en": "This is still only a draft under public discussion, not an adopted law."
+        }
+      ]
+    },
+    "checked": "2026-11-16",
+    "sources": 2
   },
   {
     "slug": "temporary-rules-foreigners-kyrgyzstan-2026",
@@ -15,7 +212,40 @@
     "title_ru": "Временные правила для иностранцев в Кыргызстане заканчиваются 31 декабря: что дальше",
     "title_en": "Kyrgyzstan's temporary rules for foreigners end December 31: what's next",
     "summary_ru": "Визы, единое разрешение на работу и резидент-карту сейчас оформляет МИД по временному порядку, который действует до конца года. Что известно о переходе к Минтруда и что проверить, пока правила не поменялись.",
-    "summary_en": "Visas, the unified work permit and the resident card are currently issued by the Foreign Ministry under temporary rules running through year-end. What's known about the handover to the Labor Ministry, and what to check before anything changes."
+    "summary_en": "Visas, the unified work permit and the resident card are currently issued by the Foreign Ministry under temporary rules running through year-end. What's known about the handover to the Labor Ministry, and what to check before anything changes.",
+    "guide": {
+      "num": 4,
+      "group": "stay",
+      "status": "soon",
+      "situation": {
+        "ru": "Я оформляю визу, единое разрешение или резидент-карту до конца года",
+        "en": "I am applying for a visa, single permit or resident card before year-end"
+      },
+      "who": {
+        "ru": "Тем, кто подаёт или продлевает документы в конце 2026 года.",
+        "en": "For anyone filing or renewing documents at the end of 2026."
+      },
+      "short": [
+        {
+          "ru": "До 31 декабря 2026 года документы оформляет МИД по временному порядку.",
+          "en": "Until 31 December 2026 the Ministry of Foreign Affairs handles documents under a temporary procedure."
+        },
+        {
+          "ru": "Указом от 28 сентября функции передают Минтруда, но дата перехода не названа.",
+          "en": "A 28 September decree moves the functions to the Ministry of Labour; no transition date has been named."
+        },
+        {
+          "ru": "Документ, оформленный сейчас, не привязан к переходному периоду.",
+          "en": "A document issued now is not tied to the transition period."
+        },
+        {
+          "ru": "Если продлеваете в декабре, начните раньше.",
+          "en": "If you renew in December, start early."
+        }
+      ]
+    },
+    "checked": "2026-11-09",
+    "sources": 3
   },
   {
     "slug": "heating-season-bishkek-2026",
@@ -24,7 +254,36 @@
     "title_ru": "Отопительный сезон в Бишкеке 2026: когда дали тепло и что в квитанции",
     "title_en": "Bishkek's 2026 heating season: when the heat came on and what's on the bill",
     "summary_ru": "Отопление в Бишкеке включили 28 октября. Сколько домов уже подключено, из чего состоит счёт за тепло и что делать, если радиаторы всё ещё холодные.",
-    "summary_en": "Bishkek turned the heat on October 28. How many buildings are connected, what the heating bill is made of, and what to do if your radiators are still cold."
+    "summary_en": "Bishkek turned the heat on October 28. How many buildings are connected, what the heating bill is made of, and what to do if your radiators are still cold.",
+    "guide": {
+      "num": 10,
+      "group": "life",
+      "status": "in_force",
+      "situation": {
+        "ru": "Я зимую в Бишкеке и мне нужно тепло",
+        "en": "I am spending winter in Bishkek and need heating"
+      },
+      "who": {
+        "ru": "Тем, кто снимает жильё в Бишкеке или платит за отопление.",
+        "en": "For anyone renting or paying for heating in Bishkek."
+      },
+      "short": [
+        {
+          "ru": "Отопительный сезон 2026 года начался 28 октября.",
+          "en": "The 2026 heating season began on 28 October."
+        },
+        {
+          "ru": "Счёт состоит из техобслуживания (по площади) и самой тепловой энергии (в гигакалориях).",
+          "en": "The bill has a maintenance part (by floor area) and the heat itself (in gigacalories)."
+        },
+        {
+          "ru": "Если радиаторы холодные несколько дней, обращайтесь в управляющую компанию.",
+          "en": "If radiators stay cold for several days, contact your management company."
+        }
+      ]
+    },
+    "checked": "2026-11-02",
+    "sources": 4
   },
   {
     "slug": "mobile-internet-kyrgyzstan-2026",
@@ -33,16 +292,36 @@
     "title_ru": "Мобильная связь и интернет в Кыргызстане: что нужно приезжему",
     "title_en": "Mobile service and internet in Kyrgyzstan: what newcomers need to know",
     "summary_ru": "Паспорт для SIM-карты, регистрация телефона на imei.kg и что происходит со спутниковым интернетом после окончания пилота Starlink.",
-    "summary_en": "A passport for a SIM card, registering your phone on imei.kg, and what happens to satellite internet now that Starlink's pilot has ended."
-  },
-  {
-    "slug": "overstay-kyrgyzstan-2026",
-    "date": "2026-10-14",
-    "category": "visa",
-    "title_ru": "Срок пребывания заканчивается: что делать до просрочки и после",
-    "title_en": "Your stay is running out: what to do before and after an overstay",
-    "summary_ru": "С сентября за просрочку можно не получить безвизовый въезд в следующий раз. Что известно о новом постановлении и куда обращаться.",
-    "summary_en": "Since September, an overstay can cost you visa-free entry next time. What the new resolution says and who to contact."
+    "summary_en": "A passport for a SIM card, registering your phone on imei.kg, and what happens to satellite internet now that Starlink's pilot has ended.",
+    "guide": {
+      "num": 9,
+      "group": "life",
+      "status": "in_force",
+      "situation": {
+        "ru": "Мне нужна местная связь и интернет",
+        "en": "I need a local SIM and internet"
+      },
+      "who": {
+        "ru": "Тем, кто только приехал или привёз телефон из-за границы.",
+        "en": "For new arrivals and anyone bringing a phone from abroad."
+      },
+      "short": [
+        {
+          "ru": "SIM-карту оформляют по паспорту; загранпаспорт подходит.",
+          "en": "A SIM is issued against a passport; a foreign passport works."
+        },
+        {
+          "ru": "Телефон из-за границы нужно зарегистрировать по IMEI на imei.kg в течение 30 дней после первого подключения к местной сети.",
+          "en": "A phone from abroad must be registered by IMEI at imei.kg within 30 days of first connecting to a local network."
+        },
+        {
+          "ru": "Starlink работает, но его правовой статус после пилота не определён.",
+          "en": "Starlink works, but its legal status after the pilot is undefined."
+        }
+      ]
+    },
+    "checked": "2026-10-19",
+    "sources": 3
   },
   {
     "slug": "register-after-renting-bishkek-2026",
@@ -51,6 +330,81 @@
     "title_ru": "Сняли квартиру в Бишкеке: как оформить регистрацию по новым правилам",
     "title_en": "Rented a flat in Bishkek: how to register under the new rules",
     "summary_ru": "Сроки, адрес, согласие собственника, 12 м² на человека и что делать при отъезде. По порядку, который действует с 23 сентября 2026 года.",
-    "summary_en": "Deadlines, address, the owner's consent, 12 m² per person and what to do when you leave. Based on the procedure in force since September 23, 2026."
+    "summary_en": "Deadlines, address, the owner's consent, 12 m² per person and what to do when you leave. Based on the procedure in force since September 23, 2026.",
+    "guide": {
+      "num": 2,
+      "group": "stay",
+      "status": "in_force",
+      "situation": {
+        "ru": "Я снял квартиру в Бишкеке",
+        "en": "I rented a flat in Bishkek"
+      },
+      "who": {
+        "ru": "Тем, кто живёт в съёмном жилье и должен встать на регистрацию.",
+        "en": "For anyone renting who needs to register."
+      },
+      "short": [
+        {
+          "ru": "Регистрируйтесь не позже последнего дня срока без регистрации: для граждан США, ЕС, Великобритании и ряда стран это 30 дней.",
+          "en": "Register no later than the last day of the registration-free period: 30 days for citizens of the USA, EU, UK and several other countries."
+        },
+        {
+          "ru": "Если хозяин не собственник, нужно нотариальное согласие собственника или доверенность.",
+          "en": "If the landlord is not the owner, you need the owner's notarised consent or a power of attorney."
+        },
+        {
+          "ru": "Для квартиры считают не меньше 12 м² жилой площади на человека.",
+          "en": "The rule is at least 12 m² of living space per person."
+        },
+        {
+          "ru": "Выезд на 30 дней и больше аннулирует регистрацию.",
+          "en": "Leaving for 30 days or more cancels the registration."
+        }
+      ]
+    },
+    "checked": "2026-10-14",
+    "sources": 3
+  },
+  {
+    "slug": "overstay-kyrgyzstan-2026",
+    "date": "2026-10-14",
+    "category": "visa",
+    "title_ru": "Срок пребывания заканчивается: что делать до просрочки и после",
+    "title_en": "Your stay is running out: what to do before and after an overstay",
+    "summary_ru": "С сентября за просрочку можно не получить безвизовый въезд в следующий раз. Что известно о новом постановлении и куда обращаться.",
+    "summary_en": "Since September, an overstay can cost you visa-free entry next time. What the new resolution says and who to contact.",
+    "guide": {
+      "num": 3,
+      "group": "stay",
+      "status": "in_force",
+      "situation": {
+        "ru": "Я просрочил срок пребывания или боюсь просрочить",
+        "en": "I overstayed, or I am afraid I will"
+      },
+      "who": {
+        "ru": "Тем, у кого срок пребывания заканчивается или уже закончился.",
+        "en": "For anyone whose permitted stay is ending or has ended."
+      },
+      "short": [
+        {
+          "ru": "По постановлению № 602 после просрочки вас не пустят в страну по безвизовому режиму в следующий раз.",
+          "en": "Under resolution No. 602, after an overstay you will be refused visa-free entry next time."
+        },
+        {
+          "ru": "Дни пребывания считает автоматическая система ЕИСУМ.",
+          "en": "Days of stay are counted by the automated EISUM system."
+        },
+        {
+          "ru": "Штраф по статье 431 — от 55 до 200 расчётных показателей, в зависимости от срока.",
+          "en": "The fine under Article 431 is 55 to 200 calculation indices, depending on how long."
+        },
+        {
+          "ru": "Не ждите выезда: свяжитесь с консульским департаментом МИД заранее.",
+          "en": "Do not wait until you leave: contact the MFA consular department in advance."
+        }
+      ]
+    },
+    "checked": "2026-11-19",
+    "sources": 3
   }
 ]
