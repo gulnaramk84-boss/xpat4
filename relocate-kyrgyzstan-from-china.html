@@ -41,22 +41,10 @@
 }</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/article-base.css?v=202611193">
   <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--sand:#f5f0e8;--warm-white:#faf8f4;--ink:#1a1814;--ink-60:rgba(26,24,20,0.6);--ink-30:rgba(26,24,20,0.3);--ink-10:rgba(26,24,20,0.08);--accent:#2d5a3d;--accent-light:#e8f0ea;--line:rgba(26,24,20,0.12)}
-    html{scroll-behavior:smooth}
-    body{font-family:'DM Sans',sans-serif;background:var(--warm-white);color:var(--ink);-webkit-font-smoothing:antialiased}
-    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 48px;background:rgba(250,248,244,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-    .logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;color:var(--ink);text-decoration:none}.logo span{color:var(--accent)}
-    .nav-right{display:flex;align-items:center;gap:16px}
-    .lang-switch{display:flex;gap:2px;background:var(--ink-10);border-radius:3px;padding:3px}
-    .lang-btn{font-size:11px;font-weight:500;padding:5px 10px;border:none;background:transparent;cursor:pointer;color:var(--ink-60);border-radius:2px;transition:background .15s,color .15s}
-    .lang-btn.active{background:var(--warm-white);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.08)}
-    .back{font-size:13px;color:var(--ink-60);text-decoration:none}.back::before{content:'← '}.back:hover{color:var(--ink)}
     /* HERO */
     .page-hero{padding:140px 48px 60px;max-width:800px;margin:0 auto;border-bottom:1px solid var(--line)}
-    .eyebrow{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;display:flex;align-items:center;gap:10px}
-    .eyebrow::before{content:'';display:block;width:24px;height:1px;background:var(--accent)}
     h1{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,60px);font-weight:300;line-height:1.1;margin-bottom:18px}
     .page-desc{font-size:16px;color:var(--ink-60);font-weight:300;line-height:1.7;max-width:600px}
     /* CONTENT */
@@ -89,15 +77,9 @@
     .btn-wa{background:#25d366;color:#fff;font-size:14px;font-weight:500;padding:13px 32px;border-radius:2px;text-decoration:none;display:inline-block;transition:opacity .2s;margin:0 6px}
     .btn-wa:hover{opacity:.88}
     /* BREADCRUMB */
-    .breadcrumb{font-size:12px;color:var(--ink-30);margin-bottom:18px}
-    .breadcrumb a{color:var(--ink-30);text-decoration:none}.breadcrumb a:hover{color:var(--ink-60)}
-    .breadcrumb span{margin:0 6px}
     /* FADE */
     .fade-up{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
     .fade-up.visible{opacity:1;transform:none}
-    footer{padding:36px 48px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
-    .footer-logo{font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--ink-60);text-decoration:none}.footer-logo span{color:var(--accent)}
-    .footer-copy{font-size:12px;color:var(--ink-30)}
     @media(max-width:700px){nav,footer{padding:16px 20px}.page-hero,.content,.bottom-cta{padding-left:24px;padding-right:24px}}
   </style>
   <meta name="robots" content="index, follow, max-image-preview:large">
