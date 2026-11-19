@@ -659,6 +659,69 @@ XPAT4.initWidget = function() {
   };
 };
 
+/* ── PROJECT CARDS (our other projects, shown where they fit) ── */
+XPAT4.PROJECTS = {
+  resumelink: {
+    url: 'https://resumelink.cc/',
+    ru: { title: 'ResumeLink — резюме в виде ссылки и QR-кода', desc: 'Загрузите резюме в PDF или DOCX и получите личную ссылку, QR-код и оценку ATS. Бесплатно, без регистрации.' },
+    en: { title: 'ResumeLink — your resume as a link and QR code', desc: 'Upload a PDF or DOCX resume and get a personal link, a QR code and an ATS score. Free, no signup.' },
+    zh: { title: 'ResumeLink — 把简历变成链接和二维码', desc: '上传PDF或DOCX简历，即可获得个人链接、二维码和ATS评分。免费，无需注册。' }
+  },
+  fundan: {
+    url: 'https://fundan.cc/',
+    ru: { title: 'Fundan — поиск грантов и инвесторов', desc: 'ИИ подбирает гранты, акселераторы и инвесторов для Кыргызстана и Центральной Азии. Поиск бесплатный, полный доступ платный.' },
+    en: { title: 'Fundan — find grants and investors', desc: 'AI matches grants, accelerators and investors for Kyrgyzstan and Central Asia. Search is free; full access is paid.' },
+    zh: { title: 'Fundan — 寻找资助和投资人', desc: 'AI为吉尔吉斯斯坦和中亚匹配资助、加速器和投资人。搜索免费，完整功能付费。' }
+  },
+  ratekit: {
+    url: 'https://ratekit.org/',
+    ru: { title: 'RateKit — калькуляторы для фрилансеров и основателей', desc: 'Ставка фрилансера, комиссии Stripe и PayPal, НДС, инвойсы, а для американцев — расчёт FEIE (форма 2555). Бесплатно.' },
+    en: { title: 'RateKit — calculators for freelancers and founders', desc: 'Freelance rate, Stripe and PayPal fees, VAT, invoices and, for US expats, the FEIE (Form 2555). Free.' },
+    zh: { title: 'RateKit — 面向自由职业者和创业者的计算器', desc: '自由职业费率、Stripe与PayPal手续费、增值税、发票，以及面向美国侨民的FEIE（2555表）。免费。' }
+  }
+};
+XPAT4.PROJECT_I18N = {
+  ru: { tag: 'Наш проект', go: 'Открыть' },
+  en: { tag: 'Our project', go: 'Open' },
+  zh: { tag: '我们的项目', go: '打开' }
+};
+XPAT4.renderProjects = function() {
+  const lang = ['ru', 'en', 'zh'].includes(XPAT4.currentLang) ? XPAT4.currentLang : 'en';
+  const ui = XPAT4.PROJECT_I18N[lang];
+  document.querySelectorAll('[data-xp-project]').forEach(el => {
+    const p = XPAT4.PROJECTS[el.getAttribute('data-xp-project')];
+    if (!p) return;
+    const t = p[lang] || p.en;
+    el.innerHTML = '<a class="xp-card" href="' + p.url + '" target="_blank" rel="noopener">' +
+      '<span class="xp-tag">' + ui.tag + '</span>' +
+      '<span class="xp-title">' + t.title + '</span>' +
+      '<span class="xp-desc">' + t.desc + '</span>' +
+      '<span class="xp-go">' + ui.go + ' →</span></a>';
+  });
+};
+(function() {
+  if (document.getElementById('xpat4-proj-css')) return;
+  const s = document.createElement('style');
+  s.id = 'xpat4-proj-css';
+  s.textContent = [
+    '.xp-proj{margin:32px 0 0}',
+    '.xp-wrap{box-sizing:border-box;max-width:896px;margin:0 auto;padding:0 48px 56px}.xp-wrap .xp-proj{margin:0}',
+    '.xp-card{display:grid;grid-template-columns:1fr auto;column-gap:24px;row-gap:4px;padding:20px 24px;border:1px solid rgba(26,24,20,.12);background:#f5f0e8;text-decoration:none;color:#1a1814;transition:border-color .2s,background .2s}',
+    '.xp-card:hover{border-color:#2d5a3d;background:#f0ebe0}',
+    '.xp-tag{grid-column:1/-1;font:500 10px/1 "DM Sans",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#2d5a3d;margin-bottom:6px}',
+    '.xp-title{font:400 19px/1.3 "Cormorant Garamond",serif;color:#1a1814}',
+    '.xp-desc{grid-column:1;font:300 13px/1.6 "DM Sans",sans-serif;color:rgba(26,24,20,.6)}',
+    '.xp-go{grid-column:2;grid-row:2/4;align-self:center;font:500 12px "DM Sans",sans-serif;color:#2d5a3d;white-space:nowrap}',
+    '.xp-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;margin:0 auto;padding:0 48px 72px}',
+    '.xp-row .xp-proj{margin:0}.xp-row .xp-card{height:100%;grid-template-columns:1fr}',
+    '.xp-row .xp-go{grid-column:1;grid-row:auto;margin-top:8px}',
+    '@media(max-width:700px){.xp-wrap{padding:0 20px 40px}}',
+    '@media(max-width:900px){.xp-row{grid-template-columns:1fr;padding:0 20px 48px}.xp-card{grid-template-columns:1fr}.xp-go{grid-column:1;grid-row:auto;margin-top:8px}}'
+  ].join('\n');
+  document.head.appendChild(s);
+})();
+document.addEventListener('xpat4-lang-change', XPAT4.renderProjects);
+
 /* ── AUTO-INIT on DOMContentLoaded ── */
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
