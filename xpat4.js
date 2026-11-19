@@ -681,9 +681,9 @@ XPAT4.PROJECTS = {
   }
 };
 XPAT4.PROJECT_I18N = {
-  ru: { tag: 'Наш проект', go: 'Открыть' },
-  en: { tag: 'Our project', go: 'Open' },
-  zh: { tag: '我们的项目', go: '打开' }
+  ru: { tag: 'Полезный сервис', go: 'Открыть' },
+  en: { tag: 'Useful service', go: 'Open' },
+  zh: { tag: '实用服务', go: '打开' }
 };
 XPAT4.renderProjects = function() {
   const lang = ['ru', 'en', 'zh'].includes(XPAT4.currentLang) ? XPAT4.currentLang : 'en';
