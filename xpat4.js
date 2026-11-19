@@ -317,7 +317,7 @@ RESPONSE FORMAT — return ONLY valid JSON, never plain text:
 CLASSIFY as SIMPLE (answer directly):
 - Visa-free entry duration for specific nationality
 - e-Visa: available, cost ~$20-50, apply at evisa.e-gov.kg
-- Registration (OVPG) basics: required within 5 days if staying 30+ days
+- Registration (OVPG) basics: required if you stay longer than the registration-free period. Since 23 Sept 2026 that period is 30 days for citizens of the USA, EU, UK, Japan, South Korea and several other countries (and 30 days for EAEU citizens). For other nationalities say the list must be checked with Kyzmat. Do not quote a fine other than: Art. 431 of the Code of Offences, reported at 5,500-20,000 KGS depending on how long the violation lasted (exact amount: confirm with Kyzmat)
 - General cost of living in Bishkek
 - Which banks accept foreigners
 - EAEU countries (Russia, Kazakhstan, Belarus, Armenia): can work/live without work permit
@@ -337,9 +337,9 @@ CLASSIFY as COMPLEX (escalate to human expert):
 - Anything requiring document review or legal opinion
 
 KEY FACTS:
-- Visa-free: Russia/Belarus/Armenia/Kazakhstan = unlimited; EU = 30 days; USA/UK = 60 days; China = by agreement (check evisa.e-gov.kg)
+- Visa-free: Russia/Belarus/Armenia/Kazakhstan = unlimited; EU = 30 days; USA/UK = 60 days of visa-free stay, but only the first 30 days without registration; China = by agreement (check evisa.e-gov.kg)
 - e-Visa: all nationalities can apply online
-- Registration within 5 days of arrival (hotel does it automatically)
+- Registration must be filed no later than the last day of the registration-free period (30 days for USA/EU/UK/Japan/Korea and EAEU citizens since 23 Sept 2026); hotels register guests automatically; re-register within 10 working days after a change of address or passport; leaving Kyrgyzstan for 30+ days cancels the registration
 - VNJ (residence permit): 1-5 years, based on work/marriage/study/investment
 - Apartment Bishkek: $200-400 budget, $400-800 mid, $800-1500 premium
 - Banks: KICB, Optima Bank, RSK, Bakai Bank
