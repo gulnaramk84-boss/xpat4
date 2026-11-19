@@ -1,0 +1,24 @@
+[
+  {
+    "date": "2026-11-18",
+    "category": "visa",
+    "title_ru": "Кыргызстан предлагает увеличить безвизовый срок до 60 дней и добавить в список 18 стран",
+    "title_en": "Kyrgyzstan proposes a 60-day visa-free stay and 18 more visa-free countries",
+    "body_ru": "Госагентство по развитию туризма вынесло на общественное обсуждение проект постановления кабмина. Он увеличивает разрешённый безвизовый срок пребывания с 30 дней в течение 60 дней до 60 дней в течение 120 дней — это коснётся всех стран из основного безвизового перечня, не только новых. Отдельно список предлагают дополнить 18 странами: Индонезией, Филиппинами, Иорданией, Марокко, ЮАР, Венесуэлой, Непалом, Тунисом, Колумбией, Доминиканской Республикой, Коста-Рикой, Эквадором, Перу, Панамой, Сейшельскими Островами, Гватемалой, Тринидадом и Тобаго и Ямайкой. Разработчики объясняют продление срока нуждами высокогорного туризма: восхождения на пики Ленина, Хан-Тенгри и Победы занимают от 45 до 60 дней. Это пока проект: он заработает только после того, как кабмин примет постановление, а требования миграционного учёта и пограничного контроля не отменяются.",
+    "body_en": "Kyrgyzstan's State Agency for Tourism Development has put a draft Cabinet resolution out for public discussion. It would extend the allowed visa-free stay from 30 days within any 60 days to 60 days within any 120 days, for every country already on the main visa-free list, not just new ones. Separately, the draft would add 18 countries to that list: Indonesia, the Philippines, Jordan, Morocco, South Africa, Venezuela, Nepal, Tunisia, Colombia, the Dominican Republic, Costa Rica, Ecuador, Peru, Panama, the Seychelles, Guatemala, Trinidad and Tobago, and Jamaica. The agency says the longer stay is mainly meant for high-altitude tourism: climbing expeditions to Lenin Peak, Khan Tengri and Victory Peak take 45 to 60 days. This is still a draft — it only takes effect once the Cabinet adopts the resolution, and registration and border-control rules stay in place either way.",
+    "source_name": "Economist.kg",
+    "source_url": "https://economist.kg/society/2026/11/18/kyrgyzstan-bezviz-18-stran/",
+    "status": "draft"
+  },
+  {
+    "date": "2026-11-12",
+    "category": "business",
+    "title_ru": "Новые правила регистрации и ликвидации компаний: иностранцам разрешили указывать другой ID вместо ПИН",
+    "title_en": "New company registration and liquidation rules let foreigners use another ID number instead of a Kyrgyz PIN",
+    "body_ru": "Кабмин постановлением №746 от 9 ноября 2026 года изменил порядок регистрации, перерегистрации и ликвидации юридических лиц, филиалов и представительств. Для иностранных граждан, которые оформляют документы на компанию, теперь можно указывать не только персональный идентификационный номер (ПИН), но и другой идентификационный номер. В решении о перерегистрации нужно будет подробно указывать всех бенефициарных владельцев: фамилию, имя, гражданство, ID-номер и место жительства. При ликвидации компании регистрирующий орган сам проверит через межведомственный обмен, нет ли долгов по налогам, страховым взносам, неналоговым платежам и таможне — при наличии долга в ликвидации откажут. Постановление опубликовано 10 ноября и вступает в силу 20 ноября 2026 года. Если вы владеете компанией в Кыргызстане или собираетесь её зарегистрировать, новые требования к раскрытию бенефициаров и проверке долгов действуют с этой даты.",
+    "body_en": "Cabinet Resolution No. 746, signed November 9, 2026, changes the rules for registering, re-registering and shutting down legal entities, branches and representative offices in Kyrgyzstan. Foreign citizens filing company paperwork can now give a different ID number instead of a Kyrgyz personal ID number (PIN). A re-registration decision must now spell out every beneficial owner's full name, citizenship, ID number and address. When a company is liquidated, the registering authority will check through inter-agency data exchange for unpaid taxes, insurance contributions, non-tax payments and customs debts — if there is a debt, liquidation is refused. The resolution was published November 10 and takes effect November 20, 2026. If you own or plan to register a company in Kyrgyzstan, the new beneficiary-disclosure and debt-check rules apply from that date.",
+    "source_name": "Economist.kg",
+    "source_url": "https://economist.kg/pravo-znat/2026/11/12/v-kyrgyzstane-izmenili-pravila-registratsii-i-likvidatsii-kompanii-chto-vazhno-znat/",
+    "status": "soon"
+  }
+]
