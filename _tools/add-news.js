@@ -20,6 +20,7 @@ for (const it of items) {
   for (const k of ['date', 'category', 'title_ru', 'title_en', 'body_ru', 'body_en', 'source_name', 'source_url']) {
     if (!it[k]) throw new Error(`Missing "${k}" in item: ${it.title_ru || JSON.stringify(it)}`);
   }
+  if (it.status && !['in_force', 'soon', 'draft'].includes(it.status)) throw new Error('status must be in_force, soon or draft: ' + it.title_ru);
   const dup = news.some((n) => n.source_url === it.source_url || n.title_ru === it.title_ru);
   if (dup) { console.log('skip (already there): ' + it.title_ru); continue; }
   news.push({ id: nextId++, title_zh: '', body_zh: '', ...it });

@@ -130,7 +130,9 @@
     .card { background: var(--warm-white); padding: 40px 32px; text-decoration: none; color: var(--ink); display: flex; flex-direction: column; gap: 14px; transition: background 0.25s; }
     .card:hover { background: var(--sand); }
     .card-num { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; color: var(--ink-30); }
-    .card-icon { font-size: 24px; line-height: 1; margin-bottom: 4px; }
+    .card-icon { line-height: 1; margin-bottom: 4px; color: var(--accent); }
+    .card-icon svg, .nomad-icon svg, .quick-card-icon svg { display: block; }
+    .nomad-icon, .quick-card-icon { color: var(--accent); }
     .card-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; line-height: 1.2; }
     .card-desc { font-size: 13px; color: var(--ink-60); line-height: 1.55; font-weight: 300; }
     .card-link { margin-top: auto; font-size: 12px; font-weight: 500; color: var(--accent); letter-spacing: 0.04em; display: flex; align-items: center; gap: 5px; }
@@ -199,6 +201,22 @@
     .btn-sand:hover { opacity: 0.85; }
 
     /* TESTIMONIALS */
+    .home-news { padding: 0 48px 80px; max-width: 1100px; margin: 0 auto; }
+    .home-news-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 28px; flex-wrap: wrap; }
+    .home-news-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+    .home-news-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3.4vw, 38px); font-weight: 300; line-height: 1.15; }
+    .home-news-all { font-size: 13px; font-weight: 500; color: var(--accent); text-decoration: none; }
+    .home-news-all::after { content: ' →'; }
+    .home-news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .hn-card { background: var(--warm-white); padding: 28px; display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: inherit; transition: background .2s; }
+    .hn-card:hover { background: var(--sand); }
+    .hn-meta { font-size: 11px; color: var(--ink-60); display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .hn-cat { font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+    .hn-badge { font-size: 10px; font-weight: 500; padding: 2px 8px; border-radius: 100px; background: var(--ink-10); color: var(--ink-60); }
+    .hn-badge.in_force { background: var(--accent-light); color: var(--accent); }
+    .hn-badge.soon { background: #fdf1dc; color: #8a5a12; }
+    .hn-title { font-family: 'Cormorant Garamond', serif; font-size: 21px; font-weight: 400; line-height: 1.3; }
+    @media (max-width: 900px) { .home-news { padding: 0 20px 56px; } .home-news-grid { grid-template-columns: 1fr; } }
     .testimonials-section { padding: 0 48px 100px; max-width: 1100px; margin: 0 auto; }
     .section-eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 48px; display: flex; align-items: center; gap: 10px; }
     .section-eyebrow::before { content:''; display:block; width:24px; height:1px; background:var(--accent); }
@@ -332,6 +350,7 @@
     <ul class="nav-center">
       <li><a href="/#services" data-ru="Услуги"      data-en="Services"    data-zh="服务">Услуги</a></li>
       <li><a href="/catalog"        data-ru="Каталог"     data-en="Catalog"     data-zh="目录">Каталог</a></li>
+      <li><a href="/news" data-ru="Новости" data-en="News" data-zh="新闻">Новости</a></li>
       <li><a href="/checklist"      data-ru="Чеклист"     data-en="Checklist"   data-zh="清单">Чеклист</a></li>
       <li><a href="/calculator"     data-ru="Калькулятор" data-en="Calculator"  data-zh="计算器">Калькулятор</a></li>
       <li><a href="/contact"        data-ru="Контакты"    data-en="Contacts"    data-zh="联系我们">Контакты</a></li>
@@ -352,7 +371,7 @@
     <a href="/checklist"      data-ru="Чеклист"        data-en="Checklist"      data-zh="清单">Чеклист</a>
     <a href="/calculator"     data-ru="Калькулятор"    data-en="Calculator"     data-zh="计算器">Калькулятор</a>
     <a href="/contact"        data-ru="Контакты"       data-en="Contacts"       data-zh="联系我们">Контакты</a>
-    <a href="/news"           data-ru="Новости"        data-en="News"           data-zh="新闻">События</a>
+    <a href="/news"           data-ru="Новости"        data-en="News"           data-zh="新闻">Новости</a>
     <a href="/join"           data-ru="Для специалистов" data-en="For Specialists" data-zh="专家入驻">Для специалистов</a>
   </div>
 
@@ -394,33 +413,23 @@
   </div>
 </div> <!-- /hero-bg -->
 
-<!-- STATS STRIP -->
-<div class="stats-strip fade-up">
-  <div class="stats-grid">
-    <div class="stat-cell">
-      <div class="stat-num">60+</div>
-      <div class="stat-label" data-ru="стран с безвизовым въездом в КР" data-en="countries with visa-free entry to KR" data-zh="个国家免签入境">стран с безвизовым въездом в КР</div>
+<!-- LATEST NEWS -->
+<section class="home-news fade-up" id="home-news">
+  <div class="home-news-head">
+    <div>
+      <div class="home-news-eyebrow" data-ru="Что нового" data-en="What's new" data-zh="最新动态">Что нового</div>
+      <h2 class="home-news-title" data-ru="Свежее для иностранцев в КР" data-en="Latest for foreigners in KR" data-zh="在吉外籍人士最新消息">Свежее для иностранцев в КР</h2>
     </div>
-    <div class="stat-cell">
-      <div class="stat-num">3+</div>
-      <div class="stat-label" data-ru="дня — минимальный срок регистрации компании" data-en="days minimum for company registration" data-zh="天起注册公司">дня — минимальный срок регистрации компании</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-num">$500</div>
-      <div class="stat-label" data-ru="средняя аренда квартиры в Бишкеке" data-en="average apartment rent in Bishkek" data-zh="比什凯克平均月租">средняя аренда квартиры в Бишкеке</div>
-    </div>
-    <div class="stat-cell">
-      <div class="stat-num">10%</div>
-      <div class="stat-label" data-ru="корпоративный налог — один из самых низких в регионе" data-en="corporate tax — one of the lowest in the region" data-zh="企业税率，区域最低之一">корпоративный налог — один из самых низких в регионе</div>
-    </div>
+    <a class="home-news-all" href="/news" data-ru="Все новости" data-en="All news" data-zh="全部新闻">Все новости</a>
   </div>
-</div>
+  <div class="home-news-grid" id="home-news-grid"></div>
+</section>
 
 <div class="cards-section" id="services">
   <div class="cards-grid">
     <a class="card" href="/visa">
       <span class="card-num">01</span>
-      <div class="card-icon">🛂</div>
+      <div class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 16h6"/></svg></div>
       <div class="card-title"
         data-ru="Виза и въезд" data-en="Visa & Entry" data-zh="签证与入境">
         Виза и въезд
@@ -438,7 +447,7 @@
     </a>
     <a class="card" href="/residence">
       <span class="card-num">02</span>
-      <div class="card-icon">📋</div>
+      <div class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg></div>
       <div class="card-title"
         data-ru="Регистрация и ВНЖ" data-en="Registration & Residence" data-zh="注册与居留">
         Регистрация и ВНЖ
@@ -456,7 +465,7 @@
     </a>
     <a class="card" href="/work">
       <span class="card-num">03</span>
-      <div class="card-icon">💼</div>
+      <div class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></svg></div>
       <div class="card-title"
         data-ru="Работа и учёба" data-en="Work & Study" data-zh="工作与学习">
         Работа и учёба
@@ -474,7 +483,7 @@
     </a>
     <a class="card" href="/living">
       <span class="card-num">04</span>
-      <div class="card-icon">🏡</div>
+      <div class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v9H4z"/><path d="M10 20v-6h4v6"/></svg></div>
       <div class="card-title"
         data-ru="Бизнес, жильё и др." data-en="Business, Housing & More" data-zh="商业、住房等">
         Бизнес, жильё и др.
@@ -497,26 +506,26 @@
 <section class="nomad-section fade-up">
   <div>
     <div class="nomad-tag" data-ru="Цифровые номады" data-en="Digital Nomads" data-zh="数字游民">Цифровые номады</div>
-    <h2 data-ru="Бишкек — лучший<br/>город для <em>удалёнщика</em> в ЦА" data-en="Bishkek — best city<br/>for <em>remote workers</em> in CA" data-zh="比什凯克——<br/>中亚最适合<em>远程工作者</em>的城市">Бишкек — лучший<br/>город для <em>удалёнщика</em> в ЦА</h2>
-    <p data-ru="Стоимость жизни на 60% ниже, чем в Европе. Быстрый интернет, коворкинги, нет налогов для работающих на иностранного работодателя — и горы в двух часах езды." data-en="Cost of living 60% lower than Europe. Fast internet, coworking spaces, no taxes for those working for foreign employers — and mountains two hours away." data-zh="生活成本比欧洲低60%。高速网络、联合办公空间、为境外雇主工作无需缴税——两小时车程即可抵达山区。">Стоимость жизни на 60% ниже, чем в Европе. Быстрый интернет, коворкинги, нет налогов для работающих на иностранного работодателя — и горы в двух часах езды.</p>
-    <a class="btn-sand" href="/work" data-ru="Подробнее о работе в КР" data-en="Learn about working in KR" data-zh="了解在吉工作详情">Подробнее о работе в КР</a>
+    <h2 data-ru="Бишкек для тех,<br/>кто работает <em>удалённо</em>" data-en="Bishkek for people<br/>who work <em>remotely</em>" data-zh="适合<em>远程工作</em><br/>的比什凯克">Бишкек для тех,<br/>кто работает <em>удалённо</em></h2>
+    <p data-ru="Коворкинги, мобильный интернет у трёх операторов и горы в двух часах езды. Налоги для удалённых работников зависят от вашего статуса и источника дохода — мы разбираем это в отдельных статьях." data-en="Coworking spaces, mobile internet from three carriers and mountains two hours away. Taxes for remote workers depend on your status and where the income comes from — we cover this in separate articles." data-zh="联合办公空间、三家运营商的移动网络，以及两小时车程的山区。远程工作者的税务取决于您的身份和收入来源——我们在专门的文章中说明。">Коворкинги, мобильный интернет у трёх операторов и горы в двух часах езды. Налоги для удалённых работников зависят от вашего статуса и источника дохода — мы разбираем это в отдельных статьях.</p>
+    <a class="btn-sand" href="/digital-nomad-kyrgyzstan" data-ru="Гид для цифровых номадов" data-en="Digital nomad guide" data-zh="数字游民指南">Гид для цифровых номадов</a>
   </div>
   <div class="nomad-benefits">
     <div class="nomad-benefit">
-      <span class="nomad-icon">⚡</span>
-      <span class="nomad-text"><strong data-ru="Быстрый интернет" data-en="Fast Internet" data-zh="高速网络">Быстрый интернет</strong><br/><span data-ru="50–200 Мбит/с, доступен повсеместно, операторы: MegaCom, Beeline, O!" data-en="50–200 Mbps, widely available, carriers: MegaCom, Beeline, O!" data-zh="50–200 Mbps，覆盖广泛，运营商：MegaCom、Beeline、O!">50–200 Мбит/с, операторы MegaCom, Beeline, O!</span></span>
+      <span class="nomad-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9a14 14 0 0 1 18 0M6 12.5a9.5 9.5 0 0 1 12 0M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r=".6"/></svg></span>
+      <span class="nomad-text"><strong data-ru="Быстрый интернет" data-en="Fast Internet" data-zh="高速网络">Быстрый интернет</strong><br/><span data-ru="Мобильный интернет: MegaCom, Beeline, O!. Подробности — в гиде" data-en="Mobile internet: MegaCom, Beeline, O!. Details in the guide" data-zh="移动网络：MegaCom、Beeline、O!。详见指南">Мобильный интернет: MegaCom, Beeline, O!. Подробности — в гиде</span></span>
     </div>
     <div class="nomad-benefit">
-      <span class="nomad-icon">🏢</span>
-      <span class="nomad-text"><strong data-ru="Коворкинги и кафе" data-en="Coworkings & Cafés" data-zh="联合办公与咖啡馆">Коворкинги и кафе</strong><br/><span data-ru="Ноушн, Hub Bishkek, Impact Hub — от $5/день" data-en="Notion, Hub Bishkek, Impact Hub — from $5/day" data-zh="Notion、Hub Bishkek、Impact Hub — 低至$5/天">Ноушн, Hub Bishkek, Impact Hub — от $5/день</span></span>
+      <span class="nomad-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 8h2M13 8h2M9 12h2M13 12h2M10 21v-4h4v4"/></svg></span>
+      <span class="nomad-text"><strong data-ru="Коворкинги и кафе" data-en="Coworkings & Cafés" data-zh="联合办公与咖啡馆">Коворкинги и кафе</strong><br/><span data-ru="В Бишкеке есть несколько коворкингов — список в нашей статье" data-en="Bishkek has several coworking spaces — see our article for the list" data-zh="比什凯克有多个联合办公空间——名单见我们的文章">В Бишкеке есть несколько коворкингов — список в нашей статье</span></span>
     </div>
     <div class="nomad-benefit">
-      <span class="nomad-icon">💰</span>
-      <span class="nomad-text"><strong data-ru="Низкие налоги" data-en="Low Taxes" data-zh="低税收">Низкие налоги</strong><br/><span data-ru="Работающие удалённо на иностранного работодателя — без налогов в КР" data-en="Remote workers for foreign employers — no taxes in KR" data-zh="为境外雇主远程工作——在吉无需缴税">Работающие удалённо — без налогов в КР</span></span>
+      <span class="nomad-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9 14.5c.5 1 1.6 1.5 3 1.5 1.7 0 3-.8 3-2s-1.3-1.7-3-2-3-.8-3-2 1.3-2 3-2c1.4 0 2.5.5 3 1.5M12 6.5V8M12 16v1.5"/></svg></span>
+      <span class="nomad-text"><strong data-ru="Налоги" data-en="Taxes" data-zh="税务">Налоги</strong><br/><span data-ru="Зависят от статуса и дохода. Для фрилансеров есть отдельный разбор" data-en="Depend on your status and income. There is a separate breakdown for freelancers" data-zh="取决于身份和收入。自由职业者另有专门说明">Зависят от статуса и дохода. Для фрилансеров есть отдельный разбор</span></span>
     </div>
     <div class="nomad-benefit">
-      <span class="nomad-icon">🏔️</span>
-      <span class="nomad-text"><strong data-ru="Природа рядом" data-en="Nature Nearby" data-zh="近在咫尺的自然">Природа рядом</strong><br/><span data-ru="Иссык-Куль, Ала-Арча — за 1-2 часа от Бишкека" data-en="Issyk-Kul, Ala-Archa — 1-2 hours from Bishkek" data-zh="伊塞克湖、阿拉-阿尔恰——距比什凯克1-2小时">Иссык-Куль, Ала-Арча — за 1-2 часа от Бишкека</span></span>
+      <span class="nomad-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19l6-10 4 6 2.5-3.5L21 19z"/></svg></span>
+      <span class="nomad-text"><strong data-ru="Природа рядом" data-en="Nature Nearby" data-zh="近在咫尺的自然">Природа рядом</strong><br/><span data-ru="Иссык-Куль и Ала-Арча — недалеко от Бишкека" data-en="Issyk-Kul and Ala-Archa are not far from Bishkek" data-zh="伊塞克湖和阿拉-阿尔恰距比什凯克不远">Иссык-Куль и Ала-Арча — недалеко от Бишкека</span></span>
     </div>
   </div>
 </section>
@@ -549,62 +558,11 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials-section">
-  <div class="section-eyebrow" data-ru="Истории реальных людей" data-en="Real Expat Stories" data-zh="真实外籍人士故事">Истории реальных людей</div>
-  <div class="testimonials-grid">
-    <div class="testimonial-card fade-up">
-      <p class="testimonial-quote"
-        data-ru="Переехал из Берлина, занялся фрилансом. В Бишкеке открыл ИП за один день — это реально. Аренда квартиры вышла в $350, интернет 100 Мбит/с. Счастлив."
-        data-en="Moved from Berlin, went freelance. In Bishkek I registered as sole trader in one day — that's real. Apartment rent came to $350, internet 100 Mbps. Very happy."
-        data-zh="从柏林搬来，做自由职业。在比什凯克一天就注册了个体户——这是真的。公寓租金350美元，网速100Mbps。非常满意。">
-        Переехал из Берлина, занялся фрилансом. В Бишкеке открыл ИП за один день — это реально. Аренда квартиры вышла в $350, интернет 100 Мбит/с. Счастлив.
-      </p>
-      <div class="testimonial-author">
-        <div class="author-avatar">AK</div>
-        <div>
-          <div class="author-name">Alexander K.</div>
-          <div class="author-meta" data-ru="Германия · Digital nomad · 2024" data-en="Germany · Digital nomad · 2024" data-zh="德国 · 数字游民 · 2024">Германия · Digital nomad · 2024</div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-card fade-up">
-      <p class="testimonial-quote"
-        data-ru="Открыл торговую компанию в Бишкеке. Гульнара помогла с документами за неделю. Налоги минимальные, бюрократия намного проще, чем я ожидал."
-        data-en="Opened a trading company in Bishkek. Gulnara helped with documents in a week. Taxes are minimal, bureaucracy much simpler than I expected."
-        data-zh="在比什凯克开了一家贸易公司。古尔纳拉一周内帮我搞定了所有文件。税收极低，行政手续比我预期的简单得多。">
-        Открыл торговую компанию в Бишкеке. Гульнара помогла с документами за неделю. Налоги минимальные, бюрократия намного проще, чем я ожидал.
-      </p>
-      <div class="testimonial-author">
-        <div class="author-avatar">LW</div>
-        <div>
-          <div class="author-name">Li Wei</div>
-          <div class="author-meta" data-ru="Китай · Предприниматель · 2023" data-en="China · Entrepreneur · 2023" data-zh="中国 · 企业家 · 2023">Китай · Предприниматель · 2023</div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-card fade-up">
-      <p class="testimonial-quote"
-        data-ru="Переехала с мужем и двумя детьми. Нашла хорошую квартиру, дети учатся в международной школе. Стоимость жизни несравнимо ниже, чем в Лондоне."
-        data-en="Relocated with my husband and two kids. Found a great apartment, kids enrolled in international school. Cost of living incomparably lower than London."
-        data-zh="和丈夫及两个孩子一起搬来。找到了好公寓，孩子们进了国际学校。生活成本远低于伦敦，难以比较。">
-        Переехала с мужем и двумя детьми. Нашла хорошую квартиру, дети учатся в международной школе. Стоимость жизни несравнимо ниже, чем в Лондоне.
-      </p>
-      <div class="testimonial-author">
-        <div class="author-avatar">SM</div>
-        <div>
-          <div class="author-name">Sarah M.</div>
-          <div class="author-meta" data-ru="Великобритания · Семья с детьми · 2024" data-en="United Kingdom · Family relocation · 2024" data-zh="英国 · 家庭移居 · 2024">Великобритания · Семья с детьми · 2024</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- QUICK ACTIONS -->
 <section class="quick-actions fade-up">
   <a class="quick-card" href="/calculator">
-    <div class="quick-card-icon">🧮</div>
+    <div class="quick-card-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M16 11v4"/></svg></div>
     <div class="quick-card-text">
       <div class="quick-card-title" data-ru="Калькулятор стоимости жизни" data-en="Cost of Living Calculator" data-zh="生活成本计算器">Калькулятор стоимости жизни</div>
       <p class="quick-card-desc" data-ru="Сравните расходы в Бишкеке с вашим текущим городом. Интерактивно, по категориям." data-en="Compare Bishkek expenses with your current city. Interactive, by category." data-zh="将比什凯克的花销与您当前城市进行对比。交互式，按类别划分。">Сравните расходы в Бишкеке с вашим текущим городом. Интерактивно, по категориям.</p>
@@ -612,7 +570,7 @@
     </div>
   </a>
   <a class="quick-card" href="/checklist">
-    <div class="quick-card-icon">✅</div>
+    <div class="quick-card-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg></div>
     <div class="quick-card-text">
       <div class="quick-card-title" data-ru="Чеклист: Первые 30 дней" data-en="Checklist: First 30 Days" data-zh="清单：入境头30天">Чеклист: Первые 30 дней</div>
       <p class="quick-card-desc" data-ru="Пошаговый план действий с момента пересечения границы. Скачайте и распечатайте." data-en="Step-by-step action plan from the moment you cross the border. Download and print." data-zh="从过境起的逐步行动计划。下载并打印。">Пошаговый план действий с момента пересечения границы. Скачайте и распечатайте.</p>
@@ -711,6 +669,34 @@
     window._specialists = data;
     renderSpecialists();
   });
+
+  /* ── Latest news ── */
+  const HN_CAT = {
+    visa: { ru: 'Виза и въезд', en: 'Visa and entry' }, residence: { ru: 'ВНЖ и регистрация', en: 'Residence' },
+    work: { ru: 'Работа', en: 'Work' }, business: { ru: 'Бизнес', en: 'Business' },
+    living: { ru: 'Жильё', en: 'Housing' }, life: { ru: 'Жизнь в КР', en: 'Life in KG' }
+  };
+  const HN_STATUS = { in_force: { ru: 'Уже действует', en: 'In force' }, soon: { ru: 'Скоро вступит в силу', en: 'Coming soon' }, draft: { ru: 'Пока проект', en: 'Draft only' } };
+  const hnEsc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  function renderHomeNews() {
+    const grid = document.getElementById('home-news-grid');
+    if (!grid || !window._news) return;
+    const lang = XPAT4.currentLang === 'ru' ? 'ru' : 'en';
+    grid.innerHTML = window._news.slice(0, 3).map(n => {
+      const st = HN_STATUS[n.status];
+      const d = new Date(n.date).toLocaleDateString(lang === 'ru' ? 'ru-RU' : 'en-GB', { day: 'numeric', month: 'long', timeZone: 'UTC' });
+      return '<a class="hn-card" href="/news">' +
+        '<div class="hn-meta"><span class="hn-cat">' + hnEsc((HN_CAT[n.category] || {})[lang] || '') + '</span><span>' + hnEsc(d) + '</span></div>' +
+        '<div class="hn-title">' + hnEsc(n['title_' + lang] || n.title_ru) + '</div>' +
+        (st ? '<div><span class="hn-badge ' + hnEsc(n.status) + '">' + hnEsc(st[lang]) + '</span></div>' : '') +
+        '</a>';
+    }).join('');
+  }
+  fetch('news.json?v=' + Date.now()).then(r => r.json()).then(d => {
+    window._news = d.slice().sort((a, b) => (b.date || '').localeCompare(a.date || '') || (b.id || 0) - (a.id || 0));
+    renderHomeNews();
+  }).catch(() => { const s = document.getElementById('home-news'); if (s) s.style.display = 'none'; });
+  document.addEventListener('xpat4-lang-change', renderHomeNews);
 
   /* Re-render specialists on language change */
   document.addEventListener('xpat4-lang-change', renderSpecialists);
