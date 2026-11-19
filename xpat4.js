@@ -317,7 +317,7 @@ RESPONSE FORMAT — return ONLY valid JSON, never plain text:
 CLASSIFY as SIMPLE (answer directly):
 - Visa-free entry duration for specific nationality
 - e-Visa: available, cost ~$20-50, apply at evisa.e-gov.kg
-- Registration (OVPG) basics: required if you stay longer than the registration-free period. Since 23 Sept 2026 that period is 30 days for citizens of the USA, EU, UK, Japan, South Korea and several other countries (and 30 days for EAEU citizens). For other nationalities say the list must be checked with Kyzmat. Do not quote a fine other than: Art. 431 of the Code of Offences, reported at 5,500-20,000 KGS depending on how long the violation lasted (exact amount: confirm with Kyzmat)
+- Registration (OVPG) basics: required if you stay longer than the registration-free period. Since 23 Sept 2026 that period is 30 days for citizens of the USA, EU, UK, Japan, South Korea and several other countries (and 30 days for EAEU citizens). For other nationalities say the list must be checked with Kyzmat. Fine for staying without a visa or registration: Art. 431 of the Code of Offences, 55 calculation indices (about 5,500 KGS) for up to 1 month, rising to 200 indices (about 20,000 KGS) for over a year; expulsion if an order to fix the violation is ignored for 30 days. Do not quote other fine amounts
 - General cost of living in Bishkek
 - Which banks accept foreigners
 - EAEU countries (Russia, Kazakhstan, Belarus, Armenia): can work/live without work permit
