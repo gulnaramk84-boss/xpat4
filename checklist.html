@@ -175,6 +175,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
+  <link rel="stylesheet" href="/site.css?v=20261119">
 </head>
 <body>
 
@@ -215,7 +216,7 @@
   <h1 data-ru="Первые 30 дней<br/>в Кыргызстане" data-en="First 30 Days<br/>in Kyrgyzstan" data-zh="入境吉尔吉斯斯坦<br/>头30天">Первые 30 дней<br/>в Кыргызстане</h1>
   <p class="page-sub" data-ru="Конкретные действия, реальные контакты и прямые ссылки — всё что нужно новому экспату в Бишкеке. Отмечайте выполненные пункты, прогресс сохраняется." data-en="Specific actions, real contacts and direct links — everything a new expat in Bishkek needs. Check items off — progress is saved." data-zh="具体行动、真实联系方式和直接链接——比什凯克新外籍人士所需的一切。勾选已完成项目，进度自动保存。">Конкретные действия, реальные контакты и прямые ссылки — всё что нужно новому экспату в Бишкеке.</p>
   <div class="hero-actions">
-    <button class="btn-print" onclick="window.print()">🖨️ <span data-ru="Распечатать" data-en="Print" data-zh="打印">Распечатать</span></button>
+    <button class="btn-print" onclick="window.print()"><span data-ru="Распечатать" data-en="Print" data-zh="打印">Распечатать</span></button>
     <div>
       <div class="progress-text" id="progress-text">0 / 0</div>
       <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
@@ -247,7 +248,7 @@
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=20261119"></script>
+<script src="/xpat4.js?v=202611192"></script>
 <script>
 // ── CHECKLIST DATA ──
 // Each item: id, urgent(bool), title(ru/en/zh), body(ru/en/zh), links[], tag(ru/en/zh)
@@ -259,7 +260,7 @@ const CHECKLIST = [
         id:'passport-stamp', urgent:true,
         title:{ru:'Проверить штамп о въезде в паспорте',en:'Check entry stamp in your passport',zh:'检查护照入境章'},
         body:{ru:'На паспортном контроле убедитесь, что в паспорте стоит штамп с датой въезда. Это точка отсчёта вашего законного пребывания — без него доказать дату въезда будет сложно.',en:'At passport control, make sure your passport has an entry stamp with the date. This is the starting point of your legal stay — without it, proving your entry date can be difficult.',zh:'在护照检查处确保护照上有带日期的入境章。这是您合法居留的起点——没有它，证明入境日期会很困难。'},
-        tag:{ru:'⚠️ Сразу при въезде',en:'⚠️ Right at entry',zh:'⚠️ 入境时立即办理'}
+        tag:{ru:'Сразу при въезде',en:'Right at entry',zh:'入境时立即办理'}
       },
       {
         id:'sim-card', urgent:false,
@@ -277,7 +278,7 @@ const CHECKLIST = [
         id:'tap-water', urgent:true,
         title:{ru:'Не пить воду из крана',en:'Do not drink tap water',zh:'不要喝自来水'},
         body:{ru:'Водопроводная вода в Бишкеке не безопасна для питья без кипячения. Покупайте бутилированную воду (5-литровые бутыли — дешевле всего, доставка на дом — Bishkek Water, Suu и другие). Водой из крана можно чистить зубы.',en:'Tap water in Bishkek is not safe to drink without boiling. Buy bottled water (5-litre bottles are cheapest; home delivery services available). Tap water is fine for brushing teeth.',zh:'比什凯克自来水未经煮沸不适合饮用。购买瓶装水（5升装最划算，可预约送货上门）。自来水可以用来刷牙。'},
-        tag:{ru:'⚠️ Важно для здоровья',en:'⚠️ Health safety',zh:'⚠️ 健康安全'}
+        tag:{ru:'Важно для здоровья',en:'Health safety',zh:'健康安全'}
       },
       {
         id:'apps', urgent:false,
@@ -294,7 +295,7 @@ const CHECKLIST = [
         id:'ovpg', urgent:true,
         title:{ru:'Оформить регистрацию по месту проживания',en:'Register at your place of residence',zh:'在居住地办理登记'},
         body:{ru:'Нужна, если остаётесь дольше срока без регистрации: с сентября 2026 года для граждан США, ЕС, Великобритании и ЕАЭС это <b>30 дней</b>. Если живёте в отеле — он регистрирует вас сам. Если снимаете квартиру — хозяин подаёт регистрацию в ЦОН или онлайн через портал госуслуг. При смене адреса — перерегистрация в течение 10 рабочих дней.',en:'Required if you stay longer than the registration-free period: since September 2026 this is <b>30 days</b> for US, EU, UK and EAEU citizens. Hotels register you themselves. If renting, your landlord files registration at a public service center or online via the Government Services portal. After a change of address, re-register within 10 working days.',zh:'如停留超过免登记期限则须办理：自2026年9月起，美国、欧盟、英国及欧亚经济联盟公民为<b>30天</b>。住酒店时由酒店办理；租房则由房东通过公共服务中心或政府服务门户在线提交。更换地址后须在10个工作日内重新登记。'},
-        tag:{ru:'⚠️ Штраф при нарушении',en:'⚠️ Fine if missed',zh:'⚠️ 违规将被罚款'}
+        tag:{ru:'Штраф при нарушении',en:'Fine if missed',zh:'违规将被罚款'}
       },
       {
         id:'rental-contract', urgent:false,
@@ -316,7 +317,7 @@ const CHECKLIST = [
           {url:'tel:+996312652079', label:'+996 312 652-079'},
           {url:'tel:+996776652079', label:'+996 776 652-079'},
         ],
-        tag:{ru:'🏥 Для западных экспатов',en:'🏥 For Western expats',zh:'🏥 西方外籍人士推荐'}
+        tag:{ru:'Для западных экспатов',en:'For Western expats',zh:'西方外籍人士推荐'}
       },
       {
         id:'clinic-neomed', urgent:false,
@@ -326,19 +327,19 @@ const CHECKLIST = [
           {url:'https://neomed.kg', label:'neomed.kg'},
           {url:'tel:+996312906090', label:'+996 312 906-090'},
         ],
-        tag:{ru:'🏥 Диагностика и специалисты',en:'🏥 Diagnostics & specialists',zh:'🏥 诊断与专科'}
+        tag:{ru:'Диагностика и специалисты',en:'Diagnostics & specialists',zh:'诊断与专科'}
       },
       {
         id:'emergency-numbers', urgent:true,
         title:{ru:'Сохранить номера экстренных служб',en:'Save emergency numbers',zh:'保存紧急服务电话'},
         body:{ru:'<b>103</b> — скорая помощь (говорят по-русски). <b>102</b> — полиция. <b>101</b> — пожарная. При серьёзном происшествии лучше сразу ехать в частную клинику — государственная скорая может работать медленно. Если нужен переводчик — звоните Гульнаре.',en:'<b>103</b> — ambulance (Russian-speaking). <b>102</b> — police. <b>101</b> — fire. For serious incidents, going directly to a private clinic is often faster than waiting for the ambulance. If you need a translator, call Gulnara.',zh:'<b>103</b>——急救（俄语服务）。<b>102</b>——警察。<b>101</b>——消防。如遇紧急情况，直接前往私立诊所通常比等救护车更快。如需翻译，请联系古尔纳拉。'},
-        tag:{ru:'⚠️ Сохраните в телефон',en:'⚠️ Save to your phone',zh:'⚠️ 存入手机'}
+        tag:{ru:'Сохраните в телефон',en:'Save to your phone',zh:'存入手机'}
       },
       {
         id:'pharmacy', urgent:false,
         title:{ru:'Аптеки: без рецепта и круглосуточно',en:'Pharmacies: no prescription and 24/7',zh:'药店：无需处方，全天候营业'},
         body:{ru:'В Кыргызстане большинство лекарств продаётся без рецепта. Аптеки — на каждом углу. Круглосуточные аптеки есть в центре. Ищите «Аптека» или пользуйтесь картой 2GIS. Антибиотики тоже продаются без рецепта — но применяйте по совету врача.',en:'In Kyrgyzstan, most medicines are sold without a prescription. Pharmacies are on every corner. 24-hour pharmacies exist in the center. Search "Аптека" on 2GIS. Antibiotics also available without prescription — but consult a doctor first.',zh:'在吉尔吉斯斯坦，大多数药物无需处方即可购买。药店随处可见。市中心有24小时药店。在2GIS上搜索"Аптека"（药店）。抗生素也无需处方，但请先咨询医生。'},
-        tag:{ru:'💊 Удобно',en:'💊 Convenient',zh:'💊 方便'}
+        tag:{ru:'Удобно',en:'Convenient',zh:'方便'}
       },
     ]
   },
@@ -349,29 +350,29 @@ const CHECKLIST = [
         id:'tg-expat', urgent:false,
         title:{ru:'Вступить в Telegram-канал экспатов КР',en:'Join the Kyrgyzstan expat Telegram group',zh:'加入吉尔吉斯斯坦外籍人士Telegram群'},
         body:{ru:'Главное сообщество экспатов Кыргызстана в Telegram. Здесь обсуждают жильё, визы, рекомендуют специалистов, предупреждают о мошенниках и делятся жизнью в КР. Активная группа.',en:'The main expat community for Kyrgyzstan on Telegram. Discussions about housing, visas, specialist recommendations, scam warnings and general life in KR. Very active group.',zh:'Telegram上最主要的吉尔吉斯斯坦外籍人士社区。讨论住房、签证、专家推荐、防诈骗提醒及在吉生活。非常活跃的群组。'},
-        links:[{url:'https://t.me/expat4kg', label:'t.me/expat4kg 📱'}],
-        tag:{ru:'💬 Главное сообщество',en:'💬 Main community',zh:'💬 主要社区'}
+        links:[{url:'https://t.me/expat4kg', label:'t.me/expat4kg '}],
+        tag:{ru:'Главное сообщество',en:'Main community',zh:'主要社区'}
       },
       {
         id:'fb-expats-kg', urgent:false,
         title:{ru:'Facebook: Expats in KG',en:'Facebook: Expats in KG',zh:'Facebook：Expats in KG'},
         body:{ru:'Большая группа на Facebook для иностранцев в Кыргызстане. Вопросы по аренде, визам, рекомендации по сервисам, объявления. Подходит для поиска жилья и знакомств.',en:'Large Facebook group for foreigners in Kyrgyzstan. Questions about rentals, visas, service recommendations and classifieds. Good for finding housing and meeting people.',zh:'吉尔吉斯斯坦外籍人士的大型Facebook群组。关于租房、签证的问题、服务推荐和分类广告。适合找房和交友。'},
-        links:[{url:'https://www.facebook.com/groups/1526676220980353', label:'Expats in KG 👥'}],
-        tag:{ru:'👥 Facebook группа',en:'👥 Facebook group',zh:'👥 Facebook群组'}
+        links:[{url:'https://www.facebook.com/groups/1526676220980353', label:'Expats in KG '}],
+        tag:{ru:'Facebook группа',en:'Facebook group',zh:'Facebook群组'}
       },
       {
         id:'fb-expats-bishkek', urgent:false,
         title:{ru:'Facebook: Expats in Bishkek',en:'Facebook: Expats in Bishkek',zh:'Facebook：Expats in Bishkek'},
         body:{ru:'Группа специально для Бишкека — более локальный фокус. Здесь чаще обсуждают конкретные вопросы жизни в столице: районы, школы, рестораны, события.',en:'Group specifically for Bishkek — more local focus. Discussions about specific aspects of life in the capital: neighborhoods, schools, restaurants, events.',zh:'专注于比什凯克的群组——更具本地性。讨论首都生活的具体方面：社区、学校、餐厅、活动。'},
-        links:[{url:'https://www.facebook.com/groups/7471415660', label:'Expats in Bishkek 👥'}],
-        tag:{ru:'👥 Facebook группа',en:'👥 Facebook group',zh:'👥 Facebook群组'}
+        links:[{url:'https://www.facebook.com/groups/7471415660', label:'Expats in Bishkek '}],
+        tag:{ru:'Facebook группа',en:'Facebook group',zh:'Facebook群组'}
       },
       {
         id:'xpat4-news', urgent:false,
         title:{ru:'Следить за новостями на xpat4.org',en:'Follow news on xpat4.org',zh:'关注xpat4.org新闻'},
         body:{ru:'На странице новостей xpat4.org публикуются изменения в визовом законодательстве, актуальные события для экспатов и мероприятия в Бишкеке.',en:'The xpat4.org news page publishes changes in visa law, current expat news and events in Bishkek.',zh:'xpat4.org新闻页面发布签证法规变化、外籍人士最新动态及比什凯克活动信息。'},
-        links:[{url:'news.html', label:'xpat4.org/news 📰'}],
-        tag:{ru:'📰 Оставайтесь в курсе',en:'📰 Stay informed',zh:'📰 保持关注'}
+        links:[{url:'news.html', label:'xpat4.org/news '}],
+        tag:{ru:'Оставайтесь в курсе',en:'Stay informed',zh:'保持关注'}
       },
     ]
   },
@@ -383,19 +384,19 @@ const CHECKLIST = [
         title:{ru:'Решить вопрос ВНЖ заранее (если остаётесь >90 дней)',en:'Decide on VNJ early (if staying >90 days)',zh:'提前决定VNJ申请（如停留超过90天）'},
         body:{ru:'Если планируете остаться более 90 дней — начинайте сбор документов сейчас. ВНЖ оформляется минимум 30 дней. Основания: трудоустройство, брак, учёба, инвестиции. Нужна помощь — обратитесь к Гульнаре.',en:'If planning to stay over 90 days — start gathering documents now. VNJ takes a minimum of 30 days. Grounds: employment, marriage, study, investment. Need help — contact Gulnara.',zh:'如计划停留超过90天——现在就开始准备文件。VNJ申请至少需要30天。依据：就业、结婚、学习、投资。需要帮助——联系古尔纳拉。'},
         links:[{url:'residence.html', label:'Подробнее о ВНЖ →'}],
-        tag:{ru:'⚠️ Если >90 дней',en:'⚠️ If staying >90 days',zh:'⚠️ 超过90天必须'}
+        tag:{ru:'Если >90 дней',en:'If staying >90 days',zh:'超过90天必须'}
       },
       {
         id:'coworking', urgent:false,
         title:{ru:'Коворкинги: конкретные адреса',en:'Coworkings: specific addresses',zh:'联合办公空间：具体地址'},
         body:{ru:'<b>Hub Bishkek</b> — ул. Логвиненко 55, от $5/день. <b>Impact Hub</b> — ул. Исанова 42. <b>Notion Coworking</b> — ул. Фрунзе 534. Большинство открыты 9:00–21:00. Wi-Fi 50–100 Мбит/с. Месячный абонемент от $80.',en:'<b>Hub Bishkek</b> — 55 Logvinenko St, from $5/day. <b>Impact Hub</b> — 42 Isanova St. <b>Notion Coworking</b> — 534 Frunze St. Most open 9am–9pm. Wi-Fi 50–100 Mbps. Monthly pass from $80.',zh:'<b>Hub Bishkek</b>——洛格维年科街55号，低至$5/天。<b>Impact Hub</b>——伊萨诺瓦街42号。<b>Notion Coworking</b>——伏龙芝街534号。大多数开放9:00-21:00。Wi-Fi 50-100Mbps。月卡低至$80。'},
-        tag:{ru:'💻 Для удалёнщиков',en:'💻 For remote workers',zh:'💻 远程工作者'}
+        tag:{ru:'Для удалёнщиков',en:'For remote workers',zh:'远程工作者'}
       },
       {
         id:'language-basics', urgent:false,
         title:{ru:'Выучить 10 фраз на русском',en:'Learn 10 phrases in Russian',zh:'学习10个俄语短语'},
         body:{ru:'Всё официальное в Бишкеке — на русском. Даже базовые фразы сильно упростят жизнь: <i>«сколько стоит?»</i>, <i>«где...?»</i>, <i>«пожалуйста», «спасибо»</i>, <i>«не понимаю»</i>, <i>«покажите на карте»</i>, <i>«вызовите скорую»</i>. Google Translate с камерой — ваш лучший друг в аптеке.',en:'Everything official in Bishkek is in Russian. Even basic phrases make life much easier: <i>"how much?"</i>, <i>"where is...?"</i>, <i>"please", "thank you"</i>, <i>"I don\'t understand"</i>, <i>"show me on the map"</i>, <i>"call an ambulance"</i>. Google Translate camera mode — your best friend in pharmacies.',zh:'比什凯克所有官方事务均使用俄语。哪怕几个基本短语也会让生活轻松很多："多少钱？""……在哪里？""请""谢谢""我听不懂""在地图上指给我看""叫救护车"。Google翻译相机模式——在药店的好帮手。'},
-        tag:{ru:'🗣️ Упростит жизнь',en:'🗣️ Makes life easier',zh:'🗣️ 让生活更轻松'}
+        tag:{ru:'Упростит жизнь',en:'Makes life easier',zh:'让生活更轻松'}
       },
       {
         id:'visa-consultant', urgent:false,
@@ -403,9 +404,9 @@ const CHECKLIST = [
         body:{ru:'У каждого экспата своя ситуация: гражданство, цель приезда, срок пребывания — всё это влияет на правильный документальный путь. Гульнара Мамбеталиева специализируется на помощи иностранцам в КР.',en:'Every expat\'s situation is different: nationality, purpose of stay, duration — all affect the correct legal path. Gulnara Mambetaliyeva specialises in helping foreigners in Kyrgyzstan.',zh:'每位外籍人士的情况各不相同：国籍、停留目的、时长——这些都影响正确的法律路径。古尔纳拉·马姆别塔利耶娃专门帮助在吉外籍人士。'},
         links:[
           {url:'contact.html', label:'Задать вопрос →'},
-          {url:'https://wa.me/996700522667', label:'💬 WhatsApp'}
+          {url:'https://wa.me/996700522667', label:'WhatsApp'}
         ],
-        tag:{ru:'✅ xpat4.org',en:'✅ xpat4.org',zh:'✅ xpat4.org'}
+        tag:{ru:'xpat4.org',en:'xpat4.org',zh:'xpat4.org'}
       },
     ]
   }

@@ -270,7 +270,7 @@ XPAT4.WIDGET_I18N = {
     greeting:    'Привет! Я помогу с вопросами о жизни и документах в Кыргызстане. Спрашивайте — виза, регистрация, работа, бизнес.',
     thinking:    'Думаю…',
     escalate_msg:'Это сложный вопрос — лучше проконсультируйтесь с Гульнарой Мамбеталиевой лично.',
-    wa_btn:      '💬 Написать Гульнаре в WhatsApp',
+    wa_btn:      'Написать Гульнаре в WhatsApp',
     error:       'Ошибка соединения. Попробуйте ещё раз.',
     no_key_msg:  'ИИ-помощник сейчас недоступен — но вы можете написать Гульнаре напрямую, она ответит лично.',
     wa_greeting: 'Здравствуйте, Гульнара! С сайта xpat4.org пришёл вопрос от потенциального клиента:\n\n',
@@ -284,7 +284,7 @@ XPAT4.WIDGET_I18N = {
     greeting:    'Hi! I can help with questions about living in Kyrgyzstan — visas, registration, work permits, business setup.',
     thinking:    'Thinking…',
     escalate_msg:'This is a complex question — I recommend a personal consultation with Gulnara Mambetaliyeva.',
-    wa_btn:      '💬 Message Gulnara on WhatsApp',
+    wa_btn:      'Message Gulnara on WhatsApp',
     error:       'Connection error. Please try again.',
     no_key_msg:  'The AI assistant is temporarily unavailable — but you can message Gulnara directly and she\'ll reply personally.',
     wa_greeting: 'Hello Gulnara! A potential client from xpat4.org sent a question:\n\n',
@@ -298,7 +298,7 @@ XPAT4.WIDGET_I18N = {
     greeting:    '您好！我可以帮助解答在吉尔吉斯斯坦生活的问题——签证、注册、工作许可、商业注册等。',
     thinking:    '思考中…',
     escalate_msg:'这是一个复杂的问题，建议您直接咨询顾问古尔纳拉·马姆别塔利耶娃。',
-    wa_btn:      '💬 通过WhatsApp联系古尔纳拉',
+    wa_btn:      '通过WhatsApp联系古尔纳拉',
     error:       '连接错误，请重试。',
     no_key_msg:  'AI助手暂时不可用——但您可以直接联系古尔纳拉，她会亲自回复。',
     wa_greeting: '您好，古尔纳拉！来自xpat4.org网站的潜在客户提出了以下问题：\n\n',
@@ -467,7 +467,7 @@ XPAT4.initWidget = function() {
     <div id="xpat-panel" role="dialog" aria-label="${i18n.title}">
       <div id="xpat-header">
         <div id="xpat-header-info">
-          <div id="xpat-avatar">🤖</div>
+          <div id="xpat-avatar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-4.5 3.5V17H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg></div>
           <div>
             <div id="xpat-title">${i18n.title}</div>
             <div id="xpat-subtitle">${i18n.subtitle}</div>

@@ -165,6 +165,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
+  <link rel="stylesheet" href="/site.css?v=20261119">
 </head>
 <body>
     <nav>
@@ -211,29 +212,29 @@
 
     <div class="why-grid">
       <div class="why-card">
-        <div class="why-icon">🌐</div>
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg></div>
         <div class="why-title" data-ru="Клиенты из 60+ стран" data-en="Clients from 60+ countries" data-zh="60多个国家的客户">Клиенты из 60+ стран</div>
         <div class="why-desc" data-ru="Профиль виден на русском, английском и китайском языках." data-en="Profile visible in Russian, English and Chinese." data-zh="档案以俄语、英语和中文显示。">Профиль на трёх языках.</div>
       </div>
       <div class="why-card">
-        <div class="why-icon">✅</div>
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg></div>
         <div class="why-title" data-ru="Бесплатно" data-en="Free listing" data-zh="免费入驻">Бесплатно</div>
         <div class="why-desc" data-ru="Базовое размещение бесплатно. Платный приоритет — опционально." data-en="Basic listing is free. Paid priority is optional." data-zh="基础展示免费，付费优先可选。">Базовое размещение бесплатно.</div>
       </div>
       <div class="why-card">
-        <div class="why-icon">🔍</div>
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></div>
         <div class="why-title" data-ru="Только проверенные" data-en="Verified only" data-zh="仅限审核通过">Только проверенные</div>
         <div class="why-desc" data-ru="Ручная проверка каждой заявки — это повышает доверие клиентов." data-en="Each application is manually reviewed — this builds client trust." data-zh="每份申请均人工审核——这将提升客户信任度。">Ручная проверка = доверие.</div>
       </div>
       <div class="why-card">
-        <div class="why-icon">💬</div>
+        <div class="why-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-4.5 3.5V17H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/></svg></div>
         <div class="why-title" data-ru="Прямой контакт" data-en="Direct contact" data-zh="直接联系">Прямой контакт</div>
         <div class="why-desc" data-ru="Клиенты пишут вам напрямую — без посредников и комиссий." data-en="Clients contact you directly — no intermediaries or fees." data-zh="客户直接联系您，无中间人，无佣金。">Без посредников, без комиссий.</div>
       </div>
     </div>
 
     <div class="form-title" data-ru="Заявка на размещение" data-en="Application for listing" data-zh="入驻申请">Заявка на размещение</div>
-    <div class="form-note-top" data-ru="📋 Заявки рассматриваются 1–3 рабочих дня. Профиль появится в каталоге только после нашего одобрения." data-en="📋 Applications reviewed in 1–3 business days. Profile goes live only after our approval." data-zh="📋 申请1-3个工作日内审核。档案仅在获得批准后才会上线。">📋 Заявки рассматриваются 1–3 рабочих дня. Публикация — только после нашего одобрения.</div>
+    <div class="form-note-top" data-ru="Заявки рассматриваются 1–3 рабочих дня. Профиль появится в каталоге только после нашего одобрения." data-en="Applications reviewed in 1–3 business days. Profile goes live only after our approval." data-zh="申请1-3个工作日内审核。档案仅在获得批准后才会上线。">Заявки рассматриваются 1–3 рабочих дня. Публикация — только после нашего одобрения.</div>
 
     <form id="join-form" onsubmit="submitForm(event)">
       <div class="form-section-label" data-ru="Основные данные" data-en="Basic Information" data-zh="基本信息">Основные данные</div>
@@ -271,15 +272,15 @@
       <div class="form-section-label" data-ru="Описание (на языках клиентов)" data-en="Description (in client languages)" data-zh="描述（客户语言）">Описание</div>
       <div class="form-grid">
         <div class="form-group full">
-          <label>Описание 🇷🇺 <span class="opt">(1–2 предложения)</span></label>
+          <label>Описание (RU) <span class="opt">(1–2 предложения)</span></label>
           <textarea name="desc_ru" placeholder="Помогаю иностранцам с получением ВНЖ. 7 лет практики в миграционном праве КР."></textarea>
         </div>
         <div class="form-group full">
-          <label>Description 🇬🇧 <span class="opt">(1–2 sentences)</span></label>
+          <label>Description (EN) <span class="opt">(1–2 sentences)</span></label>
           <textarea name="desc_en" placeholder="I help foreigners obtain residence permits. 7 years of immigration law practice in KR."></textarea>
         </div>
         <div class="form-group full">
-          <label>简介 🇨🇳 <span class="opt">（选填）</span></label>
+          <label>简介 (ZH) <span class="opt">（选填）</span></label>
           <textarea name="desc_zh" placeholder="（选填）"></textarea>
         </div>
       </div>
@@ -313,7 +314,7 @@
     </form>
 
     <div class="success-screen" id="success-screen">
-      <div class="success-icon">🎉</div>
+      <div class="success-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/></svg></div>
       <div class="success-title" data-ru="Заявка отправлена!" data-en="Application submitted!" data-zh="申请已提交！">Заявка отправлена!</div>
       <p class="success-sub" data-ru="Мы рассмотрим её в течение 1–3 рабочих дней и свяжемся с вами по email." data-en="We will review it within 1–3 business days and contact you by email." data-zh="我们将在1-3个工作日内审核并通过电子邮件联系您。">Мы рассмотрим её в течение 1–3 рабочих дней.</p>
     </div>
@@ -334,7 +335,7 @@
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=20261119"></script>
+<script src="/xpat4.js?v=202611192"></script>
 <script>
 function submitForm(e) {
   e.preventDefault();

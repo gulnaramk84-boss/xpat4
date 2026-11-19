@@ -1,0 +1,16 @@
+/* xpat4.org — shared finishing layer. Loaded last on every public page. */
+html { scroll-padding-top: 84px; }
+body { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+::selection { background: #2d5a3d; color: #faf8f4; }
+:focus-visible { outline: 2px solid #2d5a3d; outline-offset: 3px; border-radius: 2px; }
+h1, h2, h3 { text-wrap: balance; }
+p, li { text-wrap: pretty; }
+img, svg { max-width: 100%; }
+a, button { -webkit-tap-highlight-color: transparent; }
+.prose a, .content a, .qa-a a { text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.btn-wa, .btn-light, .btn-primary, .btn-ghost, .btn-outline, .btn-sand, .nav-cta, .g-btn { transition: opacity .2s, background .2s, color .2s, border-color .2s, transform .15s; }
+.btn-wa:active, .btn-light:active, .btn-primary:active, .btn-sand:active, .g-btn:active { transform: translateY(1px); }
+.lang-btn svg { display: block; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}

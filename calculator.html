@@ -191,6 +191,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
+  <link rel="stylesheet" href="/site.css?v=20261119">
 </head>
 <body>
     <nav>
@@ -252,7 +253,7 @@
       <div class="savings-pct-num" id="savings-pct">0%</div>
     </div>
     <a class="savings-cta" href="/contact" id="savings-cta">
-      💬 <span data-ru="Проконсультироваться" data-en="Get Consultation" data-zh="获取咨询">Проконсультироваться</span>
+      <span data-ru="Проконсультироваться" data-en="Get Consultation" data-zh="获取咨询">Проконсультироваться</span>
     </a>
   </div>
   <p class="calc-note" id="calc-note" data-ru="* Средние значения по Бишкеку на 2025 год. Фактические расходы зависят от образа жизни. Данные о вашем городе — ориентировочные, обновите ползунком." data-en="* Bishkek averages for 2025. Actual costs depend on lifestyle. Home city data is approximate — adjust with slider." data-zh="* 比什凯克2025年平均数据。实际费用因生活方式而异。您城市的数据为估算值——可通过滑块调整。">* Средние значения по Бишкеку на 2025 год. Фактические расходы зависят от образа жизни.</p>
@@ -272,32 +273,32 @@
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=20261119"></script>
+<script src="/xpat4.js?v=202611192"></script>
 <script>
 // ── DATA ──
 const CITIES = [
-  { id:'moscow',   flag:'🇷🇺', name:{ru:'Москва',    en:'Moscow',     zh:'莫斯科'},   multiplier:2.8 },
-  { id:'berlin',   flag:'🇩🇪', name:{ru:'Берлин',    en:'Berlin',     zh:'柏林'},     multiplier:4.2 },
-  { id:'london',   flag:'🇬🇧', name:{ru:'Лондон',    en:'London',     zh:'伦敦'},     multiplier:5.5 },
-  { id:'dubai',    flag:'🇦🇪', name:{ru:'Дубай',     en:'Dubai',      zh:'迪拜'},     multiplier:4.8 },
-  { id:'almaty',   flag:'🇰🇿', name:{ru:'Алматы',    en:'Almaty',     zh:'阿拉木图'}, multiplier:1.8 },
-  { id:'beijing',  flag:'🇨🇳', name:{ru:'Пекин',     en:'Beijing',    zh:'北京'},     multiplier:3.9 },
-  { id:'istanbul', flag:'🇹🇷', name:{ru:'Стамбул',   en:'Istanbul',   zh:'伊斯坦布尔'},multiplier:2.2 },
-  { id:'tashkent', flag:'🇺🇿', name:{ru:'Ташкент',   en:'Tashkent',   zh:'塔什干'},   multiplier:1.4 },
-  { id:'delhi',    flag:'🇮🇳', name:{ru:'Дели',      en:'Delhi',      zh:'德里'},     multiplier:1.6 },
-  { id:'nyc',      flag:'🇺🇸', name:{ru:'Нью-Йорк',  en:'New York',   zh:'纽约'},     multiplier:6.8 },
+  { id:'moscow',   flag:'', name:{ru:'Москва',    en:'Moscow',     zh:'莫斯科'},   multiplier:2.8 },
+  { id:'berlin',   flag:'', name:{ru:'Берлин',    en:'Berlin',     zh:'柏林'},     multiplier:4.2 },
+  { id:'london',   flag:'', name:{ru:'Лондон',    en:'London',     zh:'伦敦'},     multiplier:5.5 },
+  { id:'dubai',    flag:'', name:{ru:'Дубай',     en:'Dubai',      zh:'迪拜'},     multiplier:4.8 },
+  { id:'almaty',   flag:'', name:{ru:'Алматы',    en:'Almaty',     zh:'阿拉木图'}, multiplier:1.8 },
+  { id:'beijing',  flag:'', name:{ru:'Пекин',     en:'Beijing',    zh:'北京'},     multiplier:3.9 },
+  { id:'istanbul', flag:'', name:{ru:'Стамбул',   en:'Istanbul',   zh:'伊斯坦布尔'},multiplier:2.2 },
+  { id:'tashkent', flag:'', name:{ru:'Ташкент',   en:'Tashkent',   zh:'塔什干'},   multiplier:1.4 },
+  { id:'delhi',    flag:'', name:{ru:'Дели',      en:'Delhi',      zh:'德里'},     multiplier:1.6 },
+  { id:'nyc',      flag:'', name:{ru:'Нью-Йорк',  en:'New York',   zh:'纽约'},     multiplier:6.8 },
 ];
 
 // Bishkek baseline costs in USD
 const BISHKEK = [
-  { key:'rent',     icon:'🏠', name:{ru:'Аренда квартиры', en:'Apartment rent',   zh:'公寓租金'},   avg:350, min:200, max:900 },
-  { key:'food',     icon:'🛒', name:{ru:'Продукты питания', en:'Groceries',       zh:'日常食品'},   avg:150, min:80,  max:400 },
-  { key:'dining',   icon:'🍽️', name:{ru:'Кафе и рестораны', en:'Dining out',      zh:'餐厅'},       avg:100, min:40,  max:300 },
-  { key:'transport',icon:'🚌', name:{ru:'Транспорт',        en:'Transport',        zh:'交通'},       avg:40,  min:15,  max:120 },
-  { key:'utilities',icon:'💡', name:{ru:'Коммуналка',       en:'Utilities',        zh:'水电'},       avg:60,  min:30,  max:120 },
-  { key:'internet', icon:'📡', name:{ru:'Интернет + телефон',en:'Internet & phone', zh:'网络与电话'}, avg:15,  min:8,   max:40  },
-  { key:'health',   icon:'⚕️', name:{ru:'Здоровье / страховка',en:'Health / insurance',zh:'健康保险'}, avg:60,  min:20,  max:200 },
-  { key:'leisure',  icon:'🎭', name:{ru:'Отдых и развлечения',en:'Leisure',         zh:'娱乐'},       avg:80,  min:20,  max:250 },
+  { key:'rent',     icon:'', name:{ru:'Аренда квартиры', en:'Apartment rent',   zh:'公寓租金'},   avg:350, min:200, max:900 },
+  { key:'food',     icon:'', name:{ru:'Продукты питания', en:'Groceries',       zh:'日常食品'},   avg:150, min:80,  max:400 },
+  { key:'dining',   icon:'', name:{ru:'Кафе и рестораны', en:'Dining out',      zh:'餐厅'},       avg:100, min:40,  max:300 },
+  { key:'transport',icon:'', name:{ru:'Транспорт',        en:'Transport',        zh:'交通'},       avg:40,  min:15,  max:120 },
+  { key:'utilities',icon:'', name:{ru:'Коммуналка',       en:'Utilities',        zh:'水电'},       avg:60,  min:30,  max:120 },
+  { key:'internet', icon:'', name:{ru:'Интернет + телефон',en:'Internet & phone', zh:'网络与电话'}, avg:15,  min:8,   max:40  },
+  { key:'health',   icon:'', name:{ru:'Здоровье / страховка',en:'Health / insurance',zh:'健康保险'}, avg:60,  min:20,  max:200 },
+  { key:'leisure',  icon:'', name:{ru:'Отдых и развлечения',en:'Leisure',         zh:'娱乐'},       avg:80,  min:20,  max:250 },
 ];
 
 let selectedCity = CITIES[0];
@@ -354,7 +355,7 @@ function renderCalc() {
 
   let html = `
     <div class="calc-col-header bishkek">
-      <span class="col-flag">🇰🇬</span>
+      <span class="col-flag"></span>
       <span class="col-city-name">${L.bishkek}</span>
     </div>
     <div class="calc-col-header home">
