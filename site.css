@@ -14,3 +14,5 @@ a, button { -webkit-tap-highlight-color: transparent; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+.stale-note { border-left: 3px solid #b8892b; background: #fbf4e3; color: #5b4514; font-size: 14px; line-height: 1.65; font-weight: 300; padding: 14px 18px; margin: 0 0 32px; }
+.stale-note a { color: #2d5a3d; text-underline-offset: 3px; }
