@@ -1,5 +1,47 @@
 [
   {
+    "slug": "stay-longer-than-30-days-kyrgyzstan",
+    "date": "2026-11-19",
+    "category": "visa",
+    "title_ru": "Приехал по безвизу и хочу остаться дольше: что делать с регистрацией",
+    "title_en": "Arrived visa-free and want to stay longer: what to do about registration",
+    "summary_ru": "Сколько дней можно жить без регистрации, когда она перестаёт действовать и что грозит за нарушение. По порядку, который действует с 23 сентября 2026 года.",
+    "summary_en": "How many days you can live without registration, when it stops being valid and what a violation costs. Under the procedure in force since 23 September 2026.",
+    "guide": {
+      "num": 1,
+      "group": "stay",
+      "status": "in_force",
+      "situation": {
+        "ru": "Я приехал по безвизу и хочу остаться дольше 30 дней",
+        "en": "I came visa-free and want to stay longer than 30 days"
+      },
+      "who": {
+        "ru": "Тем, кто въехал без визы и планирует остаться надолго.",
+        "en": "For anyone who entered visa-free and plans a longer stay."
+      },
+      "short": [
+        {
+          "ru": "С 23 сентября 2026 года для граждан США, ЕС, Великобритании, Японии, Кореи и ряда других стран срок без регистрации — 30 дней вместо 60.",
+          "en": "Since 23 September 2026 the registration-free period for citizens of the USA, EU, UK, Japan, Korea and several others is 30 days instead of 60."
+        },
+        {
+          "ru": "Регистрацию подают после въезда и не позже последнего дня этого срока.",
+          "en": "Register after entering and no later than the last day of that period."
+        },
+        {
+          "ru": "Выезд на 30 дней и больше аннулирует регистрацию, после возвращения нужна новая.",
+          "en": "Leaving for 30 days or more cancels the registration; you need a new one on return."
+        },
+        {
+          "ru": "Без документов на пребывание штраф по статье 431: от 55 до 200 расчётных показателей.",
+          "en": "Without documents for your stay the fine under Article 431 is 55 to 200 calculation indices."
+        }
+      ]
+    },
+    "checked": "2026-11-19",
+    "sources": 5
+  },
+  {
     "slug": "work-permit-foreigners-kyrgyzstan-2026",
     "date": "2026-11-19",
     "category": "work",
@@ -124,48 +166,6 @@
     },
     "checked": "2026-11-19",
     "sources": 4
-  },
-  {
-    "slug": "stay-longer-than-30-days-kyrgyzstan",
-    "date": "2026-11-19",
-    "category": "visa",
-    "title_ru": "Приехал по безвизу и хочу остаться дольше: что делать с регистрацией",
-    "title_en": "Arrived visa-free and want to stay longer: what to do about registration",
-    "summary_ru": "Сколько дней можно жить без регистрации, когда она перестаёт действовать и что грозит за нарушение. По порядку, который действует с 23 сентября 2026 года.",
-    "summary_en": "How many days you can live without registration, when it stops being valid and what a violation costs. Under the procedure in force since 23 September 2026.",
-    "guide": {
-      "num": 1,
-      "group": "stay",
-      "status": "in_force",
-      "situation": {
-        "ru": "Я приехал по безвизу и хочу остаться дольше 30 дней",
-        "en": "I came visa-free and want to stay longer than 30 days"
-      },
-      "who": {
-        "ru": "Тем, кто въехал без визы и планирует остаться надолго.",
-        "en": "For anyone who entered visa-free and plans a longer stay."
-      },
-      "short": [
-        {
-          "ru": "С 23 сентября 2026 года для граждан США, ЕС, Великобритании, Японии, Кореи и ряда других стран срок без регистрации — 30 дней вместо 60.",
-          "en": "Since 23 September 2026 the registration-free period for citizens of the USA, EU, UK, Japan, Korea and several others is 30 days instead of 60."
-        },
-        {
-          "ru": "Регистрацию подают после въезда и не позже последнего дня этого срока.",
-          "en": "Register after entering and no later than the last day of that period."
-        },
-        {
-          "ru": "Выезд на 30 дней и больше аннулирует регистрацию, после возвращения нужна новая.",
-          "en": "Leaving for 30 days or more cancels the registration; you need a new one on return."
-        },
-        {
-          "ru": "Без документов на пребывание штраф по статье 431: от 55 до 200 расчётных показателей.",
-          "en": "Without documents for your stay the fine under Article 431 is 55 to 200 calculation indices."
-        }
-      ]
-    },
-    "checked": "2026-11-19",
-    "sources": 5
   },
   {
     "slug": "land-under-foreigner-property-2026",

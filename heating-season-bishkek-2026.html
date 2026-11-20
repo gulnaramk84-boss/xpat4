@@ -60,6 +60,24 @@
     .next small{display:block;font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
     .next span{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.3}
     @media(max-width:700px){.short{padding:20px}.next{padding:0 24px 40px}}
+    .page-tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .tool-btn{font-family:inherit;font-size:13px;color:var(--ink-60);background:none;border:1px solid var(--line);border-radius:100px;padding:8px 16px;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s}
+    .tool-btn:hover{border-color:var(--accent);color:var(--accent)}
+    .changes{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;margin:0 0 40px}
+    .changes-title{font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+    .changes ul{list-style:none;margin:0}
+    .changes li{font-size:14px;line-height:1.6;color:var(--ink-60);margin-bottom:6px}
+    .changes time{color:var(--ink);font-weight:500;margin-right:8px}
+    .toc{display:none}
+    @media(min-width:1180px){
+      .content.has-toc{max-width:1120px;display:grid;grid-template-columns:minmax(0,800px) 220px;gap:64px;justify-content:center}
+      .toc{display:block;position:sticky;top:110px;align-self:start;font-size:13px;line-height:1.5;border-left:1px solid var(--line);padding-left:18px}
+      .toc-title{font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+      .toc a{display:block;color:var(--ink-60);text-decoration:none;padding:5px 0;transition:color .2s}
+      .toc a:hover,.toc a.active{color:var(--ink)}
+    }
+    .prose h2{scroll-margin-top:96px}
+    @media print{nav,footer,.bottom-cta,.next,.toc,.page-tools,.skip-link,#xpat-btn,#xpat-chat,#xpat-widget,.stale-note,.mobile-menu{display:none!important}body{background:#fff}.page-hero{padding-top:0}.content{padding-top:24px}a{color:inherit}.prose a[href^="http"]::after{content:" (" attr(href) ")";font-size:11px;color:#555}}
     .bottom-cta{background:var(--ink);padding:60px 48px;text-align:center}
     .bottom-cta h3{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;color:var(--sand);margin-bottom:14px}
     .bottom-cta p{font-size:15px;color:rgba(245,240,232,.55);font-weight:300;margin-bottom:28px;line-height:1.7}
@@ -77,7 +95,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=202611202">
+  <link rel="stylesheet" href="/site.css?v=202611203">
 </head>
 <body>
 <a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Перейти к содержанию</a>
@@ -103,9 +121,14 @@
   <h1 data-ru="Отопительный сезон в Бишкеке 2026: когда дали тепло и что в квитанции" data-en="Bishkek's 2026 heating season: when the heat came on and what's on the bill">Отопительный сезон в Бишкеке 2026: когда дали тепло и что в квитанции</h1>
   <p class="page-desc" data-ru="Отопление в Бишкеке включили 28 октября. Сколько домов уже подключено, из чего состоит счёт за тепло и что делать, если радиаторы всё ещё холодные." data-en="Bishkek turned the heat on October 28. How many buildings are connected, what the heating bill is made of, and what to do if your radiators are still cold.">Отопление в Бишкеке включили 28 октября. Сколько домов уже подключено, из чего состоит счёт за тепло и что делать, если радиаторы всё ещё холодные.</p>
   <div class="meta" data-ru="Опубликовано 2 ноября 2026. Проверено 2 ноября 2026." data-en="Published November 2, 2026. Checked November 2, 2026.">Опубликовано 2 ноября 2026. Проверено 2 ноября 2026.</div>
+  <div class="page-tools">
+    <button type="button" class="tool-btn" onclick="window.print()" data-ru="Сохранить в PDF" data-en="Save as PDF">Сохранить в PDF</button>
+    <a class="tool-btn" href="https://wa.me/996700522667?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9A%D0%B0%D0%B6%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%B2%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B5%20%C2%AB%D0%9E%D1%82%D0%BE%D0%BF%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%20%D0%B2%20%D0%91%D0%B8%D1%88%D0%BA%D0%B5%D0%BA%D0%B5%202026%3A%20%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0%20%D0%B4%D0%B0%D0%BB%D0%B8%20%D1%82%D0%B5%D0%BF%D0%BB%D0%BE%20%D0%B8%20%D1%87%D1%82%D0%BE%20%D0%B2%20%D0%BA%D0%B2%D0%B8%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D0%B8%C2%BB%20(https%3A%2F%2Fxpat4.org%2Fheating-season-bishkek-2026)%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%20%D0%B8%D0%BB%D0%B8%20%D1%83%D1%81%D1%82%D0%B0%D1%80%D0%B5%D0%B2%D1%88%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%82%3A%20" target="_blank" rel="noopener" data-ru="Сообщить об ошибке" data-en="Report a mistake">Сообщить об ошибке</a>
+  </div>
 </div>
 
-<div class="content">
+<div class="content has-toc">
+  <div class="main-col">
   <div class="short">
     <div class="short-title" data-ru="Коротко" data-en="In short">Коротко</div>
     <ul>
@@ -114,18 +137,19 @@
       <li data-ru="Если радиаторы холодные несколько дней, обращайтесь в управляющую компанию." data-en="If radiators stay cold for several days, contact your management company.">Если радиаторы холодные несколько дней, обращайтесь в управляющую компанию.</li>
     </ul>
   </div>
+
   <div class="prose">
-    <h2 data-ru="Когда дали отопление" data-en="When the heat came on">Когда дали отопление</h2>
+    <h2 id="h-1" data-ru="Когда дали отопление" data-en="When the heat came on">Когда дали отопление</h2>
     <p data-ru="Отопительный сезон в Бишкеке начался 28 октября 2026 года. Решение приняла коллегия мэрии: учли прогноз Кыргызгидромета о похолодании и желание снизить нагрузку на электросети, пока люди не начали греться обогревателями. Правило простое: отопление включают, когда среднесуточная температура держится на уровне +8°C и ниже пять дней подряд." data-en="Bishkek's 2026 heating season started on October 28. The city hall's board made the call, citing a Kyrgyzhydromet forecast of colder weather and a wish to ease the load on the power grid before people turned to electric heaters. The rule is simple: heat goes on once the average daily temperature holds at +8°C or below for five days running.">Отопительный сезон в Бишкеке начался 28 октября 2026 года. Решение приняла коллегия мэрии: учли прогноз Кыргызгидромета о похолодании и желание снизить нагрузку на электросети, пока люди не начали греться обогревателями. Правило простое: отопление включают, когда среднесуточная температура держится на уровне +8°C и ниже пять дней подряд.</p>
     <p data-ru="В 2025 году батареи дали 3 ноября, в 2024-м — 22 октября. Этот год начался на шесть дней раньше прошлогоднего, но позже, чем в 2024-м. Прошлый сезон закончился 25 марта, а горячую воду после этого отключали на профилактику с 1 апреля по 10 мая. Точную дату окончания нынешнего сезона пока не объявляли, но ориентироваться стоит на похожие числа — конец марта." data-en="Heat came on November 3 in 2025 and October 22 in 2024. This year's start is six days earlier than last year's, but later than in 2024. Last season ended on March 25, with hot water then shut off for maintenance from April 1 to May 10. The end date for this season hasn't been announced yet, but expect something similar — late March.">В 2025 году батареи дали 3 ноября, в 2024-м — 22 октября. Этот год начался на шесть дней раньше прошлогоднего, но позже, чем в 2024-м. Прошлый сезон закончился 25 марта, а горячую воду после этого отключали на профилактику с 1 апреля по 10 мая. Точную дату окончания нынешнего сезона пока не объявляли, но ориентироваться стоит на похожие числа — конец марта.</p>
-    <h2 data-ru="Сколько домов уже греются" data-en="How many buildings have heat">Сколько домов уже греются</h2>
+    <h2 id="h-2" data-ru="Сколько домов уже греются" data-en="How many buildings have heat">Сколько домов уже греются</h2>
     <p data-ru="К утру 29 октября отопление получили 80% жилых домов, которые обслуживает «Бишкектеплоэнерго», сообщила мэрия. К вечеру того же дня подключили уже 1870 многоквартирных домов, а бригады продолжали настраивать сети. В первую очередь подключали социальные объекты: к утру 29 октября тепло получили 100% больниц и вузов, 98% детских садов и 97% школ." data-en="By the morning of October 29, 80% of the homes serviced by Bishkekteploenergo had heat, the city hall said. By that evening, 1,870 apartment buildings were connected, and crews were still adjusting the networks. Social facilities went first: by that morning, 100% of hospitals and universities had heat, along with 98% of kindergartens and 97% of schools.">К утру 29 октября отопление получили 80% жилых домов, которые обслуживает «Бишкектеплоэнерго», сообщила мэрия. К вечеру того же дня подключили уже 1870 многоквартирных домов, а бригады продолжали настраивать сети. В первую очередь подключали социальные объекты: к утру 29 октября тепло получили 100% больниц и вузов, 98% детских садов и 97% школ.</p>
     <p data-ru="Нагрузка на ТЭЦ Бишкека выросла вместе с подключением домов: среднесуточная электрическая мощность станции поднялась с 160 МВт 20 октября до 223 МВт к 29 октября — почти на 40%. На станции в работе шесть котлов и четыре турбины, ещё восемь котлов и три турбины в резерве. Сколько времени займёт подключение оставшихся домов, мэрия не уточнила — она попросила жителей отнестись с терпением, пока бригады работают по очереди." data-en="The load on Bishkek's heat and power plant grew along with the connections: its average daily electric output rose from 160 MW on October 20 to 223 MW by October 29 — almost 40% more. Six boilers and four turbines are running, with eight boilers and three turbines in reserve. The city hall did not say when the rest of the buildings would be connected, and asked residents to be patient while crews work through the list.">Нагрузка на ТЭЦ Бишкека выросла вместе с подключением домов: среднесуточная электрическая мощность станции поднялась с 160 МВт 20 октября до 223 МВт к 29 октября — почти на 40%. На станции в работе шесть котлов и четыре турбины, ещё восемь котлов и три турбины в резерве. Сколько времени займёт подключение оставшихся домов, мэрия не уточнила — она попросила жителей отнестись с терпением, пока бригады работают по очереди.</p>
-    <h2 data-ru="Что в квитанции" data-en="What's on the bill">Что в квитанции</h2>
+    <h2 id="h-3" data-ru="Что в квитанции" data-en="What's on the bill">Что в квитанции</h2>
     <p data-ru="Счёт за отопление состоит из двух частей. Первая — техобслуживание внутридомовых систем отопления и горячей воды: с 1 июля 2026 года это 1,59 сома за 1 м² общей площади квартиры в месяц за отопление и 0,79 сома за 1 м² за горячую воду, без налогов. Это на 20% больше, чем было до июля, — 1,32 и 0,66 сома. Ставку установил Департамент по регулированию ТЭК при Минэнерго, а начисляет и собирает плату муниципальное предприятие «Бишкектеплосеть»." data-en="The heating bill has two parts. One is maintenance of the building's internal heating and hot-water systems: since July 1, 2026, that's 1.59 som per m² of apartment area per month for heating and 0.79 som per m² for hot water, before tax. That is 20% more than before July, when the rates were 1.32 and 0.66 som. The rate was set by the Fuel and Energy Complex Regulation Department under the Ministry of Energy, and the municipal utility Bishkekteplosety bills and collects it.">Счёт за отопление состоит из двух частей. Первая — техобслуживание внутридомовых систем отопления и горячей воды: с 1 июля 2026 года это 1,59 сома за 1 м² общей площади квартиры в месяц за отопление и 0,79 сома за 1 м² за горячую воду, без налогов. Это на 20% больше, чем было до июля, — 1,32 и 0,66 сома. Ставку установил Департамент по регулированию ТЭК при Минэнерго, а начисляет и собирает плату муниципальное предприятие «Бишкектеплосеть».</p>
     <p data-ru="Вторая часть — сама тепловая энергия, в гигакалориях. Эту ставку правительство поднимало несколько раз с 2024 года, и свежие публикации называют разные цифры. Точную сумму за гигакалории проверяйте по своей квитанции «Бишкектеплосети» или на сайте компании." data-en="The other part is the heat itself, billed in gigacalories. The government has raised that rate more than once since 2024, and recent articles give different figures for it. Check your own Bishkekteplosety bill or the company's website for the exact gigacalorie rate.">Вторая часть — сама тепловая энергия, в гигакалориях. Эту ставку правительство поднимало несколько раз с 2024 года, и свежие публикации называют разные цифры. Точную сумму за гигакалории проверяйте по своей квитанции «Бишкектеплосети» или на сайте компании.</p>
     <div class="note" data-ru="Пока не все дома прогрелись, часть жителей включает обогреватели. Тариф на электроэнергию для населения в 2026 году тоже менялся, но издания называют разные ставки, поэтому точную цифру смотрите в своей квитанции, а не в пересказах новостей. Общий обзор повседневных цен в городе — в материале &lt;a href=&quot;/cost-of-living-bishkek-2025&quot;&gt;о стоимости жизни в Бишкеке&lt;/a&gt;." data-en="While not every building is warm yet, some residents turn to electric heaters. The electricity tariff for households also changed in 2026, but outlets give different rates for it, so check the figure on your own bill rather than in news summaries. For a broader look at everyday prices in the city, see our &lt;a href=&quot;/cost-of-living-bishkek-2025&quot;&gt;cost of living in Bishkek&lt;/a&gt; piece.">Пока не все дома прогрелись, часть жителей включает обогреватели. Тариф на электроэнергию для населения в 2026 году тоже менялся, но издания называют разные ставки, поэтому точную цифру смотрите в своей квитанции, а не в пересказах новостей. Общий обзор повседневных цен в городе — в материале <a href="/cost-of-living-bishkek-2025">о стоимости жизни в Бишкеке</a>.</div>
-    <h2 data-ru="Если в квартире холодно" data-en="If your apartment is cold">Если в квартире холодно</h2>
+    <h2 id="h-4" data-ru="Если в квартире холодно" data-en="If your apartment is cold">Если в квартире холодно</h2>
     <p data-ru="Подключение идёт очередями, и мэрия уже просила жителей потерпеть, пока бригады донастраивают сети после запуска сезона. Если радиаторы совсем холодные уже несколько дней, можно обращаться в свою управляющую компанию или напрямую в «Бишкектеплоэнерго» — но учитывайте, что в первые дни сезона тепло ещё не дошло до всех домов." data-en="Connections are being made in batches, and the city hall has already asked residents to be patient while crews finish adjusting the networks after the season's launch. If your radiators stay cold for several days, you can contact your management company or Bishkekteploenergo directly — but keep in mind that in the first days of the season, not every building is connected yet.">Подключение идёт очередями, и мэрия уже просила жителей потерпеть, пока бригады донастраивают сети после запуска сезона. Если радиаторы совсем холодные уже несколько дней, можно обращаться в свою управляющую компанию или напрямую в «Бишкектеплоэнерго» — но учитывайте, что в первые дни сезона тепло ещё не дошло до всех домов.</p>
     <p data-ru="Если вы снимаете жильё, уточните у хозяина, подключён ли дом и какая управляющая компания его обслуживает. Это пригодится, если нужно будет жаловаться на отсутствие тепла. &lt;a href=&quot;/rent-apartment-bishkek&quot;&gt;Что проверить при съёме квартиры в Бишкеке&lt;/a&gt;." data-en="If you're renting, ask your landlord whether the building is connected and which management company services it. That's useful if you need to file a complaint about missing heat. &lt;a href=&quot;/rent-apartment-bishkek&quot;&gt;What to check when renting a flat in Bishkek&lt;/a&gt;.">Если вы снимаете жильё, уточните у хозяина, подключён ли дом и какая управляющая компания его обслуживает. Это пригодится, если нужно будет жаловаться на отсутствие тепла. <a href="/rent-apartment-bishkek">Что проверить при съёме квартиры в Бишкеке</a>.</p>
   </div>
@@ -138,14 +162,22 @@
       <li><a href="https://24.kg/obschestvo/380327_vbishkeke_novyie_tarifyi_natehobslujivanie_sistem_otopleniya_igoryachey_vodyi/" target="_blank" rel="noopener">24.kg: в Бишкеке новые тарифы на техобслуживание систем отопления и горячей воды (1 июля 2026)</a></li>
     </ul>
   </div>
+  </div>
+  <aside class="toc" aria-label="Содержание">
+    <div class="toc-title" data-ru="На этой странице" data-en="On this page">На этой странице</div>
+    <a href="#h-1" data-ru="Когда дали отопление" data-en="When the heat came on">Когда дали отопление</a>
+    <a href="#h-2" data-ru="Сколько домов уже греются" data-en="How many buildings have heat">Сколько домов уже греются</a>
+    <a href="#h-3" data-ru="Что в квитанции" data-en="What's on the bill">Что в квитанции</a>
+    <a href="#h-4" data-ru="Если в квартире холодно" data-en="If your apartment is cold">Если в квартире холодно</a>
+  </aside>
 </div>
 
 <div class="next"><a href="/stay-longer-than-30-days-kyrgyzstan"><small data-ru="Следующий гайд" data-en="Next guide">Следующий гайд</small><span>Приехал по безвизу и хочу остаться дольше: что делать с регистрацией</span></a></div>
 <div class="bottom-cta">
-  <h3 data-ru="Остались вопросы по вашей ситуации?" data-en="Questions about your own case?">Остались вопросы по вашей ситуации?</h3>
-  <p data-ru="Гульнара Мамбеталиева помогает иностранцам с визой, регистрацией и переездом в Кыргызстан." data-en="Gulnara Mambetaliyeva helps foreigners with visas, registration and relocating to Kyrgyzstan.">Гульнара Мамбеталиева помогает иностранцам с визой, регистрацией и переездом в Кыргызстан.</p>
-  <a class="btn-wa" href="https://wa.me/996700522667" target="_blank" rel="noopener"><span data-ru="Написать в WhatsApp" data-en="WhatsApp Gulnara">Написать в WhatsApp</span></a>
-  <a class="btn-light" href="/contact" data-ru="Или задать вопрос на сайте" data-en="Or ask on the website">Или задать вопрос на сайте</a>
+  <h3 data-ru="Ваша ситуация отличается?" data-en="Is your case different?">Ваша ситуация отличается?</h3>
+  <p data-ru="Спросите Гульнару Мамбеталиеву, миграционного консультанта. В сообщении уже будет название этой страницы." data-en="Ask Gulnara Mambetaliyeva, a migration consultant. The message will already include the title of this page.">Спросите Гульнару Мамбеталиеву, миграционного консультанта. В сообщении уже будет название этой страницы.</p>
+  <a class="btn-wa" href="https://wa.me/996700522667?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%83%20%C2%AB%D0%9E%D1%82%D0%BE%D0%BF%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D1%81%D0%B5%D0%B7%D0%BE%D0%BD%20%D0%B2%20%D0%91%D0%B8%D1%88%D0%BA%D0%B5%D0%BA%D0%B5%202026%3A%20%D0%BA%D0%BE%D0%B3%D0%B4%D0%B0%20%D0%B4%D0%B0%D0%BB%D0%B8%20%D1%82%D0%B5%D0%BF%D0%BB%D0%BE%20%D0%B8%20%D1%87%D1%82%D0%BE%20%D0%B2%20%D0%BA%D0%B2%D0%B8%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D0%B8%C2%BB%20(https%3A%2F%2Fxpat4.org%2Fheating-season-bishkek-2026)%3A%20" target="_blank" rel="noopener"><span data-ru="Спросить Гульнару в WhatsApp" data-en="Ask Gulnara on WhatsApp">Спросить Гульнару в WhatsApp</span></a>
+  <a class="btn-light" href="/contact#brief" data-ru="Описать ситуацию за 3 шага" data-en="Describe your case in 3 steps">Описать ситуацию за 3 шага</a>
 </div>
 
 </main>
@@ -155,6 +187,22 @@
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=202611202"></script>
+<script>
+(function () {
+  var links = [].slice.call(document.querySelectorAll('.toc a'));
+  if (!links.length || !('IntersectionObserver' in window)) return;
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      links.forEach(function (a) { a.classList.remove('active'); });
+      if (map[e.target.id]) map[e.target.id].classList.add('active');
+    });
+  }, { rootMargin: '-90px 0px -70% 0px' });
+  Object.keys(map).forEach(function (id) { var h = document.getElementById(id); if (h) io.observe(h); });
+})();
+</script>
+<script src="/xpat4.js?v=202611203"></script>
 </body>
 </html>

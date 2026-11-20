@@ -167,5 +167,17 @@
         "en": "Do not wait until you leave: contact the MFA consular department in advance."
       }
     ]
-  }
+  },
+  "changes": [
+    {
+      "date": "2026-11-19",
+      "ru": "Добавили размеры штрафов по статье 431 Кодекса о правонарушениях, сверенные с базой Минюста.",
+      "en": "Added the fine amounts under Article 431 of the Code of Offences, checked against the Ministry of Justice database."
+    },
+    {
+      "date": "2026-10-14",
+      "ru": "Первая публикация.",
+      "en": "First published."
+    }
+  ]
 }

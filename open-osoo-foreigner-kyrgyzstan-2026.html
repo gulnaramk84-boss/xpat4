@@ -60,6 +60,24 @@
     .next small{display:block;font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
     .next span{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.3}
     @media(max-width:700px){.short{padding:20px}.next{padding:0 24px 40px}}
+    .page-tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .tool-btn{font-family:inherit;font-size:13px;color:var(--ink-60);background:none;border:1px solid var(--line);border-radius:100px;padding:8px 16px;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s}
+    .tool-btn:hover{border-color:var(--accent);color:var(--accent)}
+    .changes{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;margin:0 0 40px}
+    .changes-title{font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+    .changes ul{list-style:none;margin:0}
+    .changes li{font-size:14px;line-height:1.6;color:var(--ink-60);margin-bottom:6px}
+    .changes time{color:var(--ink);font-weight:500;margin-right:8px}
+    .toc{display:none}
+    @media(min-width:1180px){
+      .content.has-toc{max-width:1120px;display:grid;grid-template-columns:minmax(0,800px) 220px;gap:64px;justify-content:center}
+      .toc{display:block;position:sticky;top:110px;align-self:start;font-size:13px;line-height:1.5;border-left:1px solid var(--line);padding-left:18px}
+      .toc-title{font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+      .toc a{display:block;color:var(--ink-60);text-decoration:none;padding:5px 0;transition:color .2s}
+      .toc a:hover,.toc a.active{color:var(--ink)}
+    }
+    .prose h2{scroll-margin-top:96px}
+    @media print{nav,footer,.bottom-cta,.next,.toc,.page-tools,.skip-link,#xpat-btn,#xpat-chat,#xpat-widget,.stale-note,.mobile-menu{display:none!important}body{background:#fff}.page-hero{padding-top:0}.content{padding-top:24px}a{color:inherit}.prose a[href^="http"]::after{content:" (" attr(href) ")";font-size:11px;color:#555}}
     .bottom-cta{background:var(--ink);padding:60px 48px;text-align:center}
     .bottom-cta h3{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;color:var(--sand);margin-bottom:14px}
     .bottom-cta p{font-size:15px;color:rgba(245,240,232,.55);font-weight:300;margin-bottom:28px;line-height:1.7}
@@ -77,7 +95,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=202611202">
+  <link rel="stylesheet" href="/site.css?v=202611203">
 </head>
 <body>
 <a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Перейти к содержанию</a>
@@ -103,9 +121,14 @@
   <h1 data-ru="Открываю ОсОО в Кыргызстане иностранцем: что известно о регистрации" data-en="Opening an LLC (OsOO) in Kyrgyzstan as a foreigner: what we know about registration">Открываю ОсОО в Кыргызстане иностранцем: что известно о регистрации</h1>
   <p class="page-desc" data-ru="Кто может быть учредителем, сколько занимает регистрация, что поменялось в ноябре и что с банковским счётом. Без суммы пошлины: в проверенных источниках её нет." data-en="Who can be a founder, how long registration takes, what changed in November and what about the bank account. No state fee figure: the sources we checked do not give one.">Кто может быть учредителем, сколько занимает регистрация, что поменялось в ноябре и что с банковским счётом. Без суммы пошлины: в проверенных источниках её нет.</p>
   <div class="meta" data-ru="Опубликовано 19 ноября 2026. Проверено 19 ноября 2026." data-en="Published November 19, 2026. Checked November 19, 2026.">Опубликовано 19 ноября 2026. Проверено 19 ноября 2026.</div>
+  <div class="page-tools">
+    <button type="button" class="tool-btn" onclick="window.print()" data-ru="Сохранить в PDF" data-en="Save as PDF">Сохранить в PDF</button>
+    <a class="tool-btn" href="https://wa.me/996700522667?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9A%D0%B0%D0%B6%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%B2%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B5%20%C2%AB%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%8E%20%D0%9E%D1%81%D0%9E%D0%9E%20%D0%B2%20%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D1%82%D0%B0%D0%BD%D0%B5%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B5%D0%BC%3A%20%D1%87%D1%82%D0%BE%20%D0%B8%D0%B7%D0%B2%D0%B5%D1%81%D1%82%D0%BD%D0%BE%20%D0%BE%20%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8%C2%BB%20(https%3A%2F%2Fxpat4.org%2Fopen-osoo-foreigner-kyrgyzstan-2026)%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%20%D0%B8%D0%BB%D0%B8%20%D1%83%D1%81%D1%82%D0%B0%D1%80%D0%B5%D0%B2%D1%88%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%82%3A%20" target="_blank" rel="noopener" data-ru="Сообщить об ошибке" data-en="Report a mistake">Сообщить об ошибке</a>
+  </div>
 </div>
 
-<div class="content">
+<div class="content has-toc">
+  <div class="main-col">
   <div class="short">
     <div class="short-title" data-ru="Коротко" data-en="In short">Коротко</div>
     <ul>
@@ -115,17 +138,23 @@
       <li data-ru="Размер пошлины и правила для ИП иностранца мы в проверенных источниках не нашли." data-en="We found neither the state fee nor the rules for a foreign sole proprietor in the sources we checked.">Размер пошлины и правила для ИП иностранца мы в проверенных источниках не нашли.</li>
     </ul>
   </div>
+  <div class="changes">
+    <div class="changes-title" data-ru="Что изменилось" data-en="What changed">Что изменилось</div>
+    <ul>
+      <li><time datetime="2026-11-19">19 ноября 2026</time><span data-ru="Первая публикация." data-en="First published.">Первая публикация.</span></li>
+    </ul>
+  </div>
   <div class="prose">
-    <h2 data-ru="Кто может быть учредителем и нужен ли капитал" data-en="Who can be a founder and is capital required">Кто может быть учредителем и нужен ли капитал</h2>
+    <h2 id="h-1" data-ru="Кто может быть учредителем и нужен ли капитал" data-en="Who can be a founder and is capital required">Кто может быть учредителем и нужен ли капитал</h2>
     <p data-ru="По описанию Национального агентства инвестиций (данные на июнь 2026 года) учредителями ОсОО могут быть и иностранные физические и юридические лица. Учредителей не больше 30. Минимального уставного капитала для ОсОО нет, но его нужно полностью внести в течение первого года после регистрации." data-en="According to the National Investment Agency guide (data as of June 2026), founders of an LLC can be foreign individuals and legal entities. There can be no more than 30 founders. An LLC has no minimum charter capital, but it must be paid in full within the first year after registration.">По описанию Национального агентства инвестиций (данные на июнь 2026 года) учредителями ОсОО могут быть и иностранные физические и юридические лица. Учредителей не больше 30. Минимального уставного капитала для ОсОО нет, но его нужно полностью внести в течение первого года после регистрации.</p>
-    <h2 data-ru="Как регистрируют и за сколько" data-en="How registration works and how long it takes">Как регистрируют и за сколько</h2>
+    <h2 id="h-2" data-ru="Как регистрируют и за сколько" data-en="How registration works and how long it takes">Как регистрируют и за сколько</h2>
     <p data-ru="Регистрация идёт по принципу «единого окна»: одновременно в органе юстиции, налоговой, статистике и Социальном фонде, с присвоением регистрационного номера, ИНН и кода ОКПО. Стандартный срок — 3–5 рабочих дней, за дополнительную плату быстрее." data-en="Registration follows a one-stop-shop principle: at the justice authority, tax service, statistics office and Social Fund at the same time, with a registration number, tax ID and statistical code assigned. The standard time is 3–5 working days, faster for an extra fee.">Регистрация идёт по принципу «единого окна»: одновременно в органе юстиции, налоговой, статистике и Социальном фонде, с присвоением регистрационного номера, ИНН и кода ОКПО. Стандартный срок — 3–5 рабочих дней, за дополнительную плату быстрее.</p>
     <p data-ru="Начальник Чуй-Бишкекского управления юстиции в июле 2026 года рассказал: если есть интернет и электронная или облачная подпись, юридическое лицо можно зарегистрировать онлайн. Срочные варианты — один рабочий день, шесть или три часа. Подать документы можно в любом территориальном управлении юстиции. Бумажного свидетельства больше нет, документ электронный." data-en="In July 2026 the head of the Chui-Bishkek justice department said that with internet access and an electronic or cloud signature a legal entity can be registered online. Express options take one working day, six hours or even three. Documents can be filed at any territorial justice office. There is no paper certificate any more; the document is electronic.">Начальник Чуй-Бишкекского управления юстиции в июле 2026 года рассказал: если есть интернет и электронная или облачная подпись, юридическое лицо можно зарегистрировать онлайн. Срочные варианты — один рабочий день, шесть или три часа. Подать документы можно в любом территориальном управлении юстиции. Бумажного свидетельства больше нет, документ электронный.</p>
-    <h2 data-ru="Что поменялось в ноябре" data-en="What changed in November">Что поменялось в ноябре</h2>
+    <h2 id="h-3" data-ru="Что поменялось в ноябре" data-en="What changed in November">Что поменялось в ноябре</h2>
     <p data-ru="12 ноября 2026 года Economist.kg писал, что изменили правила регистрации и ликвидации компаний: постановление № 746, подписанное 9 ноября, вступает в силу 20 ноября. Иностранцам при оформлении документов разрешено указывать не только ПИН, но и иной идентификационный номер. Текст постановления мы не читали, поэтому перед подачей проверьте, что документы соответствуют новым требованиям." data-en="On 12 November 2026 Economist.kg reported that the rules for registering and liquidating companies had changed: resolution No. 746, signed on 9 November, takes effect on 20 November. When filing documents, foreigners may give not only a PIN but another identification number. We did not read the resolution itself, so before filing check that your documents meet the new requirements.">12 ноября 2026 года Economist.kg писал, что изменили правила регистрации и ликвидации компаний: постановление № 746, подписанное 9 ноября, вступает в силу 20 ноября. Иностранцам при оформлении документов разрешено указывать не только ПИН, но и иной идентификационный номер. Текст постановления мы не читали, поэтому перед подачей проверьте, что документы соответствуют новым требованиям.</p>
-    <h2 data-ru="Банковский счёт" data-en="The bank account">Банковский счёт</h2>
+    <h2 id="h-4" data-ru="Банковский счёт" data-en="The bank account">Банковский счёт</h2>
     <p data-ru="С 1 ноября 2026 года действует норма закона о сборе за аккредитацию счетов иностранных компаний, размер сбора правительство не утвердило (см. &lt;a href=&quot;/news&quot;&gt;новости&lt;/a&gt;). Проект постановления предлагает 200 тысяч сомов, его вынесли на общественное обсуждение 28 октября. Из публикации не следует, что сбор коснётся ОсОО, зарегистрированного в Кыргызстане с иностранным учредителем: речь идёт о счетах иностранных компаний. Уточняйте в банке." data-en="Since 1 November 2026 a legal provision on a fee for accrediting accounts of foreign companies is in force; the government has not set the amount (see the &lt;a href=&quot;/news&quot;&gt;news&lt;/a&gt;). A draft resolution proposes 200 thousand som and was put to public discussion on 28 October. The publication does not say the fee would apply to an LLC registered in Kyrgyzstan with a foreign founder: it concerns accounts of foreign companies. Ask your bank.">С 1 ноября 2026 года действует норма закона о сборе за аккредитацию счетов иностранных компаний, размер сбора правительство не утвердило (см. <a href="/news">новости</a>). Проект постановления предлагает 200 тысяч сомов, его вынесли на общественное обсуждение 28 октября. Из публикации не следует, что сбор коснётся ОсОО, зарегистрированного в Кыргызстане с иностранным учредителем: речь идёт о счетах иностранных компаний. Уточняйте в банке.</p>
-    <h2 data-ru="Чего мы не нашли" data-en="What we did not find">Чего мы не нашли</h2>
+    <h2 id="h-5" data-ru="Чего мы не нашли" data-en="What we did not find">Чего мы не нашли</h2>
     <ul>
       <li data-ru="Размера государственной пошлины за регистрацию." data-en="The state fee for registration.">Размера государственной пошлины за регистрацию.</li>
       <li data-ru="Правил регистрации ИП иностранцем и требований к виду на жительство." data-en="Rules for a foreigner registering as a sole proprietor, and any residence-permit requirements.">Правил регистрации ИП иностранцем и требований к виду на жительство.</li>
@@ -141,14 +170,23 @@
       <li><a href="https://economist.kg/banki/2026/10/28/akkreditatsiya-kompaniy-200k/" target="_blank" rel="noopener">Economist.kg: аккредитация компаний за 200 тысяч сомов (28.10.2026)</a></li>
     </ul>
   </div>
+  </div>
+  <aside class="toc" aria-label="Содержание">
+    <div class="toc-title" data-ru="На этой странице" data-en="On this page">На этой странице</div>
+    <a href="#h-1" data-ru="Кто может быть учредителем и нужен ли капитал" data-en="Who can be a founder and is capital required">Кто может быть учредителем и нужен ли капитал</a>
+    <a href="#h-2" data-ru="Как регистрируют и за сколько" data-en="How registration works and how long it takes">Как регистрируют и за сколько</a>
+    <a href="#h-3" data-ru="Что поменялось в ноябре" data-en="What changed in November">Что поменялось в ноябре</a>
+    <a href="#h-4" data-ru="Банковский счёт" data-en="The bank account">Банковский счёт</a>
+    <a href="#h-5" data-ru="Чего мы не нашли" data-en="What we did not find">Чего мы не нашли</a>
+  </aside>
 </div>
 
 <div class="next"><a href="/land-under-foreigner-property-2026"><small data-ru="Следующий гайд" data-en="Next guide">Следующий гайд</small><span>Купили дом в Кыргызстане: депутаты готовят новый порядок для земли под ним</span></a></div>
 <div class="bottom-cta">
-  <h3 data-ru="Остались вопросы по вашей ситуации?" data-en="Questions about your own case?">Остались вопросы по вашей ситуации?</h3>
-  <p data-ru="Гульнара Мамбеталиева помогает иностранцам с визой, регистрацией и переездом в Кыргызстан." data-en="Gulnara Mambetaliyeva helps foreigners with visas, registration and relocating to Kyrgyzstan.">Гульнара Мамбеталиева помогает иностранцам с визой, регистрацией и переездом в Кыргызстан.</p>
-  <a class="btn-wa" href="https://wa.me/996700522667" target="_blank" rel="noopener"><span data-ru="Написать в WhatsApp" data-en="WhatsApp Gulnara">Написать в WhatsApp</span></a>
-  <a class="btn-light" href="/contact" data-ru="Или задать вопрос на сайте" data-en="Or ask on the website">Или задать вопрос на сайте</a>
+  <h3 data-ru="Ваша ситуация отличается?" data-en="Is your case different?">Ваша ситуация отличается?</h3>
+  <p data-ru="Спросите Гульнару Мамбеталиеву, миграционного консультанта. В сообщении уже будет название этой страницы." data-en="Ask Gulnara Mambetaliyeva, a migration consultant. The message will already include the title of this page.">Спросите Гульнару Мамбеталиеву, миграционного консультанта. В сообщении уже будет название этой страницы.</p>
+  <a class="btn-wa" href="https://wa.me/996700522667?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%83%20%C2%AB%D0%9E%D1%82%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%8E%20%D0%9E%D1%81%D0%9E%D0%9E%20%D0%B2%20%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D1%82%D0%B0%D0%BD%D0%B5%20%D0%B8%D0%BD%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%86%D0%B5%D0%BC%3A%20%D1%87%D1%82%D0%BE%20%D0%B8%D0%B7%D0%B2%D0%B5%D1%81%D1%82%D0%BD%D0%BE%20%D0%BE%20%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8%C2%BB%20(https%3A%2F%2Fxpat4.org%2Fopen-osoo-foreigner-kyrgyzstan-2026)%3A%20" target="_blank" rel="noopener"><span data-ru="Спросить Гульнару в WhatsApp" data-en="Ask Gulnara on WhatsApp">Спросить Гульнару в WhatsApp</span></a>
+  <a class="btn-light" href="/contact#brief" data-ru="Описать ситуацию за 3 шага" data-en="Describe your case in 3 steps">Описать ситуацию за 3 шага</a>
 </div>
 
 </main>
@@ -158,6 +196,22 @@
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=202611202"></script>
+<script>
+(function () {
+  var links = [].slice.call(document.querySelectorAll('.toc a'));
+  if (!links.length || !('IntersectionObserver' in window)) return;
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      links.forEach(function (a) { a.classList.remove('active'); });
+      if (map[e.target.id]) map[e.target.id].classList.add('active');
+    });
+  }, { rootMargin: '-90px 0px -70% 0px' });
+  Object.keys(map).forEach(function (id) { var h = document.getElementById(id); if (h) io.observe(h); });
+})();
+</script>
+<script src="/xpat4.js?v=202611203"></script>
 </body>
 </html>

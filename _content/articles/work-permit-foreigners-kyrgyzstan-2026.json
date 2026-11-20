@@ -160,5 +160,12 @@
       "url": "https://cbd.minjust.gov.kg/112306/edition/1247867/ru",
       "note": "официальный текст, сверено 19.11.2026"
     }
+  ],
+  "changes": [
+    {
+      "date": "2026-11-19",
+      "ru": "Первая публикация.",
+      "en": "First published."
+    }
   ]
 }

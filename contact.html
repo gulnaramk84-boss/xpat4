@@ -37,6 +37,33 @@
     .eyebrow { font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-bottom:22px; display:flex; align-items:center; gap:10px; }
     .eyebrow::before { content:''; display:block; width:24px; height:1px; background:var(--accent); }
     h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(38px,6vw,62px); font-weight:300; line-height:1.1; margin-bottom:48px; }
+
+    /* BRIEF (3-step intake) */
+    .brief { border: 1px solid var(--line); background: var(--sand); padding: 40px 40px 34px; margin: 8px 0 64px; scroll-margin-top: 96px; }
+    .bf-eyebrow { font-size: 12px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+    .brief h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 4vw, 36px); font-weight: 300; line-height: 1.15; margin-bottom: 10px; }
+    .bf-lead { font-size: 15px; color: var(--ink-60); font-weight: 300; line-height: 1.65; margin-bottom: 28px; max-width: 560px; }
+    .bf-step { display: grid; grid-template-columns: 36px 1fr; gap: 16px; padding: 22px 0; border-top: 1px solid var(--line); }
+    .bf-n { width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--accent); color: var(--accent); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 18px; }
+    .bf-q { display: block; font-size: 15px; font-weight: 500; margin: 4px 0 12px; color: var(--ink); }
+    .bf-q-small { font-size: 13px; font-weight: 400; color: var(--ink-60); margin-top: 18px; }
+    .brief .bf-q { text-transform: none; letter-spacing: 0; font-size: 15px; }
+    .brief .bf-q-small { font-size: 13px; font-weight: 400; color: var(--ink-60); }
+    .bf-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+    .bf-opt { font-family: inherit; font-size: 14px; color: var(--ink); background: var(--warm-white); border: 1px solid var(--line); border-radius: 100px; padding: 10px 16px; cursor: pointer; transition: border-color .2s, background .2s, color .2s; }
+    .bf-opt:hover { border-color: var(--accent); }
+    .bf-opt[aria-checked="true"] { background: var(--ink); color: var(--warm-white); border-color: var(--ink); }
+    .bf-input { width: 100%; font-family: inherit; font-size: 15px; color: var(--ink); background: var(--warm-white); border: 1px solid var(--line); border-radius: 2px; padding: 11px 14px; outline: none; transition: border-color .2s; }
+    .bf-input:focus { border-color: var(--accent); }
+    textarea.bf-input { resize: vertical; min-height: 80px; }
+    .bf-actions { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; padding-top: 24px; border-top: 1px solid var(--line); }
+    .bf-send { display: inline-block; background: #25d366; color: #fff; font-size: 15px; font-weight: 500; padding: 14px 26px; border-radius: 2px; text-decoration: none; transition: opacity .2s; }
+    .bf-send.is-disabled { background: var(--ink-10); color: var(--ink-60); pointer-events: none; }
+    .bf-hint { font-size: 13px; color: var(--ink-60); }
+    .bf-guide { margin-top: 18px; font-size: 14px; color: var(--ink-60); }
+    .bf-guide a { color: var(--accent); text-underline-offset: 3px; }
+    .bf-note { margin-top: 20px; font-size: 13px; line-height: 1.65; color: var(--ink-60); }
+    @media (max-width: 700px) { .brief { padding: 28px 20px 24px; margin-left: -4px; margin-right: -4px; } .bf-step { grid-template-columns: 1fr; gap: 10px; } }
     .expert-card { border:1px solid var(--line); padding:44px 40px; margin-bottom:60px; display:flex; gap:32px; align-items:flex-start; }
     .expert-avatar { width:72px; height:72px; border-radius:50%; background:var(--accent-light); display:flex; align-items:center; justify-content:center; font-family:'Cormorant Garamond',serif; font-size:28px; color:var(--accent); font-weight:400; flex-shrink:0; }
     .expert-info { flex:1; }
@@ -163,7 +190,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=202611202">
+  <link rel="stylesheet" href="/site.css?v=202611203">
 </head>
 <body>
 <a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Перейти к содержанию</a>
@@ -188,7 +215,7 @@
         <button class="lang-btn" data-lang="en" onclick="XPAT4.setLang('en')">EN</button>
         <button class="lang-btn" data-lang="zh" onclick="XPAT4.setLang('zh')">中文</button>
       </div>
-      <a class="nav-cta" href="/contact" data-ru="Консультация" data-en="Consultation" data-zh="咨询">Консультация</a>
+      <a class="nav-cta" href="/contact#brief" data-ru="Консультация" data-en="Consultation" data-zh="咨询">Консультация</a>
     </div>
     <button class="nav-burger" id="nav-burger" aria-label="Меню" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </nav>
@@ -205,6 +232,60 @@
 <div class="page-wrap">
   <div class="eyebrow" data-ru="Контакты" data-en="Contacts" data-zh="联系我们">Контакты</div>
   <h1 data-ru="Свяжитесь<br/>с нами" data-en="Get in<br/>touch" data-zh="与我们<br/>取得联系">Свяжитесь<br/>с нами</h1>
+
+  <section class="brief" id="brief" aria-labelledby="brief-title">
+    <div class="bf-eyebrow" data-ru="Консультация" data-en="Consultation" data-zh="咨询">Консультация</div>
+    <h2 id="brief-title" data-ru="Опишите ситуацию за 3 шага" data-en="Describe your case in 3 steps" data-zh="三步描述您的情况">Опишите ситуацию за 3 шага</h2>
+    <p class="bf-lead" data-ru="Мы соберём ваши ответы в одно сообщение и откроем WhatsApp. Гульнара ответит лично." data-en="We put your answers into one message and open WhatsApp. Gulnara replies personally." data-zh="我们会把您的回答整理成一条消息并打开WhatsApp，古尔纳拉会亲自回复。">Мы соберём ваши ответы в одно сообщение и откроем WhatsApp. Гульнара ответит лично.</p>
+
+    <div class="bf-step">
+      <div class="bf-n">1</div>
+      <div class="bf-body">
+        <div class="bf-q" id="bf-q1" data-ru="Ваша ситуация" data-en="Your situation" data-zh="您的情况">Ваша ситуация</div>
+        <div class="bf-opts" role="radiogroup" aria-labelledby="bf-q1" id="bf-sit">
+        <button type="button" class="bf-opt" data-v="stay" data-ru="Приехал по безвизу, хочу остаться" data-en="Came visa-free, want to stay" data-zh="免签入境，想继续停留">Приехал по безвизу, хочу остаться</button>
+        <button type="button" class="bf-opt" data-v="reg" data-ru="Регистрация при аренде" data-en="Registration when renting" data-zh="租房登记">Регистрация при аренде</button>
+        <button type="button" class="bf-opt" data-v="overstay" data-ru="Просрочил срок" data-en="Overstayed" data-zh="超期停留">Просрочил срок</button>
+        <button type="button" class="bf-opt" data-v="vnzh" data-ru="Вид на жительство" data-en="Residence permit" data-zh="居留许可">Вид на жительство</button>
+        <button type="button" class="bf-opt" data-v="work" data-ru="Работа и разрешение" data-en="Work and permit" data-zh="工作与许可">Работа и разрешение</button>
+        <button type="button" class="bf-opt" data-v="nomad" data-ru="Удалённая работа, кочевник" data-en="Remote work, digital nomad" data-zh="远程工作、数字游民">Удалённая работа, кочевник</button>
+        <button type="button" class="bf-opt" data-v="company" data-ru="Открыть компанию" data-en="Open a company" data-zh="开公司">Открыть компанию</button>
+        <button type="button" class="bf-opt" data-v="other" data-ru="Другое" data-en="Other" data-zh="其他">Другое</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bf-step">
+      <div class="bf-n">2</div>
+      <div class="bf-body">
+        <label class="bf-q" for="bf-cit" data-ru="Гражданство" data-en="Citizenship" data-zh="国籍">Гражданство</label>
+        <input id="bf-cit" class="bf-input" type="text" list="bf-cit-list" autocomplete="off" placeholder="Например, Германия" data-ph-ru="Например, Германия" data-ph-en="For example, Germany" data-ph-zh="例如：德国">
+        <datalist id="bf-cit-list"><option value="Россия"><option value="Казахстан"><option value="Узбекистан"><option value="Китай"><option value="США"><option value="Германия"><option value="Великобритания"><option value="Турция"><option value="Индия"><option value="Корея"></datalist>
+      </div>
+    </div>
+
+    <div class="bf-step">
+      <div class="bf-n">3</div>
+      <div class="bf-body">
+        <div class="bf-q" id="bf-q3" data-ru="Насколько срочно" data-en="How urgent" data-zh="紧急程度">Насколько срочно</div>
+        <div class="bf-opts" role="radiogroup" aria-labelledby="bf-q3" id="bf-urg">
+        <button type="button" class="bf-opt" data-v="7" data-ru="Срок истекает в ближайшие 7 дней" data-en="A deadline within 7 days" data-zh="7天内到期">Срок истекает в ближайшие 7 дней</button>
+        <button type="button" class="bf-opt" data-v="30" data-ru="В течение месяца" data-en="Within a month" data-zh="一个月内">В течение месяца</button>
+        <button type="button" class="bf-opt" data-v="plan" data-ru="Не срочно, планирую" data-en="Not urgent, planning ahead" data-zh="不紧急，提前规划">Не срочно, планирую</button>
+        </div>
+        <label class="bf-q bf-q-small" for="bf-more" data-ru="Что ещё важно знать (по желанию)" data-en="Anything else (optional)" data-zh="其他补充（选填）">Что ещё важно знать (по желанию)</label>
+        <textarea id="bf-more" class="bf-input" rows="3" maxlength="600"></textarea>
+      </div>
+    </div>
+
+    <div class="bf-actions">
+      <a id="bf-send" class="bf-send is-disabled" href="#" target="_blank" rel="noopener" aria-disabled="true" data-ru="Отправить Гульнаре в WhatsApp" data-en="Send to Gulnara on WhatsApp" data-zh="通过WhatsApp发送给古尔纳拉">Отправить Гульнаре в WhatsApp</a>
+      <div class="bf-hint" id="bf-hint" data-ru="Выберите ситуацию и срочность" data-en="Choose a situation and urgency" data-zh="请选择情况和紧急程度">Выберите ситуацию и срочность</div>
+    </div>
+    <div class="bf-guide" id="bf-guide" hidden></div>
+    <p class="bf-note" data-ru="Что дальше: Гульнара ответит лично в WhatsApp. Формат и стоимость работы она назовёт, когда увидит вашу ситуацию. Мы ничего не сохраняем на сайте: сообщение уходит только из вашего WhatsApp." data-en="What happens next: Gulnara replies personally on WhatsApp. She will name the format and cost of the work once she sees your situation. Nothing is stored on the site: the message is sent only from your own WhatsApp." data-zh="接下来：古尔纳拉会在WhatsApp上亲自回复。了解您的情况后，她会告知服务形式和费用。网站不保存任何信息：消息只从您自己的WhatsApp发出。">Что дальше: Гульнара ответит лично в WhatsApp. Формат и стоимость работы она назовёт, когда увидит вашу ситуацию. Мы ничего не сохраняем на сайте: сообщение уходит только из вашего WhatsApp.</p>
+  </section>
+
 
   <div class="expert-card">
     <div class="expert-avatar">ГМ</div>
@@ -352,7 +433,7 @@
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=202611202"></script>
+<script src="/xpat4.js?v=202611203"></script>
 <script>
   function handleSubmit(e) {
     e.preventDefault();
@@ -399,6 +480,68 @@
     if (!b2.contains(e.target) && !m.contains(e.target)){
       m.classList.remove('open');
     }
+  });
+})();
+</script>
+
+<script>
+(function () {
+  var GUIDES = {
+    stay: ['/stay-longer-than-30-days-kyrgyzstan', 'Приехал по безвизу и хочу остаться дольше'],
+    reg: ['/register-after-renting-bishkek-2026', 'Сняли квартиру: регистрация'],
+    overstay: ['/overstay-kyrgyzstan-2026', 'Срок пребывания заканчивается'],
+    work: ['/work-permit-foreigners-kyrgyzstan-2026', 'Хочу работать в Кыргызстане'],
+    nomad: ['/digital-nomad-status-kyrgyzstan-2026', 'Статус «цифровой кочевник»'],
+    company: ['/open-osoo-foreigner-kyrgyzstan-2026', 'Открываю ОсОО иностранцем'],
+    vnzh: ['/temporary-rules-foreigners-kyrgyzstan-2026', 'Временные правила до 31 декабря']
+  };
+  var T = {
+    ru: { head: 'Здравствуйте, Гульнара! Пишу с сайта xpat4.org.', sit: 'Ситуация', cit: 'Гражданство', urg: 'Срочность', more: 'Подробности', guide: 'Пока ждёте ответа, посмотрите гайд: ', ready: 'Готово, можно отправлять', need: 'Выберите ситуацию и срочность' },
+    en: { head: 'Hello Gulnara! Writing from xpat4.org.', sit: 'Situation', cit: 'Citizenship', urg: 'Urgency', more: 'Details', guide: 'While you wait, see the guide: ', ready: 'Ready to send', need: 'Choose a situation and urgency' },
+    zh: { head: '您好，古尔纳拉！我来自xpat4.org网站。', sit: '情况', cit: '国籍', urg: '紧急程度', more: '补充', guide: '等待回复时可先看指南：', ready: '可以发送了', need: '请选择情况和紧急程度' }
+  };
+  var lang = function () { return (window.XPAT4 && T[XPAT4.currentLang]) ? XPAT4.currentLang : 'ru'; };
+  var state = { sit: null, sitLabel: '', urg: null, urgLabel: '' };
+  function pick(groupId, key) {
+    var g = document.getElementById(groupId);
+    g.querySelectorAll('.bf-opt').forEach(function (b) {
+      b.setAttribute('role', 'radio');
+      b.setAttribute('aria-checked', 'false');
+      b.addEventListener('click', function () {
+        g.querySelectorAll('.bf-opt').forEach(function (x) { x.setAttribute('aria-checked', 'false'); });
+        b.setAttribute('aria-checked', 'true');
+        state[key] = b.getAttribute('data-v');
+        state[key + 'Label'] = b.textContent.trim();
+        update();
+      });
+    });
+  }
+  function update() {
+    var t = T[lang()], send = document.getElementById('bf-send'), hint = document.getElementById('bf-hint'), gd = document.getElementById('bf-guide');
+    var ok = state.sit && state.urg;
+    var cit = document.getElementById('bf-cit').value.trim(), more = document.getElementById('bf-more').value.trim();
+    var msg = t.head + '\n' + t.sit + ': ' + (state.sitLabel || '—') + '\n' + t.cit + ': ' + (cit || '—') + '\n' + t.urg + ': ' + (state.urgLabel || '—') + (more ? '\n' + t.more + ': ' + more : '');
+    send.href = ok ? 'https://wa.me/996700522667?text=' + encodeURIComponent(msg) : '#';
+    send.classList.toggle('is-disabled', !ok);
+    send.setAttribute('aria-disabled', ok ? 'false' : 'true');
+    hint.textContent = ok ? t.ready : t.need;
+    var g = GUIDES[state.sit];
+    if (g) { gd.hidden = false; gd.innerHTML = ''; gd.appendChild(document.createTextNode(t.guide)); var a = document.createElement('a'); a.href = g[0]; a.textContent = g[1]; gd.appendChild(a); }
+    else { gd.hidden = true; }
+  }
+  function placeholders() {
+    var i = document.getElementById('bf-cit'); var l = lang();
+    i.placeholder = i.getAttribute('data-ph-' + l) || i.placeholder;
+  }
+  document.addEventListener('DOMContentLoaded', function () {
+    if (!document.getElementById('brief')) return;
+    pick('bf-sit', 'sit'); pick('bf-urg', 'urg');
+    ['bf-cit', 'bf-more'].forEach(function (id) { document.getElementById(id).addEventListener('input', update); });
+    placeholders(); update();
+  });
+  document.addEventListener('xpat4-lang-change', function () {
+    ['sit', 'urg'].forEach(function (k) { var b = document.querySelector('#bf-' + k + ' .bf-opt[aria-checked="true"]'); if (b) state[k + 'Label'] = b.textContent.trim(); });
+    placeholders(); update();
   });
 })();
 </script>

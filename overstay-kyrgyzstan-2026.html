@@ -60,6 +60,24 @@
     .next small{display:block;font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
     .next span{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.3}
     @media(max-width:700px){.short{padding:20px}.next{padding:0 24px 40px}}
+    .page-tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+    .tool-btn{font-family:inherit;font-size:13px;color:var(--ink-60);background:none;border:1px solid var(--line);border-radius:100px;padding:8px 16px;cursor:pointer;text-decoration:none;transition:border-color .2s,color .2s}
+    .tool-btn:hover{border-color:var(--accent);color:var(--accent)}
+    .changes{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;margin:0 0 40px}
+    .changes-title{font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+    .changes ul{list-style:none;margin:0}
+    .changes li{font-size:14px;line-height:1.6;color:var(--ink-60);margin-bottom:6px}
+    .changes time{color:var(--ink);font-weight:500;margin-right:8px}
+    .toc{display:none}
+    @media(min-width:1180px){
+      .content.has-toc{max-width:1120px;display:grid;grid-template-columns:minmax(0,800px) 220px;gap:64px;justify-content:center}
+      .toc{display:block;position:sticky;top:110px;align-self:start;font-size:13px;line-height:1.5;border-left:1px solid var(--line);padding-left:18px}
+      .toc-title{font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+      .toc a{display:block;color:var(--ink-60);text-decoration:none;padding:5px 0;transition:color .2s}
+      .toc a:hover,.toc a.active{color:var(--ink)}
+    }
+    .prose h2{scroll-margin-top:96px}
+    @media print{nav,footer,.bottom-cta,.next,.toc,.page-tools,.skip-link,#xpat-btn,#xpat-chat,#xpat-widget,.stale-note,.mobile-menu{display:none!important}body{background:#fff}.page-hero{padding-top:0}.content{padding-top:24px}a{color:inherit}.prose a[href^="http"]::after{content:" (" attr(href) ")";font-size:11px;color:#555}}
     .bottom-cta{background:var(--ink);padding:60px 48px;text-align:center}
     .bottom-cta h3{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:300;color:var(--sand);margin-bottom:14px}
     .bottom-cta p{font-size:15px;color:rgba(245,240,232,.55);font-weight:300;margin-bottom:28px;line-height:1.7}
@@ -77,7 +95,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=202611202">
+  <link rel="stylesheet" href="/site.css?v=202611203">
 </head>
 <body>
 <a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Перейти к содержанию</a>
@@ -103,9 +121,14 @@
   <h1 data-ru="Срок пребывания заканчивается: что делать до просрочки и после" data-en="Your stay is running out: what to do before and after an overstay">Срок пребывания заканчивается: что делать до просрочки и после</h1>
   <p class="page-desc" data-ru="С сентября за просрочку можно не получить безвизовый въезд в следующий раз. Что известно о новом постановлении и куда обращаться." data-en="Since September, an overstay can cost you visa-free entry next time. What the new resolution says and who to contact.">С сентября за просрочку можно не получить безвизовый въезд в следующий раз. Что известно о новом постановлении и куда обращаться.</p>
   <div class="meta" data-ru="Опубликовано 14 октября 2026. Проверено 19 ноября 2026." data-en="Published October 14, 2026. Checked November 19, 2026.">Опубликовано 14 октября 2026. Проверено 19 ноября 2026.</div>
+  <div class="page-tools">
+    <button type="button" class="tool-btn" onclick="window.print()" data-ru="Сохранить в PDF" data-en="Save as PDF">Сохранить в PDF</button>
+    <a class="tool-btn" href="https://wa.me/996700522667?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9A%D0%B0%D0%B6%D0%B5%D1%82%D1%81%D1%8F%2C%20%D0%B2%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B5%20%C2%AB%D0%A1%D1%80%D0%BE%D0%BA%20%D0%BF%D1%80%D0%B5%D0%B1%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%BD%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D1%82%D1%81%D1%8F%3A%20%D1%87%D1%82%D0%BE%20%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B4%D0%BE%20%D0%BF%D1%80%D0%BE%D1%81%D1%80%D0%BE%D1%87%D0%BA%D0%B8%20%D0%B8%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%C2%BB%20(https%3A%2F%2Fxpat4.org%2Foverstay-kyrgyzstan-2026)%20%D0%B5%D1%81%D1%82%D1%8C%20%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%20%D0%B8%D0%BB%D0%B8%20%D1%83%D1%81%D1%82%D0%B0%D1%80%D0%B5%D0%B2%D1%88%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%82%3A%20" target="_blank" rel="noopener" data-ru="Сообщить об ошибке" data-en="Report a mistake">Сообщить об ошибке</a>
+  </div>
 </div>
 
-<div class="content">
+<div class="content has-toc">
+  <div class="main-col">
   <div class="short">
     <div class="short-title" data-ru="Коротко" data-en="In short">Коротко</div>
     <ul>
@@ -115,22 +138,29 @@
       <li data-ru="Не ждите выезда: свяжитесь с консульским департаментом МИД заранее." data-en="Do not wait until you leave: contact the MFA consular department in advance.">Не ждите выезда: свяжитесь с консульским департаментом МИД заранее.</li>
     </ul>
   </div>
+  <div class="changes">
+    <div class="changes-title" data-ru="Что изменилось" data-en="What changed">Что изменилось</div>
+    <ul>
+      <li><time datetime="2026-11-19">19 ноября 2026</time><span data-ru="Добавили размеры штрафов по статье 431 Кодекса о правонарушениях, сверенные с базой Минюста." data-en="Added the fine amounts under Article 431 of the Code of Offences, checked against the Ministry of Justice database.">Добавили размеры штрафов по статье 431 Кодекса о правонарушениях, сверенные с базой Минюста.</span></li>
+      <li><time datetime="2026-10-14">14 октября 2026</time><span data-ru="Первая публикация." data-en="First published.">Первая публикация.</span></li>
+    </ul>
+  </div>
   <div class="prose">
-    <h2 data-ru="Что изменилось в сентябре" data-en="What changed in September">Что изменилось в сентябре</h2>
+    <h2 id="h-1" data-ru="Что изменилось в сентябре" data-en="What changed in September">Что изменилось в сентябре</h2>
     <p data-ru="7 сентября правительство приняло постановление № 602. Главное в нём: если вы превысили разрешённый срок пребывания, в следующий раз вас не пустят в страну по безвизовому режиму. Документы на въезд и пребывание вам тоже не выдадут." data-en="On September 7 the government passed resolution No. 602. The main point: if you stay longer than allowed, you will be refused entry under the visa-free regime next time. You will also not be given documents for entry and stay.">7 сентября правительство приняло постановление № 602. Главное в нём: если вы превысили разрешённый срок пребывания, в следующий раз вас не пустят в страну по безвизовому режиму. Документы на въезд и пребывание вам тоже не выдадут.</p>
     <p data-ru="Дни пребывания теперь считает автоматическая система ЕИСУМ. Прошлое пребывание заканчивается в день вашего последнего выезда из Кыргызстана." data-en="The days of your stay are now counted by an automated system (EISUM). Your previous stay ends on the day you last left Kyrgyzstan.">Дни пребывания теперь считает автоматическая система ЕИСУМ. Прошлое пребывание заканчивается в день вашего последнего выезда из Кыргызстана.</p>
     <p data-ru="На какой срок закрывается въезд, в публикации «Экономист.kg» не сказано. Постановление вступает в силу через 10 дней после публикации, а она вышла 8 сентября." data-en="The Economist.kg article does not say for how long entry is closed. The resolution takes effect 10 days after publication, and it was published on September 8.">На какой срок закрывается въезд, в публикации «Экономист.kg» не сказано. Постановление вступает в силу через 10 дней после публикации, а она вышла 8 сентября.</p>
-    <h2 data-ru="Если вы супруг или ребёнок гражданина Кыргызстана" data-en="If you are the spouse or child of a Kyrgyz citizen">Если вы супруг или ребёнок гражданина Кыргызстана</h2>
+    <h2 id="h-2" data-ru="Если вы супруг или ребёнок гражданина Кыргызстана" data-en="If you are the spouse or child of a Kyrgyz citizen">Если вы супруг или ребёнок гражданина Кыргызстана</h2>
     <p data-ru="Для супругов и несовершеннолетних детей граждан Кыргызстана сделали исключение. Они могут въехать один раз, если покажут документы, подтверждающие родство. После въезда у них есть 30 рабочих дней, чтобы оформить статус и получить нужные разрешения." data-en="There is an exception for spouses and minor children of Kyrgyz citizens. They can enter once if they show documents proving the family relationship. After entry they have 30 working days to sort out their status and get the permits they need.">Для супругов и несовершеннолетних детей граждан Кыргызстана сделали исключение. Они могут въехать один раз, если покажут документы, подтверждающие родство. После въезда у них есть 30 рабочих дней, чтобы оформить статус и получить нужные разрешения.</p>
     <p data-ru="Тем, кто уже просрочил, постановление оставляет возможность подать заявление на вид на жительство по общим правилам. Какие там условия, в публикации не объясняется." data-en="For people who have already overstayed, the resolution leaves the option of applying for a residence permit under the general rules. The article does not explain the conditions.">Тем, кто уже просрочил, постановление оставляет возможность подать заявление на вид на жительство по общим правилам. Какие там условия, в публикации не объясняется.</p>
-    <h2 data-ru="Как не попасть в просрочку" data-en="How to avoid an overstay">Как не попасть в просрочку</h2>
+    <h2 id="h-3" data-ru="Как не попасть в просрочку" data-en="How to avoid an overstay">Как не попасть в просрочку</h2>
     <p data-ru="Сначала выясните, сколько дней вам можно по вашему паспорту. Это зависит от страны. Проверьте на портале электронной визы &lt;a href=&quot;https://evisa.e-gov.kg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;evisa.e-gov.kg&lt;/a&gt; или спросите в МИД." data-en="First find out how many days your passport allows. It depends on the country. Check the e-visa portal &lt;a href=&quot;https://evisa.e-gov.kg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;evisa.e-gov.kg&lt;/a&gt; or ask the Ministry of Foreign Affairs.">Сначала выясните, сколько дней вам можно по вашему паспорту. Это зависит от страны. Проверьте на портале электронной визы <a href="https://evisa.e-gov.kg" target="_blank" rel="noopener">evisa.e-gov.kg</a> или спросите в МИД.</p>
     <p data-ru="Если хотите остаться дольше, оформляйте документы заранее, пока срок не истёк. Про электронную визу у нас есть &lt;a href=&quot;/evisa-kyrgyzstan&quot;&gt;отдельная статья&lt;/a&gt;, про вид на жительство — &lt;a href=&quot;/residence-permit-kyrgyzstan&quot;&gt;вот эта&lt;/a&gt;." data-en="If you want to stay longer, sort out the documents before your time runs out. We have a separate article on the &lt;a href=&quot;/evisa-kyrgyzstan&quot;&gt;e-visa&lt;/a&gt; and one on the &lt;a href=&quot;/residence-permit-kyrgyzstan&quot;&gt;residence permit&lt;/a&gt;.">Если хотите остаться дольше, оформляйте документы заранее, пока срок не истёк. Про электронную визу у нас есть <a href="/evisa-kyrgyzstan">отдельная статья</a>, про вид на жительство — <a href="/residence-permit-kyrgyzstan">вот эта</a>.</p>
     <p data-ru="Запишите в телефон дату, до которой можно оставаться, и поставьте напоминание за неделю. Закон этого не требует, но так проще." data-en="Put the last day of your stay in your phone and set a reminder a week before. The law does not ask for this, but it makes life easier.">Запишите в телефон дату, до которой можно оставаться, и поставьте напоминание за неделю. Закон этого не требует, но так проще.</p>
-    <h2 data-ru="Если вы уже просрочили" data-en="If you have already overstayed">Если вы уже просрочили</h2>
+    <h2 id="h-4" data-ru="Если вы уже просрочили" data-en="If you have already overstayed">Если вы уже просрочили</h2>
     <p data-ru="Посольство США на своей странице советует не ждать выезда: если вы знаете, что просрочили, заранее свяжитесь с консульским департаментом МИД Кыргызстана. По словам посольства, придётся заплатить административный штраф и оформить выездную визу." data-en="The US Embassy page says not to wait until you leave: if you know you overstayed, contact the Consular Department of the Kyrgyz Ministry of Foreign Affairs in advance. According to the embassy, you will have to pay an administrative fine and apply for an exit visa.">Посольство США на своей странице советует не ждать выезда: если вы знаете, что просрочили, заранее свяжитесь с консульским департаментом МИД Кыргызстана. По словам посольства, придётся заплатить административный штраф и оформить выездную визу.</p>
     <p data-ru="У консульского департамента есть круглосуточный центр, куда можно написать или позвонить: сайт &lt;a href=&quot;https://e-consul.gov.kg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;e-consul.gov.kg&lt;/a&gt;, телефон и WhatsApp +996 999 312 002." data-en="The consular department runs a 24-hour inquiry center: website &lt;a href=&quot;https://e-consul.gov.kg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;e-consul.gov.kg&lt;/a&gt;, phone and WhatsApp +996 999 312 002.">У консульского департамента есть круглосуточный центр, куда можно написать или позвонить: сайт <a href="https://e-consul.gov.kg" target="_blank" rel="noopener">e-consul.gov.kg</a>, телефон и WhatsApp +996 999 312 002.</p>
-    <h2 data-ru="Сколько штраф" data-en="How much is the fine">Сколько штраф</h2>
+    <h2 id="h-5" data-ru="Сколько штраф" data-en="How much is the fine">Сколько штраф</h2>
     <p data-ru="Штраф устанавливает статья 431 Кодекса о правонарушениях. Если у иностранца нет документов на пребывание (визы, регистрации, вида на жительство) или он не выехал по окончании срока, сумма зависит от того, как долго длится нарушение: до одного месяца — 55 расчётных показателей, от одного до трёх месяцев — 100, от трёх до шести — 150, от шести месяцев до года — 175, больше года — 200." data-en="The fine is set by Article 431 of the Code of Offences. If a foreigner has no document for staying (visa, registration, residence permit) or did not leave when the stay ended, the amount depends on how long the violation lasts: up to one month, 55 calculation indices; one to three months, 100; three to six months, 150; six months to a year, 175; over a year, 200.">Штраф устанавливает статья 431 Кодекса о правонарушениях. Если у иностранца нет документов на пребывание (визы, регистрации, вида на жительство) или он не выехал по окончании срока, сумма зависит от того, как долго длится нарушение: до одного месяца — 55 расчётных показателей, от одного до трёх месяцев — 100, от трёх до шести — 150, от шести месяцев до года — 175, больше года — 200.</p>
     <p data-ru="По публикациям (time.kg, zakon.kg) один расчётный показатель равен 100 сомам, то есть штраф составляет от 5 500 до 20 000 сом. Если предписание об устранении нарушения не выполнено за 30 дней, иностранца выдворяют. Выездная виза для просрочивших — это отдельный сбор, а не штраф." data-en="According to time.kg and zakon.kg, one index equals 100 som, so the fine is 5,500 to 20,000 som. If an order to fix the violation is not carried out within 30 days, the foreigner is expelled. The exit visa for overstayers is a separate fee, not a fine.">По публикациям (time.kg, zakon.kg) один расчётный показатель равен 100 сомам, то есть штраф составляет от 5 500 до 20 000 сом. Если предписание об устранении нарушения не выполнено за 30 дней, иностранца выдворяют. Выездная виза для просрочивших — это отдельный сбор, а не штраф.</p>
     <div class="note" data-ru="Страница посольства не датирована, а правила в сентябре менялись. Поэтому сверьте всё с МИД. Размеры штрафов сверены с текстом статьи 431 в базе Минюста 19 ноября 2026 года; значение расчётного показателя в Кодексе не указано." data-en="The embassy page is undated, and the rules changed in September, so check everything with the MFA. The fine amounts were checked against the text of Article 431 in the Ministry of Justice database on 19 November 2026; the value of the index is not stated in the Code.">Страница посольства не датирована, а правила в сентябре менялись. Поэтому сверьте всё с МИД. Размеры штрафов сверены с текстом статьи 431 в базе Минюста 19 ноября 2026 года; значение расчётного показателя в Кодексе не указано.</div>
@@ -143,14 +173,23 @@
       <li><a href="https://cbd.minjust.gov.kg/112306/edition/1247867/ru" target="_blank" rel="noopener">Кодекс КР о правонарушениях № 128, статьи 430 и 431 (база Минюста)</a> — официальный текст, сверено 19.11.2026</li>
     </ul>
   </div>
+  </div>
+  <aside class="toc" aria-label="Содержание">
+    <div class="toc-title" data-ru="На этой странице" data-en="On this page">На этой странице</div>
+    <a href="#h-1" data-ru="Что изменилось в сентябре" data-en="What changed in September">Что изменилось в сентябре</a>
+    <a href="#h-2" data-ru="Если вы супруг или ребёнок гражданина Кыргызстана" data-en="If you are the spouse or child of a Kyrgyz citizen">Если вы супруг или ребёнок гражданина Кыргызстана</a>
+    <a href="#h-3" data-ru="Как не попасть в просрочку" data-en="How to avoid an overstay">Как не попасть в просрочку</a>
+    <a href="#h-4" data-ru="Если вы уже просрочили" data-en="If you have already overstayed">Если вы уже просрочили</a>
+    <a href="#h-5" data-ru="Сколько штраф" data-en="How much is the fine">Сколько штраф</a>
+  </aside>
 </div>
 
 <div class="next"><a href="/temporary-rules-foreigners-kyrgyzstan-2026"><small data-ru="Следующий гайд" data-en="Next guide">Следующий гайд</small><span>Временные правила для иностранцев в Кыргызстане заканчиваются 31 декабря: что дальше</span></a></div>
 <div class="bottom-cta">
-  <h3 data-ru="Остались вопросы по вашей ситуации?" data-en="Questions about your own case?">Остались вопросы по вашей ситуации?</h3>
-  <p data-ru="Гульнара Мамбеталиева помогает иностранцам с визой, регистрацией и переездом в Кыргызстан." data-en="Gulnara Mambetaliyeva helps foreigners with visas, registration and relocating to Kyrgyzstan.">Гульнара Мамбеталиева помогает иностранцам с визой, регистрацией и переездом в Кыргызстан.</p>
-  <a class="btn-wa" href="https://wa.me/996700522667" target="_blank" rel="noopener"><span data-ru="Написать в WhatsApp" data-en="WhatsApp Gulnara">Написать в WhatsApp</span></a>
-  <a class="btn-light" href="/contact" data-ru="Или задать вопрос на сайте" data-en="Or ask on the website">Или задать вопрос на сайте</a>
+  <h3 data-ru="Ваша ситуация отличается?" data-en="Is your case different?">Ваша ситуация отличается?</h3>
+  <p data-ru="Спросите Гульнару Мамбеталиеву, миграционного консультанта. В сообщении уже будет название этой страницы." data-en="Ask Gulnara Mambetaliyeva, a migration consultant. The message will already include the title of this page.">Спросите Гульнару Мамбеталиеву, миграционного консультанта. В сообщении уже будет название этой страницы.</p>
+  <a class="btn-wa" href="https://wa.me/996700522667?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%92%D0%BE%D0%BF%D1%80%D0%BE%D1%81%20%D0%BF%D0%BE%20%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%83%20%C2%AB%D0%A1%D1%80%D0%BE%D0%BA%20%D0%BF%D1%80%D0%B5%D0%B1%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%BD%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D1%82%D1%81%D1%8F%3A%20%D1%87%D1%82%D0%BE%20%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C%20%D0%B4%D0%BE%20%D0%BF%D1%80%D0%BE%D1%81%D1%80%D0%BE%D1%87%D0%BA%D0%B8%20%D0%B8%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%C2%BB%20(https%3A%2F%2Fxpat4.org%2Foverstay-kyrgyzstan-2026)%3A%20" target="_blank" rel="noopener"><span data-ru="Спросить Гульнару в WhatsApp" data-en="Ask Gulnara on WhatsApp">Спросить Гульнару в WhatsApp</span></a>
+  <a class="btn-light" href="/contact#brief" data-ru="Описать ситуацию за 3 шага" data-en="Describe your case in 3 steps">Описать ситуацию за 3 шага</a>
 </div>
 
 </main>
@@ -160,6 +199,22 @@
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=202611202"></script>
+<script>
+(function () {
+  var links = [].slice.call(document.querySelectorAll('.toc a'));
+  if (!links.length || !('IntersectionObserver' in window)) return;
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      links.forEach(function (a) { a.classList.remove('active'); });
+      if (map[e.target.id]) map[e.target.id].classList.add('active');
+    });
+  }, { rootMargin: '-90px 0px -70% 0px' });
+  Object.keys(map).forEach(function (id) { var h = document.getElementById(id); if (h) io.observe(h); });
+})();
+</script>
+<script src="/xpat4.js?v=202611203"></script>
 </body>
 </html>

@@ -42,8 +42,10 @@ const tr = (t) => ({ ru: t.ru, en: t.en || t.ru });
 const attrs = (t) => `data-ru="${escAttr(toHtml(t.ru))}" data-en="${escAttr(toHtml(t.en || t.ru))}"`;
 const el = (tag, t, cls) => `<${tag}${cls ? ` class="${cls}"` : ''} ${attrs(t)}>${toHtml(t.ru)}</${tag}>`;
 
+let hN = 0;
+const heads = [];
 const body = art.blocks.map((b) => {
-  if (b.h2) return '    ' + el('h2', b.h2);
+  if (b.h2) { hN++; heads.push({ id: 'h-' + hN, t: b.h2 }); return '    ' + el('h2', b.h2).replace('<h2 ', '<h2 id="h-' + hN + '" '); }
   if (b.p) return '    ' + el('p', b.p);
   if (b.note) return '    ' + el('div', b.note, 'note');
   if (b.ul || b.ol) {
@@ -91,7 +93,22 @@ ${g.short.map((s) => '      ' + el('li', s)).join('\n')}
 const nextBox = (nextG && nextG.slug !== slug)
   ? `<div class="next"><a href="/${nextG.slug}"><small data-ru="Следующий гайд" data-en="Next guide">Следующий гайд</small><span>${escHtml(nextG.title_ru)}</span></a></div>`
   : '';
+const WA = 'https://wa.me/996700522667?text=';
+const pageUrl = 'https://xpat4.org/' + slug;
+const waAsk = WA + encodeURIComponent('Здравствуйте! Вопрос по материалу «' + plain(title.ru) + '» (' + pageUrl + '): ');
+const waErr = WA + encodeURIComponent('Здравствуйте! Кажется, в материале «' + plain(title.ru) + '» (' + pageUrl + ') есть ошибка или устаревший факт: ');
+const tocBox = heads.length >= 3
+  ? '  <aside class="toc" aria-label="Содержание">\n    <div class="toc-title" data-ru="На этой странице" data-en="On this page">На этой странице</div>\n' +
+    heads.map((h) => '    <a href="#' + h.id + '" ' + attrs(h.t) + '>' + toHtml(h.t.ru) + '</a>').join('\n') + '\n  </aside>'
+  : '';
+const changesBox = (art.changes && art.changes.length)
+  ? '  <div class="changes">\n    <div class="changes-title" data-ru="Что изменилось" data-en="What changed">Что изменилось</div>\n    <ul>\n' +
+    art.changes.slice().sort((x, y) => y.date.localeCompare(x.date)).map((c) => '      <li><time datetime="' + c.date + '">' + fmt(c.date).ru + '</time><span ' + attrs(c) + '>' + toHtml(c.ru) + '</span></li>').join('\n') +
+    '\n    </ul>\n  </div>'
+  : '';
 const map = {
+  WA_ASK: waAsk, WA_ERR: waErr,
+  TOC: tocBox, CHANGES: changesBox, CONTENT_CLASS: tocBox ? ' has-toc' : '',
   EYEBROW_RU: g ? 'Гайд · ' + String(g.num).padStart(2, '0') : 'Статья', EYEBROW_EN: g ? 'Guide · ' + String(g.num).padStart(2, '0') : 'Article',
   CRUMB_URL: g ? '/guides' : '/news#articles', CRUMB_RU: g ? 'Гайды' : 'Статьи', CRUMB_EN: g ? 'Guides' : 'Articles',
   BACK_URL: g ? '/guides' : '/news', BACK_RU: g ? 'Все гайды' : 'Новости и статьи', BACK_EN: g ? 'All guides' : 'News and articles',

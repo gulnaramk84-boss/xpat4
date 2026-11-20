@@ -306,6 +306,44 @@ XPAT4.WIDGET_I18N = {
   }
 };
 
+XPAT4.WIDGET_HUMAN = {
+  ru: {
+    title: 'Вопрос Гульнаре',
+    subtitle: 'Ответит лично, в WhatsApp',
+    placeholder: 'Ваш вопрос, гражданство и сроки…',
+    greeting: 'Опишите ситуацию: гражданство, сколько вы уже в Кыргызстане и что нужно сделать. Мы подготовим сообщение Гульнаре Мамбеталиевой, миграционному консультанту, и откроем WhatsApp. Многие ответы уже есть в гайдах: xpat4.org/guides',
+    no_key_msg: 'Готово. Нажмите кнопку: откроется WhatsApp с вашим вопросом, его останется только отправить.',
+    wa_greeting: 'Здравствуйте, Гульнара! Вопрос с сайта xpat4.org',
+    wa_suffix: '',
+    powered: 'Отвечает человек, а не бот · xpat4.org'
+  },
+  en: {
+    title: 'Ask Gulnara',
+    subtitle: 'She replies personally on WhatsApp',
+    placeholder: 'Your question, citizenship and dates…',
+    greeting: 'Describe your situation: citizenship, how long you have been in Kyrgyzstan and what you need to do. We will prepare a message to Gulnara Mambetaliyeva, a migration consultant, and open WhatsApp. Many answers are already in the guides: xpat4.org/guides',
+    no_key_msg: 'Done. Tap the button: WhatsApp opens with your question ready to send.',
+    wa_greeting: 'Hello Gulnara! A question from xpat4.org',
+    wa_suffix: '',
+    powered: 'A person replies, not a bot · xpat4.org'
+  },
+  zh: {
+    title: '向古尔纳拉提问',
+    subtitle: '她会在WhatsApp上亲自回复',
+    placeholder: '您的问题、国籍和时间…',
+    greeting: '请描述您的情况：国籍、已在吉尔吉斯斯坦停留多久、需要办理什么。我们会为移民顾问古尔纳拉·马姆别塔利耶娃准备好消息并打开WhatsApp。许多答案已在指南中：xpat4.org/guides',
+    no_key_msg: '准备好了。点击按钮，WhatsApp将打开并附上您的问题，直接发送即可。',
+    wa_greeting: '您好，古尔纳拉！来自xpat4.org的问题',
+    wa_suffix: '',
+    powered: '由真人回复，而非机器人 · xpat4.org'
+  }
+};
+XPAT4.widgetText = function (lang) {
+  const base = XPAT4.WIDGET_I18N[lang] || XPAT4.WIDGET_I18N.en;
+  if (getActiveApiKey()) return Object.assign({ powered: 'Powered by Claude AI · xpat4.org' }, base);
+  return Object.assign({}, base, XPAT4.WIDGET_HUMAN[lang] || XPAT4.WIDGET_HUMAN.en);
+};
+
 XPAT4.AI_SYSTEM_PROMPT = `You are xpat4 Assistant — a helpful AI for foreigners (expats) moving to or living in Kyrgyzstan. The website xpat4.org connects expats with verified specialists.
 
 DETECT the language of each user message and ALWAYS respond in the SAME language (Russian, English, or Chinese).
@@ -350,7 +388,7 @@ Always be warm, concise, and helpful. Never give detailed legal advice on comple
 
 XPAT4.initWidget = function() {
   const lang = XPAT4.currentLang;
-  const i18n = XPAT4.WIDGET_I18N[lang] || XPAT4.WIDGET_I18N.en;
+  const i18n = XPAT4.widgetText(lang);
 
   // Inject styles
   const style = document.createElement('style');
@@ -460,7 +498,7 @@ XPAT4.initWidget = function() {
   // Inject HTML
   const wrap = document.createElement('div');
   wrap.innerHTML = `
-    <button id="xpat-btn" aria-label="Помощник xpat4 / Assistant" aria-haspopup="dialog" title="${i18n.title}">
+    <button id="xpat-btn" aria-label="${i18n.title}" aria-haspopup="dialog" title="${i18n.title}">
       <span id="xpat-badge"></span>
       <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
     </button>
@@ -482,7 +520,7 @@ XPAT4.initWidget = function() {
           <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </button>
       </div>
-      <div id="xpat-powered">Powered by Claude AI · xpat4.org</div>
+      <div id="xpat-powered">${i18n.powered}</div>
     </div>
   `;
   document.body.appendChild(wrap);
@@ -502,7 +540,7 @@ XPAT4.initWidget = function() {
   const sendBtn  = document.getElementById('xpat-send');
 
   function getLang() { return XPAT4.currentLang || 'en'; }
-  function getI18n() { return XPAT4.WIDGET_I18N[getLang()] || XPAT4.WIDGET_I18N.en; }
+  function getI18n() { return XPAT4.widgetText(getLang()); }
 
   function addMsg(text, role, html) {
     const div = document.createElement('div');
@@ -517,7 +555,8 @@ XPAT4.initWidget = function() {
   function showGreeting() {
     if (greeted) return;
     greeted = true;
-    addMsg(getI18n().greeting, 'bot');
+    const g = getI18n().greeting.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace('xpat4.org/guides', '<a href="/guides">xpat4.org/guides</a>');
+    addMsg(g, 'bot', true);
   }
 
   function togglePanel() {
@@ -590,7 +629,8 @@ XPAT4.initWidget = function() {
 
   function handleEscalate(summary, message) {
     const t = getI18n();
-    const waText = encodeURIComponent(t.wa_greeting + summary + t.wa_suffix);
+    const page = (document.title || '').split(' — ')[0];
+    const waText = encodeURIComponent(t.wa_greeting + (page ? ' (' + page + ', ' + location.href.split('?')[0] + ')' : '') + ':\n\n' + summary + (t.wa_suffix || ''));
     const waUrl  = `https://wa.me/${XPAT4_CONFIG.GULNARA_WA}?text=${waText}`;
 
     const html = `
@@ -647,7 +687,9 @@ XPAT4.initWidget = function() {
 
   // Update widget language when lang changes
   XPAT4.updateWidgetLang = function(lang) {
-    const t = XPAT4.WIDGET_I18N[lang] || XPAT4.WIDGET_I18N.en;
+    const t = XPAT4.widgetText(lang);
+    const pw = document.getElementById('xpat-powered');
+    if (pw) pw.textContent = t.powered;
     const titleEl    = document.getElementById('xpat-title');
     const subtitleEl = document.getElementById('xpat-subtitle');
     if (titleEl)    titleEl.textContent    = t.title;
