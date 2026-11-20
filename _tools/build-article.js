@@ -106,12 +106,13 @@ const changesBox = (art.changes && art.changes.length)
     art.changes.slice().sort((x, y) => y.date.localeCompare(x.date)).map((c) => '      <li><time datetime="' + c.date + '">' + fmt(c.date).ru + '</time><span ' + attrs(c) + '>' + toHtml(c.ru) + '</span></li>').join('\n') +
     '\n    </ul>\n  </div>'
   : '';
+const isPage = art.kind === 'page';
 const map = {
   WA_ASK: waAsk, WA_ERR: waErr,
   TOC: tocBox, CHANGES: changesBox, CONTENT_CLASS: tocBox ? ' has-toc' : '',
-  EYEBROW_RU: g ? 'Гайд · ' + String(g.num).padStart(2, '0') : 'Статья', EYEBROW_EN: g ? 'Guide · ' + String(g.num).padStart(2, '0') : 'Article',
-  CRUMB_URL: g ? '/guides' : '/news#articles', CRUMB_RU: g ? 'Гайды' : 'Статьи', CRUMB_EN: g ? 'Guides' : 'Articles',
-  BACK_URL: g ? '/guides' : '/news', BACK_RU: g ? 'Все гайды' : 'Новости и статьи', BACK_EN: g ? 'All guides' : 'News and articles',
+  EYEBROW_RU: isPage ? 'О проекте' : g ? 'Гайд · ' + String(g.num).padStart(2, '0') : 'Статья', EYEBROW_EN: isPage ? 'About' : g ? 'Guide · ' + String(g.num).padStart(2, '0') : 'Article',
+  CRUMB_URL: isPage ? '/guides' : g ? '/guides' : '/news#articles', CRUMB_RU: g || isPage ? 'Гайды' : 'Статьи', CRUMB_EN: g || isPage ? 'Guides' : 'Articles',
+  BACK_URL: g || isPage ? '/guides' : '/news', BACK_RU: g || isPage ? 'Все гайды' : 'Новости и статьи', BACK_EN: g || isPage ? 'All guides' : 'News and articles',
   SHORT: shortBox, NEXT: nextBox,
   SLUG: slug,
   TITLE_RU_TEXT: escHtml(plain(title.ru)),
@@ -136,7 +137,7 @@ fs.writeFileSync(path.join(root, slug + '.html'), html, 'utf8');
 const aPath = path.join(root, 'articles.json');
 let list = fs.existsSync(aPath) ? JSON.parse(read(aPath)) : [];
 list = list.filter((a) => a.slug !== slug);
-list.push({
+if (!isPage) list.push({
   slug, date: art.date, category: art.category || 'life',
   title_ru: plain(title.ru), title_en: plain(title.en),
   summary_ru: plain(summary.ru), summary_en: plain(summary.en),

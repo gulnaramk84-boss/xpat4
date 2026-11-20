@@ -1,0 +1,129 @@
+{
+  "slug": "how-we-check",
+  "kind": "page",
+  "date": "2026-11-20",
+  "checked": "2026-11-20",
+  "category": "life",
+  "title": {
+    "ru": "Как мы проверяем информацию",
+    "en": "How we check information"
+  },
+  "summary": {
+    "ru": "Откуда берутся факты на xpat4.org, что значат даты и метки и что делать, если вы нашли ошибку.",
+    "en": "Where the facts on xpat4.org come from, what the dates and labels mean, and what to do if you find a mistake."
+  },
+  "blocks": [
+    {
+      "h2": {
+        "ru": "Откуда берутся факты",
+        "en": "Where facts come from"
+      }
+    },
+    {
+      "p": {
+        "ru": "Мы пишем только то, что прочитали на открытой странице: в официальном тексте закона или постановления, на сайте ведомства или посольства, в крупном кыргызстанском издании. Пересказ поисковика источником не считается. Сайты, которые продают свои услуги, мы не используем как источник цифр.",
+        "en": "We only write what we have read on an open page: an official text of a law or resolution, a government or embassy website, a major Kyrgyz news outlet. A search-engine summary is not a source. We do not use websites that sell their own services as a source of figures."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Суммы, сроки и штрафы",
+        "en": "Amounts, deadlines and fines"
+      }
+    },
+    {
+      "p": {
+        "ru": "Штрафы, сроки запретов, ставки налогов и цены публикуем, только если они есть в официальном тексте или в двух независимых источниках. Штрафы и налоговые ставки сверяем с Кодексом о правонарушениях и Налоговым кодексом в базе Министерства юстиции. Если цифры нет или источники расходятся, так и пишем.",
+        "en": "We publish fines, ban periods, tax rates and prices only if they appear in an official text or in two independent sources. We check fines and tax rates against the Code of Offences and the Tax Code in the Ministry of Justice database. If a figure is missing or sources disagree, we say so."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Даты и метки",
+        "en": "Dates and labels"
+      }
+    },
+    {
+      "ul": [
+        {
+          "ru": "У каждого гайда стоит дата проверки: день, когда факты сверили с источниками.",
+          "en": "Every guide shows a check date: the day its facts were checked against sources."
+        },
+        {
+          "ru": "Блок «Что изменилось» показывает, что и когда правили.",
+          "en": "The “What changed” block shows what was edited and when."
+        },
+        {
+          "ru": "У новостей есть метки: «Уже действует», «Скоро вступит в силу», «Пока проект». Проект — это ещё не закон.",
+          "en": "News items carry labels: “In force”, “Coming soon”, “Draft only”. A draft is not yet a law."
+        },
+        {
+          "ru": "Новости проверяем каждый день. Если нового и надёжного нет, ничего не публикуем.",
+          "en": "We check for news every day. If there is nothing new and reliable, we publish nothing."
+        }
+      ]
+    },
+    {
+      "h2": {
+        "ru": "Старые статьи",
+        "en": "Older articles"
+      }
+    },
+    {
+      "p": {
+        "ru": "Часть статей написана до того, как мы ввели эти правила. Над такими статьями стоит жёлтая пометка. Проверенные ответы по ситуациям ищите в [гайдах](/guides).",
+        "en": "Some articles were written before these rules. They carry a yellow note at the top. For verified answers by situation, see the [guides](/guides)."
+      }
+    },
+    {
+      "h2": {
+        "ru": "Чего мы не делаем",
+        "en": "What we do not do"
+      }
+    },
+    {
+      "ul": [
+        {
+          "ru": "Не публикуем выдуманные истории, отзывы и цитаты.",
+          "en": "We do not publish invented stories, reviews or quotes."
+        },
+        {
+          "ru": "Не делаем юридических выводов, которых нет в источнике.",
+          "en": "We do not draw legal conclusions that are not in the source."
+        },
+        {
+          "ru": "Не размещаем рекламу. Блок «Полезный сервис» — наша рекомендация, а не платное размещение.",
+          "en": "We run no ads. The “Useful service” block is our recommendation, not a paid placement."
+        }
+      ]
+    },
+    {
+      "h2": {
+        "ru": "Нашли ошибку",
+        "en": "Found a mistake"
+      }
+    },
+    {
+      "p": {
+        "ru": "На каждой странице гайда есть кнопка «Сообщить об ошибке»: она откроет WhatsApp с названием страницы. Мы исправим текст и отметим правку в блоке «Что изменилось».",
+        "en": "Every guide page has a “Report a mistake” button: it opens WhatsApp with the page title. We will fix the text and record the edit in the “What changed” block."
+      }
+    },
+    {
+      "note": {
+        "ru": "xpat4.org не заменяет консультацию. Если ваша ситуация отличается от описанной, [опишите её за 3 шага](/contact#brief), и Гульнара Мамбеталиева, миграционный консультант, ответит лично.",
+        "en": "xpat4.org does not replace a consultation. If your situation differs from what is described, [describe it in 3 steps](/contact#brief) and Gulnara Mambetaliyeva, a migration consultant, will reply personally."
+      }
+    }
+  ],
+  "sources": [
+    {
+      "title": "Налоговый кодекс КР № 3 от 18.01.2022 (база Минюста)",
+      "url": "https://cbd.minjust.gov.kg/3-39/edition/57656/ru"
+    },
+    {
+      "title": "Кодекс КР о правонарушениях № 128 (база Минюста)",
+      "url": "https://cbd.minjust.gov.kg/112306/edition/1247867/ru"
+    }
+  ]
+}

@@ -95,3 +95,6 @@ label .opt,
 .skip-link:focus { top: 12px; }
 .nav-center .nav-sub a { display: block !important; white-space: nowrap; }
 .topic-block p a, .qa-a a, .own-body a, .stale-note a { color: #2d5a3d; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+
+.footer-how { font-size: 13px; color: var(--ink-60); text-decoration: none; }
+.footer-how:hover { color: var(--accent); }

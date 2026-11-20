@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>xpat4 — Виза и релокация в Кыргызстан | Visa & Relocation to Kyrgyzstan</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preload" as="image" href="/hero.jpg" fetchpriority="high">
   <meta name="description" content="Всё для иностранцев в Кыргызстане: визы, регистрация, ВНЖ, работа, бизнес. Everything for expats in Kyrgyzstan.">
   <link rel="canonical" href="https://xpat4.org/" />
@@ -119,7 +120,13 @@
     h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(48px, 7vw, 86px); font-weight: 300; line-height: 1.08; letter-spacing: -0.01em; color: #fff; margin-bottom: 28px; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
     h1 em { font-style: italic; font-weight: 300; color: rgba(180,220,185,1); }
     .hero-sub { font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.85); max-width: 520px; line-height: 1.7; margin-bottom: 36px; text-shadow: 0 1px 8px rgba(0,0,0,0.25); }
-        .hero-pick { margin-top: 4px; max-width: 680px; }
+        .trust-strip { border-bottom: 1px solid var(--line); background: var(--warm-white); }
+    .ts-in { max-width: 1100px; margin: 0 auto; padding: 16px 48px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 14px; color: var(--ink-60); }
+    .ts-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-light); flex-shrink: 0; }
+    .ts-link { margin-left: auto; color: var(--accent); font-weight: 500; text-decoration: none; white-space: nowrap; }
+    .ts-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 900px) { .ts-in { padding: 14px 20px; } .ts-link { margin-left: 0; } }
+    .hero-pick { margin-top: 4px; max-width: 680px; }
     .hero-pick-label { font-size: 12px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,0.8); margin-bottom: 14px; }
     .hero-chips { display: flex; flex-wrap: wrap; gap: 10px; }
     .hero-chip { padding: 12px 20px; border: 1px solid rgba(255,255,255,0.38); background: rgba(18,17,14,0.38); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); color: #fff; border-radius: 100px; font-size: 15px; line-height: 1.2; text-decoration: none; transition: background .2s, color .2s, border-color .2s, transform .15s; }
@@ -162,6 +169,7 @@
     .consultant-card { border: 1px solid var(--line); padding: 32px 28px; background: var(--warm-white); display: flex; flex-direction: column; gap: 10px; transition: border-color 0.2s; text-decoration: none; color: var(--ink); cursor: pointer; }
     .consultant-card:hover { border-color: rgba(26,24,20,0.35); }
     .consultant-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--accent-light); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--accent); font-weight: 500; margin-bottom: 6px; flex-shrink: 0; }
+    .consultant-avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
     .consultant-name { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 400; }
     .consultant-role { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); }
     .consultant-desc { font-size: 13px; color: var(--ink-60); font-weight: 300; line-height: 1.55; margin-top: 4px; flex: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
@@ -360,7 +368,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=202611203">
+  <link rel="stylesheet" href="/site.css?v=202611204">
 </head>
 <body>
 <a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Перейти к содержанию</a>
@@ -440,6 +448,14 @@
     Независимый ресурс · Без рекламы · Каждый факт со ссылкой на источник и датой проверки
   </div>
 </div> <!-- /hero-bg -->
+
+<div class="trust-strip" aria-label="Как мы работаем">
+  <div class="ts-in">
+    <span class="ts-dot" aria-hidden="true"></span>
+    <span id="ts-text" data-ru="Гайды и новости со ссылками на источники и датой проверки" data-en="Guides and news with sources and check dates" data-zh="指南和新闻均附来源和核实日期">Гайды и новости со ссылками на источники и датой проверки</span>
+    <a class="ts-link" href="/how-we-check" data-ru="Как мы проверяем →" data-en="How we check →" data-zh="我们如何核实 →">Как мы проверяем →</a>
+  </div>
+</div>
 
 <!-- LATEST NEWS -->
 <section class="home-news fade-up" id="home-news">
@@ -621,6 +637,7 @@
     <li><a href="/contact" data-ru="Контакты" data-en="Contacts" data-zh="联系我们">Контакты</a></li>
     <li><a href="/terms" data-ru="Оферта" data-en="Terms" data-zh="条款">Оферта</a></li>
     <li><a href="/privacy" data-ru="Конфиденциальность" data-en="Privacy" data-zh="隐私">Конфиденциальность</a></li>
+    <li><a href="/how-we-check" data-ru="Как мы проверяем" data-en="How we check" data-zh="我们如何核实">Как мы проверяем</a></li>
   </ul>
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
@@ -637,7 +654,7 @@
   }
 </script>
 <!-- AI Widget + Language system -->
-<script src="/xpat4.js?v=202611203"></script>
+<script src="/xpat4.js?v=202611204"></script>
 
 <script>
   /* ── Mobile burger menu ── */
@@ -663,7 +680,7 @@
 
     grid.innerHTML = window._specialists.slice(0, 6).map(s => `
       <a class="consultant-card fade-up" href="/catalog#specialist-${s.id}">
-        <div class="consultant-avatar">${s.initials}</div>
+        <div class="consultant-avatar">${s.photo ? `<img src="${s.photo}" alt="${s['name_' + lang] || s.name_en}" width="44" height="44" loading="lazy">` : s.initials}</div>
         <div class="consultant-role">${s['role_' + lang] || s.role_en}</div>
         <div class="consultant-name">${s['name_' + lang] || s.name_en}</div>
         <p class="consultant-desc">${s['desc_' + lang] || s.desc_en}</p>
@@ -708,6 +725,29 @@
     renderHomeNews();
   }).catch(() => { const s = document.getElementById('home-news'); if (s) s.style.display = 'none'; });
   document.addEventListener('xpat4-lang-change', renderHomeNews);
+
+
+  /* ── Trust strip: live counts ── */
+  (function () {
+    const MON = { ru: ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'], en: ['January','February','March','April','May','June','July','August','September','October','November','December'] };
+    let data = null;
+    const plural = (n, a, b, c) => { const m10 = n % 10, m100 = n % 100; return m10 === 1 && m100 !== 11 ? a : (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) ? b : c; };
+    function render() {
+      const el = document.getElementById('ts-text'); if (!el || !data) return;
+      const lang = XPAT4.currentLang || 'ru';
+      const d = data.last.split('-').map(Number);
+      if (lang === 'ru') el.textContent = data.g + ' ' + plural(data.g, 'гайд', 'гайда', 'гайдов') + ' · ' + data.n + ' ' + plural(data.n, 'новость', 'новости', 'новостей') + ' · последняя проверка ' + d[2] + ' ' + MON.ru[d[1] - 1] + ' · у каждого факта есть источник';
+      else if (lang === 'zh') el.textContent = data.g + ' 篇指南 · ' + data.n + ' 条新闻 · 最近核实 ' + d[0] + '年' + d[1] + '月' + d[2] + '日 · 每条事实均附来源';
+      else el.textContent = data.g + ' guides · ' + data.n + ' news items · last checked ' + MON.en[d[1] - 1] + ' ' + d[2] + ' · every fact has a source';
+    }
+    Promise.all([fetch('articles.json?v=' + Date.now()).then(r => r.json()), fetch('news.json?v=' + Date.now()).then(r => r.json())]).then(([a, n]) => {
+      const guides = a.filter(x => x.guide);
+      const last = [...guides.map(x => x.checked || x.date), ...n.map(x => x.date)].sort().pop();
+      data = { g: guides.length, n: n.length, last };
+      render();
+    }).catch(() => {});
+    document.addEventListener('xpat4-lang-change', render);
+  })();
 
   /* Re-render specialists on language change */
   document.addEventListener('xpat4-lang-change', renderSpecialists);
