@@ -25,7 +25,9 @@
   }
 }</script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"></noscript>
   <link rel="stylesheet" href="/article-base.css?v=202611193">
   <style>
     .page-hero{padding:140px 48px 48px;max-width:800px;margin:0 auto;border-bottom:1px solid var(--line)}
@@ -75,9 +77,10 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=202611201">
+  <link rel="stylesheet" href="/site.css?v=202611202">
 </head>
 <body>
+<a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Перейти к содержанию</a>
 <nav>
   <a class="logo" href="/">xpat<span>4</span>.org</a>
   <div class="nav-right">
@@ -88,6 +91,7 @@
     <a class="back" href="/guides" data-ru="Все гайды" data-en="All guides">Все гайды</a>
   </div>
 </nav>
+<main id="main">
 
 <div class="page-hero">
   <div class="breadcrumb">
@@ -150,11 +154,13 @@
   <a class="btn-light" href="/contact" data-ru="Или задать вопрос на сайте" data-en="Or ask on the website">Или задать вопрос на сайте</a>
 </div>
 
+</main>
+
 <footer>
   <a class="footer-logo" href="/">xpat<span>4</span>.org</a>
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=202611201"></script>
+<script src="/xpat4.js?v=202611202"></script>
 </body>
 </html>

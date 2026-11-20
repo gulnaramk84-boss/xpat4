@@ -76,3 +76,22 @@ label .opt,
 #xpat-powered {
   font-size: 12px;
 }
+
+/* ---- Navigation: current page and the Tools dropdown ---- */
+.nav-center a.current { color: var(--ink) !important; }
+.nav-center a.current::after { content: ''; display: block; height: 1px; background: var(--accent); margin-top: 4px; }
+.nav-center .has-sub { position: relative; }
+.nav-sub-toggle::after { content: '⌄'; margin-left: 5px; font-size: 11px; position: relative; top: -2px; }
+.nav-center .nav-sub { list-style: none; position: absolute; top: 100%; left: -18px; margin: 0; padding: 14px 0 0; display: block; min-width: 250px; opacity: 0; visibility: hidden; transform: translateY(4px); transition: opacity .18s, transform .18s, visibility 0s .18s; z-index: 120; }
+.nav-center .nav-sub::before { content: ''; position: absolute; inset: 14px 0 0; background: #faf8f4; border: 1px solid rgba(26,24,20,.12); box-shadow: 0 18px 40px -20px rgba(26,24,20,.35); z-index: -1; }
+.nav-center .nav-sub li { display: block !important; }
+.nav-center .nav-sub a { display: block; padding: 11px 18px; font-size: 14px; color: var(--ink); }
+.nav-center .nav-sub a:hover { background: #f5f0e8; }
+.nav-center .has-sub:hover .nav-sub, .nav-center .has-sub:focus-within .nav-sub { opacity: 1; visibility: visible; transform: none; transition: opacity .18s, transform .18s; }
+.mobile-menu a.current { color: var(--ink); font-weight: 500; }
+
+/* ---- Skip link ---- */
+.skip-link { position: absolute; left: 16px; top: -60px; z-index: 1000; background: #1a1814; color: #faf8f4; padding: 10px 16px; font-size: 14px; text-decoration: none; border-radius: 2px; transition: top .15s; }
+.skip-link:focus { top: 12px; }
+.nav-center .nav-sub a { display: block !important; white-space: nowrap; }
+.topic-block p a, .qa-a a, .own-body a, .stale-note a { color: #2d5a3d; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }

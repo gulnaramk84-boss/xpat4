@@ -460,7 +460,7 @@ XPAT4.initWidget = function() {
   // Inject HTML
   const wrap = document.createElement('div');
   wrap.innerHTML = `
-    <button id="xpat-btn" aria-label="AI Assistant" title="${i18n.title}">
+    <button id="xpat-btn" aria-label="Помощник xpat4 / Assistant" aria-haspopup="dialog" title="${i18n.title}">
       <span id="xpat-badge"></span>
       <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
     </button>
@@ -721,6 +721,21 @@ XPAT4.renderProjects = function() {
   document.head.appendChild(s);
 })();
 document.addEventListener('xpat4-lang-change', XPAT4.renderProjects);
+
+/* ── Mobile menu: aria-expanded sync ── */
+(function () {
+  function sync() {
+    var m = document.getElementById("mobile-menu");
+    if (!m) return;
+    var set = function () {
+      var b = document.getElementById("nav-burger");
+      if (b) b.setAttribute("aria-expanded", m.classList.contains("open") ? "true" : "false");
+    };
+    new MutationObserver(set).observe(m, { attributes: true, attributeFilter: ["class"] });
+    set();
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", sync); else sync();
+})();
 
 /* ── AUTO-INIT on DOMContentLoaded ── */
 if (document.readyState === 'loading') {

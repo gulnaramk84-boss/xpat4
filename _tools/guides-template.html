@@ -6,7 +6,9 @@
   <meta name="description" content="Что делать, если вы приехали по безвизу, сняли квартиру, просрочили срок или хотите работать и открыть компанию в Кыргызстане. У каждого гайда дата проверки и источники.">
   <link rel="canonical" href="https://xpat4.org/guides" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"></noscript>
   <style id="xpat4-nav">
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{--sand:#f5f0e8;--warm-white:#faf8f4;--ink:#1a1814;--ink-60:rgba(26,24,20,0.6);--ink-30:rgba(26,24,20,0.3);--ink-10:rgba(26,24,20,0.08);--accent:#2d5a3d;--accent-light:#e8f0ea;--line:rgba(26,24,20,0.12)}
@@ -84,42 +86,46 @@
   <meta property="og:url" content="https://xpat4.org/guides">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=202611201">
+  <link rel="stylesheet" href="/site.css?v=202611202">
 </head>
 <body>
+<a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Перейти к содержанию</a>
 <nav>
   <a class="logo" href="/">xpat<span>4</span>.org</a>
   <ul class="nav-center">
-    <li><a href="/#services" data-ru="Услуги" data-en="Services">Услуги</a></li>
-    <li><a href="/catalog" data-ru="Каталог" data-en="Catalog">Каталог</a></li>
-    <li><a href="/guides" class="current" data-ru="Гайды" data-en="Guides">Гайды</a></li>
-    <li><a href="/news" class="current" data-ru="Новости" data-en="News">Новости</a></li>
-    <li><a href="/checklist" data-ru="Чеклист" data-en="Checklist">Чеклист</a></li>
-    <li><a href="/calculator" data-ru="Калькулятор" data-en="Calculator">Калькулятор</a></li>
-    <li><a href="/contact" data-ru="Контакты" data-en="Contacts">Контакты</a></li>
-  </ul>
+      <li><a href="/guides" class="current" aria-current="page" data-ru="Гайды" data-en="Guides" data-zh="指南">Гайды</a></li>
+      <li><a href="/news" data-ru="Новости" data-en="News" data-zh="新闻">Новости</a></li>
+      <li><a href="/catalog" data-ru="Специалисты" data-en="Specialists" data-zh="专家">Специалисты</a></li>
+      <li class="has-sub">
+        <a href="/calculator" class="nav-sub-toggle" aria-haspopup="true" data-ru="Инструменты" data-en="Tools" data-zh="工具">Инструменты</a>
+        <ul class="nav-sub">
+          <li><a href="/calculator" data-ru="Калькулятор стоимости жизни" data-en="Cost of living calculator" data-zh="生活成本计算器">Калькулятор стоимости жизни</a></li>
+          <li><a href="/checklist" data-ru="Чеклист: первые 30 дней" data-en="Checklist: first 30 days" data-zh="清单：头30天">Чеклист: первые 30 дней</a></li>
+        </ul>
+      </li>
+      <li><a href="/contact" data-ru="Контакты" data-en="Contacts" data-zh="联系我们">Контакты</a></li>
+    </ul>
   <div class="nav-right">
-    <div class="lang-switch">
+    <div class="lang-switch" role="group" aria-label="Язык / Language">
       <button class="lang-btn" data-lang="ru" onclick="XPAT4.setLang('ru')">RU</button>
       <button class="lang-btn" data-lang="en" onclick="XPAT4.setLang('en')">EN</button>
       <button class="lang-btn gt-btn" onclick="openGoogleTranslate()" title="Translate"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z"/></svg></button>
     </div>
     <a class="nav-cta" href="/contact" data-ru="Консультация" data-en="Consultation">Консультация</a>
   </div>
-  <button class="nav-burger" id="nav-burger"><span></span><span></span><span></span></button>
+  <button class="nav-burger" id="nav-burger" aria-label="Меню" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
 <div class="mobile-menu" id="mobile-menu">
-  <a href="/#services" data-ru="Услуги" data-en="Services">Услуги</a>
-  <a href="/catalog" data-ru="Каталог" data-en="Catalog">Каталог</a>
-  <a href="/guides" data-ru="Гайды" data-en="Guides">Гайды</a>
-  <a href="/news" data-ru="Новости" data-en="News">Новости</a>
-  <a href="/checklist" data-ru="Чеклист" data-en="Checklist">Чеклист</a>
-  <a href="/calculator" data-ru="Калькулятор" data-en="Calculator">Калькулятор</a>
-  <a href="/contact" data-ru="Контакты" data-en="Contacts">Контакты</a>
-  <a href="/join" data-ru="Для специалистов" data-en="For Specialists">Для специалистов</a>
-</div>
+    <a href="/guides" class="current" aria-current="page" data-ru="Гайды" data-en="Guides" data-zh="指南">Гайды</a>
+    <a href="/news" data-ru="Новости" data-en="News" data-zh="新闻">Новости</a>
+    <a href="/catalog" data-ru="Специалисты" data-en="Specialists" data-zh="专家">Специалисты</a>
+    <a href="/calculator" data-ru="Калькулятор" data-en="Calculator" data-zh="计算器">Калькулятор</a>
+    <a href="/checklist" data-ru="Чеклист" data-en="Checklist" data-zh="清单">Чеклист</a>
+    <a href="/contact" data-ru="Контакты" data-en="Contacts" data-zh="联系我们">Контакты</a>
+    <a href="/join" data-ru="Для специалистов" data-en="For Specialists" data-zh="专家入驻">Для специалистов</a>
+  </div>
 
-<main>
+<main id="main">
 <section class="g-hero">
   <div class="g-eyebrow" data-ru="Гайды по ситуациям" data-en="Guides by situation">Гайды по ситуациям</div>
   <h1 data-ru="Что делать,<br/><em>если…</em>" data-en="What to do<br/><em>if…</em>">Что делать,<br/><em>если…</em></h1>
@@ -164,7 +170,7 @@
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=202611201"></script>
+<script src="/xpat4.js?v=202611202"></script>
 <script>
 (function(){
   var b=document.getElementById('nav-burger'), m=document.getElementById('mobile-menu');
