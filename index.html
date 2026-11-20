@@ -115,14 +115,22 @@
     .hero-eyebrow::before { content: ''; display: block; width: 28px; height: 1px; background: rgba(255,255,255,0.5); }
     h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(48px, 7vw, 86px); font-weight: 300; line-height: 1.08; letter-spacing: -0.01em; color: #fff; margin-bottom: 28px; text-shadow: 0 2px 20px rgba(0,0,0,0.3); }
     h1 em { font-style: italic; font-weight: 300; color: rgba(180,220,185,1); }
-    .hero-sub { font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.75); max-width: 500px; line-height: 1.7; margin-bottom: 44px; text-shadow: 0 1px 8px rgba(0,0,0,0.25); }
+    .hero-sub { font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.85); max-width: 520px; line-height: 1.7; margin-bottom: 36px; text-shadow: 0 1px 8px rgba(0,0,0,0.25); }
+        .hero-pick { margin-top: 4px; max-width: 680px; }
+    .hero-pick-label { font-size: 12px; font-weight: 500; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,0.8); margin-bottom: 14px; }
+    .hero-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+    .hero-chip { padding: 12px 20px; border: 1px solid rgba(255,255,255,0.38); background: rgba(18,17,14,0.38); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); color: #fff; border-radius: 100px; font-size: 15px; line-height: 1.2; text-decoration: none; transition: background .2s, color .2s, border-color .2s, transform .15s; }
+    .hero-chip:hover { background: rgba(250,248,244,0.96); color: var(--ink); border-color: transparent; }
+    .hero-chip:active { transform: translateY(1px); }
+    .hero-more { display: inline-block; margin-top: 18px; font-size: 14px; color: rgba(255,255,255,0.85); text-decoration: none; }
+    .hero-more:hover { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
     .hero-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
     .btn-primary { background: var(--accent); color: #fff; font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 500; padding: 14px 34px; border-radius: 2px; text-decoration: none; letter-spacing: 0.03em; transition: opacity 0.2s; }
     .btn-primary:hover { opacity: 0.85; }
     .btn-ghost { font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.7); text-decoration: none; letter-spacing: 0.02em; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
     .btn-ghost:hover { color: #fff; }
     .btn-ghost::after { content: '→'; }
-    .hero-trust { margin-top: 60px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.15); font-size: 12px; color: rgba(255,255,255,0.45); letter-spacing: 0.04em; }
+    .hero-trust { margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.2); font-size: 13px; color: rgba(255,255,255,0.78); letter-spacing: 0.04em; }
 
     /* CARDS */
     .cards-section { padding: 0 48px 100px; max-width: 1100px; margin: 0 auto; }
@@ -349,7 +357,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=20261119">
+  <link rel="stylesheet" href="/site.css?v=202611201">
 </head>
 <body>
 
@@ -405,21 +413,23 @@
     data-zh="外籍人士所需的一切——从入境到居留许可。复杂问题的简单答案，可信赖的专家就在身边。">
     Всё, что нужно иностранцу — от въезда до вида на жительство. Простые ответы на сложные вопросы, проверенные специалисты рядом.
   </p>
-  <div class="hero-actions">
-    <a class="btn-primary" href="#services"
-      data-ru="Начать здесь" data-en="Start Here" data-zh="从这里开始">
-      Начать здесь
-    </a>
-    <a class="btn-ghost" href="/catalog"
-      data-ru="Найти специалиста" data-en="Find a Specialist" data-zh="寻找专家">
-      Найти специалиста
-    </a>
+  <div class="hero-pick">
+    <div class="hero-pick-label" data-ru="Выберите вашу ситуацию" data-en="Choose your situation" data-zh="选择您的情况">Выберите вашу ситуацию</div>
+    <div class="hero-chips">
+      <a class="hero-chip" href="/stay-longer-than-30-days-kyrgyzstan" data-ru="Приехал по безвизу и хочу остаться" data-en="I came visa-free and want to stay" data-zh="我免签入境，想继续停留">Приехал по безвизу и хочу остаться</a>
+      <a class="hero-chip" href="/register-after-renting-bishkek-2026" data-ru="Снял квартиру" data-en="I rented a flat" data-zh="我租了房子">Снял квартиру</a>
+      <a class="hero-chip" href="/overstay-kyrgyzstan-2026" data-ru="Просрочил срок или боюсь просрочить" data-en="I overstayed, or fear I will" data-zh="我超期了，或担心超期">Просрочил срок или боюсь просрочить</a>
+      <a class="hero-chip" href="/work-permit-foreigners-kyrgyzstan-2026" data-ru="Хочу работать" data-en="I want to work" data-zh="我想工作">Хочу работать</a>
+      <a class="hero-chip" href="/digital-nomad-status-kyrgyzstan-2026" data-ru="Работаю удалённо" data-en="I work remotely" data-zh="我远程工作">Работаю удалённо</a>
+      <a class="hero-chip" href="/open-osoo-foreigner-kyrgyzstan-2026" data-ru="Открываю компанию" data-en="I am opening a company" data-zh="我要开公司">Открываю компанию</a>
+    </div>
+    <a class="hero-more" href="/catalog" data-ru="или найти специалиста →" data-en="or find a specialist →" data-zh="或寻找专家 →">или найти специалиста →</a>
   </div>
   <div class="hero-trust"
-    data-ru="Независимый ресурс для экспатов в КР · Без рекламы"
-    data-en="Independent resource for expats in KR · Ad-free"
-    data-zh="吉尔吉斯斯坦外籍人士独立资源 · 无广告">
-    Независимый ресурс для экспатов в КР · Без рекламы
+    data-ru="Независимый ресурс · Без рекламы · Каждый факт со ссылкой на источник и датой проверки"
+    data-en="Independent · Ad-free · Every fact links to its source and check date"
+    data-zh="独立资源 · 无广告 · 每条事实均附来源和核实日期">
+    Независимый ресурс · Без рекламы · Каждый факт со ссылкой на источник и датой проверки
   </div>
 </div> <!-- /hero-bg -->
 
@@ -435,22 +445,7 @@
   <div class="home-news-grid" id="home-news-grid"></div>
 </section>
 
-<!-- GUIDES BY SITUATION -->
-<section class="home-guides fade-up" id="home-guides">
-  <div class="home-news-head">
-    <div>
-      <div class="home-news-eyebrow" data-ru="Гайды" data-en="Guides" data-zh="指南">Гайды</div>
-      <h2 class="home-news-title" data-ru="Начните со своей ситуации" data-en="Start with your situation" data-zh="从您的情况开始">Начните со своей ситуации</h2>
-    </div>
-    <a class="home-news-all" href="/guides" data-ru="Все гайды" data-en="All guides" data-zh="全部指南">Все гайды</a>
-  </div>
-  <div class="hg-grid">
-    <a class="hg-item" href="/stay-longer-than-30-days-kyrgyzstan"><span class="hg-n">01</span><span class="hg-t" data-ru="Я приехал по безвизу и хочу остаться дольше 30 дней" data-en="I came visa-free and want to stay longer than 30 days">Я приехал по безвизу и хочу остаться дольше 30 дней</span></a>
-    <a class="hg-item" href="/overstay-kyrgyzstan-2026"><span class="hg-n">03</span><span class="hg-t" data-ru="Я просрочил срок пребывания или боюсь просрочить" data-en="I overstayed, or I am afraid I will">Я просрочил срок пребывания или боюсь просрочить</span></a>
-    <a class="hg-item" href="/work-permit-foreigners-kyrgyzstan-2026"><span class="hg-n">05</span><span class="hg-t" data-ru="Я хочу работать в Кыргызстане" data-en="I want to work in Kyrgyzstan">Я хочу работать в Кыргызстане</span></a>
-    <a class="hg-item" href="/open-osoo-foreigner-kyrgyzstan-2026"><span class="hg-n">07</span><span class="hg-t" data-ru="Я открываю компанию как иностранец" data-en="I am opening a company as a foreigner">Я открываю компанию как иностранец</span></a>
-  </div>
-</section>
+
 <div class="cards-section" id="services">
   <div class="cards-grid">
     <a class="card" href="/visa">
@@ -528,33 +523,6 @@
   </div>
 </div>
 
-<!-- DIGITAL NOMAD BLOCK -->
-<section class="nomad-section fade-up">
-  <div>
-    <div class="nomad-tag" data-ru="Цифровые номады" data-en="Digital Nomads" data-zh="数字游民">Цифровые номады</div>
-    <h2 data-ru="Бишкек для тех,<br/>кто работает <em>удалённо</em>" data-en="Bishkek for people<br/>who work <em>remotely</em>" data-zh="适合<em>远程工作</em><br/>的比什凯克">Бишкек для тех,<br/>кто работает <em>удалённо</em></h2>
-    <p data-ru="Коворкинги, мобильный интернет у трёх операторов и горы в двух часах езды. Налоги для удалённых работников зависят от вашего статуса и источника дохода — мы разбираем это в отдельных статьях." data-en="Coworking spaces, mobile internet from three carriers and mountains two hours away. Taxes for remote workers depend on your status and where the income comes from — we cover this in separate articles." data-zh="联合办公空间、三家运营商的移动网络，以及两小时车程的山区。远程工作者的税务取决于您的身份和收入来源——我们在专门的文章中说明。">Коворкинги, мобильный интернет у трёх операторов и горы в двух часах езды. Налоги для удалённых работников зависят от вашего статуса и источника дохода — мы разбираем это в отдельных статьях.</p>
-    <a class="btn-sand" href="/digital-nomad-kyrgyzstan" data-ru="Гид для цифровых номадов" data-en="Digital nomad guide" data-zh="数字游民指南">Гид для цифровых номадов</a>
-  </div>
-  <div class="nomad-benefits">
-    <div class="nomad-benefit">
-      <span class="nomad-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9a14 14 0 0 1 18 0M6 12.5a9.5 9.5 0 0 1 12 0M9 16a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r=".6"/></svg></span>
-      <span class="nomad-text"><strong data-ru="Быстрый интернет" data-en="Fast Internet" data-zh="高速网络">Быстрый интернет</strong><br/><span data-ru="Мобильный интернет: MegaCom, Beeline, O!. Подробности — в гиде" data-en="Mobile internet: MegaCom, Beeline, O!. Details in the guide" data-zh="移动网络：MegaCom、Beeline、O!。详见指南">Мобильный интернет: MegaCom, Beeline, O!. Подробности — в гиде</span></span>
-    </div>
-    <div class="nomad-benefit">
-      <span class="nomad-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 8h2M13 8h2M9 12h2M13 12h2M10 21v-4h4v4"/></svg></span>
-      <span class="nomad-text"><strong data-ru="Коворкинги и кафе" data-en="Coworkings & Cafés" data-zh="联合办公与咖啡馆">Коворкинги и кафе</strong><br/><span data-ru="В Бишкеке есть несколько коворкингов — список в нашей статье" data-en="Bishkek has several coworking spaces — see our article for the list" data-zh="比什凯克有多个联合办公空间——名单见我们的文章">В Бишкеке есть несколько коворкингов — список в нашей статье</span></span>
-    </div>
-    <div class="nomad-benefit">
-      <span class="nomad-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9 14.5c.5 1 1.6 1.5 3 1.5 1.7 0 3-.8 3-2s-1.3-1.7-3-2-3-.8-3-2 1.3-2 3-2c1.4 0 2.5.5 3 1.5M12 6.5V8M12 16v1.5"/></svg></span>
-      <span class="nomad-text"><strong data-ru="Налоги" data-en="Taxes" data-zh="税务">Налоги</strong><br/><span data-ru="Зависят от статуса и дохода. Для фрилансеров есть отдельный разбор" data-en="Depend on your status and income. There is a separate breakdown for freelancers" data-zh="取决于身份和收入。自由职业者另有专门说明">Зависят от статуса и дохода. Для фрилансеров есть отдельный разбор</span></span>
-    </div>
-    <div class="nomad-benefit">
-      <span class="nomad-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19l6-10 4 6 2.5-3.5L21 19z"/></svg></span>
-      <span class="nomad-text"><strong data-ru="Природа рядом" data-en="Nature Nearby" data-zh="近在咫尺的自然">Природа рядом</strong><br/><span data-ru="Иссык-Куль и Ала-Арча — недалеко от Бишкека" data-en="Issyk-Kul and Ala-Archa are not far from Bishkek" data-zh="伊塞克湖和阿拉-阿尔恰距比什凯克不远">Иссык-Куль и Ала-Арча — недалеко от Бишкека</span></span>
-    </div>
-  </div>
-</section>
 
 <section class="section" id="catalog">
   <div class="catalog-intro fade-up">
@@ -659,7 +627,7 @@
   }
 </script>
 <!-- AI Widget + Language system -->
-<script src="/xpat4.js?v=202611192"></script>
+<script src="/xpat4.js?v=202611201"></script>
 
 <script>
   /* ── Mobile burger menu ── */

@@ -16,3 +16,63 @@ a, button { -webkit-tap-highlight-color: transparent; }
 }
 .stale-note { border-left: 3px solid #b8892b; background: #fbf4e3; color: #5b4514; font-size: 14px; line-height: 1.65; font-weight: 300; padding: 14px 18px; margin: 0 0 32px; }
 .stale-note a { color: #2d5a3d; text-underline-offset: 3px; }
+
+/* ---- Readability layer: WCAG AA contrast and a 12px type floor ---- */
+:root {
+  --ink-60: rgba(26, 24, 20, 0.7);   /* secondary text: about 6.4:1 on the page background */
+  --ink-30: rgba(26, 24, 20, 0.6);   /* tertiary text: 4.5:1, was 1.9:1 */
+}
+
+/* ---- Readability layer: WCAG AA contrast and a 12px type floor ---- */
+:root {
+  --ink-60: rgba(26, 24, 20, 0.7);   /* secondary text, about 6.4:1 on the page background */
+  --ink-30: rgba(26, 24, 20, 0.6);   /* tertiary text, 4.5:1 (was 1.9:1) */
+}
+.steps-title,
+.eyebrow,
+.city-label,
+.cell-currency,
+.verified-badge,
+.s-role,
+.online-badge,
+.phase-label,
+.tag-urgent,
+.tag-tip,
+.expert-role,
+.contact-label,
+label,
+.sources-title,
+.short-title,
+.next small,
+.lang-btn,
+.g-eyebrow,
+.g-badge,
+.hero-eyebrow,
+.card-num,
+.consultant-role,
+.nomad-tag,
+.home-news-eyebrow,
+.hn-meta,
+.hn-badge,
+.section-eyebrow,
+.author-meta,
+.form-section-label,
+label .opt,
+.topic-num,
+.price-label,
+.section-label,
+.en-badge,
+.news-meta,
+.news-source,
+.badge,
+.event-month,
+.event-cat,
+.event-free,
+.event-paid,
+.suggest-eyebrow,
+.suggest-label,
+.char-counter,
+#xpat-subtitle,
+#xpat-powered {
+  font-size: 12px;
+}
