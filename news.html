@@ -155,7 +155,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=202611204">
+  <link rel="stylesheet" href="/site.css?v=202611211">
 </head>
 <body>
 <a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Перейти к содержанию</a>
@@ -318,7 +318,7 @@
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=202611204"></script>
+<script src="/xpat4.js?v=202611211"></script>
 <script>
 // ── TABS ──
 function showTab(tab) {
@@ -400,7 +400,7 @@ async function renderOwnNews(){
     var st=STATUS_LABEL[n.status];
     var badge=st?'<div><span class="badge badge-'+esc(n.status)+'">'+esc(st[lang])+'</span></div>':'';
     var src=n.source_url?'<a class="news-read" href="'+esc(n.source_url)+'" target="_blank" rel="noopener">'+(lang==='ru'?'Источник: ':'Source: ')+esc(n.source_name||'')+'</a>':'';
-    return '<article class="news-item'+(i===0&&newsFilter==='all'?' latest':'')+'">'+
+    return '<article id="n-'+esc(n.id)+'" class="news-item'+(i===0&&newsFilter==='all'?' latest':'')+'">'+
       '<div class="news-meta"><div class="news-source own-cat">'+esc(catLabel(n.category,lang))+'</div>'+esc(fmtDateLong(n.date,lang))+'</div>'+
       '<div>'+badge+'<h2 class="news-title-plain">'+esc(title)+'</h2><div class="own-body">'+mdLinks(body)+'</div>'+src+'</div>'+
     '</article>';
@@ -415,7 +415,22 @@ async function renderOwnNews(){
       abox.innerHTML=old.map(card).join('');
     } else { arch.style.display='none'; }
   }
+  focusNewsHash();
 }
+// Open a specific item from a link like /news#n-17 (used by site search)
+var newsHashDone=false;
+function focusNewsHash(){
+  if(newsHashDone) return;
+  var m=(location.hash||'').match(/^#n-(\d+)$/); if(!m) return;
+  var el=document.getElementById('n-'+m[1]); if(!el) return;
+  newsHashDone=true;
+  var det=el.closest('details'); if(det) det.open=true;
+  el.style.transition='background-color 1.2s'; el.style.backgroundColor='#f5f0e8';
+  var go=function(){ var e=document.getElementById('n-'+m[1]); if(e) e.scrollIntoView({block:'start'}); };
+  setTimeout(go,80); setTimeout(go,700);
+  setTimeout(function(){ el.style.backgroundColor=''; },1800);
+}
+window.addEventListener('hashchange',function(){ newsHashDone=false; focusNewsHash(); });
 async function renderArticles(){
   var box=document.getElementById('articles-list'); if(!box) return;
   var lang=XPAT4.currentLang==='ru'?'ru':'en';

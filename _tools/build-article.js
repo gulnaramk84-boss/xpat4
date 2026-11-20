@@ -171,3 +171,5 @@ if (!llms.includes(`https://xpat4.org/${slug})`)) {
 console.log(`Built ${slug}.html, updated articles.json, sitemap.xml, llms.txt`);
 
 if (art.guide) require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'build-guides.js')], { stdio: 'inherit' });
+
+require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'build-search.js')], { stdio: 'inherit' });

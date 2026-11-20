@@ -779,6 +779,193 @@ document.addEventListener('xpat4-lang-change', XPAT4.renderProjects);
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", sync); else sync();
 })();
 
+/* ── SITE SEARCH (Ctrl+K) ── */
+XPAT4.SEARCH_I18N = {
+  ru: { btn: 'Поиск', ph: 'Найти: регистрация, просрочка, ВНЖ, налоги…', hint: 'Enter — открыть · ↑↓ — выбрать · Esc — закрыть', empty: 'Ничего не нашлось.', ask: 'Спросите Гульнару →', try: 'Часто ищут', loading: 'Загружаем…', types: { guide: 'Гайд', article: 'Статья', news: 'Новость', page: 'Раздел' }, sugg: ['регистрация', 'просрочка', 'разрешение на работу', 'налоги', 'ВНЖ', 'цифровой кочевник'] },
+  en: { btn: 'Search', ph: 'Search: registration, overstay, residence permit, taxes…', hint: 'Enter to open · ↑↓ to move · Esc to close', empty: 'Nothing found.', ask: 'Ask Gulnara →', try: 'Popular', loading: 'Loading…', types: { guide: 'Guide', article: 'Article', news: 'News', page: 'Section' }, sugg: ['registration', 'overstay', 'work permit', 'taxes', 'residence permit', 'digital nomad'] },
+  zh: { btn: '搜索', ph: '搜索：登记、超期、居留许可、税…', hint: 'Enter 打开 · ↑↓ 选择 · Esc 关闭', empty: '没有找到结果。', ask: '向古尔纳拉提问 →', try: '热门搜索', loading: '加载中…', types: { guide: '指南', article: '文章', news: '新闻', page: '栏目' }, sugg: ['registration', 'overstay', 'work permit', 'taxes', 'ВНЖ', 'digital nomad'] }
+};
+(function () {
+  let index = null, loading = null, open = false, sel = 0, results = [];
+  const L = () => XPAT4.SEARCH_I18N[XPAT4.currentLang] || XPAT4.SEARCH_I18N.ru;
+  const norm = (s) => (s || '').toLowerCase().replace(/ё/g, 'е').replace(/[«»"“”„()\[\],.;:!?/\\]/g, ' ');
+  const esc = (s) => String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  // crude Russian/English stemming: drop typical endings so "регистрацию" finds "регистрация"
+  const stem = (w) => {
+    if (/[а-я]/.test(w)) { if (w.length > 6) return w.slice(0, w.length - 2); if (w.length > 4) return w.slice(0, w.length - 1); return w; }
+    if (w.length > 5) return w.replace(/(ing|ed|es|s)$/, '');
+    return w;
+  };
+  const tokens = (q) => norm(q).split(/\s+/).filter((w) => w.length >= 2).map(stem);
+
+  function load() {
+    if (index) return Promise.resolve(index);
+    if (!loading) {
+      loading = fetch('/search-index.json?v=' + new Date().toISOString().slice(0, 10)).then((r) => r.json()).then((d) => {
+        index = d.map((x) => Object.assign(x, { _t: norm(x.t + ' ' + (x.te || '')), _h: norm(x.h), _d: norm(x.d), _b: norm(x.b) }));
+        return index;
+      });
+    }
+    return loading;
+  }
+
+  function search(q) {
+    const ts = tokens(q);
+    if (!ts.length || !index) return [];
+    const now = Date.now();
+    const scored = [];
+    for (const x of index) {
+      let score = 0, hit = 0;
+      for (const t of ts) {
+        let s = 0;
+        if (x._t.includes(t)) s += 10;
+        if (x._h.includes(t)) s += 4;
+        if (x._d.includes(t)) s += 3;
+        if (x._b.includes(t)) s += 1 + Math.min(3, (x._b.split(t).length - 1) * 0.3);
+        if (s) hit++;
+        score += s;
+      }
+      if (!hit) continue;
+      if (hit < ts.length) score *= 0.35;           // prefer pages that match every word
+      if (x.k === 'guide') score += 4;
+      else if (x.k === 'page') score += 1;
+      if (x.k === 'news' && x.dt) { const days = (now - Date.parse(x.dt)) / 864e5; score += days < 30 ? 2 : days < 90 ? 1 : 0; }
+      scored.push({ x, score });
+    }
+    return scored.sort((a, b) => b.score - a.score).slice(0, 12).map((s) => s.x);
+  }
+
+  function snippet(x, q) {
+    const ts = tokens(q);
+    const text = x.b || x.d || '';
+    const low = norm(text);
+    let at = -1;
+    for (const t of ts) { const i = low.indexOf(t); if (i >= 0 && (at < 0 || i < at)) at = i; }
+    let s = at < 0 ? text.slice(0, 150) : (at > 60 ? '…' : '') + text.slice(Math.max(0, at - 60), at + 110);
+    s = esc(s) + (text.length > 170 ? '…' : '');
+    for (const t of ts) {
+      if (t.length < 3) continue;
+      const re = new RegExp('(' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '[а-яёa-z]*)', 'gi');
+      s = s.replace(re, '<mark>$1</mark>');
+    }
+    return s;
+  }
+
+  function css() {
+    if (document.getElementById('xpat4-search-css')) return;
+    const st = document.createElement('style');
+    st.id = 'xpat4-search-css';
+    st.textContent = [
+      '.xs-btn{display:inline-flex;align-items:center;gap:8px;font:400 13px "DM Sans",sans-serif;color:rgba(26,24,20,.7);background:rgba(26,24,20,.05);border:1px solid rgba(26,24,20,.1);border-radius:100px;padding:7px 12px 7px 11px;cursor:pointer;transition:border-color .2s,color .2s;white-space:nowrap}',
+      '.xs-btn:hover{border-color:#2d5a3d;color:#1a1814}',
+      '.xs-btn kbd{font:500 11px "DM Sans",sans-serif;color:rgba(26,24,20,.55);border:1px solid rgba(26,24,20,.15);border-radius:4px;padding:1px 5px;background:#faf8f4}',
+      '@media(max-width:900px){.xs-btn .xs-label,.xs-btn kbd{display:none}.xs-btn{padding:8px;border-radius:50%}}',
+      '.xs-ov{position:fixed;inset:0;z-index:100000;background:rgba(26,24,20,.42);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:none;align-items:flex-start;justify-content:center;padding:10vh 16px 16px}',
+      '.xs-ov.open{display:flex}',
+      '.xs-box{width:100%;max-width:640px;background:#faf8f4;border:1px solid rgba(26,24,20,.12);box-shadow:0 30px 80px -30px rgba(26,24,20,.55);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;max-height:76vh}',
+      '.xs-top{display:flex;align-items:center;gap:12px;padding:16px 18px;border-bottom:1px solid rgba(26,24,20,.1)}',
+      '.xs-top svg{flex-shrink:0;color:#2d5a3d}',
+      '.xs-in{flex:1;border:0;outline:0;background:transparent;font:400 17px "DM Sans",sans-serif;color:#1a1814}',
+      '.xs-close{border:0;background:rgba(26,24,20,.06);color:rgba(26,24,20,.7);border-radius:6px;font:500 12px "DM Sans",sans-serif;padding:5px 8px;cursor:pointer}',
+      '.xs-list{overflow-y:auto;padding:8px}',
+      '.xs-item{display:block;padding:12px 14px;border-radius:8px;text-decoration:none;color:#1a1814}',
+      '.xs-item.sel,.xs-item:hover{background:#f0ebe0}',
+      '.xs-meta{display:flex;gap:8px;align-items:center;font:500 11px "DM Sans",sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#2d5a3d;margin-bottom:4px}',
+      '.xs-meta span+span{color:rgba(26,24,20,.55);letter-spacing:0;text-transform:none;font-weight:400}',
+      '.xs-title{font:400 19px/1.3 "Cormorant Garamond",serif}',
+      '.xs-snip{font:300 13px/1.55 "DM Sans",sans-serif;color:rgba(26,24,20,.7);margin-top:3px}',
+      '.xs-snip mark{background:#e8f0ea;color:#1a1814;padding:0 2px;border-radius:2px}',
+      '.xs-empty{padding:22px 16px;font:400 14px "DM Sans",sans-serif;color:rgba(26,24,20,.7)}',
+      '.xs-empty a{color:#2d5a3d}',
+      '.xs-sugg{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}',
+      '.xs-sugg button{font:400 13px "DM Sans",sans-serif;border:1px solid rgba(26,24,20,.15);background:#fff;border-radius:100px;padding:6px 12px;cursor:pointer;color:#1a1814}',
+      '.xs-sugg button:hover{border-color:#2d5a3d}',
+      '.xs-foot{padding:10px 18px;border-top:1px solid rgba(26,24,20,.1);font:400 12px "DM Sans",sans-serif;color:rgba(26,24,20,.6)}',
+      '@media(max-width:600px){.xs-ov{padding:0}.xs-box{max-width:none;max-height:100vh;height:100%;border-radius:0}.xs-foot{display:none}}'
+    ].join('\n');
+    document.head.appendChild(st);
+  }
+
+  const ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>';
+  let ov, input, list, foot;
+
+  function build() {
+    css();
+    ov = document.createElement('div');
+    ov.className = 'xs-ov';
+    ov.setAttribute('role', 'dialog');
+    ov.setAttribute('aria-modal', 'true');
+    ov.innerHTML = '<div class="xs-box"><div class="xs-top">' + ICON + '<input class="xs-in" type="search" autocomplete="off" spellcheck="false" aria-label="Search"><button class="xs-close" type="button">Esc</button></div><div class="xs-list" role="listbox"></div><div class="xs-foot"></div></div>';
+    document.body.appendChild(ov);
+    input = ov.querySelector('.xs-in'); list = ov.querySelector('.xs-list'); foot = ov.querySelector('.xs-foot');
+    ov.addEventListener('click', (e) => { if (e.target === ov) close(); });
+    ov.querySelector('.xs-close').addEventListener('click', close);
+    input.addEventListener('input', render);
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') { e.preventDefault(); move(1); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
+      else if (e.key === 'Enter') { const a = list.querySelectorAll('.xs-item')[sel]; if (a) { e.preventDefault(); location.href = a.getAttribute('href'); close(); } }
+    });
+  }
+
+  function move(d) {
+    const items = list.querySelectorAll('.xs-item');
+    if (!items.length) return;
+    sel = (sel + d + items.length) % items.length;
+    items.forEach((a, i) => a.classList.toggle('sel', i === sel));
+    items[sel].scrollIntoView({ block: 'nearest' });
+  }
+
+  function render() {
+    const t = L(); const q = input.value.trim();
+    input.placeholder = t.ph; foot.textContent = t.hint;
+    if (!index) { list.innerHTML = '<div class="xs-empty">' + t.loading + '</div>'; return; }
+    if (!q) {
+      list.innerHTML = '<div class="xs-empty">' + t.try + '<div class="xs-sugg">' + t.sugg.map((s) => '<button type="button">' + esc(s) + '</button>').join('') + '</div></div>';
+      list.querySelectorAll('.xs-sugg button').forEach((b) => b.addEventListener('click', () => { input.value = b.textContent; render(); input.focus(); }));
+      return;
+    }
+    results = search(q); sel = 0;
+    if (!results.length) { list.innerHTML = '<div class="xs-empty">' + t.empty + ' <a href="/contact#brief">' + t.ask + '</a></div>'; return; }
+    list.innerHTML = results.map((x, i) => {
+      const date = x.dt ? new Date(x.dt).toLocaleDateString(XPAT4.currentLang === 'en' ? 'en-GB' : 'ru-RU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }) : '';
+      const title = (XPAT4.currentLang === 'en' && x.te) ? x.te : x.t;
+      return '<a class="xs-item' + (i === 0 ? ' sel' : '') + '" role="option" href="' + esc(x.u) + '"><div class="xs-meta"><span>' + esc(t.types[x.k] || '') + '</span>' + (date ? '<span>' + esc(date) + '</span>' : '') + '</div><div class="xs-title">' + esc(title) + '</div><div class="xs-snip">' + snippet(x, q) + '</div></a>';
+    }).join('');
+    list.querySelectorAll('.xs-item').forEach((a) => a.addEventListener('click', close));
+  }
+
+  function openSearch() {
+    if (!ov) build();
+    open = true; ov.classList.add('open'); document.documentElement.style.overflow = 'hidden';
+    input.value = ''; render(); setTimeout(() => input.focus(), 10);
+    load().then(render).catch(() => { list.innerHTML = '<div class="xs-empty">—</div>'; });
+  }
+  function close() { if (!ov) return; open = false; ov.classList.remove('open'); document.documentElement.style.overflow = ''; }
+  XPAT4.openSearch = openSearch;
+
+  function addButton() {
+    const right = document.querySelector('nav .nav-right');
+    if (!right || right.querySelector('.xs-btn')) return;
+    css();
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'xs-btn';
+    b.setAttribute('aria-label', 'Поиск по сайту (Ctrl+K)');
+    b.innerHTML = ICON + '<span class="xs-label">' + L().btn + '</span><kbd>Ctrl K</kbd>';
+    b.addEventListener('click', openSearch);
+    right.insertBefore(b, right.firstChild);
+    document.addEventListener('xpat4-lang-change', () => { const s = b.querySelector('.xs-label'); if (s) s.textContent = L().btn; if (open) render(); });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    const typing = /^(INPUT|TEXTAREA|SELECT)$/.test((e.target && e.target.tagName) || '') || (e.target && e.target.isContentEditable);
+    if ((e.ctrlKey || e.metaKey) && (e.key === 'k' || e.key === 'K' || e.key === 'л' || e.key === 'Л')) { e.preventDefault(); open ? close() : openSearch(); }
+    else if (e.key === '/' && !typing && !open) { e.preventDefault(); openSearch(); }
+    else if (e.key === 'Escape' && open) { close(); }
+  });
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', addButton); else addButton();
+})();
+
 /* ── AUTO-INIT on DOMContentLoaded ── */
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
