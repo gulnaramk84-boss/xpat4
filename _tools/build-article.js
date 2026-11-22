@@ -50,6 +50,19 @@ const body = art.blocks.map((b) => {
   if (b.h2) { hN++; heads.push({ id: 'h-' + hN, t: b.h2 }); return '    ' + el('h2', b.h2).replace('<h2 ', '<h2 id="h-' + hN + '" '); }
   if (b.p) return '    ' + el('p', b.p);
   if (b.note) return '    ' + el('div', b.note, 'note');
+  if (b.table) {
+    // {table: {head: [{ru,en,zh}], rows: [[{ru,en,zh}, ...]]}}; the first cell of a row is its header
+    const head = b.table.head.map((h) => `<th scope="col" ${attrs(h)}>${toHtml(h.ru)}</th>`).join("");
+    const rows = b.table.rows.map((r) => "        <tr>" + r.map((c, i) => i === 0 ? `<th scope="row" ${attrs(c)}>${toHtml(c.ru)}</th>` : `<td><span class="cell-label" aria-hidden="true" ${attrs(b.table.head[i])}>${toHtml(b.table.head[i].ru)}</span><span ${attrs(c)}>${toHtml(c.ru)}</span></td>`).join("") + "</tr>").join("\n");
+    return `    <div class="table-wrap" tabindex="0">
+      <table class="data">
+        <thead><tr>${head}</tr></thead>
+        <tbody>
+${rows}
+        </tbody>
+      </table>
+    </div>`;
+  }
   if (b.ul || b.ol) {
     const tag = b.ul ? 'ul' : 'ol';
     return `    <${tag}>\n${(b.ul || b.ol).map((i) => '      ' + el('li', i)).join('\n')}\n    </${tag}>`;

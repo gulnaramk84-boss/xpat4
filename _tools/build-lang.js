@@ -17,7 +17,8 @@ const SITE = 'https://xpat4.org';
 const SKIP = new Set(['admin.html']);
 // Chinese is published only where the whole page is translated.
 const ZH_PAGES = ['index', 'contact', 'kyrgyzstan-chinese-investors', 'relocate-kyrgyzstan-from-china',
-  'open-osoo-foreigner-kyrgyzstan-2026', 'work-permit-foreigners-kyrgyzstan-2026', 'register-after-renting-bishkek-2026'];
+  'open-osoo-foreigner-kyrgyzstan-2026', 'work-permit-foreigners-kyrgyzstan-2026', 'register-after-renting-bishkek-2026',
+  'visa-free-and-registration-days-by-country-2026'];
 const LOCALE = { ru: 'ru_RU', en: 'en_US', zh: 'zh_CN' };
 const SUFFIX = ' | xpat4.org';
 const HOME_TITLE = {

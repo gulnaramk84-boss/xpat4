@@ -1,7 +1,7 @@
 {
   "slug": "stay-longer-than-30-days-kyrgyzstan",
   "date": "2026-11-19",
-  "checked": "2026-11-19",
+  "checked": "2026-11-22",
   "category": "visa",
   "title": {
     "ru": "Приехал по безвизу и хочу остаться дольше: что делать с регистрацией",
@@ -47,6 +47,12 @@
       "h2": {
         "ru": "Сколько дней можно без регистрации",
         "en": "How many days without registration"
+      }
+    },
+    {
+      "note": {
+        "ru": "Все сроки по странам, безвизовые и без регистрации, собраны в [таблице](/visa-free-and-registration-days-by-country-2026).",
+        "en": "All periods by country, visa-free and registration-free, are in one [table](/visa-free-and-registration-days-by-country-2026)."
       }
     },
     {
@@ -160,6 +166,11 @@
       "date": "2026-11-19",
       "ru": "Первая публикация.",
       "en": "First published."
+    },
+    {
+      "date": "2026-11-22",
+      "ru": "Добавлена ссылка на таблицу сроков по странам.",
+      "en": "Added a link to the table of periods by country."
     }
   ]
 }

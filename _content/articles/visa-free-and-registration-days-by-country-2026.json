@@ -1,0 +1,406 @@
+{
+  "slug": "visa-free-and-registration-days-by-country-2026",
+  "date": "2026-11-22",
+  "checked": "2026-11-22",
+  "category": "visa",
+  "title": {
+    "ru": "Сколько дней можно быть в Кыргызстане без визы и без регистрации: таблица по странам",
+    "en": "How long you can stay in Kyrgyzstan without a visa or registration: table by country",
+    "zh": "在吉尔吉斯斯坦免签和免登记可以停留多少天：按国家列表"
+  },
+  "summary": {
+    "ru": "Безвизовые сроки и сроки без регистрации по гражданству, по постановлениям кабмина № 855 и № 190 и новому порядку регистрации. Где источники молчат, так и пишем.",
+    "en": "Visa-free periods and registration-free periods by citizenship, based on Cabinet resolutions No. 855 and No. 190 and the new registration procedure. Where the sources say nothing, we say so.",
+    "zh": "按国籍列出免签停留期限和免登记期限，依据内阁第855号、第190号决议和新的登记程序。来源中没有的信息，我们如实说明。"
+  },
+  "guide": {
+    "num": 11,
+    "group": "stay",
+    "status": "in_force",
+    "situation": {
+      "ru": "Я еду в Кыргызстан и хочу знать, сколько дней мне можно",
+      "en": "I am going to Kyrgyzstan and want to know how many days I can stay",
+      "zh": "我要去吉尔吉斯斯坦，想知道可以停留多少天"
+    },
+    "who": {
+      "ru": "Всем иностранцам, которые въезжают без визы или собираются.",
+      "en": "For all foreigners who enter or plan to enter without a visa.",
+      "zh": "适合免签入境或计划免签入境的所有外国人。"
+    },
+    "short": [
+      {
+        "ru": "Граждане 55 стран, в том числе США, ЕС, Великобритании, Японии и Кореи: без визы до 30 дней в каждые 60 дней.",
+        "en": "Citizens of 55 countries, including the US, EU, UK, Japan and Korea: up to 30 days in every 60 days without a visa.",
+        "zh": "55个国家的公民，包括美国、欧盟、英国、日本和韩国：每60天内免签最多30天。"
+      },
+      {
+        "ru": "Россия, Казахстан, Беларусь, Армения: до 90 дней в каждые 180 дней, регистрация после 30 дней.",
+        "en": "Russia, Kazakhstan, Belarus, Armenia: up to 90 days in every 180 days, registration after 30 days.",
+        "zh": "俄罗斯、哈萨克斯坦、白俄罗斯、亚美尼亚：每180天内最多90天，30天后需登记。"
+      },
+      {
+        "ru": "Узбекистан: 60 из 120 дней. Сербия, Турция, Украина, Монголия: 90 из 180. Страны Персидского залива: 180 из 360.",
+        "en": "Uzbekistan: 60 of 120 days. Serbia, Turkey, Ukraine, Mongolia: 90 of 180. Gulf states: 180 of 360.",
+        "zh": "乌兹别克斯坦：120天内60天。塞尔维亚、土耳其、乌克兰、蒙古：180天内90天。海湾国家：360天内180天。"
+      },
+      {
+        "ru": "Для граждан Китая безвиз есть только у организованных туристических групп: до 21 дня.",
+        "en": "For Chinese citizens visa-free entry exists only for organised tour groups: up to 21 days.",
+        "zh": "中国公民只有有组织的旅游团可以免签：最多21天。"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "p": {
+        "ru": "Безвизовый срок и срок без регистрации — разные вещи. Первый говорит, сколько дней вы можете быть в стране без визы. Второй — до какого дня нужно встать на учёт по адресу, где живёте. Подробно о регистрации — в [гайде для тех, кто снял жильё](/register-after-renting-bishkek-2026).",
+        "en": "A visa-free period and a registration-free period are different things. The first says how many days you can be in the country without a visa. The second says by which day you must register at the address where you live. More on registration in our [guide for people renting a home](/register-after-renting-bishkek-2026).",
+        "zh": "免签期限和免登记期限是两回事。前者说明您可以免签在境内停留多少天。后者说明您最迟在哪一天之前要在居住地址办理登记。登记详情见[租房者指南](/register-after-renting-bishkek-2026)。"
+      }
+    },
+    {
+      "h2": {
+        "ru": "Таблица по гражданству",
+        "en": "Table by citizenship",
+        "zh": "按国籍列表"
+      }
+    },
+    {
+      "table": {
+        "head": [
+          {
+            "ru": "Гражданство",
+            "en": "Citizenship",
+            "zh": "国籍"
+          },
+          {
+            "ru": "Без визы",
+            "en": "Without a visa",
+            "zh": "免签停留"
+          },
+          {
+            "ru": "Без регистрации",
+            "en": "Without registration",
+            "zh": "免登记期限"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "ru": "Россия, Казахстан, Беларусь, Армения (ЕАЭС)",
+              "en": "Russia, Kazakhstan, Belarus, Armenia (EAEU)",
+              "zh": "俄罗斯、哈萨克斯坦、白俄罗斯、亚美尼亚（欧亚经济联盟）"
+            },
+            {
+              "ru": "До 90 дней в каждые 180 дней",
+              "en": "Up to 90 days in every 180 days",
+              "zh": "每180天内最多90天"
+            },
+            {
+              "ru": "30 дней (for.kg). Тем, кто работает по договору, можно оставаться на срок договора ([гайд для граждан ЕАЭС](/eaeu-citizens-kyrgyzstan))",
+              "en": "30 days (for.kg). If you work under a contract, you may stay for as long as the contract runs ([EAEU guide](/eaeu-citizens-kyrgyzstan))",
+              "zh": "30天（for.kg）。依据合同工作的，可停留至合同期满（[欧亚经济联盟公民指南](/eaeu-citizens-kyrgyzstan)）"
+            }
+          ],
+          [
+            {
+              "ru": "Австралия, Австрия, Бельгия, Великобритания, Германия, Греция, Дания, Испания, Италия, Канада, Нидерланды, Новая Зеландия, Норвегия, Польша, Португалия, Республика Корея, Сингапур, США, Финляндия, Франция, Швейцария, Швеция, Япония",
+              "en": "Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Greece, Italy, Japan, Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Korea, Spain, Sweden, Switzerland, United Kingdom, United States",
+              "zh": "澳大利亚、奥地利、比利时、英国、德国、希腊、丹麦、西班牙、意大利、加拿大、荷兰、新西兰、挪威、波兰、葡萄牙、韩国、新加坡、美国、芬兰、法国、瑞士、瑞典、日本"
+            },
+            {
+              "ru": "До 30 дней в каждые 60 дней",
+              "en": "Up to 30 days in every 60 days",
+              "zh": "每60天内最多30天"
+            },
+            {
+              "ru": "30 дней",
+              "en": "30 days",
+              "zh": "30天"
+            }
+          ],
+          [
+            {
+              "ru": "Албания, Андорра, Аргентина, Болгария, Босния и Герцеговина, Бразилия, Бруней, Ватикан, Венгрия, Вьетнам, Израиль, Ирландия, Исландия, Кипр, Латвия, Литва, Лихтенштейн, Люксембург, Мальта, Мексика, Монако, Румыния, Сан-Марино, Северная Македония, Словакия, Словения, Таиланд, Хорватия, Черногория, Чехия, Чили, Эстония",
+              "en": "Albania, Andorra, Argentina, Bosnia and Herzegovina, Brazil, Brunei, Bulgaria, Chile, Croatia, Cyprus, Czech Republic, Estonia, Hungary, Iceland, Ireland, Israel, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Mexico, Monaco, Montenegro, North Macedonia, Romania, San Marino, Slovakia, Slovenia, Thailand, Vatican City, Vietnam",
+              "zh": "阿尔巴尼亚、安道尔、阿根廷、保加利亚、波斯尼亚和黑塞哥维那、巴西、文莱、梵蒂冈、匈牙利、越南、以色列、冰岛、爱尔兰、塞浦路斯、拉脱维亚、立陶宛、列支敦士登、卢森堡、马耳他、墨西哥、摩纳哥、罗马尼亚、圣马力诺、北马其顿、斯洛伐克、斯洛文尼亚、泰国、克罗地亚、黑山、捷克、智利、爱沙尼亚"
+            },
+            {
+              "ru": "До 30 дней в каждые 60 дней",
+              "en": "Up to 30 days in every 60 days",
+              "zh": "每60天内最多30天"
+            },
+            {
+              "ru": "Этих стран нет в публикациях о новом порядке регистрации. Уточните в «Кызмат»",
+              "en": "These countries are not in the reports on the new registration procedure. Ask Kyzmat",
+              "zh": "有关登记新程序的报道中没有这些国家。请向Kyzmat确认"
+            }
+          ],
+          [
+            {
+              "ru": "Узбекистан",
+              "en": "Uzbekistan",
+              "zh": "乌兹别克斯坦"
+            },
+            {
+              "ru": "До 60 дней в каждые 120 дней",
+              "en": "Up to 60 days in every 120 days",
+              "zh": "每120天内最多60天"
+            },
+            {
+              "ru": "В проверенных источниках не нашли",
+              "en": "Not found in the sources we checked",
+              "zh": "我们查阅的来源中没有找到"
+            }
+          ],
+          [
+            {
+              "ru": "Сербия, Турция, Украина, Монголия",
+              "en": "Serbia, Turkey, Ukraine, Mongolia",
+              "zh": "塞尔维亚、土耳其、乌克兰、蒙古"
+            },
+            {
+              "ru": "До 90 дней в каждые 180 дней",
+              "en": "Up to 90 days in every 180 days",
+              "zh": "每180天内最多90天"
+            },
+            {
+              "ru": "В проверенных источниках не нашли",
+              "en": "Not found in the sources we checked",
+              "zh": "我们查阅的来源中没有找到"
+            }
+          ],
+          [
+            {
+              "ru": "Саудовская Аравия, ОАЭ, Катар, Кувейт, Оман, Бахрейн",
+              "en": "Saudi Arabia, UAE, Qatar, Kuwait, Oman, Bahrain",
+              "zh": "沙特阿拉伯、阿联酋、卡塔尔、科威特、阿曼、巴林"
+            },
+            {
+              "ru": "До 180 дней в каждые 360 дней",
+              "en": "Up to 180 days in every 360 days",
+              "zh": "每360天内最多180天"
+            },
+            {
+              "ru": "В проверенных источниках не нашли",
+              "en": "Not found in the sources we checked",
+              "zh": "我们查阅的来源中没有找到"
+            }
+          ],
+          [
+            {
+              "ru": "Китай: организованные туристические группы",
+              "en": "China: organised tour groups",
+              "zh": "中国：有组织的旅游团"
+            },
+            {
+              "ru": "До 21 дня. Снова по этому порядку — не раньше чем через 21 день после выезда. Продлить визой нельзя, кроме форс-мажора",
+              "en": "Up to 21 days. Again under this scheme only 21 days after leaving. Cannot be extended with a visa except in force majeure",
+              "zh": "最多21天。离境21天后才能再次按此方式入境。除不可抗力外，不能通过签证延长"
+            },
+            {
+              "ru": "В проверенных источниках не нашли",
+              "en": "Not found in the sources we checked",
+              "zh": "我们查阅的来源中没有找到"
+            }
+          ],
+          [
+            {
+              "ru": "Жители Гонконга и Макао",
+              "en": "Residents of Hong Kong and Macau",
+              "zh": "香港和澳门居民"
+            },
+            {
+              "ru": "До 30 дней, по тому же порядку, что и для групп из Китая. Продлить визой нельзя, кроме форс-мажора",
+              "en": "Up to 30 days, under the same scheme as Chinese tour groups. Cannot be extended with a visa except in force majeure",
+              "zh": "最多30天，与中国旅游团的方式相同。除不可抗力外，不能通过签证延长"
+            },
+            {
+              "ru": "В проверенных источниках не нашли",
+              "en": "Not found in the sources we checked",
+              "zh": "我们查阅的来源中没有找到"
+            }
+          ],
+          [
+            {
+              "ru": "Владельцы паспорта ООН (United Nations Laissez-Passer)",
+              "en": "Holders of a UN passport (United Nations Laissez-Passer)",
+              "zh": "联合国通行证持有人"
+            },
+            {
+              "ru": "До 60 дней",
+              "en": "Up to 60 days",
+              "zh": "最多60天"
+            },
+            {
+              "ru": "В проверенных источниках не нашли",
+              "en": "Not found in the sources we checked",
+              "zh": "我们查阅的来源中没有找到"
+            }
+          ],
+          [
+            {
+              "ru": "Граждане остальных стран, в том числе Китая с обычным паспортом вне туристической группы",
+              "en": "Citizens of all other countries, including China on an ordinary passport outside a tour group",
+              "zh": "其他国家的公民，包括持普通护照、不随旅游团的中国公民"
+            },
+            {
+              "ru": "Безвиза в постановлении нет: нужна виза ([электронная виза](/evisa-kyrgyzstan)), если договор вашей страны с Кыргызстаном не говорит иное",
+              "en": "The resolution gives no visa-free stay: you need a visa ([e-Visa](/evisa-kyrgyzstan)) unless a treaty between your country and Kyrgyzstan says otherwise",
+              "zh": "决议中没有免签：需要签证（[电子签证](/evisa-kyrgyzstan)），除非您的国家与吉尔吉斯斯坦的条约另有规定"
+            },
+            {
+              "ru": "В проверенных источниках не нашли",
+              "en": "Not found in the sources we checked",
+              "zh": "我们查阅的来源中没有找到"
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "note": {
+        "ru": "Правила для дипломатических и служебных паспортов, двойного гражданства и для тех, кто въезжает работать или учиться, бывают другими. Эта таблица — про обычный паспорт и короткий въезд без визы.",
+        "en": "Rules can differ for diplomatic and service passports, dual citizens and people entering to work or study. This table is about an ordinary passport and a short visa-free entry.",
+        "zh": "外交护照和公务护照持有人、双重国籍者以及入境工作或学习的人，规则可能不同。本表针对普通护照和短期免签入境。"
+      }
+    },
+    {
+      "h2": {
+        "ru": "Как считать дни",
+        "en": "How to count the days",
+        "zh": "如何计算天数"
+      }
+    },
+    {
+      "p": {
+        "ru": "Срок считается суммарно. Правило «30 дней в каждые 60» значит: в любые 60 дней с момента въезда вы можете провести в стране не больше 30 дней в сумме. Поэтому выехать на день и вернуться, чтобы начать отсчёт заново, не получится.",
+        "en": "The period is counted in total. The rule \"30 days in every 60\" means that in any 60 days from entry you can spend no more than 30 days in the country altogether. So leaving for a day and coming back does not restart the count.",
+        "zh": "期限是累计计算的。\"每60天内30天\"的规则是指：自入境起的任意60天内，您在境内累计停留不能超过30天。因此出境一天再回来，并不能重新计算。"
+      }
+    },
+    {
+      "p": {
+        "ru": "Если нужно остаться дольше, нужна виза, вид на жительство или другой документ. Если срок уже вышел, читайте [гайд про просрочку](/overstay-kyrgyzstan-2026): с сентября 2026 года тому, кто просрочил, при следующем въезде откажут в безвизе.",
+        "en": "To stay longer you need a visa, a residence permit or another document. If your time has already run out, read the [overstay guide](/overstay-kyrgyzstan-2026): since September 2026 anyone who overstayed is refused visa-free entry the next time.",
+        "zh": "如需停留更久，需要签证、居留许可或其他文件。如果期限已过，请阅读[超期停留指南](/overstay-kyrgyzstan-2026)：自2026年9月起，超期者下次入境时将不能免签。"
+      }
+    },
+    {
+      "h2": {
+        "ru": "Что изменилось в 2026 году",
+        "en": "What changed in 2026",
+        "zh": "2026年的变化"
+      }
+    },
+    {
+      "ul": [
+        {
+          "ru": "Постановление кабмина № 855 от 31 декабря 2025 года установило сроки из таблицы: 30 из 60 дней для 55 стран, отдельные сроки для ЕАЭС, Узбекистана, Сербии, Турции, Украины, Монголии и стран Персидского залива, 60 дней для паспорта ООН.",
+          "en": "Cabinet resolution No. 855 of 31 December 2025 set the periods in the table: 30 of 60 days for 55 countries, separate periods for the EAEU, Uzbekistan, Serbia, Turkey, Ukraine, Mongolia and the Gulf states, 60 days for a UN passport.",
+          "zh": "内阁2025年12月31日第855号决议规定了表中的期限：55个国家为60天内30天，欧亚经济联盟、乌兹别克斯坦、塞尔维亚、土耳其、乌克兰、蒙古和海湾国家另有期限，联合国通行证为60天。"
+        },
+        {
+          "ru": "Постановление № 190 от 24 марта 2026 года ввело безвиз до 21 дня для организованных туристических групп из Китая и до 30 дней для жителей Гонконга и Макао.",
+          "en": "Resolution No. 190 of 24 March 2026 introduced visa-free stays of up to 21 days for organised tour groups from China and up to 30 days for residents of Hong Kong and Macau.",
+          "zh": "2026年3月24日第190号决议规定：中国有组织的旅游团免签最多21天，香港和澳门居民最多30天。"
+        },
+        {
+          "ru": "С 23 сентября 2026 года действует новый порядок регистрации: для граждан 23 стран срок без регистрации — 30 дней.",
+          "en": "Since 23 September 2026 a new registration procedure applies: for citizens of 23 countries the registration-free period is 30 days.",
+          "zh": "自2026年9月23日起实行新的登记程序：23个国家的公民免登记期限为30天。"
+        }
+      ]
+    },
+    {
+      "h2": {
+        "ru": "Что может измениться",
+        "en": "What may change",
+        "zh": "可能的变化"
+      }
+    },
+    {
+      "p": {
+        "ru": "18 ноября 2026 года Госагентство по развитию туризма вынесло на обсуждение проект: безвиз ещё для 18 стран и срок 60 дней в каждые 120 вместо 30 из 60. Это пока проект, он не действует. Следим в [новостях](/news).",
+        "en": "On 18 November 2026 the State Tourism Development Agency put a draft up for discussion: visa-free entry for 18 more countries and 60 days in every 120 instead of 30 of 60. It is only a draft and not in force. We follow it in the [news](/news).",
+        "zh": "2026年11月18日，国家旅游发展署公布了一份草案征求意见：再给予18个国家免签，并把期限从60天内30天改为120天内60天。这只是草案，尚未生效。我们会在[新闻](/news)中跟进。"
+      }
+    },
+    {
+      "h2": {
+        "ru": "Чего мы не нашли",
+        "en": "What we did not find",
+        "zh": "我们没有找到的信息"
+      }
+    },
+    {
+      "ul": [
+        {
+          "ru": "Срок без регистрации для Узбекистана, Сербии, Турции, Украины, Монголии, стран Персидского залива и 32 стран из общего списка.",
+          "en": "The registration-free period for Uzbekistan, Serbia, Turkey, Ukraine, Mongolia, the Gulf states and 32 countries from the general list.",
+          "zh": "乌兹别克斯坦、塞尔维亚、土耳其、乌克兰、蒙古、海湾国家以及总名单中32个国家的免登记期限。"
+        },
+        {
+          "ru": "Сроки для стран СНГ, у которых свои соглашения с Кыргызстаном, например Таджикистана, Азербайджана, Молдовы.",
+          "en": "Periods for CIS countries with their own agreements with Kyrgyzstan, such as Tajikistan, Azerbaijan and Moldova.",
+          "zh": "与吉尔吉斯斯坦有单独协定的独联体国家（如塔吉克斯坦、阿塞拜疆、摩尔多瓦）的期限。"
+        },
+        {
+          "ru": "Какой должна быть туристическая группа из Китая (сколько человек, нужна ли программа тура): в публикациях 2026 года условий нет.",
+          "en": "What a tour group from China must look like (how many people, whether a tour programme is needed): the 2026 reports give no conditions.",
+          "zh": "中国旅游团需要满足什么条件（多少人、是否需要行程安排）：2026年的报道中没有说明。"
+        },
+        {
+          "ru": "Тексты постановлений № 855 и № 190 в базе Минюста: мы читали их в пересказе изданий. Списки стран у разных изданий совпадают.",
+          "en": "The texts of resolutions No. 855 and No. 190 in the Justice Ministry database: we read them as reported by the media. The country lists match across outlets.",
+          "zh": "司法部数据库中第855号和第190号决议的原文：我们读的是媒体的转述。不同媒体给出的国家名单一致。"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "Economist.kg: кабмин обновил сроки безвизового пребывания иностранцев (31.12.2025)",
+      "url": "https://economist.kg/vlast/2025/12/31/kabmin-obnovil-sroki-biezvizovogho-priebyvaniia-inostrantsiev-v-kr/",
+      "note": "полный список 55 стран и отдельные сроки"
+    },
+    {
+      "title": "Kaktus.media: изменён порядок безвизового пребывания для граждан 55 стран (31.12.2025)",
+      "url": "https://kaktus.media/doc/538103_v_kyrgyzstane_izmenen_poriadok_bezvizovogo_prebyvaniia_dlia_grajdan_55_stran.html",
+      "note": "сообщение МИД и список стран"
+    },
+    {
+      "title": "24.kg: без виз и дольше — изменены правила пребывания иностранцев (13.01.2026)",
+      "url": "https://24.kg/vlast/357624_bez_viz_idolshe_izmenenyi_pravila_prebyivaniya_inostrantsev_vkyirgyizstane/"
+    },
+    {
+      "title": "Economist.kg: изменены правила пребывания и легализации, постановление № 190 (28.03.2026)",
+      "url": "https://economist.kg/society/2026/03/28/kyrghyzstan-izmienil-pravila-priebyvaniia-i-lieghalizatsii-dlia-inostrannykh-ghrazhdan/"
+    },
+    {
+      "title": "Kaktus.media: изменён порядок пребывания иностранных граждан (29.03.2026)",
+      "url": "https://kaktus.media/doc/543322_v_kyrgyzstane_izmenen_poriadok_prebyvaniia_inostrannyh_grajdan.html"
+    },
+    {
+      "title": "Economist.kg: в Кыргызстане изменили порядок регистрации иностранных граждан (21.09.2026)",
+      "url": "https://economist.kg/pravo-znat/2026/09/21/v-kyrgyzstane-izmenili-poriadok-registratsii-inostrannykh-grazhdan-chto-nuzhno-znat/"
+    },
+    {
+      "title": "For.kg: регистрация иностранных граждан — сроки, документы, штрафы (23.09.2026)",
+      "url": "https://www.for.kg/news-929892-ru.html"
+    },
+    {
+      "title": "Economist.kg: Кыргызстан предлагает отменить визы для граждан ещё 18 стран (18.11.2026)",
+      "url": "https://economist.kg/society/2026/11/18/kyrgyzstan-bezviz-18-stran/",
+      "note": "проект"
+    }
+  ],
+  "changes": [
+    {
+      "date": "2026-11-22",
+      "ru": "Первая публикация.",
+      "en": "First published.",
+      "zh": "首次发布。"
+    }
+  ]
+}

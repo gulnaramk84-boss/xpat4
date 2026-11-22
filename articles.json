@@ -1,5 +1,55 @@
 [
   {
+    "slug": "visa-free-and-registration-days-by-country-2026",
+    "date": "2026-11-22",
+    "category": "visa",
+    "title_ru": "Сколько дней можно быть в Кыргызстане без визы и без регистрации: таблица по странам",
+    "title_en": "How long you can stay in Kyrgyzstan without a visa or registration: table by country",
+    "summary_ru": "Безвизовые сроки и сроки без регистрации по гражданству, по постановлениям кабмина № 855 и № 190 и новому порядку регистрации. Где источники молчат, так и пишем.",
+    "summary_en": "Visa-free periods and registration-free periods by citizenship, based on Cabinet resolutions No. 855 and No. 190 and the new registration procedure. Where the sources say nothing, we say so.",
+    "title_zh": "在吉尔吉斯斯坦免签和免登记可以停留多少天：按国家列表",
+    "summary_zh": "按国籍列出免签停留期限和免登记期限，依据内阁第855号、第190号决议和新的登记程序。来源中没有的信息，我们如实说明。",
+    "guide": {
+      "num": 11,
+      "group": "stay",
+      "status": "in_force",
+      "situation": {
+        "ru": "Я еду в Кыргызстан и хочу знать, сколько дней мне можно",
+        "en": "I am going to Kyrgyzstan and want to know how many days I can stay",
+        "zh": "我要去吉尔吉斯斯坦，想知道可以停留多少天"
+      },
+      "who": {
+        "ru": "Всем иностранцам, которые въезжают без визы или собираются.",
+        "en": "For all foreigners who enter or plan to enter without a visa.",
+        "zh": "适合免签入境或计划免签入境的所有外国人。"
+      },
+      "short": [
+        {
+          "ru": "Граждане 55 стран, в том числе США, ЕС, Великобритании, Японии и Кореи: без визы до 30 дней в каждые 60 дней.",
+          "en": "Citizens of 55 countries, including the US, EU, UK, Japan and Korea: up to 30 days in every 60 days without a visa.",
+          "zh": "55个国家的公民，包括美国、欧盟、英国、日本和韩国：每60天内免签最多30天。"
+        },
+        {
+          "ru": "Россия, Казахстан, Беларусь, Армения: до 90 дней в каждые 180 дней, регистрация после 30 дней.",
+          "en": "Russia, Kazakhstan, Belarus, Armenia: up to 90 days in every 180 days, registration after 30 days.",
+          "zh": "俄罗斯、哈萨克斯坦、白俄罗斯、亚美尼亚：每180天内最多90天，30天后需登记。"
+        },
+        {
+          "ru": "Узбекистан: 60 из 120 дней. Сербия, Турция, Украина, Монголия: 90 из 180. Страны Персидского залива: 180 из 360.",
+          "en": "Uzbekistan: 60 of 120 days. Serbia, Turkey, Ukraine, Mongolia: 90 of 180. Gulf states: 180 of 360.",
+          "zh": "乌兹别克斯坦：120天内60天。塞尔维亚、土耳其、乌克兰、蒙古：180天内90天。海湾国家：360天内180天。"
+        },
+        {
+          "ru": "Для граждан Китая безвиз есть только у организованных туристических групп: до 21 дня.",
+          "en": "For Chinese citizens visa-free entry exists only for organised tour groups: up to 21 days.",
+          "zh": "中国公民只有有组织的旅游团可以免签：最多21天。"
+        }
+      ]
+    },
+    "checked": "2026-11-22",
+    "sources": 8
+  },
+  {
     "slug": "digital-nomad-status-kyrgyzstan-2026",
     "date": "2026-11-19",
     "category": "work",
@@ -92,48 +142,6 @@
     "sources": 4
   },
   {
-    "slug": "stay-longer-than-30-days-kyrgyzstan",
-    "date": "2026-11-19",
-    "category": "visa",
-    "title_ru": "Приехал по безвизу и хочу остаться дольше: что делать с регистрацией",
-    "title_en": "Arrived visa-free and want to stay longer: what to do about registration",
-    "summary_ru": "Сколько дней можно жить без регистрации, когда она перестаёт действовать и что грозит за нарушение. По порядку, который действует с 23 сентября 2026 года.",
-    "summary_en": "How many days you can live without registration, when it stops being valid and what a violation costs. Under the procedure in force since 23 September 2026.",
-    "guide": {
-      "num": 1,
-      "group": "stay",
-      "status": "in_force",
-      "situation": {
-        "ru": "Я приехал по безвизу и хочу остаться дольше 30 дней",
-        "en": "I came visa-free and want to stay longer than 30 days"
-      },
-      "who": {
-        "ru": "Тем, кто въехал без визы и планирует остаться надолго.",
-        "en": "For anyone who entered visa-free and plans a longer stay."
-      },
-      "short": [
-        {
-          "ru": "С 23 сентября 2026 года для граждан США, ЕС, Великобритании, Японии, Кореи и ряда других стран срок без регистрации — 30 дней вместо 60.",
-          "en": "Since 23 September 2026 the registration-free period for citizens of the USA, EU, UK, Japan, Korea and several others is 30 days instead of 60."
-        },
-        {
-          "ru": "Регистрацию подают после въезда и не позже последнего дня этого срока.",
-          "en": "Register after entering and no later than the last day of that period."
-        },
-        {
-          "ru": "Выезд на 30 дней и больше аннулирует регистрацию, после возвращения нужна новая.",
-          "en": "Leaving for 30 days or more cancels the registration; you need a new one on return."
-        },
-        {
-          "ru": "Без документов на пребывание штраф по статье 431: от 55 до 200 расчётных показателей.",
-          "en": "Without documents for your stay the fine under Article 431 is 55 to 200 calculation indices."
-        }
-      ]
-    },
-    "checked": "2026-11-19",
-    "sources": 5
-  },
-  {
     "slug": "work-permit-foreigners-kyrgyzstan-2026",
     "date": "2026-11-19",
     "category": "work",
@@ -181,6 +189,48 @@
       ]
     },
     "checked": "2026-11-19",
+    "sources": 5
+  },
+  {
+    "slug": "stay-longer-than-30-days-kyrgyzstan",
+    "date": "2026-11-19",
+    "category": "visa",
+    "title_ru": "Приехал по безвизу и хочу остаться дольше: что делать с регистрацией",
+    "title_en": "Arrived visa-free and want to stay longer: what to do about registration",
+    "summary_ru": "Сколько дней можно жить без регистрации, когда она перестаёт действовать и что грозит за нарушение. По порядку, который действует с 23 сентября 2026 года.",
+    "summary_en": "How many days you can live without registration, when it stops being valid and what a violation costs. Under the procedure in force since 23 September 2026.",
+    "guide": {
+      "num": 1,
+      "group": "stay",
+      "status": "in_force",
+      "situation": {
+        "ru": "Я приехал по безвизу и хочу остаться дольше 30 дней",
+        "en": "I came visa-free and want to stay longer than 30 days"
+      },
+      "who": {
+        "ru": "Тем, кто въехал без визы и планирует остаться надолго.",
+        "en": "For anyone who entered visa-free and plans a longer stay."
+      },
+      "short": [
+        {
+          "ru": "С 23 сентября 2026 года для граждан США, ЕС, Великобритании, Японии, Кореи и ряда других стран срок без регистрации — 30 дней вместо 60.",
+          "en": "Since 23 September 2026 the registration-free period for citizens of the USA, EU, UK, Japan, Korea and several others is 30 days instead of 60."
+        },
+        {
+          "ru": "Регистрацию подают после въезда и не позже последнего дня этого срока.",
+          "en": "Register after entering and no later than the last day of that period."
+        },
+        {
+          "ru": "Выезд на 30 дней и больше аннулирует регистрацию, после возвращения нужна новая.",
+          "en": "Leaving for 30 days or more cancels the registration; you need a new one on return."
+        },
+        {
+          "ru": "Без документов на пребывание штраф по статье 431: от 55 до 200 расчётных показателей.",
+          "en": "Without documents for your stay the fine under Article 431 is 55 to 200 calculation indices."
+        }
+      ]
+    },
+    "checked": "2026-11-22",
     "sources": 5
   },
   {

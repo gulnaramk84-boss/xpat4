@@ -61,6 +61,7 @@
 - [Открываю ОсОО в Кыргызстане иностранцем: что известно о регистрации — xpat4.org](https://xpat4.org/open-osoo-foreigner-kyrgyzstan-2026): Кто может быть учредителем, сколько занимает регистрация, что поменялось в ноябре и что с банковским счётом. Без суммы пошлины: в проверенных источниках её нет.
 - [Гайды по ситуациям — xpat4.org](https://xpat4.org/guides): что делать иностранцу в Кыргызстане в конкретной ситуации; у каждого гайда дата проверки и источники
 - [Как мы проверяем информацию — xpat4.org](https://xpat4.org/how-we-check): Откуда берутся факты на xpat4.org, что значат даты и метки и что делать, если вы нашли ошибку.
+- [Сколько дней можно быть в Кыргызстане без визы и без регистрации: таблица по странам — xpat4.org](https://xpat4.org/visa-free-and-registration-days-by-country-2026): Безвизовые сроки и сроки без регистрации по гражданству, по постановлениям кабмина № 855 и № 190 и новому порядку регистрации. Где источники молчат, так и пишем.
 
 <!-- lang-sections -->
 ## English version (same content, own URLs)
@@ -114,6 +115,7 @@
 - [Arrived visa-free and want to stay longer: what to do about registration](https://xpat4.org/en/stay-longer-than-30-days-kyrgyzstan): How many days you can live without registration, when it stops being valid and what a violation costs. Under the procedure in force since 23 September 2026.
 - [Taxes for Foreigners in Kyrgyzstan 2026](https://xpat4.org/en/tax-foreigners-kyrgyzstan): Tax obligations for expats in Kyrgyzstan: income tax, VAT, simplified tax system.
 - [Kyrgyzstan's temporary rules for foreigners end December 31: what's next](https://xpat4.org/en/temporary-rules-foreigners-kyrgyzstan-2026): Visas, the unified work permit and the resident card are currently issued by the Foreign Ministry under temporary rules running through year-end. What's…
+- [How long you can stay in Kyrgyzstan without a visa or registration](https://xpat4.org/en/visa-free-and-registration-days-by-country-2026): Visa-free periods and registration-free periods by citizenship, based on Cabinet resolutions No. 855 and No. 190 and the new registration procedure. Where…
 - [Visa Run from Kyrgyzstan: How It Works and Risks in 2026](https://xpat4.org/en/visa-run-kyrgyzstan): Everything about visa runs from Kyrgyzstan: destinations, costs, frequency limits and legal risks.
 - [Entering Kyrgyzstan: visa-free stay, e-Visa, registration](https://xpat4.org/en/visa): Visa types, visa-free entry, e-Visa, OVPG registration in Kyrgyzstan. Visa types, visa-free entry, border crossing rules and registration at your place of…
 - [I want to work in Kyrgyzstan: who issues the permit and what we know](https://xpat4.org/en/work-permit-foreigners-kyrgyzstan-2026): Work permits are currently issued by the Foreign Ministry under a temporary procedure until the end of 2026, then move to the Labour Ministry. What is…
@@ -128,4 +130,5 @@
 - [外国人在吉尔吉斯斯坦开办有限责任公司（OsOO）：注册须知](https://xpat4.org/zh/open-osoo-foreigner-kyrgyzstan-2026): 谁可以当创始人、注册需要多久、11月有哪些变化、银行账户怎么办。注册国家规费的金额我们查阅的来源中没有给出。
 - [我想在吉尔吉斯斯坦工作：谁发放许可，目前已知什么](https://xpat4.org/zh/work-permit-foreigners-kyrgyzstan-2026): 目前工作许可由外交部按临时程序发放，有效到2026年底，之后移交劳动部。哪些已经确认，哪些公开来源没有说明。
 - [在比什凯克租了房：如何按新规办理登记](https://xpat4.org/zh/register-after-renting-bishkek-2026): 期限、地址、房主同意、每人12平方米，以及离境时该怎么办。依据2026年9月23日起施行的程序。
+- [在吉尔吉斯斯坦免签和免登记可以停留多少天：按国家列表](https://xpat4.org/zh/visa-free-and-registration-days-by-country-2026): 按国籍列出免签停留期限和免登记期限，依据内阁第855号、第190号决议和新的登记程序。来源中没有的信息，我们如实说明。
 <!-- /lang-sections -->

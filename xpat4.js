@@ -269,7 +269,7 @@ XPAT4.altUrl = function (lang) {
     const bar = document.createElement('div');
     bar.id = 'xpat4-langbar';
     bar.setAttribute('role', 'note');
-    bar.style.cssText = 'position:fixed;left:16px;right:16px;bottom:16px;z-index:9998;max-width:440px;margin:0 auto;background:#1a1814;color:#faf8f4;border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:center;font:400 14px/1.4 "DM Sans",sans-serif;box-shadow:0 12px 32px -12px rgba(0,0,0,.5)';
+    bar.style.cssText = 'position:fixed;left:16px;right:88px;bottom:20px;z-index:9998;max-width:440px;margin:0 auto;background:#1a1814;color:#faf8f4;border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:center;font:400 14px/1.4 "DM Sans",sans-serif;box-shadow:0 12px 32px -12px rgba(0,0,0,.5)';
     bar.innerHTML = '<a href="' + alt + '" data-lang="' + want + '" class="lang-btn" style="flex:1;color:#faf8f4;text-decoration:underline;text-underline-offset:3px;background:none;box-shadow:none;padding:0;font-size:14px">' + TXT[want] + ' →</a>' +
       '<button type="button" aria-label="Close" style="background:none;border:0;color:#faf8f4;font-size:18px;cursor:pointer;padding:0 4px">×</button>';
     bar.querySelector('button').onclick = function () { try { localStorage.setItem(KEY, XPAT4.currentLang); } catch (e) {} bar.remove(); };
