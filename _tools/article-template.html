@@ -4,7 +4,7 @@
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{TITLE_RU_TEXT}} — xpat4.org</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <meta name="description" content="{{DESC_RU_ATTR}}">
+  <meta name="description" content="{{DESC_RU_ATTR}}" data-en="{{DESC_EN_ATTR}}"{{DESC_ZH}}>
   <meta property="og:title" content="{{TITLE_RU_ATTR}}" />
   <meta property="og:description" content="{{DESC_RU_ATTR}}" />
   <meta property="og:type" content="article" />
@@ -82,10 +82,10 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=202611211">
+  <link rel="stylesheet" href="/site.css?v=202611221">
 </head>
 <body>
-<a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Перейти к содержанию</a>
+<a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文" data-zh="跳到正文">Перейти к содержанию</a>
 <nav>
   <a class="logo" href="/">xpat<span>4</span>.org</a>
   <div class="nav-right">
@@ -93,24 +93,24 @@
       <button class="lang-btn" data-lang="ru" onclick="XPAT4.setLang('ru')">RU</button>
       <button class="lang-btn" data-lang="en" onclick="XPAT4.setLang('en')">EN</button>
     </div>
-    <a class="back" href="{{BACK_URL}}" data-ru="{{BACK_RU}}" data-en="{{BACK_EN}}">{{BACK_RU}}</a>
+    <a class="back" href="{{BACK_URL}}" data-ru="{{BACK_RU}}" data-en="{{BACK_EN}}"{{BACK_ZH}}>{{BACK_RU}}</a>
   </div>
 </nav>
 <main id="main">
 
 <div class="page-hero">
   <div class="breadcrumb">
-    <a href="/" data-ru="Главная" data-en="Home">Главная</a>
+    <a href="/" data-ru="Главная" data-en="Home" data-zh="首页">Главная</a>
     <span>›</span>
-    <a href="{{CRUMB_URL}}" data-ru="{{CRUMB_RU}}" data-en="{{CRUMB_EN}}">{{CRUMB_RU}}</a>
+    <a href="{{CRUMB_URL}}" data-ru="{{CRUMB_RU}}" data-en="{{CRUMB_EN}}"{{CRUMB_ZH}}>{{CRUMB_RU}}</a>
   </div>
-  <div class="eyebrow" data-ru="{{EYEBROW_RU}}" data-en="{{EYEBROW_EN}}">{{EYEBROW_RU}}</div>
-  <h1 data-ru="{{TITLE_RU_ATTR}}" data-en="{{TITLE_EN_ATTR}}">{{TITLE_RU_HTML}}</h1>
-  <p class="page-desc" data-ru="{{DESC_RU_ATTR}}" data-en="{{DESC_EN_ATTR}}">{{DESC_RU_HTML}}</p>
-  <div class="meta" data-ru="Опубликовано {{DATE_RU}}. Проверено {{CHECKED_RU}}." data-en="Published {{DATE_EN}}. Checked {{CHECKED_EN}}.">Опубликовано {{DATE_RU}}. Проверено {{CHECKED_RU}}.</div>
+  <div class="eyebrow" data-ru="{{EYEBROW_RU}}" data-en="{{EYEBROW_EN}}"{{EYEBROW_ZH}}>{{EYEBROW_RU}}</div>
+  <h1 data-ru="{{TITLE_RU_ATTR}}" data-en="{{TITLE_EN_ATTR}}"{{TITLE_ZH}}>{{TITLE_RU_HTML}}</h1>
+  <p class="page-desc" data-ru="{{DESC_RU_ATTR}}" data-en="{{DESC_EN_ATTR}}"{{DESC_ZH}}>{{DESC_RU_HTML}}</p>
+  <div class="meta" data-ru="Опубликовано {{DATE_RU}}. Проверено {{CHECKED_RU}}." data-en="Published {{DATE_EN}}. Checked {{CHECKED_EN}}."{{META_ZH}}>Опубликовано {{DATE_RU}}. Проверено {{CHECKED_RU}}.</div>
   <div class="page-tools">
-    <button type="button" class="tool-btn" onclick="window.print()" data-ru="Сохранить в PDF" data-en="Save as PDF">Сохранить в PDF</button>
-    <a class="tool-btn" href="{{WA_ERR}}" target="_blank" rel="noopener" data-ru="Сообщить об ошибке" data-en="Report a mistake">Сообщить об ошибке</a>
+    <button type="button" class="tool-btn" onclick="window.print()" data-ru="Сохранить в PDF" data-en="Save as PDF" data-zh="保存为 PDF">Сохранить в PDF</button>
+    <a class="tool-btn" href="{{WA_ERR}}" target="_blank" rel="noopener" data-ru="Сообщить об ошибке" data-en="Report a mistake" data-zh="报告错误">Сообщить об ошибке</a>
   </div>
 </div>
 
@@ -128,17 +128,17 @@
 
 {{NEXT}}
 <div class="bottom-cta">
-  <h3 data-ru="Ваша ситуация отличается?" data-en="Is your case different?">Ваша ситуация отличается?</h3>
-  <p data-ru="Спросите Гульнару Мамбеталиеву, миграционного консультанта. В сообщении уже будет название этой страницы." data-en="Ask Gulnara Mambetaliyeva, a migration consultant. The message will already include the title of this page.">Спросите Гульнару Мамбеталиеву, миграционного консультанта. В сообщении уже будет название этой страницы.</p>
-  <a class="btn-wa" href="{{WA_ASK}}" target="_blank" rel="noopener"><span data-ru="Спросить Гульнару в WhatsApp" data-en="Ask Gulnara on WhatsApp">Спросить Гульнару в WhatsApp</span></a>
-  <a class="btn-light" href="/contact#brief" data-ru="Описать ситуацию за 3 шага" data-en="Describe your case in 3 steps">Описать ситуацию за 3 шага</a>
+  <h3 data-ru="Ваша ситуация отличается?" data-en="Is your case different?" data-zh="您的情况不一样？">Ваша ситуация отличается?</h3>
+  <p data-ru="Спросите Гульнару Мамбеталиеву, миграционного консультанта. В сообщении уже будет название этой страницы." data-en="Ask Gulnara Mambetaliyeva, a migration consultant. The message will already include the title of this page." data-zh="向移民顾问古尔纳拉·马姆别塔利耶娃提问。消息中会自动附上本页标题。">Спросите Гульнару Мамбеталиеву, миграционного консультанта. В сообщении уже будет название этой страницы.</p>
+  <a class="btn-wa" href="{{WA_ASK}}" target="_blank" rel="noopener"><span data-ru="Спросить Гульнару в WhatsApp" data-en="Ask Gulnara on WhatsApp" data-zh="通过 WhatsApp 咨询古尔纳拉">Спросить Гульнару в WhatsApp</span></a>
+  <a class="btn-light" href="/contact#brief" data-ru="Описать ситуацию за 3 шага" data-en="Describe your case in 3 steps" data-zh="用3步描述您的情况">Описать ситуацию за 3 шага</a>
 </div>
 
 </main>
 
 <footer>
   <a class="footer-logo" href="/">xpat<span>4</span>.org</a>
-  <a class="footer-how" href="/how-we-check" data-ru="Как мы проверяем" data-en="How we check">Как мы проверяем</a>
+  <a class="footer-how" href="/how-we-check" data-ru="Как мы проверяем" data-en="How we check" data-zh="我们如何核实">Как мы проверяем</a>
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
@@ -158,6 +158,6 @@
   Object.keys(map).forEach(function (id) { var h = document.getElementById(id); if (h) io.observe(h); });
 })();
 </script>
-<script src="/xpat4.js?v=202611211"></script>
+<script src="/xpat4.js?v=202611221"></script>
 </body>
 </html>

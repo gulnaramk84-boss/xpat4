@@ -1,0 +1,371 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Specialists for foreigners in Bishkek | xpat4.org</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Find immigration lawyers, visa consultants and relocation agents in Kyrgyzstan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"></noscript>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --sand: #f5f0e8; --warm-white: #faf8f4; --ink: #1a1814; --ink-60: rgba(26,24,20,0.6); --ink-30: rgba(26,24,20,0.3); --ink-10: rgba(26,24,20,0.08); --accent: #2d5a3d; --accent-light: #e8f0ea; --line: rgba(26,24,20,0.12); }
+    body { font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+
+
+
+
+
+
+    .back-link { font-size:13px; color:var(--ink-60); text-decoration:none; display:flex; align-items:center; gap:5px; }
+    .back-link::before { content:'←'; }
+    .back-link:hover { color:var(--ink); }
+
+    .page-hero { padding:140px 48px 60px; max-width:900px; margin:0 auto; }
+    .eyebrow { font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-bottom:22px; display:flex; align-items:center; gap:10px; }
+    .eyebrow::before { content:''; display:block; width:24px; height:1px; background:var(--accent); }
+    h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(38px,6vw,62px); font-weight:300; line-height:1.1; margin-bottom:18px; }
+    .page-sub { font-size:16px; color:var(--ink-60); font-weight:300; line-height:1.7; max-width:520px; }
+
+    .filters-bar { padding:0 48px 48px; max-width:900px; margin:0 auto; display:flex; gap:8px; flex-wrap:wrap; }
+    .filter-btn { font-size:12px; font-weight:400; color:var(--ink-60); border:1px solid var(--line); background:transparent; padding:8px 18px; border-radius:100px; cursor:pointer; transition:all 0.2s; letter-spacing:0.02em; }
+    .filter-btn:hover { border-color:rgba(26,24,20,0.3); color:var(--ink); }
+    .filter-btn.active { background:var(--ink); color:#fff; border-color:var(--ink); }
+
+    .catalog-grid { padding:0 48px 80px; max-width:900px; margin:0 auto; display:grid; grid-template-columns:repeat(2, 1fr); gap:20px; }
+    .specialist-card { border:1px solid var(--line); padding:32px 28px; background:var(--warm-white); display:flex; flex-direction:column; gap:10px; transition:border-color 0.2s; position:relative; overflow:hidden; }
+    .specialist-card:hover { border-color:rgba(26,24,20,0.3); }
+    .specialist-card.is-verified { border-color:rgba(45,90,61,0.25); }
+    .verified-badge { display:inline-flex; align-items:center; gap:5px; font-size:10px; font-weight:500; letter-spacing:0.07em; text-transform:uppercase; color:#2d5a3d; background:#e8f0ea; padding:4px 12px; border-radius:100px; margin-bottom:6px; border:1px solid rgba(45,90,61,0.2); }
+    .verified-badge::before { content:'✓  '; }
+    .card-top { display:flex; align-items:flex-start; gap:16px; }
+    .avatar { width:48px; height:48px; border-radius:50%; background:var(--accent-light); display:flex; align-items:center; justify-content:center; font-family:'Cormorant Garamond',serif; font-size:18px; color:var(--accent); font-weight:500; flex-shrink:0; }
+    .card-meta { flex:1; }
+    .s-role { font-size:11px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); margin-bottom:4px; }
+    .s-name { font-family:'Cormorant Garamond',serif; font-size:22px; font-weight:400; line-height:1.1; }
+    .s-desc { font-size:13px; color:var(--ink-60); font-weight:300; line-height:1.6; }
+    .card-bottom { display:flex; align-items:center; justify-content:space-between; padding-top:16px; border-top:1px solid var(--line); margin-top:auto; flex-wrap:wrap; gap:10px; }
+    .s-city { font-size:12px; color:var(--ink-30); }
+    .s-contacts { display:flex; gap:10px; }
+    .contact-link { font-size:12px; font-weight:500; color:var(--accent); text-decoration:none; border:1px solid var(--accent-light); padding:5px 12px; border-radius:2px; transition:background 0.2s; }
+    .contact-link:hover { background:var(--accent-light); }
+    .online-badge { font-size:10px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent); background:var(--accent-light); padding:3px 8px; border-radius:100px; }
+    .empty-state { padding:60px 48px; text-align:center; color:var(--ink-30); font-size:15px; font-weight:300; grid-column:1/-1; }
+
+    footer { padding:36px 48px; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:center; }
+    .footer-logo { font-family:'Cormorant Garamond',serif; font-size:18px; color:var(--ink-60); text-decoration:none; }
+    .footer-logo span { color:var(--accent); }
+    .footer-copy { font-size:12px; color:var(--ink-30); }
+    
+    
+  
+    /* ── MOBILE FIXES ── */
+    @media (max-width: 768px) {
+      /* Page layout */
+      body { font-size: 15px; }
+      .page-hero, .content, .page-wrap, .wrap,
+      .calc-wrap, .city-selector, .checklist-wrap,
+      .filters-bar, .catalog-grid, .page-hero { padding-left: 20px !important; padding-right: 20px !important; }
+
+      /* Cards grids → single column */
+      .cards-grid,
+      .consultants-grid,
+      .testimonials-grid,
+      .catalog-grid,
+      .events-grid,
+      .why-grid,
+      .form-grid,
+      .form-grid-3,
+      .quick-actions,
+      .stats-grid,
+      .price-grid,
+      .news-grid { grid-template-columns: 1fr !important; }
+
+      /* Nomad section */
+      .nomad-section { grid-template-columns: 1fr !important; padding: 40px 24px !important; margin: 0 20px 60px !important; }
+
+      /* Calculator */
+      .calc-grid { grid-template-columns: 1fr !important; }
+      .calc-cell.home, .calc-col-header.home { border-left: 1px solid var(--line) !important; }
+
+      /* Catalog specialist cards */
+      .specialist-card { padding: 20px 16px !important; }
+      .card-top { gap: 12px !important; }
+      .card-bottom { flex-direction: column !important; align-items: flex-start !important; gap: 10px !important; }
+      .s-contacts { flex-wrap: wrap !important; }
+
+      /* Contact page */
+      .expert-card { flex-direction: column !important; padding: 24px 20px !important; gap: 16px !important; }
+      .form-row { grid-template-columns: 1fr !important; }
+
+      /* Savings box */
+      .savings-box { flex-direction: column !important; align-items: flex-start !important; }
+
+      /* Final CTA */
+      .final-cta, .bottom-cta { padding: 60px 20px !important; }
+
+      /* Sections */
+      .section, .cards-section, .stats-strip,
+      .testimonials-section, .quick-actions { padding-left: 20px !important; padding-right: 20px !important; }
+
+      /* Catalog intro */
+      .catalog-intro { flex-direction: column !important; align-items: flex-start !important; }
+
+      /* Hero */
+      .hero { padding: 120px 20px 60px !important; }
+      h1 { font-size: clamp(36px, 10vw, 54px) !important; }
+
+      /* Suggest box */
+      .suggest-box { flex-direction: column !important; align-items: flex-start !important; }
+
+      /* Manual news items */
+      .manual-item { grid-template-columns: 1fr !important; }
+
+      /* Event cards */
+      .event-card { flex-direction: column !important; gap: 16px !important; }
+
+      /* Join page why-grid */
+      .why-grid { grid-template-columns: 1fr 1fr !important; }
+    }
+
+    @media (max-width: 480px) {
+      .why-grid { grid-template-columns: 1fr !important; }
+      .cat-toggles { gap: 6px !important; }
+      .hero-actions { flex-direction: column !important; align-items: flex-start !important; }
+    }
+
+  </style>
+  <link rel="canonical" href="https://xpat4.org/en/catalog">
+  <!-- i18n -->
+  <link rel="alternate" hreflang="ru" href="https://xpat4.org/catalog">
+  <link rel="alternate" hreflang="en" href="https://xpat4.org/en/catalog">
+  <link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/catalog">
+  <meta name="xpat4-langs" content='{"zh":["index","contact","kyrgyzstan-chinese-investors","relocate-kyrgyzstan-from-china","open-osoo-foreigner-kyrgyzstan-2026","work-permit-foreigners-kyrgyzstan-2026","register-after-renting-bishkek-2026"],"noen":["privacy","terms"]}'>
+  <!-- /i18n -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="xpat4.org">
+  <meta property="og:title" content="Specialists for foreigners in Bishkek">
+  <meta property="og:description" content="Find immigration lawyers, visa consultants and relocation agents in Kyrgyzstan.">
+  <meta property="og:url" content="https://xpat4.org/en/catalog">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://xpat4.org/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
+  <link rel="stylesheet" href="/site.css?v=202611221">
+</head>
+<body>
+<a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Skip to content</a>
+    <nav>
+    <a class="logo" href="/en/">xpat<span>4</span>.org</a>
+    <ul class="nav-center">
+      <li><a href="/en/guides" data-ru="Гайды" data-en="Guides" data-zh="指南">Guides</a></li>
+      <li><a href="/en/news" data-ru="Новости" data-en="News" data-zh="新闻">News</a></li>
+      <li><a href="/en/catalog" class="current" aria-current="page" data-ru="Специалисты" data-en="Specialists" data-zh="专家">Specialists</a></li>
+      <li class="has-sub">
+        <a href="/en/calculator" class="nav-sub-toggle" aria-haspopup="true" data-ru="Инструменты" data-en="Tools" data-zh="工具">Tools</a>
+        <ul class="nav-sub">
+          <li><a href="/en/calculator" data-ru="Калькулятор стоимости жизни" data-en="Cost of living calculator" data-zh="生活成本计算器">Cost of living calculator</a></li>
+          <li><a href="/en/checklist" data-ru="Чеклист: первые 30 дней" data-en="Checklist: first 30 days" data-zh="清单：头30天">Checklist: first 30 days</a></li>
+        </ul>
+      </li>
+      <li><a href="/en/contact" data-ru="Контакты" data-en="Contacts" data-zh="联系我们">Contacts</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switch" role="group" aria-label="Язык / Language">
+        <a class="lang-btn" data-lang="ru" href="/catalog" hreflang="ru" lang="ru" title="Русский">RU</a>
+        <a class="lang-btn active" data-lang="en" href="/en/catalog" hreflang="en" lang="en" aria-current="true" title="English">EN</a>
+      </div>
+      <a class="nav-cta" href="/en/contact#brief" data-ru="Консультация" data-en="Consultation" data-zh="咨询">Consultation</a>
+    </div>
+    <button class="nav-burger" id="nav-burger" aria-label="Меню" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/en/guides" data-ru="Гайды" data-en="Guides" data-zh="指南">Guides</a>
+    <a href="/en/news" data-ru="Новости" data-en="News" data-zh="新闻">News</a>
+    <a href="/en/catalog" class="current" aria-current="page" data-ru="Специалисты" data-en="Specialists" data-zh="专家">Specialists</a>
+    <a href="/en/calculator" data-ru="Калькулятор" data-en="Calculator" data-zh="计算器">Calculator</a>
+    <a href="/en/checklist" data-ru="Чеклист" data-en="Checklist" data-zh="清单">Checklist</a>
+    <a href="/en/contact" data-ru="Контакты" data-en="Contacts" data-zh="联系我们">Contacts</a>
+    <a href="/en/join" data-ru="Для специалистов" data-en="For Specialists" data-zh="专家入驻">For Specialists</a>
+  </div>
+<main id="main">
+<div class="page-hero">
+  <div class="eyebrow" data-ru="Каталог специалистов" data-en="Specialist Catalog" data-zh="专家目录">Specialist Catalog</div>
+  <h1 data-ru="Найдите нужного<br/>специалиста" data-en="Find the right<br/>specialist" data-zh="寻找合适的<br/>专家">Find the right<br/>specialist</h1>
+  <p class="page-sub" data-ru="Юристы, консультанты и агентства, работающие с иностранцами в Кыргызстане." data-en="Lawyers, consultants and agencies working with foreigners in Kyrgyzstan." data-zh="在吉尔吉斯斯坦为外国人提供服务的律师、顾问和机构。">Lawyers, consultants and agencies working with foreigners in Kyrgyzstan.</p>
+</div>
+
+<div class="filters-bar" id="filters-bar"></div>
+<div class="catalog-grid" id="catalog-grid"></div>
+
+<div style="max-width:900px;margin:0 auto 60px;padding:0 48px;">
+  <div style="border:1px solid var(--line);padding:32px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;background:var(--sand);">
+    <div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;margin-bottom:6px;"
+        data-ru="Вы специалист по экспат-вопросам?" data-en="Are you an expat specialist?" data-zh="您是外籍事务专家吗？">Are you an expat specialist?</div>
+      <div style="font-size:13px;color:var(--ink-60);font-weight:300;line-height:1.6;"
+        data-ru="Подайте заявку на включение в каталог — бесплатно, после проверки." data-en="Apply for a free listing — reviewed and published after verification." data-zh="免费申请入驻目录——审核通过后发布。">Apply for a free listing — reviewed and published after verification.</div>
+    </div>
+    <a href="/en/join" style="background:var(--accent);color:#fff;font-size:13px;font-weight:500;padding:12px 28px;border-radius:2px;text-decoration:none;white-space:nowrap;transition:opacity 0.2s;flex-shrink:0;"
+      data-ru="Подать заявку →" data-en="Apply Now →" data-zh="立即申请 →">Apply Now →</a>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <a class="footer-logo" href="/en/">xpat<span>4</span>.org</a>
+  <ul class="footer-links">
+    <li><a href="/en/visa" data-ru="Виза" data-en="Visa" data-zh="签证">Visa</a></li>
+    <li><a href="/en/catalog" data-ru="Каталог" data-en="Catalog" data-zh="目录">Catalog</a></li>
+    <li><a href="/en/calculator" data-ru="Калькулятор" data-en="Calculator" data-zh="计算器">Calculator</a></li>
+    <li><a href="/en/join" data-ru="Для специалистов" data-en="For Specialists" data-zh="专家入驻">For Specialists</a></li>
+    <li><a href="/en/contact" data-ru="Контакты" data-en="Contacts" data-zh="联系我们">Contacts</a></li>
+    <li><a href="/terms" data-ru="Оферта" data-en="Terms" data-zh="条款">Terms</a></li>
+    <li><a href="/privacy" data-ru="Конфиденциальность" data-en="Privacy" data-zh="隐私">Privacy</a></li>
+    <li><a href="/en/how-we-check" data-ru="Как мы проверяем" data-en="How we check" data-zh="我们如何核实">How we check</a></li>
+  </ul>
+  <span class="footer-copy">© 2026 xpat4.org</span>
+</footer>
+
+<script src="/xpat4.js?v=202611221"></script>
+<script>
+  let currentFilter = 'all';
+  let specialists = [];
+
+  const FILTERS = {
+    all:       { ru: 'Все', en: 'All', zh: '全部' },
+    visa:      { ru: 'Виза', en: 'Visa', zh: '签证' },
+    residence: { ru: 'ВНЖ', en: 'Residence', zh: '居留' },
+    work:      { ru: 'Работа', en: 'Work', zh: '工作' },
+    business:  { ru: 'Бизнес', en: 'Business', zh: '商业' },
+    living:    { ru: 'Жильё', en: 'Housing', zh: '住房' }
+  };
+
+  const CONTACT_LABELS = {
+    ru: { wa: 'WhatsApp', email: 'Email', tg: 'Telegram', online: 'Онлайн', nocontact: 'Уточнить контакты' },
+    en: { wa: 'WhatsApp', email: 'Email', tg: 'Telegram', online: 'Online', nocontact: 'Request contacts' },
+    zh: { wa: 'WhatsApp', email: '邮件', tg: 'Telegram', online: '在线', nocontact: '询问联系方式' }
+  };
+
+  function renderFilters() {
+    const lang = XPAT4.currentLang || 'ru';
+    const bar = document.getElementById('filters-bar');
+    bar.innerHTML = Object.entries(FILTERS).map(([key, labels]) =>
+      `<button class="filter-btn${currentFilter === key ? ' active' : ''}" onclick="setFilter('${key}')">${labels[lang] || labels.en}</button>`
+    ).join('');
+  }
+
+  function setFilter(key) { currentFilter = key; renderFilters(); renderCards(); }
+
+  function renderCards() {
+    const lang = XPAT4.currentLang || 'ru';
+    const cl = CONTACT_LABELS[lang] || CONTACT_LABELS.en;
+    const grid = document.getElementById('catalog-grid');
+    const filtered = currentFilter === 'all' ? specialists : specialists.filter(s => s.categories.includes(currentFilter));
+
+    if (!filtered.length) {
+      const msg = lang === 'zh' ? '未找到专家' : lang === 'en' ? 'No specialists found' : 'Специалисты не найдены';
+      grid.innerHTML = `<div class="empty-state">${msg}</div>`;
+      return;
+    }
+
+    grid.innerHTML = filtered.map(s => {
+      const contacts = [];
+      if (s.phone)    contacts.push('<a class="contact-link" href="https://wa.me/' + s.phone.replace(/\D/g,'') + '" target="_blank">' + cl.wa + '</a>');
+      if (s.telegram) contacts.push('<a class="contact-link" href="https://t.me/' + s.telegram + '" target="_blank">' + cl.tg + '</a>');
+      if (s.email)    contacts.push('<a class="contact-link" href="mailto:' + s.email + '">' + cl.email + '</a>');
+      if (!contacts.length) contacts.push('<a class="contact-link" href="/en/contact">' + cl.nocontact + '</a>');
+
+      // Verified badge — check expiry
+      let isVerified = s.verified;
+      if (isVerified && s.badge_expires) {
+        isVerified = new Date(s.badge_expires) > new Date();
+      }
+      const badgeText  = s.badge || 'Verified by xpat4';
+      const verifiedHtml = isVerified
+        ? '<span class="verified-badge">' + badgeText + '</span>'
+        : '';
+
+      return '<div class="specialist-card' + (isVerified ? ' is-verified' : '') + '" id="specialist-' + s.id + '">'
+        + verifiedHtml
+        + '<div class="card-top">'
+        + '<div class="avatar">' + (s.photo ? '<img src="' + s.photo + '" alt="' + (s['name_' + lang] || s.name_en) + '" width="56" height="56" loading="lazy" style="width:100%;height:100%;border-radius:50%;object-fit:cover;display:block">' : s.initials) + '</div>'
+        + '<div class="card-meta">'
+        + '<div class="s-role">' + (s['role_' + lang] || s.role_en) + '</div>'
+        + '<div class="s-name">' + (s['name_' + lang] || s.name_en) + '</div>'
+        + '</div></div>'
+        + '<p class="s-desc">' + (s['desc_' + lang] || s.desc_en) + '</p>'
+        + '<div class="card-bottom">'
+        + '<span class="s-city">' + (s['city_' + lang] || s.city_en) + (s.online ? ' · <span class="online-badge">' + cl.online + '</span>' : '') + '</span>'
+        + '<div class="s-contacts">' + contacts.join('') + '</div>'
+        + '</div></div>';
+    }).join('');
+
+    // Scroll to anchor if hash
+    const hash = window.location.hash;
+    if (hash) { setTimeout(() => { const el = document.querySelector(hash); if (el) el.scrollIntoView({ behavior:'smooth', block:'center' }); }, 100); }
+  }
+
+  fetch('/specialists.json?v=' + Date.now()).then(r => r.json()).then(data => {
+    specialists = data;
+    renderFilters();
+    renderCards();
+  });
+
+  document.addEventListener('xpat4-lang-change', () => { renderFilters(); renderCards(); });
+</script>
+
+<script>
+(function(){
+  var burger = document.getElementById('nav-burger');
+  var menu   = document.getElementById('mobile-menu');
+  if (!burger || !menu) return;
+  burger.addEventListener('click', function(){ menu.classList.toggle('open'); });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ menu.classList.remove('open'); });
+  });
+})();
+</script>
+<script>
+(function(){
+  var b = document.getElementById('nav-burger');
+  var m = document.getElementById('mobile-menu');
+  if (!b || !m) return;
+  // Remove duplicate listeners by cloning
+  var b2 = b.cloneNode(true);
+  b.parentNode.replaceChild(b2, b);
+  b2.addEventListener('click', function(e){
+    e.stopPropagation();
+    m.classList.toggle('open');
+  });
+  m.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ m.classList.remove('open'); });
+  });
+  // Close on outside click
+  document.addEventListener('click', function(e){
+    if (!b2.contains(e.target) && !m.contains(e.target)){
+      m.classList.remove('open');
+    }
+  });
+})();
+</script>
+</body>
+</html>

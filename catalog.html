@@ -13,9 +13,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Specialists Catalog — xpat4.org | Каталог специалистов | 专家目录</title>
+  <title>Специалисты для иностранцев в Бишкеке | xpat4.org</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <meta name="description" content="Find immigration lawyers, visa consultants and relocation agents in Kyrgyzstan. 在吉尔吉斯斯坦寻找移民律师和签证顾问。">
+  <meta name="description" content="Юристы, консультанты и агентства, работающие с иностранцами в Кыргызстане. Подайте заявку на включение в каталог — бесплатно, после проверки." data-en="Find immigration lawyers, visa consultants and relocation agents in Kyrgyzstan.">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
@@ -150,11 +150,17 @@
 
   </style>
   <link rel="canonical" href="https://xpat4.org/catalog">
+  <!-- i18n -->
+  <link rel="alternate" hreflang="ru" href="https://xpat4.org/catalog">
+  <link rel="alternate" hreflang="en" href="https://xpat4.org/en/catalog">
+  <link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/catalog">
+  <meta name="xpat4-langs" content='{"zh":["index","contact","kyrgyzstan-chinese-investors","relocate-kyrgyzstan-from-china","open-osoo-foreigner-kyrgyzstan-2026","work-permit-foreigners-kyrgyzstan-2026","register-after-renting-bishkek-2026"],"noen":["privacy","terms"]}'>
+  <!-- /i18n -->
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="xpat4.org">
-  <meta property="og:title" content="Specialists Catalog — xpat4.org | Каталог специалистов | 专家目录">
-  <meta property="og:description" content="Find immigration lawyers, visa consultants and relocation agents in Kyrgyzstan. 在吉尔吉斯斯坦寻找移民律师和签证顾问。">
+  <meta property="og:title" content="Специалисты для иностранцев в Бишкеке">
+  <meta property="og:description" content="Юристы, консультанты и агентства, работающие с иностранцами в Кыргызстане. Подайте заявку на включение в каталог — бесплатно, после проверки.">
   <meta property="og:url" content="https://xpat4.org/catalog">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:image" content="https://xpat4.org/og-image.jpg">
@@ -162,7 +168,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=202611211">
+  <link rel="stylesheet" href="/site.css?v=202611221">
 </head>
 <body>
 <a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Перейти к содержанию</a>
@@ -183,9 +189,8 @@
     </ul>
     <div class="nav-right">
       <div class="lang-switch" role="group" aria-label="Язык / Language">
-        <button class="lang-btn" data-lang="ru" onclick="XPAT4.setLang('ru')">RU</button>
-        <button class="lang-btn" data-lang="en" onclick="XPAT4.setLang('en')">EN</button>
-        <button class="lang-btn" data-lang="zh" onclick="XPAT4.setLang('zh')">中文</button>
+        <a class="lang-btn active" data-lang="ru" href="/catalog" hreflang="ru" lang="ru" aria-current="true" title="Русский">RU</a>
+        <a class="lang-btn" data-lang="en" href="/en/catalog" hreflang="en" lang="en" title="English">EN</a>
       </div>
       <a class="nav-cta" href="/contact#brief" data-ru="Консультация" data-en="Consultation" data-zh="咨询">Консультация</a>
     </div>
@@ -246,7 +251,7 @@
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=202611211"></script>
+<script src="/xpat4.js?v=202611221"></script>
 <script>
   let currentFilter = 'all';
   let specialists = [];
@@ -325,7 +330,7 @@
     if (hash) { setTimeout(() => { const el = document.querySelector(hash); if (el) el.scrollIntoView({ behavior:'smooth', block:'center' }); }, 100); }
   }
 
-  fetch('specialists.json?v=' + Date.now()).then(r => r.json()).then(data => {
+  fetch('/specialists.json?v=' + Date.now()).then(r => r.json()).then(data => {
     specialists = data;
     renderFilters();
     renderCards();

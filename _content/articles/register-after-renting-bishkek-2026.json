@@ -5,125 +5,147 @@
   "category": "residence",
   "title": {
     "ru": "Сняли квартиру в Бишкеке: как оформить регистрацию по новым правилам",
-    "en": "Rented a flat in Bishkek: how to register under the new rules"
+    "en": "Rented a flat in Bishkek: how to register under the new rules",
+    "zh": "在比什凯克租了房：如何按新规办理登记"
   },
   "summary": {
     "ru": "Сроки, адрес, согласие собственника, 12 м² на человека и что делать при отъезде. По порядку, который действует с 23 сентября 2026 года.",
-    "en": "Deadlines, address, the owner's consent, 12 m² per person and what to do when you leave. Based on the procedure in force since September 23, 2026."
+    "en": "Deadlines, address, the owner's consent, 12 m² per person and what to do when you leave. Based on the procedure in force since September 23, 2026.",
+    "zh": "期限、地址、房主同意、每人12平方米，以及离境时该怎么办。依据2026年9月23日起施行的程序。"
   },
   "blocks": [
     {
       "p": {
         "ru": "Новый порядок регистрации иностранцев утверждён постановлением № 600 от 4 сентября 2026 года. По словам главы миграционного департамента «Кызмат», он начал действовать 23 сентября. Ниже то, что важно, если вы живёте в съёмной квартире.",
-        "en": "The new procedure for registering foreigners was set by resolution No. 600 of September 4, 2026. According to the head of the migration department at Kyzmat, it took effect on September 23. Below is what matters if you live in a rented flat."
+        "en": "The new procedure for registering foreigners was set by resolution No. 600 of September 4, 2026. According to the head of the migration department at Kyzmat, it took effect on September 23. Below is what matters if you live in a rented flat.",
+        "zh": "外国人登记新程序由2026年9月4日第600号决议规定。据国家机构\"Kyzmat\"移民部门负责人说，新程序于9月23日生效。下面是住在租来的房子里需要知道的内容。"
       }
     },
     {
       "h2": {
         "ru": "Сколько у вас времени",
-        "en": "How much time you have"
+        "en": "How much time you have",
+        "zh": "您有多少时间"
       }
     },
     {
       "p": {
         "ru": "Регистрироваться нужно после въезда и не позже последнего дня, когда можно находиться в стране без регистрации. Для граждан ряда стран этот срок — 30 дней. Вот список, который приводит «Экономист.kg» со ссылкой на «Кызмат»:",
-        "en": "You register after you enter the country, and no later than the last day you are allowed to stay without registration. For citizens of a number of countries this is 30 days. Here is the list given by Economist.kg, citing Kyzmat:"
+        "en": "You register after you enter the country, and no later than the last day you are allowed to stay without registration. For citizens of a number of countries this is 30 days. Here is the list given by Economist.kg, citing Kyzmat:",
+        "zh": "登记在入境后办理，最迟在允许免登记停留的最后一天。对一些国家的公民来说是30天。以下是Economist.kg援引Kyzmat给出的名单："
       }
     },
     {
       "p": {
         "ru": "Австралия, Австрия, Бельгия, Великобритания, Германия, Греция, Дания, Испания, Италия, Канада, Нидерланды, Новая Зеландия, Норвегия, Польша, Португалия, Республика Корея, Сингапур, США, Финляндия, Франция, Швейцария, Швеция, Япония.",
-        "en": "Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Greece, Italy, Japan, the Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Korea, Spain, Sweden, Switzerland, the UK, the USA."
+        "en": "Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Greece, Italy, Japan, the Netherlands, New Zealand, Norway, Poland, Portugal, Singapore, South Korea, Spain, Sweden, Switzerland, the UK, the USA.",
+        "zh": "澳大利亚、奥地利、比利时、加拿大、丹麦、芬兰、法国、德国、希腊、意大利、日本、荷兰、新西兰、挪威、波兰、葡萄牙、新加坡、韩国、西班牙、瑞典、瑞士、英国、美国。"
       }
     },
     {
       "p": {
         "ru": "Если вашей страны в списке нет, срок может быть другим. Уточните в «Кызмат», прежде чем считать дни самостоятельно.",
-        "en": "If your country is not on the list, the period may be different. Ask Kyzmat before you count the days yourself."
+        "en": "If your country is not on the list, the period may be different. Ask Kyzmat before you count the days yourself.",
+        "zh": "如果您的国家不在名单上，期限可能不同。在自己计算天数之前，请先向Kyzmat确认。"
       }
     },
     {
       "h2": {
         "ru": "Где и как",
-        "en": "Where and how"
+        "en": "Where and how",
+        "zh": "在哪里办，怎么办"
       }
     },
     {
       "p": {
         "ru": "Регистрируют по адресу, где вы на самом деле живёте. Документы можно подать лично или онлайн. Для первой регистрации нужен паспорт, с которым вы въехали.",
-        "en": "You are registered at the address where you actually live. You can file the documents in person or online. For the first registration you need the passport you entered with."
+        "en": "You are registered at the address where you actually live. You can file the documents in person or online. For the first registration you need the passport you entered with.",
+        "zh": "按您实际居住的地址登记。文件可以亲自提交，也可以在线提交。首次登记需要您入境时使用的护照。"
       }
     },
     {
       "p": {
         "ru": "Если тот, кто вас принимает, не собственник квартиры, нужно нотариально заверенное согласие собственника или доверенность, где регистрация прямо разрешена.",
-        "en": "If the person hosting you is not the owner of the flat, you need a notarized consent from the owner, or a power of attorney that explicitly allows registration."
+        "en": "If the person hosting you is not the owner of the flat, you need a notarized consent from the owner, or a power of attorney that explicitly allows registration.",
+        "zh": "如果接待您的人不是房主，需要房主经公证的同意书，或明确允许办理登记的委托书。"
       }
     },
     {
       "h2": {
         "ru": "Сколько места нужно на человека",
-        "en": "How much space per person"
+        "en": "How much space per person",
+        "zh": "每人需要多少面积"
       }
     },
     {
       "p": {
         "ru": "Для квартиры или дома считают не меньше 12 м² жилой площади на человека. Близких родственников это правило не касается. Если снимаете комнату или живёте вдвоём-втроём на небольшой площади, проверьте метраж до подписания договора.",
-        "en": "For a flat or house the rule is at least 12 m² of living space per person. It does not apply to close relatives. If you rent a room, or share a small flat with one or two other people, check the floor area before you sign the contract."
+        "en": "For a flat or house the rule is at least 12 m² of living space per person. It does not apply to close relatives. If you rent a room, or share a small flat with one or two other people, check the floor area before you sign the contract.",
+        "zh": "住宅或公寓的标准是每人至少12平方米居住面积。近亲属不受此限制。如果您租一个房间，或与一两个人合租小公寓，签合同前请核对面积。"
       }
     },
     {
       "h2": {
         "ru": "Когда регистрацию нужно менять",
-        "en": "When the registration has to change"
+        "en": "When the registration has to change",
+        "zh": "什么情况下需要变更登记"
       }
     },
     {
       "ul": [
         {
           "ru": "Сменили адрес, паспорт или личные данные, изменился срок или цель пребывания: перерегистрируйтесь в течение 10 рабочих дней.",
-          "en": "You changed address, passport or personal data, or your period or purpose of stay changed: re-register within 10 working days."
+          "en": "You changed address, passport or personal data, or your period or purpose of stay changed: re-register within 10 working days.",
+          "zh": "您更换了地址、护照或个人信息，或者停留期限或目的发生变化：须在10个工作日内重新登记。"
         },
         {
           "ru": "Уехали из Кыргызстана на 30 календарных дней и больше: регистрация сама становится недействительной. После возвращения оформляйте заново.",
-          "en": "You left Kyrgyzstan for 30 calendar days or more: the registration becomes invalid on its own. Register again after you come back."
+          "en": "You left Kyrgyzstan for 30 calendar days or more: the registration becomes invalid on its own. Register again after you come back.",
+          "zh": "您离开吉尔吉斯斯坦30个日历日或以上：登记自动失效。回来后重新登记。"
         },
         {
           "ru": "Продлеваете регистрацию: нужен документ, который подтверждает право находиться в стране, например виза, вид на жительство или резидент-карта.",
-          "en": "You extend the registration: you need a document that confirms your right to stay, such as a visa, a residence permit or a resident card."
+          "en": "You extend the registration: you need a document that confirms your right to stay, such as a visa, a residence permit or a resident card.",
+          "zh": "您延长登记：需要证明您有权停留的文件，例如签证、居留许可或居民卡。"
         }
       ]
     },
     {
       "h2": {
         "ru": "Что спросить у хозяина до договора",
-        "en": "What to ask the landlord before the contract"
+        "en": "What to ask the landlord before the contract",
+        "zh": "签合同前要问房东的问题"
       }
     },
     {
       "ul": [
         {
           "ru": "Готов ли он вас регистрировать. Лучше узнать это до того, как вы заплатили.",
-          "en": "Whether the landlord is ready to register you. Better to find out before you pay anything."
+          "en": "Whether the landlord is ready to register you. Better to find out before you pay anything.",
+          "zh": "房东是否愿意为您办理登记。最好在付钱之前问清楚。"
         },
         {
           "ru": "Собственник ли он. Попросите документ на квартиру и паспорт.",
-          "en": "Whether the landlord owns the flat. Ask to see the ownership document and a passport."
+          "en": "Whether the landlord owns the flat. Ask to see the ownership document and a passport.",
+          "zh": "房东是否是房主。请查看产权文件和护照。"
         },
         {
           "ru": "Сколько в квартире жилой площади и сколько человек будет там жить.",
-          "en": "How much living space the flat has and how many people will live there."
+          "en": "How much living space the flat has and how many people will live there.",
+          "zh": "房子的居住面积是多少，将有几个人住。"
         },
         {
           "ru": "Запишите в договор адрес, срок, сумму и залог. При заселении сфотографируйте состояние квартиры.",
-          "en": "Put the address, term, amount and deposit in the contract. Take photos of the flat when you move in."
+          "en": "Put the address, term, amount and deposit in the contract. Take photos of the flat when you move in.",
+          "zh": "在合同中写明地址、期限、金额和押金。入住时给房子拍照。"
         }
       ]
     },
     {
       "note": {
         "ru": "Порядок новый, и на практике что-то может отличаться. Если у вас просят документы, которых нет в этой статье, или называют другой срок, уточните в «Кызмат».",
-        "en": "The procedure is new and practice may differ in places. If you are asked for documents that are not mentioned here, or told a different period, check with Kyzmat."
+        "en": "The procedure is new and practice may differ in places. If you are asked for documents that are not mentioned here, or told a different period, check with Kyzmat.",
+        "zh": "程序是新的，各地做法可能不同。如果要求您提供这里没有提到的文件，或告诉您不同的期限，请向Kyzmat核实。"
       }
     }
   ],
@@ -148,28 +170,34 @@
     "status": "in_force",
     "situation": {
       "ru": "Я снял квартиру в Бишкеке",
-      "en": "I rented a flat in Bishkek"
+      "en": "I rented a flat in Bishkek",
+      "zh": "我在比什凯克租了房"
     },
     "who": {
       "ru": "Тем, кто живёт в съёмном жилье и должен встать на регистрацию.",
-      "en": "For anyone renting who needs to register."
+      "en": "For anyone renting who needs to register.",
+      "zh": "适合租房并需要办理登记的人。"
     },
     "short": [
       {
         "ru": "Регистрируйтесь не позже последнего дня срока без регистрации: для граждан США, ЕС, Великобритании и ряда стран это 30 дней.",
-        "en": "Register no later than the last day of the registration-free period: 30 days for citizens of the USA, EU, UK and several other countries."
+        "en": "Register no later than the last day of the registration-free period: 30 days for citizens of the USA, EU, UK and several other countries.",
+        "zh": "最迟在免登记期限的最后一天办理登记：美国、欧盟、英国和其他一些国家的公民为30天。"
       },
       {
         "ru": "Если хозяин не собственник, нужно нотариальное согласие собственника или доверенность.",
-        "en": "If the landlord is not the owner, you need the owner's notarised consent or a power of attorney."
+        "en": "If the landlord is not the owner, you need the owner's notarised consent or a power of attorney.",
+        "zh": "如果出租人不是房主，需要房主经公证的同意书或委托书。"
       },
       {
         "ru": "Для квартиры считают не меньше 12 м² жилой площади на человека.",
-        "en": "The rule is at least 12 m² of living space per person."
+        "en": "The rule is at least 12 m² of living space per person.",
+        "zh": "标准是每人至少12平方米居住面积。"
       },
       {
         "ru": "Выезд на 30 дней и больше аннулирует регистрацию.",
-        "en": "Leaving for 30 days or more cancels the registration."
+        "en": "Leaving for 30 days or more cancels the registration.",
+        "zh": "离境30天或以上，登记即失效。"
       }
     ]
   }

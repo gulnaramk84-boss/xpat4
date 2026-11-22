@@ -37,3 +37,6 @@ fs.writeFileSync(sPath, sm, 'utf8');
 console.log(`Added ${added} item(s); news.json now has ${news.length}.`);
 
 require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'build-search.js')], { stdio: 'inherit' });
+
+// language versions (/en/, /zh/), hreflang, sitemap.xml
+require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'build-lang.js')], { stdio: 'inherit' });

@@ -1,0 +1,332 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Residence permits and registration in Kyrgyzstan | xpat4.org</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Residence permit (VNJ) and registration in Kyrgyzstan. Step-by-step guide for expats.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"></noscript>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --warm-white: #faf8f4; --ink: #1a1814; --ink-60: rgba(26,24,20,0.6); --ink-30: rgba(26,24,20,0.3); --ink-10: rgba(26,24,20,0.08); --accent: #2d5a3d; --line: rgba(26,24,20,0.12); }
+    body { font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+
+
+
+
+
+
+    .back { font-size:13px; color:var(--ink-60); text-decoration:none; }
+    .back::before { content:'← '; }
+    .back:hover { color:var(--ink); }
+    .page-hero { padding:160px 48px 80px; max-width:760px; margin:0 auto; border-bottom:1px solid var(--line); }
+    .eyebrow { font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-bottom:24px; display:flex; align-items:center; gap:10px; }
+    .eyebrow::before { content:''; display:block; width:24px; height:1px; background:var(--accent); }
+    h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(40px,6vw,68px); font-weight:300; line-height:1.1; margin-bottom:22px; }
+    .page-sub { font-size:16px; color:var(--ink-60); font-weight:300; line-height:1.7; }
+    .content { max-width:760px; margin:0 auto; padding:72px 48px; }
+    .topic-block { padding:40px 0; border-bottom:1px solid var(--line); }
+    .topic-block:last-child { border-bottom:none; }
+    .topic-num { font-size:11px; color:var(--ink-30); letter-spacing:0.12em; margin-bottom:12px; }
+    h2 { font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:400; margin-bottom:14px; }
+    p { font-size:15px; color:var(--ink-60); font-weight:300; line-height:1.7; }
+    .steps { margin-top:20px; display:flex; flex-direction:column; gap:10px; }
+    .step { display:flex; gap:16px; align-items:flex-start; padding:14px 0; border-top:1px solid var(--line); }
+    .step-n { font-size:12px; color:var(--accent); font-weight:500; min-width:22px; }
+    .step-t { font-size:14px; color:var(--ink-60); font-weight:300; line-height:1.6; }
+    footer { padding:36px 48px; border-top:1px solid var(--line); display:flex; justify-content:space-between; align-items:center; }
+    .footer-logo { font-family:'Cormorant Garamond',serif; font-size:18px; color:var(--ink-60); text-decoration:none; }
+    .footer-logo span { color:var(--accent); }
+    .footer-copy { font-size:12px; color:var(--ink-30); }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+  
+    /* ── MOBILE FIXES ── */
+    @media (max-width: 768px) {
+      /* Page layout */
+      body { font-size: 15px; }
+      .page-hero, .content, .page-wrap, .wrap,
+      .calc-wrap, .city-selector, .checklist-wrap,
+      .filters-bar, .catalog-grid, .page-hero { padding-left: 20px !important; padding-right: 20px !important; }
+
+      /* Cards grids → single column */
+      .cards-grid,
+      .consultants-grid,
+      .testimonials-grid,
+      .catalog-grid,
+      .events-grid,
+      .why-grid,
+      .form-grid,
+      .form-grid-3,
+      .quick-actions,
+      .stats-grid,
+      .price-grid,
+      .news-grid { grid-template-columns: 1fr !important; }
+
+      /* Nomad section */
+      .nomad-section { grid-template-columns: 1fr !important; padding: 40px 24px !important; margin: 0 20px 60px !important; }
+
+      /* Calculator */
+      .calc-grid { grid-template-columns: 1fr !important; }
+      .calc-cell.home, .calc-col-header.home { border-left: 1px solid var(--line) !important; }
+
+      /* Catalog specialist cards */
+      .specialist-card { padding: 20px 16px !important; }
+      .card-top { gap: 12px !important; }
+      .card-bottom { flex-direction: column !important; align-items: flex-start !important; gap: 10px !important; }
+      .s-contacts { flex-wrap: wrap !important; }
+
+      /* Contact page */
+      .expert-card { flex-direction: column !important; padding: 24px 20px !important; gap: 16px !important; }
+      .form-row { grid-template-columns: 1fr !important; }
+
+      /* Savings box */
+      .savings-box { flex-direction: column !important; align-items: flex-start !important; }
+
+      /* Final CTA */
+      .final-cta, .bottom-cta { padding: 60px 20px !important; }
+
+      /* Sections */
+      .section, .cards-section, .stats-strip,
+      .testimonials-section, .quick-actions { padding-left: 20px !important; padding-right: 20px !important; }
+
+      /* Catalog intro */
+      .catalog-intro { flex-direction: column !important; align-items: flex-start !important; }
+
+      /* Hero */
+      .hero { padding: 120px 20px 60px !important; }
+      h1 { font-size: clamp(36px, 10vw, 54px) !important; }
+
+      /* Suggest box */
+      .suggest-box { flex-direction: column !important; align-items: flex-start !important; }
+
+      /* Manual news items */
+      .manual-item { grid-template-columns: 1fr !important; }
+
+      /* Event cards */
+      .event-card { flex-direction: column !important; gap: 16px !important; }
+
+      /* Join page why-grid */
+      .why-grid { grid-template-columns: 1fr 1fr !important; }
+    }
+
+    @media (max-width: 480px) {
+      .why-grid { grid-template-columns: 1fr !important; }
+      .cat-toggles { gap: 6px !important; }
+      .hero-actions { flex-direction: column !important; align-items: flex-start !important; }
+    }
+
+  </style>
+  <link rel="canonical" href="https://xpat4.org/en/residence">
+  <!-- i18n -->
+  <link rel="alternate" hreflang="ru" href="https://xpat4.org/residence">
+  <link rel="alternate" hreflang="en" href="https://xpat4.org/en/residence">
+  <link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/residence">
+  <meta name="xpat4-langs" content='{"zh":["index","contact","kyrgyzstan-chinese-investors","relocate-kyrgyzstan-from-china","open-osoo-foreigner-kyrgyzstan-2026","work-permit-foreigners-kyrgyzstan-2026","register-after-renting-bishkek-2026"],"noen":["privacy","terms"]}'>
+  <!-- /i18n -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="xpat4.org">
+  <meta property="og:title" content="Residence permits and registration in Kyrgyzstan">
+  <meta property="og:description" content="Residence permit (VNJ) and registration in Kyrgyzstan. Step-by-step guide for expats.">
+  <meta property="og:url" content="https://xpat4.org/en/residence">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://xpat4.org/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
+  <link rel="stylesheet" href="/site.css?v=202611221">
+</head>
+<body>
+<a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Skip to content</a>
+      <nav>
+    <a class="logo" href="/en/">xpat<span>4</span>.org</a>
+    <ul class="nav-center">
+      <li><a href="/en/guides" data-ru="Гайды" data-en="Guides" data-zh="指南">Guides</a></li>
+      <li><a href="/en/news" data-ru="Новости" data-en="News" data-zh="新闻">News</a></li>
+      <li><a href="/en/catalog" data-ru="Специалисты" data-en="Specialists" data-zh="专家">Specialists</a></li>
+      <li class="has-sub">
+        <a href="/en/calculator" class="nav-sub-toggle" aria-haspopup="true" data-ru="Инструменты" data-en="Tools" data-zh="工具">Tools</a>
+        <ul class="nav-sub">
+          <li><a href="/en/calculator" data-ru="Калькулятор стоимости жизни" data-en="Cost of living calculator" data-zh="生活成本计算器">Cost of living calculator</a></li>
+          <li><a href="/en/checklist" data-ru="Чеклист: первые 30 дней" data-en="Checklist: first 30 days" data-zh="清单：头30天">Checklist: first 30 days</a></li>
+        </ul>
+      </li>
+      <li><a href="/en/contact" data-ru="Контакты" data-en="Contacts" data-zh="联系我们">Contacts</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switch" role="group" aria-label="Язык / Language">
+        <a class="lang-btn" data-lang="ru" href="/residence" hreflang="ru" lang="ru" title="Русский">RU</a>
+        <a class="lang-btn active" data-lang="en" href="/en/residence" hreflang="en" lang="en" aria-current="true" title="English">EN</a>
+      </div>
+      <a class="nav-cta" href="/en/contact#brief" data-ru="Консультация" data-en="Consultation" data-zh="咨询">Consultation</a>
+    </div>
+    <button class="nav-burger" id="nav-burger" aria-label="Меню" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/en/guides" data-ru="Гайды" data-en="Guides" data-zh="指南">Guides</a>
+    <a href="/en/news" data-ru="Новости" data-en="News" data-zh="新闻">News</a>
+    <a href="/en/catalog" data-ru="Специалисты" data-en="Specialists" data-zh="专家">Specialists</a>
+    <a href="/en/calculator" data-ru="Калькулятор" data-en="Calculator" data-zh="计算器">Calculator</a>
+    <a href="/en/checklist" data-ru="Чеклист" data-en="Checklist" data-zh="清单">Checklist</a>
+    <a href="/en/contact" data-ru="Контакты" data-en="Contacts" data-zh="联系我们">Contacts</a>
+    <a href="/en/join" data-ru="Для специалистов" data-en="For Specialists" data-zh="专家入驻">For Specialists</a>
+  </div>
+<main id="main">
+
+
+  <div class="page-hero">
+    <div class="eyebrow"
+      data-ru="02 · Регистрация и ВНЖ"
+      data-en="02 · Registration & Residence"
+      data-zh="02 · 注册与居留">02 · Registration & Residence</div>
+    <h1 data-ru="Легальное проживание в КР" data-en="Legal Residence in Kyrgyzstan" data-zh="在吉尔吉斯斯坦合法居留">Legal Residence in Kyrgyzstan</h1>
+    <p class="page-sub"
+      data-ru="Временная регистрация по месту пребывания, вид на жительство и пути к постоянному проживанию в Кыргызстане."
+      data-en="Temporary registration, residence permit (VNJ) and pathways to permanent residence in Kyrgyzstan."
+      data-zh="在吉尔吉斯斯坦的临时登记、居留许可（VNJ）及长期居留途径。">Temporary registration, residence permit (VNJ) and pathways to permanent residence in Kyrgyzstan.</p>
+  </div>
+
+  <div class="content">
+    <div class="topic-block">
+      <div class="topic-num">02.1</div>
+      <h2 data-ru="Временная регистрация" data-en="Temporary Registration" data-zh="临时登记">Temporary Registration</h2>
+      <p
+        
+         data-ru="Иностранные граждане регистрируются по фактическому адресу пребывания, если остаются дольше срока, разрешённого без регистрации: с 23 сентября 2026 года это 30 дней для граждан США, ЕС, Великобритании, Японии, Республики Корея и ряда других стран, а также для граждан ЕАЭС. Регистрацию подаёт принимающая сторона — отель, хозяин жилья или работодатель — в ЦОН или онлайн." data-en="Foreign nationals register at their actual address of stay if they remain longer than the registration-free period: since 23 September 2026 this is 30 days for citizens of the USA, EU, UK, Japan, South Korea and several other countries, as well as for EAEU citizens. Registration is filed by the host (hotel, landlord or employer) at a public service center or online." data-zh="外国公民如停留超过免登记期限，须在实际停留地址办理登记：自2026年9月23日起，美国、欧盟、英国、日本、韩国等国公民以及欧亚经济联盟公民的该期限为30天。登记由接待方（酒店、房东或雇主）通过公共服务中心或在线提交。">Foreign nationals register at their actual address of stay if they remain longer than the registration-free period: since 23 September 2026 this is 30 days for citizens of the USA, EU, UK, Japan, South Korea and several other countries, as well as for EAEU citizens. Registration is filed by the host (hotel, landlord or employer) at a public service center or online.</p>
+    </div>
+
+    <div class="topic-block">
+      <div class="topic-num">02.2</div>
+      <h2 data-ru="Вид на жительство (ВНЖ)" data-en="Residence Permit (VNJ)" data-zh="居留许可（VNJ）">Residence Permit (VNJ)</h2>
+      <p data-ru="ВНЖ выдаётся на 1–5 лет с правом продления. Основания для получения: трудоустройство, брак с гражданином КР, учёба, инвестиции или «пассивные» основания. Куда подавать документы, сейчас меняется: функции по ВНЖ передают Министерству труда, соцобеспечения и миграции (<a href='/en/temporary-rules-foreigners-kyrgyzstan-2026'>что известно</a>)."
+         data-en="The residence permit is issued for 1–5 years and is renewable. Grounds include employment, marriage to a Kyrgyz citizen, study, investment, or passive income. Where to apply is changing: residence-permit functions are being moved to the Ministry of Labour, Social Welfare and Migration (<a href='/en/temporary-rules-foreigners-kyrgyzstan-2026'>what we know</a>)."
+         data-zh="居留许可有效期1至5年，可续期。申请依据包括就业、与吉尔吉斯公民结婚、学习、投资或被动收入。申请地点正在变化：居留许可职能正移交劳动、社会保障和移民部（<a href='/en/temporary-rules-foreigners-kyrgyzstan-2026'>已知情况</a>）。">The residence permit is issued for 1–5 years and is renewable. Grounds include employment, marriage to a Kyrgyz citizen, study, investment, or passive income. Where to apply is changing: residence-permit functions are being moved to the Ministry of Labour, Social Welfare and Migration (<a href='/en/temporary-rules-foreigners-kyrgyzstan-2026'>what we know</a>).</p>
+      <div class="steps">
+        <div class="step"><span class="step-n">1</span>
+          <span class="step-t"
+            data-ru="Выбрать основание для ВНЖ"
+            data-en="Choose grounds for your residence permit"
+            data-zh="选择居留许可申请依据">Choose grounds for your residence permit</span>
+        </div>
+        <div class="step"><span class="step-n">2</span>
+          <span class="step-t"
+            data-ru="Собрать пакет документов (паспорт, фото, справки, основание)"
+            data-en="Gather documents (passport, photos, certificates, proof of grounds)"
+            data-zh="准备材料（护照、照片、证明文件、申请依据）">Gather documents (passport, photos, certificates, proof of grounds)</span>
+        </div>
+        <div class="step"><span class="step-n">3</span>
+          <span class="step-t"
+            data-ru="Подать заявление в ДПВС МВД КР"
+            data-en="Submit application to the Passport & Visa Control Dept."
+            data-zh="向吉内务部护照与签证管理局提交申请">Submit application to the Passport & Visa Control Dept.</span>
+        </div>
+        <div class="step"><span class="step-n">4</span>
+          <span class="step-t"
+            data-ru="Дождаться решения (обычно 30 дней)"
+            data-en="Wait for decision (usually 30 days)"
+            data-zh="等待决定（通常30天）">Wait for decision (usually 30 days)</span>
+        </div>
+        <div class="step"><span class="step-n">5</span>
+          <span class="step-t"
+            data-ru="Получить ВНЖ и встать на учёт"
+            data-en="Receive residence permit and complete registration"
+            data-zh="领取居留许可并完成登记">Receive residence permit and complete registration</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="topic-block">
+      <div class="topic-num">02.3</div>
+      <h2 data-ru="Постоянное проживание и гражданство" data-en="Permanent Residence & Citizenship" data-zh="永久居留与公民身份">Permanent Residence & Citizenship</h2>
+      <p data-ru="После 5 лет непрерывного проживания по ВНЖ возможно получение постоянного вида на жительство или гражданства КР. Для некоторых категорий (супруги граждан, беженцы, инвесторы) сроки сокращены."
+         data-en="After 5 years of continuous residence on a VNJ, you may apply for permanent residence or Kyrgyz citizenship. Shorter periods apply for spouses of citizens, refugees, and investors."
+         data-zh="持VNJ连续居住5年后，可申请永久居留或吉尔吉斯公民身份。公民配偶、难民和投资者可享受缩短期限。">After 5 years of continuous residence on a VNJ, you may apply for permanent residence or Kyrgyz citizenship. Shorter periods apply for spouses of citizens, refugees, and investors.</p>
+    </div>
+  </div>
+
+  </main>
+
+<footer>
+  <a class="footer-logo" href="/en/">xpat<span>4</span>.org</a>
+  <ul class="footer-links">
+    <li><a href="/en/visa" data-ru="Виза" data-en="Visa" data-zh="签证">Visa</a></li>
+    <li><a href="/en/catalog" data-ru="Каталог" data-en="Catalog" data-zh="目录">Catalog</a></li>
+    <li><a href="/en/calculator" data-ru="Калькулятор" data-en="Calculator" data-zh="计算器">Calculator</a></li>
+    <li><a href="/en/join" data-ru="Для специалистов" data-en="For Specialists" data-zh="专家入驻">For Specialists</a></li>
+    <li><a href="/en/contact" data-ru="Контакты" data-en="Contacts" data-zh="联系我们">Contacts</a></li>
+    <li><a href="/terms" data-ru="Оферта" data-en="Terms" data-zh="条款">Terms</a></li>
+    <li><a href="/privacy" data-ru="Конфиденциальность" data-en="Privacy" data-zh="隐私">Privacy</a></li>
+    <li><a href="/en/how-we-check" data-ru="Как мы проверяем" data-en="How we check" data-zh="我们如何核实">How we check</a></li>
+  </ul>
+  <span class="footer-copy">© 2026 xpat4.org</span>
+</footer>
+
+  <script src="/xpat4.js?v=202611221"></script>
+
+
+
+<script>
+(function(){
+  var burger = document.getElementById('nav-burger');
+  var menu   = document.getElementById('mobile-menu');
+  if (!burger || !menu) return;
+  burger.addEventListener('click', function(){ menu.classList.toggle('open'); });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ menu.classList.remove('open'); });
+  });
+})();
+</script>
+<script>
+(function(){
+  var b = document.getElementById('nav-burger');
+  var m = document.getElementById('mobile-menu');
+  if (!b || !m) return;
+  // Remove duplicate listeners by cloning
+  var b2 = b.cloneNode(true);
+  b.parentNode.replaceChild(b2, b);
+  b2.addEventListener('click', function(e){
+    e.stopPropagation();
+    m.classList.toggle('open');
+  });
+  m.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ m.classList.remove('open'); });
+  });
+  // Close on outside click
+  document.addEventListener('click', function(e){
+    if (!b2.contains(e.target) && !m.contains(e.target)){
+      m.classList.remove('open');
+    }
+  });
+})();
+</script>
+</body>
+</html>

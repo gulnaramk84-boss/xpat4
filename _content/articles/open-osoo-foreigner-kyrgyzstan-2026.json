@@ -5,11 +5,13 @@
   "category": "business",
   "title": {
     "ru": "Открываю ОсОО в Кыргызстане иностранцем: что известно о регистрации",
-    "en": "Opening an LLC (OsOO) in Kyrgyzstan as a foreigner: what we know about registration"
+    "en": "Opening an LLC (OsOO) in Kyrgyzstan as a foreigner: what we know about registration",
+    "zh": "外国人在吉尔吉斯斯坦开办有限责任公司（OsOO）：注册须知"
   },
   "summary": {
     "ru": "Кто может быть учредителем, сколько занимает регистрация, что поменялось в ноябре и что с банковским счётом. Без суммы пошлины: в проверенных источниках её нет.",
-    "en": "Who can be a founder, how long registration takes, what changed in November and what about the bank account. No state fee figure: the sources we checked do not give one."
+    "en": "Who can be a founder, how long registration takes, what changed in November and what about the bank account. No state fee figure: the sources we checked do not give one.",
+    "zh": "谁可以当创始人、注册需要多久、11月有哪些变化、银行账户怎么办。注册国家规费的金额我们查阅的来源中没有给出。"
   },
   "guide": {
     "num": 7,
@@ -17,28 +19,34 @@
     "status": "in_force",
     "situation": {
       "ru": "Я открываю компанию в Кыргызстане как иностранец",
-      "en": "I am opening a company in Kyrgyzstan as a foreigner"
+      "en": "I am opening a company in Kyrgyzstan as a foreigner",
+      "zh": "我是外国人，要在吉尔吉斯斯坦开公司"
     },
     "who": {
       "ru": "Иностранным предпринимателям, которые регистрируют ОсОО.",
-      "en": "For foreign entrepreneurs registering an LLC."
+      "en": "For foreign entrepreneurs registering an LLC.",
+      "zh": "适合注册有限责任公司的外国创业者。"
     },
     "short": [
       {
         "ru": "Учредителями ОсОО могут быть и иностранные физические и юридические лица; минимального капитала нет.",
-        "en": "Founders of an LLC can be foreign individuals and companies; there is no minimum capital."
+        "en": "Founders of an LLC can be foreign individuals and companies; there is no minimum capital.",
+        "zh": "外国自然人和外国公司都可以成为有限责任公司的创始人；没有最低注册资本要求。"
       },
       {
         "ru": "Регистрация идёт через «единое окно», стандартный срок — 3–5 рабочих дней, онлайн можно быстрее.",
-        "en": "Registration goes through a one-stop shop; the standard time is 3–5 working days, and online it can be faster."
+        "en": "Registration goes through a one-stop shop; the standard time is 3–5 working days, and online it can be faster.",
+        "zh": "注册实行\"一站式\"办理；标准时间为3–5个工作日，网上办理可以更快。"
       },
       {
         "ru": "С 20 ноября 2026 года вступают новые правила регистрации и ликвидации компаний (постановление № 746).",
-        "en": "New rules on company registration and liquidation (resolution No. 746) take effect on 20 November 2026."
+        "en": "New rules on company registration and liquidation (resolution No. 746) take effect on 20 November 2026.",
+        "zh": "公司注册和清算新规（第746号决议）于2026年11月20日生效。"
       },
       {
         "ru": "Размер пошлины и правила для ИП иностранца мы в проверенных источниках не нашли.",
-        "en": "We found neither the state fee nor the rules for a foreign sole proprietor in the sources we checked."
+        "en": "We found neither the state fee nor the rules for a foreign sole proprietor in the sources we checked.",
+        "zh": "我们查阅的来源中既没有注册国家规费金额，也没有外国人注册个体经营者的规定。"
       }
     ]
   },
@@ -46,76 +54,89 @@
     {
       "h2": {
         "ru": "Кто может быть учредителем и нужен ли капитал",
-        "en": "Who can be a founder and is capital required"
+        "en": "Who can be a founder and is capital required",
+        "zh": "谁可以当创始人，是否需要注册资本"
       }
     },
     {
       "p": {
         "ru": "По описанию Национального агентства инвестиций (данные на июнь 2026 года) учредителями ОсОО могут быть и иностранные физические и юридические лица. Учредителей не больше 30. Минимального уставного капитала для ОсОО нет, но его нужно полностью внести в течение первого года после регистрации.",
-        "en": "According to the National Investment Agency guide (data as of June 2026), founders of an LLC can be foreign individuals and legal entities. There can be no more than 30 founders. An LLC has no minimum charter capital, but it must be paid in full within the first year after registration."
+        "en": "According to the National Investment Agency guide (data as of June 2026), founders of an LLC can be foreign individuals and legal entities. There can be no more than 30 founders. An LLC has no minimum charter capital, but it must be paid in full within the first year after registration.",
+        "zh": "根据国家投资署的说明（截至2026年6月的数据），外国自然人和外国法人都可以成为有限责任公司的创始人。创始人不超过30名。有限责任公司没有最低注册资本，但须在注册后第一年内全额缴清。"
       }
     },
     {
       "h2": {
         "ru": "Как регистрируют и за сколько",
-        "en": "How registration works and how long it takes"
+        "en": "How registration works and how long it takes",
+        "zh": "如何注册，需要多长时间"
       }
     },
     {
       "p": {
         "ru": "Регистрация идёт по принципу «единого окна»: одновременно в органе юстиции, налоговой, статистике и Социальном фонде, с присвоением регистрационного номера, ИНН и кода ОКПО. Стандартный срок — 3–5 рабочих дней, за дополнительную плату быстрее.",
-        "en": "Registration follows a one-stop-shop principle: at the justice authority, tax service, statistics office and Social Fund at the same time, with a registration number, tax ID and statistical code assigned. The standard time is 3–5 working days, faster for an extra fee."
+        "en": "Registration follows a one-stop-shop principle: at the justice authority, tax service, statistics office and Social Fund at the same time, with a registration number, tax ID and statistical code assigned. The standard time is 3–5 working days, faster for an extra fee.",
+        "zh": "注册实行\"一站式\"原则：同时在司法机关、税务机关、统计部门和社会基金登记，并分配注册号、税号和统计代码。标准时间为3–5个工作日，加急需另付费。"
       }
     },
     {
       "p": {
         "ru": "Начальник Чуй-Бишкекского управления юстиции в июле 2026 года рассказал: если есть интернет и электронная или облачная подпись, юридическое лицо можно зарегистрировать онлайн. Срочные варианты — один рабочий день, шесть или три часа. Подать документы можно в любом территориальном управлении юстиции. Бумажного свидетельства больше нет, документ электронный.",
-        "en": "In July 2026 the head of the Chui-Bishkek justice department said that with internet access and an electronic or cloud signature a legal entity can be registered online. Express options take one working day, six hours or even three. Documents can be filed at any territorial justice office. There is no paper certificate any more; the document is electronic."
+        "en": "In July 2026 the head of the Chui-Bishkek justice department said that with internet access and an electronic or cloud signature a legal entity can be registered online. Express options take one working day, six hours or even three. Documents can be filed at any territorial justice office. There is no paper certificate any more; the document is electronic.",
+        "zh": "2026年7月，楚河—比什凯克司法局负责人表示，有网络并持有电子签名或云签名，就可以在线注册法人。加急办理需要一个工作日、六小时甚至三小时。文件可以在任何一个地方司法机关提交。纸质证书已取消，改为电子文件。"
       }
     },
     {
       "h2": {
         "ru": "Что поменялось в ноябре",
-        "en": "What changed in November"
+        "en": "What changed in November",
+        "zh": "11月有哪些变化"
       }
     },
     {
       "p": {
         "ru": "12 ноября 2026 года Economist.kg писал, что изменили правила регистрации и ликвидации компаний: постановление № 746, подписанное 9 ноября, вступает в силу 20 ноября. Иностранцам при оформлении документов разрешено указывать не только ПИН, но и иной идентификационный номер. Текст постановления мы не читали, поэтому перед подачей проверьте, что документы соответствуют новым требованиям.",
-        "en": "On 12 November 2026 Economist.kg reported that the rules for registering and liquidating companies had changed: resolution No. 746, signed on 9 November, takes effect on 20 November. When filing documents, foreigners may give not only a PIN but another identification number. We did not read the resolution itself, so before filing check that your documents meet the new requirements."
+        "en": "On 12 November 2026 Economist.kg reported that the rules for registering and liquidating companies had changed: resolution No. 746, signed on 9 November, takes effect on 20 November. When filing documents, foreigners may give not only a PIN but another identification number. We did not read the resolution itself, so before filing check that your documents meet the new requirements.",
+        "zh": "2026年11月12日，Economist.kg报道公司注册和清算规则已经修改：11月9日签署的第746号决议于11月20日生效。外国人提交文件时，除个人识别号（PIN）外，也可以填写其他识别号码。我们没有读到决议原文，提交前请确认您的文件符合新要求。"
       }
     },
     {
       "h2": {
         "ru": "Банковский счёт",
-        "en": "The bank account"
+        "en": "The bank account",
+        "zh": "银行账户"
       }
     },
     {
       "p": {
         "ru": "С 1 ноября 2026 года действует норма закона о сборе за аккредитацию счетов иностранных компаний, размер сбора правительство не утвердило (см. [новости](/news)). Проект постановления предлагает 200 тысяч сомов, его вынесли на общественное обсуждение 28 октября. Из публикации не следует, что сбор коснётся ОсОО, зарегистрированного в Кыргызстане с иностранным учредителем: речь идёт о счетах иностранных компаний. Уточняйте в банке.",
-        "en": "Since 1 November 2026 a legal provision on a fee for accrediting accounts of foreign companies is in force; the government has not set the amount (see the [news](/news)). A draft resolution proposes 200 thousand som and was put to public discussion on 28 October. The publication does not say the fee would apply to an LLC registered in Kyrgyzstan with a foreign founder: it concerns accounts of foreign companies. Ask your bank."
+        "en": "Since 1 November 2026 a legal provision on a fee for accrediting accounts of foreign companies is in force; the government has not set the amount (see the [news](/news)). A draft resolution proposes 200 thousand som and was put to public discussion on 28 October. The publication does not say the fee would apply to an LLC registered in Kyrgyzstan with a foreign founder: it concerns accounts of foreign companies. Ask your bank.",
+        "zh": "自2026年11月1日起，关于外国公司账户认证收费的法律规定开始生效；政府尚未确定金额（见[新闻](/news)）。一份决议草案建议收费20万索姆，已于10月28日公开征求意见。报道没有说明这项收费适用于有外国创始人、在吉尔吉斯斯坦注册的有限责任公司：它针对的是外国公司的账户。请向您的银行确认。"
       }
     },
     {
       "h2": {
         "ru": "Чего мы не нашли",
-        "en": "What we did not find"
+        "en": "What we did not find",
+        "zh": "我们没有找到的信息"
       }
     },
     {
       "ul": [
         {
           "ru": "Размера государственной пошлины за регистрацию.",
-          "en": "The state fee for registration."
+          "en": "The state fee for registration.",
+          "zh": "注册的国家规费金额。"
         },
         {
           "ru": "Правил регистрации ИП иностранцем и требований к виду на жительство.",
-          "en": "Rules for a foreigner registering as a sole proprietor, and any residence-permit requirements."
+          "en": "Rules for a foreigner registering as a sole proprietor, and any residence-permit requirements.",
+          "zh": "外国人注册为个体经营者的规定，以及是否需要居留许可。"
         },
         {
           "ru": "Требуется ли учредителю-иностранцу виза или вид на жительство: в прочитанных источниках прямого требования нет.",
-          "en": "Whether a foreign founder needs a visa or a residence permit: the sources we read give no direct requirement."
+          "en": "Whether a foreign founder needs a visa or a residence permit: the sources we read give no direct requirement.",
+          "zh": "外国创始人是否需要签证或居留许可：我们查阅的来源中没有直接规定。"
         }
       ]
     }
@@ -143,7 +164,8 @@
     {
       "date": "2026-11-19",
       "ru": "Первая публикация.",
-      "en": "First published."
+      "en": "First published.",
+      "zh": "首次发布。"
     }
   ]
 }

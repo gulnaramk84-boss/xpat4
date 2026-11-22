@@ -98,3 +98,7 @@ label .opt,
 
 .footer-how { font-size: 13px; color: var(--ink-60); text-decoration: none; }
 .footer-how:hover { color: var(--accent); }
+
+/* language switch: real links to /, /en/, /zh/ */
+a.lang-btn { text-decoration: none; display: inline-block; line-height: 1.4; }
+a.lang-btn:focus-visible { outline: 2px solid #2d5a3d; outline-offset: 2px; }

@@ -13,9 +13,9 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cost of Living Calculator Bishkek — xpat4.org | Калькулятор стоимости жизни</title>
+  <title>Калькулятор стоимости жизни в Бишкеке | xpat4.org</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <meta name="description" content="Compare your monthly expenses in Bishkek, Kyrgyzstan vs your home city. Free interactive calculator for expats. Сравните расходы в Бишкеке с вашим городом.">
+  <meta name="description" content="Сравните расходы в Бишкеке с вашим городом. Сравните ваши ежемесячные расходы в Бишкеке с текущим городом. Перетащите ползунки под ваш образ жизни." data-en="Compare your monthly expenses in Bishkek, Kyrgyzstan vs your home city. Free interactive calculator for expats.">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" media="print" onload="this.media='all'">
@@ -182,11 +182,17 @@
 
   </style>
   <link rel="canonical" href="https://xpat4.org/calculator">
+  <!-- i18n -->
+  <link rel="alternate" hreflang="ru" href="https://xpat4.org/calculator">
+  <link rel="alternate" hreflang="en" href="https://xpat4.org/en/calculator">
+  <link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/calculator">
+  <meta name="xpat4-langs" content='{"zh":["index","contact","kyrgyzstan-chinese-investors","relocate-kyrgyzstan-from-china","open-osoo-foreigner-kyrgyzstan-2026","work-permit-foreigners-kyrgyzstan-2026","register-after-renting-bishkek-2026"],"noen":["privacy","terms"]}'>
+  <!-- /i18n -->
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="xpat4.org">
-  <meta property="og:title" content="Cost of Living Calculator Bishkek — xpat4.org | Калькулятор стоимости жизни">
-  <meta property="og:description" content="Compare your monthly expenses in Bishkek, Kyrgyzstan vs your home city. Free interactive calculator for expats. Сравните расходы в Бишкеке с вашим городом.">
+  <meta property="og:title" content="Калькулятор стоимости жизни в Бишкеке">
+  <meta property="og:description" content="Сравните расходы в Бишкеке с вашим городом. Сравните ваши ежемесячные расходы в Бишкеке с текущим городом. Перетащите ползунки под ваш образ жизни.">
   <meta property="og:url" content="https://xpat4.org/calculator">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:image" content="https://xpat4.org/og-image.jpg">
@@ -194,7 +200,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://xpat4.org/og-image.jpg">
-  <link rel="stylesheet" href="/site.css?v=202611211">
+  <link rel="stylesheet" href="/site.css?v=202611221">
 </head>
 <body>
 <a class="skip-link" href="#main" data-ru="Перейти к содержанию" data-en="Skip to content" data-zh="跳到正文">Перейти к содержанию</a>
@@ -215,9 +221,8 @@
     </ul>
     <div class="nav-right">
       <div class="lang-switch" role="group" aria-label="Язык / Language">
-        <button class="lang-btn" data-lang="ru" onclick="XPAT4.setLang('ru')">RU</button>
-        <button class="lang-btn" data-lang="en" onclick="XPAT4.setLang('en')">EN</button>
-        <button class="lang-btn" data-lang="zh" onclick="XPAT4.setLang('zh')">中文</button>
+        <a class="lang-btn active" data-lang="ru" href="/calculator" hreflang="ru" lang="ru" aria-current="true" title="Русский">RU</a>
+        <a class="lang-btn" data-lang="en" href="/en/calculator" hreflang="en" lang="en" title="English">EN</a>
       </div>
       <a class="nav-cta" href="/contact#brief" data-ru="Консультация" data-en="Consultation" data-zh="咨询">Консультация</a>
     </div>
@@ -284,7 +289,7 @@
   <span class="footer-copy">© 2026 xpat4.org</span>
 </footer>
 
-<script src="/xpat4.js?v=202611211"></script>
+<script src="/xpat4.js?v=202611221"></script>
 <script>
 // ── DATA ──
 const CITIES = [

@@ -213,20 +213,74 @@ function rotateApiKey() {
 /* ── LANGUAGE SYSTEM ── */
 window.XPAT4 = window.XPAT4 || {};
 
+// Each language has its own URL: / (Russian), /en/... (English), /zh/... (Chinese).
+// The page language comes from the address, not from the browser.
 XPAT4.detectLang = function() {
-  const saved = localStorage.getItem('xpat4-lang');
-  if (saved && (saved === 'ru' || saved === 'en')) return saved;
-  const nav = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-  if (nav.startsWith('ru') || nav.startsWith('ky')) return 'ru';
-  return 'en';
+  const p = location.pathname;
+  if (p === '/en' || p.indexOf('/en/') === 0) return 'en';
+  if (p === '/zh' || p.indexOf('/zh/') === 0) return 'zh';
+  return 'ru';
 };
 
 XPAT4.currentLang = XPAT4.detectLang();
 
+// Language map written by _tools/build-lang.js: {zh:[slugs with Chinese], noen:[slugs without English]}
+XPAT4.langMap = (function () {
+  try { const m = document.querySelector('meta[name="xpat4-langs"]'); return m ? JSON.parse(m.content) : { zh: [], noen: [] }; } catch (e) { return { zh: [], noen: [] }; }
+})();
+// "/visa" -> "/en/visa" on English pages; Chinese pages fall back to English where there is no Chinese version.
+XPAT4.localPath = function (p) {
+  const lang = XPAT4.currentLang;
+  if (lang === 'ru' || typeof p !== 'string' || p.charAt(0) !== '/' || p.charAt(1) === '/') return p;
+  const m = p.match(/^\/([a-z0-9-]*)([#?].*)?$/);
+  if (!m) return p;
+  const slug = m[1] || 'index', rest = m[2] || '';
+  if ((XPAT4.langMap.noen || []).indexOf(slug) >= 0) return p;
+  const target = lang === 'zh' && (XPAT4.langMap.zh || []).indexOf(slug) >= 0 ? 'zh' : 'en';
+  return '/' + target + (slug === 'index' ? '/' : '/' + slug) + rest;
+};
+XPAT4.altUrl = function (lang) {
+  const l = document.querySelector('link[rel="alternate"][hreflang="' + (lang === 'zh' ? 'zh-Hans' : lang) + '"]');
+  return l ? l.getAttribute('href').replace(/^https?:\/\/[^/]+/, '') : null;
+};
+(function () {
+  const KEY = 'xpat4-lang-choice';
+  let saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) {}
+  // a visitor who picked a language in the switch is taken to that version of the page
+  if (saved && saved !== XPAT4.currentLang && ['ru', 'en', 'zh'].indexOf(saved) >= 0) {
+    const alt = XPAT4.altUrl(saved);
+    if (alt) { location.replace(alt + location.search + location.hash); return; }
+  }
+  document.addEventListener('click', function (e) {
+    const a = e.target.closest && e.target.closest('a.lang-btn[data-lang]');
+    if (a) { try { localStorage.setItem(KEY, a.dataset.lang); } catch (err) {} }
+  });
+  // first visit with the browser in another language: offer that version, never redirect
+  if (saved) return;
+  const nav = (navigator.language || 'ru').toLowerCase();
+  let want = nav.indexOf('zh') === 0 ? 'zh' : (nav.indexOf('ru') === 0 || nav.indexOf('ky') === 0) ? 'ru' : 'en';
+  if (want === 'zh' && !XPAT4.altUrl('zh')) want = 'en';
+  const alt = XPAT4.altUrl(want);
+  if (want === XPAT4.currentLang || !alt) return;
+  const TXT = { ru: 'Эта страница есть на русском', en: 'This page is available in English', zh: '本页有中文版' };
+  const show = function () {
+    if (document.getElementById('xpat4-langbar')) return;
+    const bar = document.createElement('div');
+    bar.id = 'xpat4-langbar';
+    bar.setAttribute('role', 'note');
+    bar.style.cssText = 'position:fixed;left:16px;right:16px;bottom:16px;z-index:9998;max-width:440px;margin:0 auto;background:#1a1814;color:#faf8f4;border-radius:10px;padding:12px 14px;display:flex;gap:12px;align-items:center;font:400 14px/1.4 "DM Sans",sans-serif;box-shadow:0 12px 32px -12px rgba(0,0,0,.5)';
+    bar.innerHTML = '<a href="' + alt + '" data-lang="' + want + '" class="lang-btn" style="flex:1;color:#faf8f4;text-decoration:underline;text-underline-offset:3px;background:none;box-shadow:none;padding:0;font-size:14px">' + TXT[want] + ' →</a>' +
+      '<button type="button" aria-label="Close" style="background:none;border:0;color:#faf8f4;font-size:18px;cursor:pointer;padding:0 4px">×</button>';
+    bar.querySelector('button').onclick = function () { try { localStorage.setItem(KEY, XPAT4.currentLang); } catch (e) {} bar.remove(); };
+    document.body.appendChild(bar);
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', show); else show();
+})();
+
 XPAT4.setLang = function(lang) {
   XPAT4.currentLang = lang;
-  localStorage.setItem('xpat4-lang', lang);
-  document.documentElement.lang = lang === 'ru' ? 'ru' : 'en';
+  document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
   document.documentElement.dir = 'ltr';
   document.body.style.direction = '';
 
@@ -926,11 +980,11 @@ XPAT4.SEARCH_I18N = {
       return;
     }
     results = search(q); sel = 0;
-    if (!results.length) { list.innerHTML = '<div class="xs-empty">' + t.empty + ' <a href="/contact#brief">' + t.ask + '</a></div>'; return; }
+    if (!results.length) { list.innerHTML = '<div class="xs-empty">' + t.empty + ' <a href="' + XPAT4.localPath('/contact#brief') + '">' + t.ask + '</a></div>'; return; }
     list.innerHTML = results.map((x, i) => {
       const date = x.dt ? new Date(x.dt).toLocaleDateString(XPAT4.currentLang === 'en' ? 'en-GB' : 'ru-RU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }) : '';
-      const title = (XPAT4.currentLang === 'en' && x.te) ? x.te : x.t;
-      return '<a class="xs-item' + (i === 0 ? ' sel' : '') + '" role="option" href="' + esc(x.u) + '"><div class="xs-meta"><span>' + esc(t.types[x.k] || '') + '</span>' + (date ? '<span>' + esc(date) + '</span>' : '') + '</div><div class="xs-title">' + esc(title) + '</div><div class="xs-snip">' + snippet(x, q) + '</div></a>';
+      const title = (XPAT4.currentLang !== 'ru' && x.te) ? x.te : x.t;
+      return '<a class="xs-item' + (i === 0 ? ' sel' : '') + '" role="option" href="' + esc(XPAT4.localPath(x.u)) + '"><div class="xs-meta"><span>' + esc(t.types[x.k] || '') + '</span>' + (date ? '<span>' + esc(date) + '</span>' : '') + '</div><div class="xs-title">' + esc(title) + '</div><div class="xs-snip">' + snippet(x, q) + '</div></a>';
     }).join('');
     list.querySelectorAll('.xs-item').forEach((a) => a.addEventListener('click', close));
   }

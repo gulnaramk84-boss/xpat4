@@ -1,47 +1,5 @@
 [
   {
-    "slug": "work-permit-foreigners-kyrgyzstan-2026",
-    "date": "2026-11-19",
-    "category": "work",
-    "title_ru": "Хочу работать в Кыргызстане: кто выдаёт разрешение и что известно о правилах",
-    "title_en": "I want to work in Kyrgyzstan: who issues the permit and what we know",
-    "summary_ru": "Разрешения на работу сейчас оформляет МИД по временному порядку до конца 2026 года, потом дело переходит к Минтруда. Что подтверждено, а чего в открытых источниках нет.",
-    "summary_en": "Work permits are currently issued by the Foreign Ministry under a temporary procedure until the end of 2026, then move to the Labour Ministry. What is confirmed and what the open sources do not say.",
-    "guide": {
-      "num": 5,
-      "group": "work",
-      "status": "soon",
-      "situation": {
-        "ru": "Я хочу работать в Кыргызстане",
-        "en": "I want to work in Kyrgyzstan"
-      },
-      "who": {
-        "ru": "Иностранцам, которые ищут работу, и работодателям, которые их нанимают.",
-        "en": "For foreigners looking for work and the employers hiring them."
-      },
-      "short": [
-        {
-          "ru": "До 31 декабря 2026 года документы для работы иностранцев оформляет МИД по временному порядку.",
-          "en": "Until 31 December 2026 the Foreign Ministry issues work documents under a temporary procedure."
-        },
-        {
-          "ru": "Указом от 28 сентября функции передают Минтруда, дату перехода не назвали.",
-          "en": "A 28 September decree moves the functions to the Labour Ministry; no date was named."
-        },
-        {
-          "ru": "Работа без разрешения — штраф по статье 431 и выдворение, если предписание не выполнено за 30 дней.",
-          "en": "Working without a permit means a fine under Article 431 and expulsion if an order is not carried out within 30 days."
-        },
-        {
-          "ru": "Обычные сборы и полный список документов мы в открытых источниках не нашли.",
-          "en": "We found no regular fees or a full document list in open sources."
-        }
-      ]
-    },
-    "checked": "2026-11-19",
-    "sources": 5
-  },
-  {
     "slug": "digital-nomad-status-kyrgyzstan-2026",
     "date": "2026-11-19",
     "category": "work",
@@ -91,34 +49,42 @@
     "title_en": "Opening an LLC (OsOO) in Kyrgyzstan as a foreigner: what we know about registration",
     "summary_ru": "Кто может быть учредителем, сколько занимает регистрация, что поменялось в ноябре и что с банковским счётом. Без суммы пошлины: в проверенных источниках её нет.",
     "summary_en": "Who can be a founder, how long registration takes, what changed in November and what about the bank account. No state fee figure: the sources we checked do not give one.",
+    "title_zh": "外国人在吉尔吉斯斯坦开办有限责任公司（OsOO）：注册须知",
+    "summary_zh": "谁可以当创始人、注册需要多久、11月有哪些变化、银行账户怎么办。注册国家规费的金额我们查阅的来源中没有给出。",
     "guide": {
       "num": 7,
       "group": "work",
       "status": "in_force",
       "situation": {
         "ru": "Я открываю компанию в Кыргызстане как иностранец",
-        "en": "I am opening a company in Kyrgyzstan as a foreigner"
+        "en": "I am opening a company in Kyrgyzstan as a foreigner",
+        "zh": "我是外国人，要在吉尔吉斯斯坦开公司"
       },
       "who": {
         "ru": "Иностранным предпринимателям, которые регистрируют ОсОО.",
-        "en": "For foreign entrepreneurs registering an LLC."
+        "en": "For foreign entrepreneurs registering an LLC.",
+        "zh": "适合注册有限责任公司的外国创业者。"
       },
       "short": [
         {
           "ru": "Учредителями ОсОО могут быть и иностранные физические и юридические лица; минимального капитала нет.",
-          "en": "Founders of an LLC can be foreign individuals and companies; there is no minimum capital."
+          "en": "Founders of an LLC can be foreign individuals and companies; there is no minimum capital.",
+          "zh": "外国自然人和外国公司都可以成为有限责任公司的创始人；没有最低注册资本要求。"
         },
         {
           "ru": "Регистрация идёт через «единое окно», стандартный срок — 3–5 рабочих дней, онлайн можно быстрее.",
-          "en": "Registration goes through a one-stop shop; the standard time is 3–5 working days, and online it can be faster."
+          "en": "Registration goes through a one-stop shop; the standard time is 3–5 working days, and online it can be faster.",
+          "zh": "注册实行\"一站式\"办理；标准时间为3–5个工作日，网上办理可以更快。"
         },
         {
           "ru": "С 20 ноября 2026 года вступают новые правила регистрации и ликвидации компаний (постановление № 746).",
-          "en": "New rules on company registration and liquidation (resolution No. 746) take effect on 20 November 2026."
+          "en": "New rules on company registration and liquidation (resolution No. 746) take effect on 20 November 2026.",
+          "zh": "公司注册和清算新规（第746号决议）于2026年11月20日生效。"
         },
         {
           "ru": "Размер пошлины и правила для ИП иностранца мы в проверенных источниках не нашли.",
-          "en": "We found neither the state fee nor the rules for a foreign sole proprietor in the sources we checked."
+          "en": "We found neither the state fee nor the rules for a foreign sole proprietor in the sources we checked.",
+          "zh": "我们查阅的来源中既没有注册国家规费金额，也没有外国人注册个体经营者的规定。"
         }
       ]
     },
@@ -161,6 +127,56 @@
         {
           "ru": "Без документов на пребывание штраф по статье 431: от 55 до 200 расчётных показателей.",
           "en": "Without documents for your stay the fine under Article 431 is 55 to 200 calculation indices."
+        }
+      ]
+    },
+    "checked": "2026-11-19",
+    "sources": 5
+  },
+  {
+    "slug": "work-permit-foreigners-kyrgyzstan-2026",
+    "date": "2026-11-19",
+    "category": "work",
+    "title_ru": "Хочу работать в Кыргызстане: кто выдаёт разрешение и что известно о правилах",
+    "title_en": "I want to work in Kyrgyzstan: who issues the permit and what we know",
+    "summary_ru": "Разрешения на работу сейчас оформляет МИД по временному порядку до конца 2026 года, потом дело переходит к Минтруда. Что подтверждено, а чего в открытых источниках нет.",
+    "summary_en": "Work permits are currently issued by the Foreign Ministry under a temporary procedure until the end of 2026, then move to the Labour Ministry. What is confirmed and what the open sources do not say.",
+    "title_zh": "我想在吉尔吉斯斯坦工作：谁发放许可，目前已知什么",
+    "summary_zh": "目前工作许可由外交部按临时程序发放，有效到2026年底，之后移交劳动部。哪些已经确认，哪些公开来源没有说明。",
+    "guide": {
+      "num": 5,
+      "group": "work",
+      "status": "soon",
+      "situation": {
+        "ru": "Я хочу работать в Кыргызстане",
+        "en": "I want to work in Kyrgyzstan",
+        "zh": "我想在吉尔吉斯斯坦工作"
+      },
+      "who": {
+        "ru": "Иностранцам, которые ищут работу, и работодателям, которые их нанимают.",
+        "en": "For foreigners looking for work and the employers hiring them.",
+        "zh": "适合找工作的外国人和雇用外国人的雇主。"
+      },
+      "short": [
+        {
+          "ru": "До 31 декабря 2026 года документы для работы иностранцев оформляет МИД по временному порядку.",
+          "en": "Until 31 December 2026 the Foreign Ministry issues work documents under a temporary procedure.",
+          "zh": "2026年12月31日前，工作相关文件由外交部按临时程序办理。"
+        },
+        {
+          "ru": "Указом от 28 сентября функции передают Минтруда, дату перехода не назвали.",
+          "en": "A 28 September decree moves the functions to the Labour Ministry; no date was named.",
+          "zh": "9月28日的总统令将这些职能移交劳动部；没有说明具体日期。"
+        },
+        {
+          "ru": "Работа без разрешения — штраф по статье 431 и выдворение, если предписание не выполнено за 30 дней.",
+          "en": "Working without a permit means a fine under Article 431 and expulsion if an order is not carried out within 30 days.",
+          "zh": "无许可工作将按第431条罚款；如在30天内未执行整改要求，将被驱逐出境。"
+        },
+        {
+          "ru": "Обычные сборы и полный список документов мы в открытых источниках не нашли.",
+          "en": "We found no regular fees or a full document list in open sources.",
+          "zh": "公开来源中没有找到常规收费标准和完整的文件清单。"
         }
       ]
     },
@@ -324,48 +340,6 @@
     "sources": 3
   },
   {
-    "slug": "register-after-renting-bishkek-2026",
-    "date": "2026-10-14",
-    "category": "residence",
-    "title_ru": "Сняли квартиру в Бишкеке: как оформить регистрацию по новым правилам",
-    "title_en": "Rented a flat in Bishkek: how to register under the new rules",
-    "summary_ru": "Сроки, адрес, согласие собственника, 12 м² на человека и что делать при отъезде. По порядку, который действует с 23 сентября 2026 года.",
-    "summary_en": "Deadlines, address, the owner's consent, 12 m² per person and what to do when you leave. Based on the procedure in force since September 23, 2026.",
-    "guide": {
-      "num": 2,
-      "group": "stay",
-      "status": "in_force",
-      "situation": {
-        "ru": "Я снял квартиру в Бишкеке",
-        "en": "I rented a flat in Bishkek"
-      },
-      "who": {
-        "ru": "Тем, кто живёт в съёмном жилье и должен встать на регистрацию.",
-        "en": "For anyone renting who needs to register."
-      },
-      "short": [
-        {
-          "ru": "Регистрируйтесь не позже последнего дня срока без регистрации: для граждан США, ЕС, Великобритании и ряда стран это 30 дней.",
-          "en": "Register no later than the last day of the registration-free period: 30 days for citizens of the USA, EU, UK and several other countries."
-        },
-        {
-          "ru": "Если хозяин не собственник, нужно нотариальное согласие собственника или доверенность.",
-          "en": "If the landlord is not the owner, you need the owner's notarised consent or a power of attorney."
-        },
-        {
-          "ru": "Для квартиры считают не меньше 12 м² жилой площади на человека.",
-          "en": "The rule is at least 12 m² of living space per person."
-        },
-        {
-          "ru": "Выезд на 30 дней и больше аннулирует регистрацию.",
-          "en": "Leaving for 30 days or more cancels the registration."
-        }
-      ]
-    },
-    "checked": "2026-10-14",
-    "sources": 3
-  },
-  {
     "slug": "overstay-kyrgyzstan-2026",
     "date": "2026-10-14",
     "category": "visa",
@@ -405,6 +379,56 @@
       ]
     },
     "checked": "2026-11-19",
+    "sources": 3
+  },
+  {
+    "slug": "register-after-renting-bishkek-2026",
+    "date": "2026-10-14",
+    "category": "residence",
+    "title_ru": "Сняли квартиру в Бишкеке: как оформить регистрацию по новым правилам",
+    "title_en": "Rented a flat in Bishkek: how to register under the new rules",
+    "summary_ru": "Сроки, адрес, согласие собственника, 12 м² на человека и что делать при отъезде. По порядку, который действует с 23 сентября 2026 года.",
+    "summary_en": "Deadlines, address, the owner's consent, 12 m² per person and what to do when you leave. Based on the procedure in force since September 23, 2026.",
+    "title_zh": "在比什凯克租了房：如何按新规办理登记",
+    "summary_zh": "期限、地址、房主同意、每人12平方米，以及离境时该怎么办。依据2026年9月23日起施行的程序。",
+    "guide": {
+      "num": 2,
+      "group": "stay",
+      "status": "in_force",
+      "situation": {
+        "ru": "Я снял квартиру в Бишкеке",
+        "en": "I rented a flat in Bishkek",
+        "zh": "我在比什凯克租了房"
+      },
+      "who": {
+        "ru": "Тем, кто живёт в съёмном жилье и должен встать на регистрацию.",
+        "en": "For anyone renting who needs to register.",
+        "zh": "适合租房并需要办理登记的人。"
+      },
+      "short": [
+        {
+          "ru": "Регистрируйтесь не позже последнего дня срока без регистрации: для граждан США, ЕС, Великобритании и ряда стран это 30 дней.",
+          "en": "Register no later than the last day of the registration-free period: 30 days for citizens of the USA, EU, UK and several other countries.",
+          "zh": "最迟在免登记期限的最后一天办理登记：美国、欧盟、英国和其他一些国家的公民为30天。"
+        },
+        {
+          "ru": "Если хозяин не собственник, нужно нотариальное согласие собственника или доверенность.",
+          "en": "If the landlord is not the owner, you need the owner's notarised consent or a power of attorney.",
+          "zh": "如果出租人不是房主，需要房主经公证的同意书或委托书。"
+        },
+        {
+          "ru": "Для квартиры считают не меньше 12 м² жилой площади на человека.",
+          "en": "The rule is at least 12 m² of living space per person.",
+          "zh": "标准是每人至少12平方米居住面积。"
+        },
+        {
+          "ru": "Выезд на 30 дней и больше аннулирует регистрацию.",
+          "en": "Leaving for 30 days or more cancels the registration.",
+          "zh": "离境30天或以上，登记即失效。"
+        }
+      ]
+    },
+    "checked": "2026-10-14",
     "sources": 3
   }
 ]

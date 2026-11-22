@@ -5,11 +5,13 @@
   "category": "work",
   "title": {
     "ru": "Хочу работать в Кыргызстане: кто выдаёт разрешение и что известно о правилах",
-    "en": "I want to work in Kyrgyzstan: who issues the permit and what we know"
+    "en": "I want to work in Kyrgyzstan: who issues the permit and what we know",
+    "zh": "我想在吉尔吉斯斯坦工作：谁发放许可，目前已知什么"
   },
   "summary": {
     "ru": "Разрешения на работу сейчас оформляет МИД по временному порядку до конца 2026 года, потом дело переходит к Минтруда. Что подтверждено, а чего в открытых источниках нет.",
-    "en": "Work permits are currently issued by the Foreign Ministry under a temporary procedure until the end of 2026, then move to the Labour Ministry. What is confirmed and what the open sources do not say."
+    "en": "Work permits are currently issued by the Foreign Ministry under a temporary procedure until the end of 2026, then move to the Labour Ministry. What is confirmed and what the open sources do not say.",
+    "zh": "目前工作许可由外交部按临时程序发放，有效到2026年底，之后移交劳动部。哪些已经确认，哪些公开来源没有说明。"
   },
   "guide": {
     "num": 5,
@@ -17,28 +19,34 @@
     "status": "soon",
     "situation": {
       "ru": "Я хочу работать в Кыргызстане",
-      "en": "I want to work in Kyrgyzstan"
+      "en": "I want to work in Kyrgyzstan",
+      "zh": "我想在吉尔吉斯斯坦工作"
     },
     "who": {
       "ru": "Иностранцам, которые ищут работу, и работодателям, которые их нанимают.",
-      "en": "For foreigners looking for work and the employers hiring them."
+      "en": "For foreigners looking for work and the employers hiring them.",
+      "zh": "适合找工作的外国人和雇用外国人的雇主。"
     },
     "short": [
       {
         "ru": "До 31 декабря 2026 года документы для работы иностранцев оформляет МИД по временному порядку.",
-        "en": "Until 31 December 2026 the Foreign Ministry issues work documents under a temporary procedure."
+        "en": "Until 31 December 2026 the Foreign Ministry issues work documents under a temporary procedure.",
+        "zh": "2026年12月31日前，工作相关文件由外交部按临时程序办理。"
       },
       {
         "ru": "Указом от 28 сентября функции передают Минтруда, дату перехода не назвали.",
-        "en": "A 28 September decree moves the functions to the Labour Ministry; no date was named."
+        "en": "A 28 September decree moves the functions to the Labour Ministry; no date was named.",
+        "zh": "9月28日的总统令将这些职能移交劳动部；没有说明具体日期。"
       },
       {
         "ru": "Работа без разрешения — штраф по статье 431 и выдворение, если предписание не выполнено за 30 дней.",
-        "en": "Working without a permit means a fine under Article 431 and expulsion if an order is not carried out within 30 days."
+        "en": "Working without a permit means a fine under Article 431 and expulsion if an order is not carried out within 30 days.",
+        "zh": "无许可工作将按第431条罚款；如在30天内未执行整改要求，将被驱逐出境。"
       },
       {
         "ru": "Обычные сборы и полный список документов мы в открытых источниках не нашли.",
-        "en": "We found no regular fees or a full document list in open sources."
+        "en": "We found no regular fees or a full document list in open sources.",
+        "zh": "公开来源中没有找到常规收费标准和完整的文件清单。"
       }
     ]
   },
@@ -46,94 +54,110 @@
     {
       "h2": {
         "ru": "Кто выдаёт разрешение сейчас",
-        "en": "Who issues the permit now"
+        "en": "Who issues the permit now",
+        "zh": "现在由谁发放许可"
       }
     },
     {
       "p": {
         "ru": "До 31 декабря 2026 года действует временное положение: оформлением виз, единого разрешения на пребывание и работу и резидент-карт занимается Министерство иностранных дел. Об этом писал 24.kg в мае 2026 года. Подробнее про временный порядок — в [отдельном гайде](/temporary-rules-foreigners-kyrgyzstan-2026).",
-        "en": "A temporary regulation runs until 31 December 2026: the Ministry of Foreign Affairs handles visas, the single permit for stay and work, and resident cards. 24.kg reported this in May 2026. More on the temporary procedure in a [separate guide](/temporary-rules-foreigners-kyrgyzstan-2026)."
+        "en": "A temporary regulation runs until 31 December 2026: the Ministry of Foreign Affairs handles visas, the single permit for stay and work, and resident cards. 24.kg reported this in May 2026. More on the temporary procedure in a [separate guide](/temporary-rules-foreigners-kyrgyzstan-2026).",
+        "zh": "临时规定有效至2026年12月31日：由外交部办理签证、居留和工作统一许可以及居民卡。24.kg于2026年5月报道了这一点。临时程序详见[单独的指南](/temporary-rules-foreigners-kyrgyzstan-2026)。"
       }
     },
     {
       "h2": {
         "ru": "Что будет после Нового года",
-        "en": "What happens after New Year"
+        "en": "What happens after New Year",
+        "zh": "新年之后会怎样"
       }
     },
     {
       "p": {
         "ru": "28 сентября 2026 года президент подписал указ: функции по единому разрешению и резидент-карте переходят от МИД к Министерству труда, социального обеспечения и миграции. В министерстве создают департамент по вопросам миграции. Правительству дали два месяца, чтобы привести свои решения в соответствие с указом. Дату, с которой документы нужно подавать в новое ведомство, в публикации не назвали.",
-        "en": "On 28 September 2026 the president signed a decree: functions on the single permit and the resident card move from the Foreign Ministry to the Ministry of Labour, Social Welfare and Migration, which is setting up a migration department. The government was given two months to bring its decisions into line. The publication did not name the date from which documents should go to the new body."
+        "en": "On 28 September 2026 the president signed a decree: functions on the single permit and the resident card move from the Foreign Ministry to the Ministry of Labour, Social Welfare and Migration, which is setting up a migration department. The government was given two months to bring its decisions into line. The publication did not name the date from which documents should go to the new body.",
+        "zh": "2026年9月28日，总统签署命令：统一许可和居民卡的相关职能从外交部移交给劳动、社会保障和移民部，该部正在设立移民司。政府有两个月时间调整相关决定。报道没有说明从哪一天起应向新机构提交文件。"
       }
     },
     {
       "h2": {
         "ru": "Что сняли",
-        "en": "What was lifted"
+        "en": "What was lifted",
+        "zh": "取消了哪些限制"
       }
     },
     {
       "p": {
         "ru": "По сообщению МВД, опубликованному 2 июня 2025 года, ограничение в 20% иностранных работников в штате компании отменено: «сейчас ограничений по числу иностранных сотрудников нет».",
-        "en": "According to an Interior Ministry statement published on 2 June 2025, the 20% cap on foreign employees in a company was lifted: there is now no limit on the number of foreign staff."
+        "en": "According to an Interior Ministry statement published on 2 June 2025, the 20% cap on foreign employees in a company was lifted: there is now no limit on the number of foreign staff.",
+        "zh": "根据内务部2025年6月2日发布的声明，公司外籍员工不得超过20%的限制已经取消：现在外籍员工人数没有上限。"
       }
     },
     {
       "h2": {
         "ru": "Что грозит за работу без разрешения",
-        "en": "What working without a permit costs"
+        "en": "What working without a permit costs",
+        "zh": "无许可工作的代价"
       }
     },
     {
       "p": {
         "ru": "Статья 431 Кодекса о правонарушениях называет разрешение на трудовую деятельность среди документов, без которых иностранцу нельзя находиться и работать в стране. Штраф зависит от срока нарушения: от 55 до 200 расчётных показателей. По публикациям один показатель равен 100 сомам, то есть от 5 500 до 20 000 сом. Если иностранец не выполнил предписание об устранении нарушения за 30 дней, его выдворяют.",
-        "en": "Article 431 of the Code of Offences lists the work permit among the documents a foreigner needs to stay and work in the country. The fine depends on how long the violation lasts: 55 to 200 calculation indices. According to press reports one index equals 100 som, so 5,500 to 20,000 som. If a foreigner does not carry out an order to fix the violation within 30 days, they are expelled."
+        "en": "Article 431 of the Code of Offences lists the work permit among the documents a foreigner needs to stay and work in the country. The fine depends on how long the violation lasts: 55 to 200 calculation indices. According to press reports one index equals 100 som, so 5,500 to 20,000 som. If a foreigner does not carry out an order to fix the violation within 30 days, they are expelled.",
+        "zh": "《违法行为法典》第431条把工作许可列为外国人在吉尔吉斯斯坦停留和工作所需的文件之一。罚款金额取决于违法持续的时间：55至200个计算指数。据媒体报道，1个计算指数等于100索姆，即5,500至20,000索姆。如果外国人在30天内未执行纠正违法的要求，将被驱逐出境。"
       }
     },
     {
       "p": {
         "ru": "Ответственность лежит и на работодателе: на это указывали в МВД в 2025 году. Суммы для работодателей мы в прочитанных источниках не нашли.",
-        "en": "The employer is liable too, as the Interior Ministry pointed out in 2025. We did not find employer fine amounts in the sources we read."
+        "en": "The employer is liable too, as the Interior Ministry pointed out in 2025. We did not find employer fine amounts in the sources we read.",
+        "zh": "雇主同样要承担责任，内务部在2025年指出了这一点。我们查阅的来源中没有找到对雇主的罚款金额。"
       }
     },
     {
       "h2": {
         "ru": "Чего в открытых источниках нет",
-        "en": "What the open sources do not say"
+        "en": "What the open sources do not say",
+        "zh": "公开来源没有说明的内容"
       }
     },
     {
       "ul": [
         {
           "ru": "Обычных, не льготных сборов за единое разрешение. Льготные тарифы для швейной отрасли действовали до 1 ноября 2026 года.",
-          "en": "Regular, non-preferential fees for the single permit. Preferential rates for the garment industry ran until 1 November 2026."
+          "en": "Regular, non-preferential fees for the single permit. Preferential rates for the garment industry ran until 1 November 2026.",
+          "zh": "统一许可的常规（非优惠）收费。服装业的优惠费率有效至2026年11月1日。"
         },
         {
           "ru": "Полного списка документов и срока действия разрешения.",
-          "en": "The full document list and the permit validity period."
+          "en": "The full document list and the permit validity period.",
+          "zh": "完整的文件清单和许可的有效期。"
         },
         {
           "ru": "Что требуется гражданам стран ЕАЭС: в прочитанных нами материалах об этом ничего нет.",
-          "en": "What EAEU citizens need: the materials we read say nothing about it."
+          "en": "What EAEU citizens need: the materials we read say nothing about it.",
+          "zh": "欧亚经济联盟公民需要什么：我们查阅的材料中没有提到。"
         }
       ]
     },
     {
       "h2": {
         "ru": "Что делать",
-        "en": "What to do"
+        "en": "What to do",
+        "zh": "该怎么做"
       }
     },
     {
       "ol": [
         {
           "ru": "Узнайте в МИД или в консульском департаменте, куда подавать документы сейчас, и сохраните подтверждение подачи.",
-          "en": "Ask the Foreign Ministry or its consular department where to file now, and keep proof of filing."
+          "en": "Ask the Foreign Ministry or its consular department where to file now, and keep proof of filing.",
+          "zh": "向外交部或其领事司询问现在应在哪里提交文件，并保留提交凭证。"
         },
         {
           "ru": "Если подаёте или продлеваете в декабре, начните раньше: ведомства меняются, возможны паузы.",
-          "en": "If you file or renew in December, start early: the bodies are changing and pauses are possible."
+          "en": "If you file or renew in December, start early: the bodies are changing and pauses are possible.",
+          "zh": "如果在12月提交或续签，请尽早开始：主管机构正在变更，可能出现暂停。"
         }
       ]
     }
@@ -165,7 +189,8 @@
     {
       "date": "2026-11-19",
       "ru": "Первая публикация.",
-      "en": "First published."
+      "en": "First published.",
+      "zh": "首次发布。"
     }
   ]
 }

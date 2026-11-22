@@ -19,7 +19,7 @@ const MONTHS_RU = ['января','февраля','марта','апреля','
 const MONTHS_EN = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 const fmt = (iso) => {
   const [y, m, d] = iso.split('-').map(Number);
-  return { ru: `${d} ${MONTHS_RU[m - 1]} ${y}`, en: `${MONTHS_EN[m - 1]} ${d}, ${y}` };
+  return { ru: `${d} ${MONTHS_RU[m - 1]} ${y}`, en: `${MONTHS_EN[m - 1]} ${d}, ${y}`, zh: `${y}年${m}月${d}日` };
 };
 
 const escHtml = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -38,8 +38,10 @@ function toHtml(s) {
   return out + escHtml(s.slice(last));
 }
 const plain = (s) => s.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1');
-const tr = (t) => ({ ru: t.ru, en: t.en || t.ru });
-const attrs = (t) => `data-ru="${escAttr(toHtml(t.ru))}" data-en="${escAttr(toHtml(t.en || t.ru))}"`;
+const tr = (t) => ({ ru: t.ru, en: t.en || t.ru, zh: t.zh || '' });
+// data-zh only where a Chinese text exists (Chinese pages are published by build-lang.js for listed slugs)
+const attrs = (t) => `data-ru="${escAttr(toHtml(t.ru))}" data-en="${escAttr(toHtml(t.en || t.ru))}"` + (t.zh ? ` data-zh="${escAttr(toHtml(t.zh))}"` : '');
+const zhAttr = (s) => (s ? ` data-zh="${escAttr(s)}"` : '');
 const el = (tag, t, cls) => `<${tag}${cls ? ` class="${cls}"` : ''} ${attrs(t)}>${toHtml(t.ru)}</${tag}>`;
 
 let hN = 0;
@@ -57,7 +59,7 @@ const body = art.blocks.map((b) => {
 
 const sources = (art.sources && art.sources.length)
   ? `  <div class="sources">
-    <div class="sources-title" data-ru="Источники" data-en="Sources">Источники</div>
+    <div class="sources-title" data-ru="Источники" data-en="Sources" data-zh="来源">Источники</div>
     <ul>
 ${art.sources.map((s) => `      <li><a href="${escAttr(s.url)}" target="_blank" rel="noopener">${escHtml(s.title)}</a>${s.note ? ' — ' + escHtml(s.note) : ''}</li>`).join('\n')}
     </ul>
@@ -80,29 +82,29 @@ const jsonld = JSON.stringify({
 }, null, 2);
 
 const g = art.guide || null;
-const guides = fs.existsSync(path.join(root, 'articles.json')) ? JSON.parse(read(path.join(root, 'articles.json'))).filter((a) => a.guide && a.slug !== slug).concat(g ? [{ slug, guide: g, title_ru: plain(title.ru), title_en: plain(title.en) }] : []).sort((a, b) => a.guide.num - b.guide.num) : [];
+const guides = fs.existsSync(path.join(root, 'articles.json')) ? JSON.parse(read(path.join(root, 'articles.json'))).filter((a) => a.guide && a.slug !== slug).concat(g ? [{ slug, guide: g, title_ru: plain(title.ru), title_en: plain(title.en), title_zh: title.zh ? plain(title.zh) : '' }] : []).sort((a, b) => a.guide.num - b.guide.num) : [];
 const nextG = g ? guides.find((a) => a.guide.num > g.num) || guides[0] : null;
 const shortBox = (g && g.short && g.short.length)
   ? `  <div class="short">
-    <div class="short-title" data-ru="Коротко" data-en="In short">Коротко</div>
+    <div class="short-title" data-ru="Коротко" data-en="In short" data-zh="要点">Коротко</div>
     <ul>
 ${g.short.map((s) => '      ' + el('li', s)).join('\n')}
     </ul>
   </div>`
   : '';
 const nextBox = (nextG && nextG.slug !== slug)
-  ? `<div class="next"><a href="/${nextG.slug}"><small data-ru="Следующий гайд" data-en="Next guide">Следующий гайд</small><span>${escHtml(nextG.title_ru)}</span></a></div>`
+  ? `<div class="next"><a href="/${nextG.slug}"><small data-ru="Следующий гайд" data-en="Next guide" data-zh="下一篇指南">Следующий гайд</small><span data-ru="${escAttr(nextG.title_ru)}" data-en="${escAttr(nextG.title_en || nextG.title_ru)}"${zhAttr(nextG.title_zh)}>${escHtml(nextG.title_ru)}</span></a></div>`
   : '';
 const WA = 'https://wa.me/996700522667?text=';
 const pageUrl = 'https://xpat4.org/' + slug;
 const waAsk = WA + encodeURIComponent('Здравствуйте! Вопрос по материалу «' + plain(title.ru) + '» (' + pageUrl + '): ');
 const waErr = WA + encodeURIComponent('Здравствуйте! Кажется, в материале «' + plain(title.ru) + '» (' + pageUrl + ') есть ошибка или устаревший факт: ');
 const tocBox = heads.length >= 3
-  ? '  <aside class="toc" aria-label="Содержание">\n    <div class="toc-title" data-ru="На этой странице" data-en="On this page">На этой странице</div>\n' +
+  ? '  <aside class="toc" aria-label="Содержание">\n    <div class="toc-title" data-ru="На этой странице" data-en="On this page" data-zh="本页内容">На этой странице</div>\n' +
     heads.map((h) => '    <a href="#' + h.id + '" ' + attrs(h.t) + '>' + toHtml(h.t.ru) + '</a>').join('\n') + '\n  </aside>'
   : '';
 const changesBox = (art.changes && art.changes.length)
-  ? '  <div class="changes">\n    <div class="changes-title" data-ru="Что изменилось" data-en="What changed">Что изменилось</div>\n    <ul>\n' +
+  ? '  <div class="changes">\n    <div class="changes-title" data-ru="Что изменилось" data-en="What changed" data-zh="更新记录">Что изменилось</div>\n    <ul>\n' +
     art.changes.slice().sort((x, y) => y.date.localeCompare(x.date)).map((c) => '      <li><time datetime="' + c.date + '">' + fmt(c.date).ru + '</time><span ' + attrs(c) + '>' + toHtml(c.ru) + '</span></li>').join('\n') +
     '\n    </ul>\n  </div>'
   : '';
@@ -124,6 +126,10 @@ const map = {
   DESC_RU_HTML: toHtml(summary.ru),
   DATE_RU: published.ru, DATE_EN: published.en,
   CHECKED_RU: checked.ru, CHECKED_EN: checked.en,
+  TITLE_ZH: zhAttr(title.zh ? toHtml(title.zh) : ''), DESC_ZH: zhAttr(summary.zh ? toHtml(summary.zh) : ''),
+  EYEBROW_ZH: zhAttr(title.zh ? (isPage ? '关于本站' : g ? '指南 · ' + String(g.num).padStart(2, '0') : '文章') : ''),
+  CRUMB_ZH: zhAttr(title.zh ? (g || isPage ? '指南' : '文章') : ''), BACK_ZH: zhAttr(title.zh ? (g || isPage ? '全部指南' : '新闻与文章') : ''),
+  META_ZH: zhAttr(title.zh ? `发布于${published.zh}，核实于${checked.zh}。` : ''),
   JSONLD: jsonld, BODY: body, SOURCES: sources,
 };
 let html = read(path.join(__dirname, 'article-template.html'));
@@ -141,6 +147,7 @@ if (!isPage) list.push({
   slug, date: art.date, category: art.category || 'life',
   title_ru: plain(title.ru), title_en: plain(title.en),
   summary_ru: plain(summary.ru), summary_en: plain(summary.en),
+  ...(title.zh ? { title_zh: plain(title.zh), summary_zh: plain(summary.zh || '') } : {}),
   ...(art.guide ? { guide: art.guide, checked: art.checked || art.date, sources: (art.sources || []).length } : {}),
 });
 list.sort((a, b) => b.date.localeCompare(a.date));
@@ -173,3 +180,6 @@ console.log(`Built ${slug}.html, updated articles.json, sitemap.xml, llms.txt`);
 if (art.guide) require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'build-guides.js')], { stdio: 'inherit' });
 
 require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'build-search.js')], { stdio: 'inherit' });
+
+// language versions (/en/, /zh/), hreflang, sitemap.xml
+require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'build-lang.js')], { stdio: 'inherit' });
