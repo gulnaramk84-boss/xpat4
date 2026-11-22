@@ -1,0 +1,465 @@
+{
+ "_readme": "Правила для /stay-counter. Источник тот же, что у гайда visa-free-and-registration-days-by-country-2026: постановления № 855 и № 190, порядок регистрации с 23.09.2026. Меняется закон — правьте здесь и в гайде.",
+ "checked": "2026-11-22",
+ "groups": [
+  {
+   "id": "eaeu",
+   "free": 90,
+   "win": 180,
+   "reg": 30,
+   "members": [
+    {
+     "ru": "Россия",
+     "en": "Russia",
+     "zh": "俄罗斯"
+    },
+    {
+     "ru": "Казахстан",
+     "en": "Kazakhstan",
+     "zh": "哈萨克斯坦"
+    },
+    {
+     "ru": "Беларусь",
+     "en": "Belarus",
+     "zh": "白俄罗斯"
+    },
+    {
+     "ru": "Армения",
+     "en": "Armenia",
+     "zh": "亚美尼亚"
+    }
+   ]
+  },
+  {
+   "id": "list55reg",
+   "free": 30,
+   "win": 60,
+   "reg": 30,
+   "members": [
+    {
+     "ru": "Австралия",
+     "en": "Australia",
+     "zh": "澳大利亚"
+    },
+    {
+     "ru": "Австрия",
+     "en": "Austria",
+     "zh": "奥地利"
+    },
+    {
+     "ru": "Бельгия",
+     "en": "Belgium",
+     "zh": "比利时"
+    },
+    {
+     "ru": "Великобритания",
+     "en": "United Kingdom",
+     "zh": "英国"
+    },
+    {
+     "ru": "Германия",
+     "en": "Germany",
+     "zh": "德国"
+    },
+    {
+     "ru": "Греция",
+     "en": "Greece",
+     "zh": "希腊"
+    },
+    {
+     "ru": "Дания",
+     "en": "Denmark",
+     "zh": "丹麦"
+    },
+    {
+     "ru": "Испания",
+     "en": "Spain",
+     "zh": "西班牙"
+    },
+    {
+     "ru": "Италия",
+     "en": "Italy",
+     "zh": "意大利"
+    },
+    {
+     "ru": "Канада",
+     "en": "Canada",
+     "zh": "加拿大"
+    },
+    {
+     "ru": "Нидерланды",
+     "en": "Netherlands",
+     "zh": "荷兰"
+    },
+    {
+     "ru": "Новая Зеландия",
+     "en": "New Zealand",
+     "zh": "新西兰"
+    },
+    {
+     "ru": "Норвегия",
+     "en": "Norway",
+     "zh": "挪威"
+    },
+    {
+     "ru": "Польша",
+     "en": "Poland",
+     "zh": "波兰"
+    },
+    {
+     "ru": "Португалия",
+     "en": "Portugal",
+     "zh": "葡萄牙"
+    },
+    {
+     "ru": "Республика Корея",
+     "en": "South Korea",
+     "zh": "韩国"
+    },
+    {
+     "ru": "Сингапур",
+     "en": "Singapore",
+     "zh": "新加坡"
+    },
+    {
+     "ru": "США",
+     "en": "United States",
+     "zh": "美国"
+    },
+    {
+     "ru": "Финляндия",
+     "en": "Finland",
+     "zh": "芬兰"
+    },
+    {
+     "ru": "Франция",
+     "en": "France",
+     "zh": "法国"
+    },
+    {
+     "ru": "Швейцария",
+     "en": "Switzerland",
+     "zh": "瑞士"
+    },
+    {
+     "ru": "Швеция",
+     "en": "Sweden",
+     "zh": "瑞典"
+    },
+    {
+     "ru": "Япония",
+     "en": "Japan",
+     "zh": "日本"
+    }
+   ]
+  },
+  {
+   "id": "list55",
+   "free": 30,
+   "win": 60,
+   "reg": null,
+   "members": [
+    {
+     "ru": "Албания",
+     "en": "Albania",
+     "zh": "阿尔巴尼亚"
+    },
+    {
+     "ru": "Андорра",
+     "en": "Andorra",
+     "zh": "安道尔"
+    },
+    {
+     "ru": "Аргентина",
+     "en": "Argentina",
+     "zh": "阿根廷"
+    },
+    {
+     "ru": "Болгария",
+     "en": "Bulgaria",
+     "zh": "保加利亚"
+    },
+    {
+     "ru": "Босния и Герцеговина",
+     "en": "Bosnia and Herzegovina",
+     "zh": "波斯尼亚和黑塞哥维那"
+    },
+    {
+     "ru": "Бразилия",
+     "en": "Brazil",
+     "zh": "巴西"
+    },
+    {
+     "ru": "Бруней",
+     "en": "Brunei",
+     "zh": "文莱"
+    },
+    {
+     "ru": "Ватикан",
+     "en": "Vatican City",
+     "zh": "梵蒂冈"
+    },
+    {
+     "ru": "Венгрия",
+     "en": "Hungary",
+     "zh": "匈牙利"
+    },
+    {
+     "ru": "Вьетнам",
+     "en": "Vietnam",
+     "zh": "越南"
+    },
+    {
+     "ru": "Израиль",
+     "en": "Israel",
+     "zh": "以色列"
+    },
+    {
+     "ru": "Исландия",
+     "en": "Iceland",
+     "zh": "冰岛"
+    },
+    {
+     "ru": "Ирландия",
+     "en": "Ireland",
+     "zh": "爱尔兰"
+    },
+    {
+     "ru": "Кипр",
+     "en": "Cyprus",
+     "zh": "塞浦路斯"
+    },
+    {
+     "ru": "Латвия",
+     "en": "Latvia",
+     "zh": "拉脱维亚"
+    },
+    {
+     "ru": "Литва",
+     "en": "Lithuania",
+     "zh": "立陶宛"
+    },
+    {
+     "ru": "Лихтенштейн",
+     "en": "Liechtenstein",
+     "zh": "列支敦士登"
+    },
+    {
+     "ru": "Люксембург",
+     "en": "Luxembourg",
+     "zh": "卢森堡"
+    },
+    {
+     "ru": "Мальта",
+     "en": "Malta",
+     "zh": "马耳他"
+    },
+    {
+     "ru": "Мексика",
+     "en": "Mexico",
+     "zh": "墨西哥"
+    },
+    {
+     "ru": "Монако",
+     "en": "Monaco",
+     "zh": "摩纳哥"
+    },
+    {
+     "ru": "Румыния",
+     "en": "Romania",
+     "zh": "罗马尼亚"
+    },
+    {
+     "ru": "Сан-Марино",
+     "en": "San Marino",
+     "zh": "圣马力诺"
+    },
+    {
+     "ru": "Северная Македония",
+     "en": "North Macedonia",
+     "zh": "北马其顿"
+    },
+    {
+     "ru": "Словакия",
+     "en": "Slovakia",
+     "zh": "斯洛伐克"
+    },
+    {
+     "ru": "Словения",
+     "en": "Slovenia",
+     "zh": "斯洛文尼亚"
+    },
+    {
+     "ru": "Таиланд",
+     "en": "Thailand",
+     "zh": "泰国"
+    },
+    {
+     "ru": "Хорватия",
+     "en": "Croatia",
+     "zh": "克罗地亚"
+    },
+    {
+     "ru": "Черногория",
+     "en": "Montenegro",
+     "zh": "黑山"
+    },
+    {
+     "ru": "Чехия",
+     "en": "Czech Republic",
+     "zh": "捷克"
+    },
+    {
+     "ru": "Чили",
+     "en": "Chile",
+     "zh": "智利"
+    },
+    {
+     "ru": "Эстония",
+     "en": "Estonia",
+     "zh": "爱沙尼亚"
+    }
+   ]
+  },
+  {
+   "id": "uz",
+   "free": 60,
+   "win": 120,
+   "reg": null,
+   "members": [
+    {
+     "ru": "Узбекистан",
+     "en": "Uzbekistan",
+     "zh": "乌兹别克斯坦"
+    }
+   ]
+  },
+  {
+   "id": "srb",
+   "free": 90,
+   "win": 180,
+   "reg": null,
+   "members": [
+    {
+     "ru": "Сербия",
+     "en": "Serbia",
+     "zh": "塞尔维亚"
+    },
+    {
+     "ru": "Турция",
+     "en": "Turkey",
+     "zh": "土耳其"
+    },
+    {
+     "ru": "Украина",
+     "en": "Ukraine",
+     "zh": "乌克兰"
+    },
+    {
+     "ru": "Монголия",
+     "en": "Mongolia",
+     "zh": "蒙古"
+    }
+   ]
+  },
+  {
+   "id": "gulf",
+   "free": 180,
+   "win": 360,
+   "reg": null,
+   "members": [
+    {
+     "ru": "Саудовская Аравия",
+     "en": "Saudi Arabia",
+     "zh": "沙特阿拉伯"
+    },
+    {
+     "ru": "ОАЭ",
+     "en": "United Arab Emirates",
+     "zh": "阿联酋"
+    },
+    {
+     "ru": "Катар",
+     "en": "Qatar",
+     "zh": "卡塔尔"
+    },
+    {
+     "ru": "Кувейт",
+     "en": "Kuwait",
+     "zh": "科威特"
+    },
+    {
+     "ru": "Оман",
+     "en": "Oman",
+     "zh": "阿曼"
+    },
+    {
+     "ru": "Бахрейн",
+     "en": "Bahrain",
+     "zh": "巴林"
+    }
+   ]
+  },
+  {
+   "id": "cngroup",
+   "free": 21,
+   "win": null,
+   "reg": null,
+   "reentry": 21,
+   "members": [
+    {
+     "ru": "Китай — организованная туристическая группа",
+     "en": "China — organised tour group",
+     "zh": "中国 — 有组织的旅游团"
+    }
+   ]
+  },
+  {
+   "id": "hkmo",
+   "free": 30,
+   "win": null,
+   "reg": null,
+   "members": [
+    {
+     "ru": "Гонконг",
+     "en": "Hong Kong",
+     "zh": "香港"
+    },
+    {
+     "ru": "Макао",
+     "en": "Macau",
+     "zh": "澳门"
+    }
+   ]
+  },
+  {
+   "id": "un",
+   "free": 60,
+   "win": null,
+   "reg": null,
+   "members": [
+    {
+     "ru": "Паспорт ООН (Laissez-Passer)",
+     "en": "UN passport (Laissez-Passer)",
+     "zh": "联合国通行证"
+    }
+   ]
+  },
+  {
+   "id": "visa",
+   "visa": true,
+   "members": [
+    {
+     "ru": "Китай — обычная поездка, не в тургруппе",
+     "en": "China — ordinary trip, not in a tour group",
+     "zh": "中国 — 普通出行（非旅游团）"
+    },
+    {
+     "ru": "Другая страна",
+     "en": "Another country",
+     "zh": "其他国家"
+    }
+   ]
+  }
+ ]
+}

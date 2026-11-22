@@ -71,6 +71,30 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/calculator"/>
   </url>
   <url>
+    <loc>https://xpat4.org/calendar</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/calendar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xpat4.org/en/calendar"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://xpat4.org/zh/calendar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/calendar"/>
+  </url>
+  <url>
+    <loc>https://xpat4.org/en/calendar</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/calendar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xpat4.org/en/calendar"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://xpat4.org/zh/calendar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/calendar"/>
+  </url>
+  <url>
+    <loc>https://xpat4.org/zh/calendar</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/calendar"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xpat4.org/en/calendar"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://xpat4.org/zh/calendar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/calendar"/>
+  </url>
+  <url>
     <loc>https://xpat4.org/catalog</loc>
     <lastmod>2026-11-22</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/catalog"/>
@@ -735,6 +759,30 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/residence"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://xpat4.org/en/residence"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/residence"/>
+  </url>
+  <url>
+    <loc>https://xpat4.org/stay-counter</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/stay-counter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xpat4.org/en/stay-counter"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://xpat4.org/zh/stay-counter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/stay-counter"/>
+  </url>
+  <url>
+    <loc>https://xpat4.org/en/stay-counter</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/stay-counter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xpat4.org/en/stay-counter"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://xpat4.org/zh/stay-counter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/stay-counter"/>
+  </url>
+  <url>
+    <loc>https://xpat4.org/zh/stay-counter</loc>
+    <lastmod>2026-11-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/stay-counter"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xpat4.org/en/stay-counter"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://xpat4.org/zh/stay-counter"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/stay-counter"/>
   </url>
   <url>
     <loc>https://xpat4.org/stay-longer-than-30-days-kyrgyzstan</loc>

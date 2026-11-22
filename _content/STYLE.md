@@ -71,9 +71,16 @@
 - Папки `en/` и `zh/`, `sitemap.xml` и языковые разделы `llms.txt` собирает `node _tools/build-lang.js`. Его сами запускают `build-article.js` и `add-news.js`. Руками эти файлы не править.
 - Гайды с китайской версией: `open-osoo-foreigner-kyrgyzstan-2026`, `work-permit-foreigners-kyrgyzstan-2026`, `register-after-renting-bishkek-2026`. При правке такого гайда пишите в каждом изменённом блоке и в записи `changes` поле `zh` вместе с `ru` и `en`. Если `zh` не написать, на китайской странице этот абзац выйдет по-английски, а сборщик напечатает «Нет перевода».
 
+## Календарь важных дат (/calendar)
+
+- Данные в `_content/calendar.json`: `dated` — даты (поле `date` ГГГГ-ММ-ДД, `kind`: `on` вступает в силу, `last` последний день, `deadline` крайний срок, `before` подать до этой даты), `pending` — решения без даты. У каждой записи `status` (`in_force` / `soon` / `draft`), `cat`, `title` и `body` на ru, en и zh, `link` на наш гайд, `source` (название и URL).
+- Добавляйте дату, только если она есть в источнике, который вы открыли (те же правила, что для новостей). Когда новость называет дату вступления в силу, срок или дедлайн для иностранцев, добавьте её в календарь. Когда проект принят и получил дату, перенесите запись из `pending` в `dated`.
+- После правки: `node _tools/build-calendar.js` (пересоберёт `calendar.html`, `/en/calendar`, `/zh/calendar`).
+- Безвизовые сроки и сроки без регистрации для счётчика `/stay-counter` лежат в `stay-rules.json` в корне. Если закон меняет сроки, правьте и этот файл, и гайд `visa-free-and-registration-days-by-country-2026`.
+
 ## Что нельзя
 
-- Менять код сайта, `admin.html`, `xpat4.js`, настройки Cloudflare и GitHub. Работаем только с `_content/`, `news.json`, `articles.json`, `guides.html`, `search-index.json` (поисковый индекс, его пересобирают `add-news.js` и `build-article.js`), страницами, которые собирает скрипт, папками `en/` и `zh/`, `sitemap.xml` и `llms.txt`.
+- Менять код сайта, `admin.html`, `xpat4.js`, настройки Cloudflare и GitHub. Работаем только с `_content/`, `news.json`, `articles.json`, `guides.html`, `search-index.json` (поисковый индекс, его пересобирают `add-news.js` и `build-article.js`), страницами, которые собирает скрипт, папками `en/` и `zh/`, `sitemap.xml`, `llms.txt`, `calendar.html` (через `build-calendar.js`) и `stay-rules.json`.
 - Публиковать юридические выводы, которых нет в источнике.
 
 ## Темы про запас

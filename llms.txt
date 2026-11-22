@@ -70,6 +70,7 @@
 - [Bishkek Expat Guide: Everything You Need to Know Before Moving](https://xpat4.org/en/bishkek-expat-guide): Complete guide to living in Bishkek: neighborhoods, safety, weather, language and expat community.
 - [Bishkek vs Osh for Expats: Which City to Choose?](https://xpat4.org/en/bishkek-vs-osh-expats): Comparing Bishkek and Osh for expats: cost of living, infrastructure, international community and quality of life.
 - [Bishkek cost of living calculator](https://xpat4.org/en/calculator): Compare your monthly expenses in Bishkek, Kyrgyzstan vs your home city. Free interactive calculator for expats.
+- [Key dates for foreigners in Kyrgyzstan: calendar](https://xpat4.org/en/calendar): Deadlines that affect visas, registration, work and taxes. Every date has a source. Drafts that have not been adopted are listed separately.
 - [Specialists for foreigners in Bishkek](https://xpat4.org/en/catalog): Find immigration lawyers, visa consultants and relocation agents in Kyrgyzstan.
 - [First 30 days in Kyrgyzstan: checklist for foreigners](https://xpat4.org/en/checklist): Practical expat checklist for the first 30 days in Bishkek, Kyrgyzstan. Real clinic names, community links, apps and deadlines.
 - [Kyrgyzstan relocation consultation](https://xpat4.org/en/contact): Contact Gulnara Mambetaliyeva — visa and migration expert in Kyrgyzstan.
@@ -112,6 +113,7 @@
 - [Renting an Apartment in Bishkek: Expat Guide](https://xpat4.org/en/rent-apartment-bishkek): Everything about renting in Bishkek: best neighborhoods, average prices, how to find apartments, what to check in a contract.
 - [How to Get a Residence Permit (VNJ) in Kyrgyzstan](https://xpat4.org/en/residence-permit-kyrgyzstan): Full guide to residence permit (VNJ) in Kyrgyzstan: who qualifies, required documents, costs and processing time.
 - [Residence permits and registration in Kyrgyzstan](https://xpat4.org/en/residence): Residence permit (VNJ) and registration in Kyrgyzstan. Step-by-step guide for expats.
+- [Kyrgyzstan stay counter: visa-free days and registration](https://xpat4.org/en/stay-counter): Enter your citizenship and entry date. We show the last day you can stay without a visa and the last day to register. Gulnara Mambetaliyeva, a migration…
 - [Arrived visa-free and want to stay longer: what to do about registration](https://xpat4.org/en/stay-longer-than-30-days-kyrgyzstan): How many days you can live without registration, when it stops being valid and what a violation costs. Under the procedure in force since 23 September 2026.
 - [Taxes for Foreigners in Kyrgyzstan 2026](https://xpat4.org/en/tax-foreigners-kyrgyzstan): Tax obligations for expats in Kyrgyzstan: income tax, VAT, simplified tax system.
 - [Kyrgyzstan's temporary rules for foreigners end December 31: what's next](https://xpat4.org/en/temporary-rules-foreigners-kyrgyzstan-2026): Visas, the unified work permit and the resident card are currently issued by the Foreign Ministry under temporary rules running through year-end. What's…
@@ -131,4 +133,6 @@
 - [我想在吉尔吉斯斯坦工作：谁发放许可，目前已知什么](https://xpat4.org/zh/work-permit-foreigners-kyrgyzstan-2026): 目前工作许可由外交部按临时程序发放，有效到2026年底，之后移交劳动部。哪些已经确认，哪些公开来源没有说明。
 - [在比什凯克租了房：如何按新规办理登记](https://xpat4.org/zh/register-after-renting-bishkek-2026): 期限、地址、房主同意、每人12平方米，以及离境时该怎么办。依据2026年9月23日起施行的程序。
 - [在吉尔吉斯斯坦免签和免登记可以停留多少天：按国家列表](https://xpat4.org/zh/visa-free-and-registration-days-by-country-2026): 按国籍列出免签停留期限和免登记期限，依据内阁第855号、第190号决议和新的登记程序。来源中没有的信息，我们如实说明。
+- [在吉尔吉斯斯坦的外国人重要日期日历](https://xpat4.org/zh/calendar): 此后统一许可和居民卡移交劳动部，但何时开始向劳动部提交尚未公布。如果在12月续签文件，请尽早开始。 个体经营者为自己缴纳不低于所在区或城市上一年平均工资的6%。每年1月1日起重新计算。外籍个体经营者同样缴纳。 截止日期为季度结束后次月20日（《税法典》第424、426条）。逾期提交报表，个体经营者罚30个计算指数。
+- [吉尔吉斯斯坦停留天数计算器：免签与登记](https://xpat4.org/zh/stay-counter): 
 <!-- /lang-sections -->

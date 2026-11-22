@@ -18,7 +18,7 @@ const SKIP = new Set(['admin.html']);
 // Chinese is published only where the whole page is translated.
 const ZH_PAGES = ['index', 'contact', 'kyrgyzstan-chinese-investors', 'relocate-kyrgyzstan-from-china',
   'open-osoo-foreigner-kyrgyzstan-2026', 'work-permit-foreigners-kyrgyzstan-2026', 'register-after-renting-bishkek-2026',
-  'visa-free-and-registration-days-by-country-2026'];
+  'visa-free-and-registration-days-by-country-2026', 'calendar', 'stay-counter'];
 const LOCALE = { ru: 'ru_RU', en: 'en_US', zh: 'zh_CN' };
 const SUFFIX = ' | xpat4.org';
 const HOME_TITLE = {
@@ -38,6 +38,8 @@ const TITLES = {
   residence: { ru: 'ВНЖ и регистрация в Кыргызстане для иностранцев', en: 'Residence permits and registration in Kyrgyzstan' },
   work: { ru: 'Работа и учёба в Кыргызстане для иностранцев', en: 'Working and studying in Kyrgyzstan as a foreigner' },
   living: { ru: 'Жизнь в Кыргызстане: практическая сторона', en: 'Living in Kyrgyzstan: the practical side' },
+  calendar: { ru: 'Календарь важных дат для иностранцев в Кыргызстане', en: 'Key dates for foreigners in Kyrgyzstan: calendar', zh: '在吉尔吉斯斯坦的外国人重要日期日历' },
+  'stay-counter': { ru: 'Счётчик дней пребывания в Кыргызстане: виза и регистрация', en: 'Kyrgyzstan stay counter: visa-free days and registration', zh: '吉尔吉斯斯坦停留天数计算器：免签与登记' },
 };
 const CRUMBS = {
   'Главная': { en: 'Home', zh: '首页' }, 'Гайды': { en: 'Guides', zh: '指南' }, 'Статьи': { en: 'Articles', zh: '文章' },
