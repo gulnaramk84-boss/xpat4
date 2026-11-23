@@ -62,6 +62,7 @@
 - [Гайды по ситуациям — xpat4.org](https://xpat4.org/guides): что делать иностранцу в Кыргызстане в конкретной ситуации; у каждого гайда дата проверки и источники
 - [Как мы проверяем информацию — xpat4.org](https://xpat4.org/how-we-check): Откуда берутся факты на xpat4.org, что значат даты и метки и что делать, если вы нашли ошибку.
 - [Сколько дней можно быть в Кыргызстане без визы и без регистрации: таблица по странам — xpat4.org](https://xpat4.org/visa-free-and-registration-days-by-country-2026): Безвизовые сроки и сроки без регистрации по гражданству, по постановлениям кабмина № 855 и № 190 и новому порядку регистрации. Где источники молчат, так и пишем.
+- [Как иностранцу пожаловаться омбудсмену в Кыргызстане — xpat4.org](https://xpat4.org/ombudsman-complaint-foreigners-kyrgyzstan-2026): Омбудсмен принимает жалобы и от иностранцев. Куда писать и звонить, какие сроки и что указать в обращении.
 
 <!-- lang-sections -->
 ## English version (same content, own URLs)
@@ -100,6 +101,7 @@
 - [Mobile service and internet in Kyrgyzstan: what newcomers need to know](https://xpat4.org/en/mobile-internet-kyrgyzstan-2026): A passport for a SIM card, registering your phone on imei.kg, and what happens to satellite internet now that Starlink's pilot has ended.
 - [Moving to Bishkek Checklist 2026](https://xpat4.org/en/move-bishkek-checklist): Complete pre-arrival and post-arrival checklist for moving to Bishkek, Kyrgyzstan. Practical steps and timeline.
 - [Kyrgyzstan news for foreigners: visas, registration, work](https://xpat4.org/en/news): News and events for expats in Kyrgyzstan. Visas, registration, work, taxes and daily life in Kyrgyzstan. Every item links to its source and says whether it…
+- [How a foreigner can complain to the ombudsman in Kyrgyzstan](https://xpat4.org/en/ombudsman-complaint-foreigners-kyrgyzstan-2026): The ombudsman takes complaints from foreigners too. Where to write or call, the deadlines and what to put in your complaint.
 - [How to Open a Bank Account in Kyrgyzstan as a Foreigner: Step-by-Step](https://xpat4.org/en/open-bank-account-kyrgyzstan-step-by-step): Exact steps to open a bank account in Kyrgyzstan as a non-resident foreigner. Which bank, documents needed and what to expect.
 - [How to Open a Company (OsOO) in Kyrgyzstan as a Foreigner 2026](https://xpat4.org/en/open-company-kyrgyzstan): Step-by-step guide to registering an OsOO (LLC equivalent) or sole trader (IP) in Kyrgyzstan. Costs, taxes and timelines.
 - [Opening an LLC (OsOO) in Kyrgyzstan as a foreigner](https://xpat4.org/en/open-osoo-foreigner-kyrgyzstan-2026): Who can be a founder, how long registration takes, what changed in November and what about the bank account. No state fee figure: the sources we checked do…

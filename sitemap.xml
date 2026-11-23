@@ -532,17 +532,31 @@
   </url>
   <url>
     <loc>https://xpat4.org/news</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/news"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://xpat4.org/en/news"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/news"/>
   </url>
   <url>
     <loc>https://xpat4.org/en/news</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/news"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://xpat4.org/en/news"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/news"/>
+  </url>
+  <url>
+    <loc>https://xpat4.org/ombudsman-complaint-foreigners-kyrgyzstan-2026</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/ombudsman-complaint-foreigners-kyrgyzstan-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xpat4.org/en/ombudsman-complaint-foreigners-kyrgyzstan-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/ombudsman-complaint-foreigners-kyrgyzstan-2026"/>
+  </url>
+  <url>
+    <loc>https://xpat4.org/en/ombudsman-complaint-foreigners-kyrgyzstan-2026</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://xpat4.org/ombudsman-complaint-foreigners-kyrgyzstan-2026"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xpat4.org/en/ombudsman-complaint-foreigners-kyrgyzstan-2026"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xpat4.org/en/ombudsman-complaint-foreigners-kyrgyzstan-2026"/>
   </url>
   <url>
     <loc>https://xpat4.org/open-bank-account-kyrgyzstan-step-by-step</loc>
