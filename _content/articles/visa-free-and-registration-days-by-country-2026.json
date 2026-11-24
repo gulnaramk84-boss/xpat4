@@ -1,7 +1,7 @@
 {
   "slug": "visa-free-and-registration-days-by-country-2026",
   "date": "2026-11-22",
-  "checked": "2026-11-22",
+  "checked": "2026-11-24",
   "category": "visa",
   "title": {
     "ru": "Сколько дней можно быть в Кыргызстане без визы и без регистрации: таблица по странам",
@@ -240,14 +240,48 @@
           ],
           [
             {
+              "ru": "Малайзия, Мальдивы",
+              "en": "Malaysia, Maldives",
+              "zh": "马来西亚、马尔代夫"
+            },
+            {
+              "ru": "До 30 дней, по соглашениям между странами (с Мальдивами — с 20 августа 2023 года)",
+              "en": "Up to 30 days, under bilateral agreements (with the Maldives since 20 August 2023)",
+              "zh": "最多30天，依据双边协定（与马尔代夫的协定自2023年8月20日起生效）"
+            },
+            {
+              "ru": "В проверенных источниках не нашли",
+              "en": "Not found in the sources we checked",
+              "zh": "我们查阅的来源中没有找到"
+            }
+          ],
+          [
+            {
+              "ru": "Азербайджан, Грузия, Таджикистан",
+              "en": "Azerbaijan, Georgia, Tajikistan",
+              "zh": "阿塞拜疆、格鲁吉亚、塔吉克斯坦"
+            },
+            {
+              "ru": "Без визы. Срок на портале МИД не указан",
+              "en": "Visa-free. The Foreign Ministry portal gives no time limit",
+              "zh": "免签。外交部门户网站未注明期限"
+            },
+            {
+              "ru": "В проверенных источниках не нашли",
+              "en": "Not found in the sources we checked",
+              "zh": "我们查阅的来源中没有找到"
+            }
+          ],
+          [
+            {
               "ru": "Граждане остальных стран, в том числе Китая с обычным паспортом вне туристической группы",
               "en": "Citizens of all other countries, including China on an ordinary passport outside a tour group",
               "zh": "其他国家的公民，包括持普通护照、不随旅游团的中国公民"
             },
             {
-              "ru": "Безвиза в постановлении нет: нужна виза ([электронная виза](/evisa-kyrgyzstan)), если договор вашей страны с Кыргызстаном не говорит иное",
-              "en": "The resolution gives no visa-free stay: you need a visa ([e-Visa](/evisa-kyrgyzstan)) unless a treaty between your country and Kyrgyzstan says otherwise",
-              "zh": "决议中没有免签：需要签证（[电子签证](/evisa-kyrgyzstan)），除非您的国家与吉尔吉斯斯坦的条约另有规定"
+              "ru": "Безвиза в постановлении нет: нужна виза ([электронная виза](/evisa-kyrgyzstan)), если договор вашей страны с Кыргызстаном не говорит иное. Проверить можно на портале evisa.e-gov.kg в разделе «Информация по странам»",
+              "en": "The resolution gives no visa-free stay: you need a visa ([e-Visa](/evisa-kyrgyzstan)) unless a treaty between your country and Kyrgyzstan says otherwise. You can check on evisa.e-gov.kg under Country information",
+              "zh": "决议中没有免签：需要签证（[电子签证](/evisa-kyrgyzstan)），除非您的国家与吉尔吉斯斯坦的条约另有规定。可在evisa.e-gov.kg的“国家信息”栏目查询"
             },
             {
               "ru": "В проверенных источниках не нашли",
@@ -263,6 +297,13 @@
         "ru": "Правила для дипломатических и служебных паспортов, двойного гражданства и для тех, кто въезжает работать или учиться, бывают другими. Эта таблица — про обычный паспорт и короткий въезд без визы.",
         "en": "Rules can differ for diplomatic and service passports, dual citizens and people entering to work or study. This table is about an ordinary passport and a short visa-free entry.",
         "zh": "外交护照和公务护照持有人、双重国籍者以及入境工作或学习的人，规则可能不同。本表针对普通护照和短期免签入境。"
+      }
+    },
+    {
+      "p": {
+        "ru": "Сроки для Малайзии, Мальдив, Азербайджана, Грузии и Таджикистана установлены не постановлением № 855, а соглашениями между странами. Мы взяли их с портала МИД [evisa.e-gov.kg](https://www.evisa.e-gov.kg/get_information.php?lng=ru), раздел «Информация по странам».",
+        "en": "The periods for Malaysia, the Maldives, Azerbaijan, Georgia and Tajikistan come from agreements between the countries, not from resolution No. 855. We took them from the Foreign Ministry portal [evisa.e-gov.kg](https://www.evisa.e-gov.kg/get_information.php?lng=en), Country information.",
+        "zh": "马来西亚、马尔代夫、阿塞拜疆、格鲁吉亚和塔吉克斯坦的期限不是由第855号决议规定，而是依据国家间协定。我们参照了外交部门户网站[evisa.e-gov.kg](https://www.evisa.e-gov.kg/get_information.php?lng=ru)的“国家信息”栏目。"
       }
     },
     {
@@ -354,6 +395,11 @@
           "ru": "Тексты постановлений № 855 и № 190 в базе Минюста: мы читали их в пересказе изданий. Списки стран у разных изданий совпадают.",
           "en": "The texts of resolutions No. 855 and No. 190 in the Justice Ministry database: we read them as reported by the media. The country lists match across outlets.",
           "zh": "司法部数据库中第855号和第190号决议的原文：我们读的是媒体的转述。不同媒体给出的国家名单一致。"
+        },
+        {
+          "ru": "Есть ли безвиз у Молдовы. Портал МИД для обычного паспорта пишет «нет», а страница МИД 2024 года называет безвизовый режим по соглашению СНГ. Источники расходятся, поэтому в таблицу Молдову не включили.",
+          "en": "Whether Moldova has visa-free entry. The Foreign Ministry portal says \"no\" for an ordinary passport, while a 2024 ministry page lists visa-free travel under a CIS agreement. The sources disagree, so Moldova is not in the table.",
+          "zh": "摩尔多瓦是否免签。外交部门户网站对普通护照显示“否”，而外交部2024年的页面则列出依据独联体协定免签。来源相互矛盾，因此未将摩尔多瓦列入表格。"
         }
       ]
     }
@@ -393,9 +439,28 @@
       "title": "Economist.kg: Кыргызстан предлагает отменить визы для граждан ещё 18 стран (18.11.2026)",
       "url": "https://economist.kg/society/2026/11/18/kyrgyzstan-bezviz-18-stran/",
       "note": "проект"
+    },
+    {
+      "title": "Портал электронной визы МИД КР: информация по странам (Малайзия, Мальдивы, Азербайджан, Грузия, Таджикистан, Молдова)",
+      "url": "https://www.evisa.e-gov.kg/get_information.php?lng=ru"
+    },
+    {
+      "title": "Economist.kg: соглашение с Мальдивами о взаимном безвизе вступает в силу 20 августа 2023 года (19.08.2023)",
+      "url": "https://economist.kg/vlast/2023/08/19/kyrghyzstantsy-s-20-avghusta-moghut-lietat-na-maldivy-biez-viz/"
+    },
+    {
+      "title": "МИД КР, генконсульство в Екатеринбурге: визовые вопросы (копия страницы от 12.07.2024 в веб-архиве)",
+      "url": "https://web.archive.org/web/20240712221819/https://mfa.gov.kg/ru/dm/generalnoe-konsulstvo-kyrgyzskoy-respubliki-v-g-ekaterinburg/menyu---inostrannoe/konsulskie-voprosy/vizovye-voprosy/izovye-voprosy-5c175d02e6a1c",
+      "note": "соглашение с Малайзией 1995 года, безвиз по соглашению СНГ"
     }
   ],
   "changes": [
+    {
+      "date": "2026-11-24",
+      "ru": "Добавили страны с безвизом по соглашениям: Малайзия и Мальдивы (до 30 дней), Азербайджан, Грузия, Таджикистан.",
+      "en": "Added countries with visa-free entry under agreements: Malaysia and the Maldives (up to 30 days), Azerbaijan, Georgia, Tajikistan.",
+      "zh": "新增依据协定免签的国家：马来西亚和马尔代夫（最多30天）、阿塞拜疆、格鲁吉亚、塔吉克斯坦。"
+    },
     {
       "date": "2026-11-24",
       "ru": "Добавили, что визаран не обнуляет срок. Старые страницы про визаран и список безвизовых стран теперь ведут сюда.",

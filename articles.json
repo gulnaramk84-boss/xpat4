@@ -33,13 +33,13 @@
           "en": "The fee is not refunded after a refusal or if you never use the visa. Buy tickets after approval."
         },
         {
-          "ru": "Сумму сбора и полный список пунктов въезда мы на открытых страницах портала не нашли.",
-          "en": "We did not find the fee or the full list of entry points on the portal's open pages."
+          "ru": "Сумму сбора мы на открытых страницах портала не нашли. Въезжать можно только через определённые пункты пропуска.",
+          "en": "We did not find the fee on the portal's open pages. You can enter only through certain border crossings."
         }
       ]
     },
     "checked": "2026-11-24",
-    "sources": 4
+    "sources": 5
   },
   {
     "slug": "ombudsman-complaint-foreigners-kyrgyzstan-2026",
@@ -97,8 +97,8 @@
         }
       ]
     },
-    "checked": "2026-11-22",
-    "sources": 8
+    "checked": "2026-11-24",
+    "sources": 11
   },
   {
     "slug": "digital-nomad-status-kyrgyzstan-2026",
