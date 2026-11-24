@@ -74,6 +74,45 @@
           "Turkish"
         ]
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://xpat4.org/#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long can I stay in Kyrgyzstan without a visa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Таблица по странам\" data-en=\"It depends on your citizenship. Citizens of the US, the UK, EU countries and several others can stay up to 30 days in every 60; EAEU citizens up to 90 days in every 180. Days are counted in total, so a visa run does not reset them. Table by country\" data-zh=\"取决于国籍。美国、英国、欧盟国家及其他一些国家的公民每60天内最多停留30天；欧亚经济联盟公民每180天内最多90天。天数累计计算，因此签证跑不会重新计算期限。各国列表\">It depends on your citizenship. Citizens of the US, the UK, EU countries and several others can stay up to 30 days in every 60; EAEU citizens up to 90 days in every 180. Days are counted in total, so a visa run does not reset them. Table by country"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When do I need to register?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Подробнее\" data-en=\"Since 23 September 2026 citizens of the US, the UK, Germany, France, Japan, Korea and several other countries can stay 30 days without registration. Register no later than the last day of that period. Leaving for 30 days or more cancels the registration. Details\" data-zh=\"自2026年9月23日起，美国、英国、德国、法国、日本、韩国及其他一些国家的公民可免登记停留30天。最迟须在该期限的最后一天办理登记。离境30天或以上，登记即失效。详情\">Since 23 September 2026 citizens of the US, the UK, Germany, France, Japan, Korea and several other countries can stay 30 days without registration. Register no later than the last day of that period. Leaving for 30 days or more cancels the registration. Details"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I overstay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Что делать\" data-en=\"A fine under Article 431 of the Code of Offences: 55 to 200 calculation indices, depending on how long. And next time you will be refused visa-free entry. What to do\" data-zh=\"依据《违法行为法典》第431条罚款：视超期时长为55至200个计算指数。下次入境时将不允许免签。怎么办\">A fine under Article 431 of the Code of Offences: 55 to 200 calculation indices, depending on how long. And next time you will be refused visa-free entry. What to do"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who issues work documents now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Гайд по работе\" data-en=\"Until 31 December 2026 the Foreign Ministry issues them under a temporary procedure. A 28 September decree moves this to the Labour Ministry, but no date has been named yet. Work guide\" data-zh=\"2026年12月31日前由外交部按临时程序办理。9月28日的总统令将这些职能移交劳动部，但尚未公布具体日期。工作指南\">Until 31 December 2026 the Foreign Ministry issues them under a temporary procedure. A 28 September decree moves this to the Labour Ministry, but no date has been named yet. Work guide"
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -272,6 +311,19 @@
     .author-avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--accent-light); display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; color: var(--accent); font-family: 'Cormorant Garamond', serif; flex-shrink: 0; }
     .author-name { font-size: 13px; font-weight: 500; color: var(--ink); }
     .author-meta { font-size: 11px; color: var(--ink-30); margin-top: 2px; letter-spacing: 0.03em; }
+
+    /* HOME: key dates, FAQ, Telegram */
+    .hd-date { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; line-height: 1.1; color: var(--accent); }
+    .hd-kind { font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-60); }
+    .home-faq { padding: 0 48px 80px; max-width: 1100px; margin: 0 auto; }
+    .home-faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .hf-item { background: var(--warm-white); padding: 28px; }
+    .hf-item .qa-q { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; line-height: 1.25; margin-bottom: 10px; }
+    .hf-item .qa-a { font-size: 14px; line-height: 1.65; color: var(--ink-60); font-weight: 300; }
+    .hf-item .qa-a a { color: var(--accent); }
+    .final-cta .tg-line { margin-top: 26px; font-size: 13px; color: var(--sand); opacity: .85; }
+    .final-cta .tg-line a { color: var(--sand); text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 900px) { .home-faq { padding: 0 20px 56px; } .home-faq-grid { grid-template-columns: 1fr; } }
 
     /* QUICK ACTIONS */
     .quick-actions { padding: 0 48px 80px; max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -478,9 +530,21 @@
     </div>
     <a class="home-news-all" href="/en/news" data-ru="Все новости" data-en="All news" data-zh="全部新闻">All news</a>
   </div>
-  <div class="home-news-grid" id="home-news-grid"></div>
+  <div class="home-news-grid" id="home-news-grid"><!--pre:home-news--><a class="hn-card" href="/en/news#n-24"><div class="hn-meta"><span class="hn-cat">Visa and entry</span><span>November 24</span></div><div class="hn-title">Chaldybar border crossing with Kazakhstan closes to vehicles from 25 November</div><div><span class="hn-badge soon">Coming soon</span></div></a><a class="hn-card" href="/en/news#n-22"><div class="hn-meta"><span class="hn-cat">Life in KG</span><span>November 23</span></div><div class="hn-title">Lawmakers want to ban surrogacy for foreigners in Kyrgyzstan</div><div><span class="hn-badge draft">Draft only</span></div></a><a class="hn-card" href="/en/news#n-23"><div class="hn-meta"><span class="hn-cat">Life in KG</span><span>November 18</span></div><div class="hn-title">Foreigners are turning to Kyrgyzstan's ombudsman 2.5 times more often</div></a><!--/pre:home-news--></div>
 </section>
 
+
+<!-- KEY DATES (filled by _tools/build-lang.js from _content/calendar.json) -->
+<section class="home-news fade-up" id="home-dates">
+  <div class="home-news-head">
+    <div>
+      <div class="home-news-eyebrow" data-ru="Календарь" data-en="Calendar" data-zh="日历">Calendar</div>
+      <h2 class="home-news-title" data-ru="Ближайшие важные даты" data-en="Upcoming key dates" data-zh="近期重要日期">Upcoming key dates</h2>
+    </div>
+    <a href="/en/calendar" class="home-news-all" data-ru="Все даты" data-en="All dates" data-zh="全部日期">All dates</a>
+  </div>
+  <div class="home-news-grid" id="home-dates-grid"><!--pre:home-dates--><a class="hn-card" data-date="2026-12-31" href="/en/temporary-rules-foreigners-kyrgyzstan-2026"><div class="hd-date">December 31 <span class="hd-kind">2026</span></div><div class="hd-kind">Last day</div><div class="hn-title">Last day of the temporary procedure: the Foreign Ministry issues work documents</div></a><a class="hn-card" data-date="2027-01-01" href="/en/kyrgyzstan-freelancer-tax"><div class="hd-date">January 1 <span class="hd-kind">2027</span></div><div class="hd-kind">Takes effect</div><div class="hn-title">New sole-trader Social Fund contribution for 2027</div></a><a class="hn-card" data-date="2027-01-20" href="/en/kyrgyzstan-freelancer-tax"><div class="hd-date">January 20 <span class="hd-kind">2027</span></div><div class="hd-kind">Deadline</div><div class="hn-title">Single tax: report and payment for Q4 2026</div></a><a class="hn-card" data-date="2027-04-01" href="/en/open-osoo-foreigner-kyrgyzstan-2026"><div class="hd-date">April 1 <span class="hd-kind">2027</span></div><div class="hd-kind">File before this date</div><div class="hn-title">Unified Tax Declaration for 2026: companies</div></a><a class="hn-card" data-date="2027-04-20" href="/en/kyrgyzstan-freelancer-tax"><div class="hd-date">April 20 <span class="hd-kind">2027</span></div><div class="hd-kind">Deadline</div><div class="hn-title">Single tax: report and payment for Q1 2027</div></a><a class="hn-card" data-date="2027-05-01" href="/en/kyrgyzstan-freelancer-tax"><div class="hd-date">May 1 <span class="hd-kind">2027</span></div><div class="hd-kind">File before this date</div><div class="hn-title">Unified Tax Declaration for 2026: sole traders and individuals</div></a><!--/pre:home-dates--></div>
+</section>
 
 <div class="cards-section" id="services">
   <div class="cards-grid">
@@ -553,14 +617,28 @@
         data-ru="Весь каталог" data-en="Full Catalog" data-zh="完整目录">Full Catalog</a>
     </div>
   </div>
-  <div class="consultants-grid" id="specialists-grid">
-    <!-- Loaded from specialists.json -->
-  </div>
+  <div class="consultants-grid" id="specialists-grid"><!--pre:home-specialists--><a class="consultant-card" href="/en/catalog#specialist-1"><div class="consultant-avatar">GM</div><div class="consultant-role">Migration consultant</div><div class="consultant-name">Gulnara Mambetaliyeva</div><p class="consultant-desc">Handles residence permits and citizenship cases. Over 10 years of practice in Kyrgyz migration matters.</p><div class="consultant-footer"><span class="consultant-city">Bishkek</span><span class="consultant-open">Profile</span></div></a><a class="consultant-card" href="/en/catalog#specialist-2"><div class="consultant-avatar">AI</div><div class="consultant-role">Business Consultant</div><div class="consultant-name">Azat Israilov</div><p class="consultant-desc">Assists with registration and opening of businesses for foreign citizens.</p><div class="consultant-footer"><span class="consultant-city">Bishkek · Online</span><span class="consultant-open">Profile</span></div></a><a class="consultant-card" href="/en/catalog#specialist-3"><div class="consultant-avatar">MA</div><div class="consultant-role">Notary services</div><div class="consultant-name">Mahabat Arykova</div><p class="consultant-desc">Certification of powers of attorney, real estate transactions, certification of signature authenticity and accuracy of document copies, etc.</p><div class="consultant-footer"><span class="consultant-city">Bishkek</span><span class="consultant-open">Profile</span></div></a><a class="consultant-card" href="/en/catalog#specialist-4"><div class="consultant-avatar">AK</div><div class="consultant-role">Mentor, coach</div><div class="consultant-name">Anara Kadyrbaeva</div><p class="consultant-desc">People management, mediation, conflict resolution, team building, personal and team development methodology.</p><div class="consultant-footer"><span class="consultant-city">Osh · Online</span><span class="consultant-open">Profile</span></div></a><a class="consultant-card" href="/en/catalog#specialist-5"><div class="consultant-avatar">ML</div><div class="consultant-role">Translator, tutor</div><div class="consultant-name">Marina Levoshina</div><p class="consultant-desc">Russian-English and English-Russian translator; teacher of Russian as a foreign language.</p><div class="consultant-footer"><span class="consultant-city">Osh · Online</span><span class="consultant-open">Profile</span></div></a><!--/pre:home-specialists--></div>
 </section>
 
 
 <!-- QUICK ACTIONS -->
-<section class="quick-actions fade-up">
+<section class="quick-actions fade-up" aria-label="Инструменты">
+  <a class="quick-card" href="/en/stay-counter">
+    <div class="quick-card-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg></div>
+    <div class="quick-card-text">
+      <div class="quick-card-title" data-ru="Счётчик дней пребывания" data-en="Stay day counter" data-zh="停留天数计算器">Stay day counter</div>
+      <p class="quick-card-desc" data-ru="Выберите гражданство и дату въезда, и узнаете, до какого дня можно быть без визы и без регистрации." data-en="Pick your citizenship and entry date to see how long you can stay without a visa and without registration." data-zh="选择国籍和入境日期，即可知道免签和免登记可停留到哪一天。">Pick your citizenship and entry date to see how long you can stay without a visa and without registration.</p>
+      <div class="quick-card-arrow" data-ru="Посчитать дни" data-en="Count my days" data-zh="计算天数">Count my days</div>
+    </div>
+  </a>
+  <a class="quick-card" href="/en/calendar">
+    <div class="quick-card-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 14h2M14 14h2M8 17h2"/></svg></div>
+    <div class="quick-card-text">
+      <div class="quick-card-title" data-ru="Календарь важных дат" data-en="Key dates calendar" data-zh="重要日期日历">Key dates calendar</div>
+      <p class="quick-card-desc" data-ru="Когда вступают в силу новые правила для иностранцев и до какого дня сдавать отчёты." data-en="When new rules for foreigners take effect and when reports are due." data-zh="针对外国人的新规何时生效，报表何时截止。">When new rules for foreigners take effect and when reports are due.</p>
+      <div class="quick-card-arrow" data-ru="Открыть календарь" data-en="Open calendar" data-zh="打开日历">Open calendar</div>
+    </div>
+  </a>
   <a class="quick-card" href="/en/calculator">
     <div class="quick-card-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M8 15h2M12 15h2M16 11v4"/></svg></div>
     <div class="quick-card-text">
@@ -579,6 +657,34 @@
   </a>
 </section>
 
+<!-- FAQ (answers only from checked guides; FAQPage markup is built by build-lang.js) -->
+<section class="home-faq fade-up" id="faq">
+  <div class="home-news-head">
+    <div>
+      <div class="home-news-eyebrow" data-ru="Коротко" data-en="In short" data-zh="简要">In short</div>
+      <h2 class="home-news-title" data-ru="Частые вопросы" data-en="Common questions" data-zh="常见问题">Common questions</h2>
+    </div>
+    <a href="/en/guides" class="home-news-all" data-ru="Все гайды" data-en="All guides" data-zh="全部指南">All guides</a>
+  </div>
+  <div class="home-faq-grid">
+    <div class="hf-item">
+      <h3 class="qa-q" data-ru="Сколько дней можно быть в Кыргызстане без визы?" data-en="How long can I stay in Kyrgyzstan without a visa?" data-zh="在吉尔吉斯斯坦免签可以停留多久？">How long can I stay in Kyrgyzstan without a visa?</h3>
+      <p class="qa-a" data-ru="Зависит от гражданства. Гражданам США, Великобритании, стран ЕС и ещё ряда стран можно до 30 дней в каждые 60, гражданам ЕАЭС до 90 дней в каждые 180. Дни считаются в сумме, поэтому визаран срок не обнуляет. <a href='/en/visa-free-and-registration-days-by-country-2026'>Таблица по странам</a>" data-en="It depends on your citizenship. Citizens of the US, the UK, EU countries and several others can stay up to 30 days in every 60; EAEU citizens up to 90 days in every 180. Days are counted in total, so a visa run does not reset them. <a href='/en/visa-free-and-registration-days-by-country-2026'>Table by country</a>" data-zh="取决于国籍。美国、英国、欧盟国家及其他一些国家的公民每60天内最多停留30天；欧亚经济联盟公民每180天内最多90天。天数累计计算，因此签证跑不会重新计算期限。<a href='/en/visa-free-and-registration-days-by-country-2026'>各国列表</a>">It depends on your citizenship. Citizens of the US, the UK, EU countries and several others can stay up to 30 days in every 60; EAEU citizens up to 90 days in every 180. Days are counted in total, so a visa run does not reset them. <a href='/en/visa-free-and-registration-days-by-country-2026'>Table by country</a></p>
+    </div>
+    <div class="hf-item">
+      <h3 class="qa-q" data-ru="Когда нужна регистрация?" data-en="When do I need to register?" data-zh="什么时候需要办理登记？">When do I need to register?</h3>
+      <p class="qa-a" data-ru="С 23 сентября 2026 года гражданам США, Великобритании, Германии, Франции, Японии, Кореи и ещё ряда стран без регистрации можно быть 30 дней. Регистрацию подают не позже последнего дня этого срока. Выезд на 30 дней и больше её аннулирует. <a href='/en/stay-longer-than-30-days-kyrgyzstan'>Подробнее</a>" data-en="Since 23 September 2026 citizens of the US, the UK, Germany, France, Japan, Korea and several other countries can stay 30 days without registration. Register no later than the last day of that period. Leaving for 30 days or more cancels the registration. <a href='/en/stay-longer-than-30-days-kyrgyzstan'>Details</a>" data-zh="自2026年9月23日起，美国、英国、德国、法国、日本、韩国及其他一些国家的公民可免登记停留30天。最迟须在该期限的最后一天办理登记。离境30天或以上，登记即失效。<a href='/en/stay-longer-than-30-days-kyrgyzstan'>详情</a>">Since 23 September 2026 citizens of the US, the UK, Germany, France, Japan, Korea and several other countries can stay 30 days without registration. Register no later than the last day of that period. Leaving for 30 days or more cancels the registration. <a href='/en/stay-longer-than-30-days-kyrgyzstan'>Details</a></p>
+    </div>
+    <div class="hf-item">
+      <h3 class="qa-q" data-ru="Что будет, если просрочить срок?" data-en="What happens if I overstay?" data-zh="如果超期停留会怎样？">What happens if I overstay?</h3>
+      <p class="qa-a" data-ru="Штраф по статье 431 Кодекса о правонарушениях: от 55 до 200 расчётных показателей, в зависимости от срока. А при следующем въезде вам откажут в безвизе. <a href='/en/overstay-kyrgyzstan-2026'>Что делать</a>" data-en="A fine under Article 431 of the Code of Offences: 55 to 200 calculation indices, depending on how long. And next time you will be refused visa-free entry. <a href='/en/overstay-kyrgyzstan-2026'>What to do</a>" data-zh="依据《违法行为法典》第431条罚款：视超期时长为55至200个计算指数。下次入境时将不允许免签。<a href='/en/overstay-kyrgyzstan-2026'>怎么办</a>">A fine under Article 431 of the Code of Offences: 55 to 200 calculation indices, depending on how long. And next time you will be refused visa-free entry. <a href='/en/overstay-kyrgyzstan-2026'>What to do</a></p>
+    </div>
+    <div class="hf-item">
+      <h3 class="qa-q" data-ru="Кто сейчас оформляет документы на работу?" data-en="Who issues work documents now?" data-zh="目前由哪个部门办理工作文件？">Who issues work documents now?</h3>
+      <p class="qa-a" data-ru="До 31 декабря 2026 года их оформляет МИД по временному порядку. Указом от 28 сентября эти функции передают Минтруда, но дату перехода пока не назвали. <a href='/en/work-permit-foreigners-kyrgyzstan-2026'>Гайд по работе</a>" data-en="Until 31 December 2026 the Foreign Ministry issues them under a temporary procedure. A 28 September decree moves this to the Labour Ministry, but no date has been named yet. <a href='/en/work-permit-foreigners-kyrgyzstan-2026'>Work guide</a>" data-zh="2026年12月31日前由外交部按临时程序办理。9月28日的总统令将这些职能移交劳动部，但尚未公布具体日期。<a href='/en/work-permit-foreigners-kyrgyzstan-2026'>工作指南</a>">Until 31 December 2026 the Foreign Ministry issues them under a temporary procedure. A 28 September decree moves this to the Labour Ministry, but no date has been named yet. <a href='/en/work-permit-foreigners-kyrgyzstan-2026'>Work guide</a></p>
+    </div>
+  </div>
+</section>
 <!-- USEFUL SERVICES -->
 <section class="xp-row fade-up" aria-label="Полезные сервисы">
   <aside class="xp-proj" data-xp-project="resumelink"></aside>
@@ -598,6 +704,7 @@
       data-zh="描述您的情况——我们将帮助您了解需要哪些文件以及联系谁。">Describe your situation — we'll help figure out what documents you need and who to contact.</p>
     <a class="btn-light" href="/en/contact"
       data-ru="Задать вопрос" data-en="Ask a Question" data-zh="提问">Ask a Question</a>
+    <p class="tg-line" data-ru="Короткие новости на английском — в Telegram-канале <a href='https://t.me/expat4kg' target='_blank' rel='noopener'>@expat4kg</a>" data-en="Short news in English on our Telegram channel <a href='https://t.me/expat4kg' target='_blank' rel='noopener'>@expat4kg</a>" data-zh="英文简讯请关注Telegram频道 <a href='https://t.me/expat4kg' target='_blank' rel='noopener'>@expat4kg</a>">Short news in English on our Telegram channel <a href='https://t.me/expat4kg' target='_blank' rel='noopener'>@expat4kg</a></p>
   </div>
 </section>
 
@@ -685,13 +792,15 @@
   function renderHomeNews() {
     const grid = document.getElementById('home-news-grid');
     if (!grid || !window._news) return;
-    const lang = XPAT4.currentLang === 'ru' ? 'ru' : 'en';
+    const cur = XPAT4.currentLang || 'ru';
+    const lang = cur === 'ru' ? 'ru' : 'en';
+    const newsUrl = XPAT4.localPath ? XPAT4.localPath('/news') : '/news';
     grid.innerHTML = window._news.slice(0, 3).map(n => {
       const st = HN_STATUS[n.status];
       const d = new Date(n.date).toLocaleDateString(lang === 'ru' ? 'ru-RU' : 'en-GB', { day: 'numeric', month: 'long', timeZone: 'UTC' });
-      return '<a class="hn-card" href="/en/news">' +
+      return '<a class="hn-card" href="' + newsUrl + '#n-' + hnEsc(n.id) + '">' +
         '<div class="hn-meta"><span class="hn-cat">' + hnEsc((HN_CAT[n.category] || {})[lang] || '') + '</span><span>' + hnEsc(d) + '</span></div>' +
-        '<div class="hn-title">' + hnEsc(n['title_' + lang] || n.title_ru) + '</div>' +
+        '<div class="hn-title">' + hnEsc(n['title_' + cur] || n['title_' + lang] || n.title_ru) + '</div>' +
         (st ? '<div><span class="hn-badge ' + hnEsc(n.status) + '">' + hnEsc(st[lang]) + '</span></div>' : '') +
         '</a>';
     }).join('');
@@ -701,6 +810,15 @@
     renderHomeNews();
   }).catch(() => { const s = document.getElementById('home-news'); if (s) s.style.display = 'none'; });
   document.addEventListener('xpat4-lang-change', renderHomeNews);
+
+  /* ── Key dates: hide dates that have passed since the last build, show 3 ── */
+  (function () {
+    const grid = document.getElementById('home-dates-grid'); if (!grid) return;
+    const d = new Date(), today = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+    let shown = 0;
+    grid.querySelectorAll('[data-date]').forEach(el => { if (el.dataset.date < today || shown >= 3) el.remove(); else shown++; });
+    if (!shown) document.getElementById('home-dates').style.display = 'none';
+  })();
 
 
   /* ── Trust strip: live counts ── */

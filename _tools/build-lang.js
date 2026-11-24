@@ -176,9 +176,9 @@ function fixJsonLd(html, lang, slug, title, desc) {
   const url = urlOf(lang, slug);
   const org = { '@type': 'Organization', name: 'xpat4.org', url: SITE + '/', logo: { '@type': 'ImageObject', url: SITE + '/favicon.svg' } };
   const qa = [];
-  const reQ = /<h2 class="qa-q"[^>]*>([\s\S]*?)<\/h2>\s*<p class="qa-a"[^>]*>([\s\S]*?)<\/p>/g;
+  const reQ = /<(h[23]) class="qa-q"[^>]*>([\s\S]*?)<\/\1>\s*<p class="qa-a"[^>]*>([\s\S]*?)<\/p>/g;
   let m;
-  while ((m = reQ.exec(html))) qa.push({ q: stripTags(m[1]), a: stripTags(m[2]) });
+  while ((m = reQ.exec(html))) qa.push({ q: stripTags(m[2]), a: stripTags(m[3]) });
   const fixNode = (n) => {
     if (!n || typeof n !== 'object') return n;
     const type = n['@type'];
@@ -249,6 +249,44 @@ function mdLinks(s, lang) {
   }
   return rewriteLinks(out + escH(s.slice(last)), lang);
 }
+// Home page: latest news, next key dates and specialists as real HTML (the page script refreshes them)
+function homeHtml(html, lang) {
+  const k = lang === 'ru' ? 'ru' : 'en', L = lang === 'ru' ? 0 : 1;
+  const pick = (o, f) => o[f + '_' + lang] || o[f + '_' + k] || o[f + '_en'] || o[f + '_ru'] || '';
+  const fill = (h, name, inner) => h.replace(new RegExp('<!--pre:' + name + '-->[\\s\\S]*?<!--/pre:' + name + '-->'), () => '<!--pre:' + name + '-->' + inner + '<!--/pre:' + name + '-->');
+  const dayMon = (iso) => { const [y, mo, d] = iso.split('-').map(Number); return lang === 'zh' ? `${mo}月${d}日` : lang === 'ru' ? `${d} ${MONTHS.ru[mo - 1]}` : `${MONTHS.en[mo - 1]} ${d}`; };
+  const jPath = (f) => path.join(root, f);
+  if (fs.existsSync(jPath('news.json'))) {
+    const news = JSON.parse(read(jPath('news.json'))).sort((a, b) => (b.date || '').localeCompare(a.date || '') || (b.id || 0) - (a.id || 0)).slice(0, 3);
+    html = fill(html, 'home-news', news.map((n) => {
+      const st = STATUS[n.status];
+      return '<a class="hn-card" href="/news#n-' + escH(n.id) + '"><div class="hn-meta"><span class="hn-cat">' + escH(CAT[n.category] ? CAT[n.category][L] : '') + '</span><span>' + escH(dayMon(n.date)) + '</span></div>' +
+        '<div class="hn-title">' + escH(pick(n, 'title')) + '</div>' + (st ? '<div><span class="hn-badge ' + escH(n.status) + '">' + escH(st[L]) + '</span></div>' : '') + '</a>';
+    }).join(''));
+  }
+  const cPath = path.join(root, '_content', 'calendar.json');
+  if (fs.existsSync(cPath)) {
+    const KIND = { on: ['Вступает в силу', 'Takes effect', '生效'], last: ['Последний день', 'Last day', '最后一天'], deadline: ['Крайний срок', 'Deadline', '截止日期'], before: ['Подать до этой даты', 'File before this date', '须在此日期前提交'] };
+    const li = { ru: 0, en: 1, zh: 2 }[lang];
+    const today = new Date().toISOString().slice(0, 10);
+    const up = JSON.parse(read(cPath)).dated.filter((x) => x.date >= today).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 6);
+    html = fill(html, 'home-dates', up.map((x) => {
+      const [y] = x.date.split('-');
+      return '<a class="hn-card" data-date="' + x.date + '" href="' + escH(x.link || '/calendar') + '"><div class="hd-date">' + escH(dayMon(x.date)) + (lang === 'zh' ? '' : ' ') + '<span class="hd-kind">' + escH(lang === 'zh' ? y + '年' : y) + '</span></div>' +
+        '<div class="hd-kind">' + escH((KIND[x.kind] || KIND.on)[li]) + '</div><div class="hn-title">' + escH(x.title[lang] || x.title.en) + '</div></a>';
+    }).join(''));
+  }
+  if (fs.existsSync(jPath('specialists.json'))) {
+    const sp = JSON.parse(read(jPath('specialists.json'))).slice(0, 6);
+    const open = { ru: 'Профиль', en: 'Profile', zh: '查看资料' }[lang], online = { ru: 'Онлайн', en: 'Online', zh: '在线' }[lang];
+    html = fill(html, 'home-specialists', sp.map((s) => '<a class="consultant-card" href="/catalog#specialist-' + escH(s.id) + '"><div class="consultant-avatar">' +
+      (s.photo ? '<img src="' + escH(s.photo) + '" alt="' + escH(pick(s, 'name')) + '" width="44" height="44" loading="lazy">' : escH(s.initials)) + '</div>' +
+      '<div class="consultant-role">' + escH(pick(s, 'role')) + '</div><div class="consultant-name">' + escH(pick(s, 'name')) + '</div><p class="consultant-desc">' + escH(pick(s, 'desc')) + '</p>' +
+      '<div class="consultant-footer"><span class="consultant-city">' + escH(pick(s, 'city')) + (s.online ? ' · ' + online : '') + '</span><span class="consultant-open">' + open + '</span></div></a>').join(''));
+  }
+  return html;
+}
+
 function newsHtml(html, lang) {
   const nPath = path.join(root, 'news.json');
   if (!fs.existsSync(nPath)) return html;
@@ -286,6 +324,7 @@ function build(slug, lang) {
   // relative data fetches would break under /en/ and /zh/
   html = html.replace(/(fetch\(|getJson\()'(?!\/|https?:)([a-z0-9-]+\.json)/g, "$1'/$2").replace(/url\('(?!\/|https?:|data:)([^')]+)'\)/g, "url('/$1')");
   if (slug === 'news') html = newsHtml(html, lang);
+  if (slug === 'index') html = homeHtml(html, lang);
   if (lang !== 'ru') {
     const head = html.slice(0, html.indexOf('<body'));
     let body = translateBody(html.slice(head.length), lang, slug, missing);
