@@ -14,7 +14,9 @@ const cp = require('child_process');
 
 const root = path.resolve(__dirname, '..');
 const SITE = 'https://xpat4.org';
-const SKIP = new Set(['admin.html']);
+// Old URLs merged into other pages: _content/redirects.json { "old-slug": "/new-path" }
+const REDIRECTS = (() => { try { const r = JSON.parse(fs.readFileSync(path.join(root, '_content', 'redirects.json'), 'utf8')); delete r._about; return r; } catch (e) { return {}; } })();
+const SKIP = new Set(['admin.html', ...Object.keys(REDIRECTS).map((s) => s + '.html')]);
 // Chinese is published only where the whole page is translated.
 const ZH_PAGES = ['index', 'contact', 'kyrgyzstan-chinese-investors', 'relocate-kyrgyzstan-from-china',
   'open-osoo-foreigner-kyrgyzstan-2026', 'work-permit-foreigners-kyrgyzstan-2026', 'register-after-renting-bishkek-2026',
@@ -334,6 +336,21 @@ for (const lang of ['ru', 'en', 'zh']) {
   }
   // remove stale versions of pages that are no longer published in this language
   if (lang !== 'ru') for (const f of fs.readdirSync(path.join(root, lang))) if (f.endsWith('.html') && !LANGS[lang].has(f.slice(0, -5))) fs.unlinkSync(path.join(root, lang, f));
+}
+
+// ---------- redirect pages for merged URLs (GitHub Pages has no server redirects) ----------
+for (const [from, to] of Object.entries(REDIRECTS)) {
+  const tSlug = to.replace(/^\//, '').replace(/[#?].*$/, '') || 'index';
+  for (const lang of ['ru', 'en']) {
+    const target = (lang === 'en' && LANGS.en.has(tSlug) ? '/en' : '') + to;
+    const html = '<!DOCTYPE html>\n<html lang="' + lang + '">\n<head>\n<meta charset="utf-8">\n<title>' +
+      (lang === 'en' ? 'Page moved' : 'Страница переехала') + ' | xpat4.org</title>\n' +
+      '<meta name="robots" content="noindex, follow">\n<link rel="canonical" href="' + SITE + target + '">\n' +
+      '<meta http-equiv="refresh" content="0; url=' + target + '">\n<script>location.replace(' + JSON.stringify(target) + ' + location.hash)</script>\n</head>\n<body>\n<p><a href="' + target + '">' +
+      (lang === 'en' ? 'This page has moved. Open the new page' : 'Страница переехала. Открыть новую страницу') + '</a></p>\n</body>\n</html>\n';
+    const file = lang === 'ru' ? path.join(root, from + '.html') : path.join(root, lang, from + '.html');
+    if (!fs.existsSync(file) || read(file) !== html) fs.writeFileSync(file, html, 'utf8');
+  }
 }
 
 // ---------- sitemap.xml ----------

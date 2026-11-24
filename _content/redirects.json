@@ -1,0 +1,5 @@
+{
+  "_about": "Old URLs merged into another page. build-lang.js turns each into a redirect page (RU and EN) and keeps it out of sitemap.xml, llms.txt and search. Key: old slug, value: new path without language prefix.",
+  "kyrgyzstan-visa-free-countries": "/visa-free-and-registration-days-by-country-2026",
+  "visa-run-kyrgyzstan": "/visa-free-and-registration-days-by-country-2026"
+}

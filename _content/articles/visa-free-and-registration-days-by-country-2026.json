@@ -274,9 +274,9 @@
     },
     {
       "p": {
-        "ru": "Срок считается суммарно. Правило «30 дней в каждые 60» значит: в любые 60 дней с момента въезда вы можете провести в стране не больше 30 дней в сумме. Поэтому выехать на день и вернуться, чтобы начать отсчёт заново, не получится.",
-        "en": "The period is counted in total. The rule \"30 days in every 60\" means that in any 60 days from entry you can spend no more than 30 days in the country altogether. So leaving for a day and coming back does not restart the count.",
-        "zh": "期限是累计计算的。\"每60天内30天\"的规则是指：自入境起的任意60天内，您在境内累计停留不能超过30天。因此出境一天再回来，并不能重新计算。"
+        "ru": "Срок считается суммарно. Правило «30 дней в каждые 60» значит: в любые 60 дней с момента въезда вы можете провести в стране не больше 30 дней в сумме. Поэтому визаран не помогает: если выехать на день и вернуться, отсчёт заново не начнётся.",
+        "en": "The period is counted in total. The rule \"30 days in every 60\" means that in any 60 days from entry you can spend no more than 30 days in the country altogether. So a visa run does not help: leaving for a day and coming back does not restart the count.",
+        "zh": "期限是累计计算的。\"每60天内30天\"的规则是指：自入境起的任意60天内，您在境内累计停留不能超过30天。因此\"签证跑\"没有用：出境一天再回来，并不能重新计算。"
       }
     },
     {
@@ -396,6 +396,12 @@
     }
   ],
   "changes": [
+    {
+      "date": "2026-11-24",
+      "ru": "Добавили, что визаран не обнуляет срок. Старые страницы про визаран и список безвизовых стран теперь ведут сюда.",
+      "en": "Added that a visa run does not reset the count. The old visa run and visa-free countries pages now lead here.",
+      "zh": "补充说明签证跑不会重新计算期限。旧的签证跑页面和免签国家列表页面现转至本页。"
+    },
     {
       "date": "2026-11-22",
       "ru": "Первая публикация.",

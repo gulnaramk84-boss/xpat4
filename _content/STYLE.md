@@ -78,6 +78,10 @@
 - После правки: `node _tools/build-calendar.js` (пересоберёт `calendar.html`, `/en/calendar`, `/zh/calendar`).
 - Безвизовые сроки и сроки без регистрации для счётчика `/stay-counter` лежат в `stay-rules.json` в корне. Если закон меняет сроки, правьте и этот файл, и гайд `visa-free-and-registration-days-by-country-2026`.
 
+## Старые адреса
+
+- Если старую страницу заменил гайд, её не удаляют, а добавляют в `_content/redirects.json` (старый адрес → новый). `build-lang.js` сам делает из неё переадресацию на русском и английском и убирает её из `sitemap.xml`, `llms.txt` и поиска. Строку о ней в основной части `llms.txt` удалите руками.
+
 ## Что нельзя
 
 - Менять код сайта, `admin.html`, `xpat4.js`, настройки Cloudflare и GitHub. Работаем только с `_content/`, `news.json`, `articles.json`, `guides.html`, `search-index.json` (поисковый индекс, его пересобирают `add-news.js` и `build-article.js`), страницами, которые собирает скрипт, папками `en/` и `zh/`, `sitemap.xml`, `llms.txt`, `calendar.html` (через `build-calendar.js`) и `stay-rules.json`.

@@ -7,7 +7,8 @@ const path = require('path');
 const root = path.resolve(__dirname, '..');
 const read = (p) => fs.readFileSync(p, 'utf8').replace(/^\uFEFF/, '');
 
-const SKIP = new Set(['admin.html', 'privacy.html', 'terms.html']);
+const REDIRECTS = (() => { try { return JSON.parse(fs.readFileSync(path.join(root, '_content', 'redirects.json'), 'utf8')); } catch (e) { return {}; } })();
+const SKIP = new Set(['admin.html', 'privacy.html', 'terms.html', ...Object.keys(REDIRECTS).map((s) => s + '.html')]);
 const SECTION = new Set(['index', 'guides', 'news', 'catalog', 'calculator', 'checklist', 'contact', 'join', 'visa', 'residence', 'work', 'living', 'how-we-check']);
 const articles = fs.existsSync(path.join(root, 'articles.json')) ? JSON.parse(read(path.join(root, 'articles.json'))) : [];
 const bySlug = new Map(articles.map((a) => [a.slug, a]));
