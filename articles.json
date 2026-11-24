@@ -1,5 +1,47 @@
 [
   {
+    "slug": "evisa-kyrgyzstan",
+    "date": "2026-11-24",
+    "category": "visa",
+    "title_ru": "Моей стране нужна виза: как получить электронную визу в Кыргызстан",
+    "title_en": "My country needs a visa: how to get a Kyrgyzstan e-visa",
+    "summary_ru": "Кому нужна виза, как подать заявку на портале МИД, сколько её рассматривают и что делать, если заявку вернули. По официальному порталу evisa.e-gov.kg.",
+    "summary_en": "Who needs a visa, how to apply on the Foreign Ministry portal, how long review takes and what to do if the application is sent back. Based on the official evisa.e-gov.kg portal.",
+    "guide": {
+      "num": 12,
+      "group": "stay",
+      "status": "in_force",
+      "situation": {
+        "ru": "Моей стране нужна виза в Кыргызстан",
+        "en": "My country needs a visa for Kyrgyzstan"
+      },
+      "who": {
+        "ru": "Тем, у кого нет безвиза, и тем, кому безвизового срока мало.",
+        "en": "For anyone without visa-free entry, and anyone for whom the visa-free period is too short."
+      },
+      "short": [
+        {
+          "ru": "Заявку подают только на официальном портале МИД evisa.e-gov.kg, на английском языке. Электронная виза даёт то же право на въезд, что и виза в паспорте.",
+          "en": "Apply only on the Foreign Ministry portal evisa.e-gov.kg, in English. An e-visa gives the same right of entry as a visa sticker in the passport."
+        },
+        {
+          "ru": "Рассмотрение — 5 рабочих дней с момента, когда поданы все документы. При подаче можно выбрать рассмотрение за 2 рабочих дня.",
+          "en": "Review takes 5 working days from the moment all documents are in. When applying you can choose review within 2 working days."
+        },
+        {
+          "ru": "Деньги не возвращают ни при отказе, ни если виза не пригодилась. Билеты лучше покупать после одобрения.",
+          "en": "The fee is not refunded after a refusal or if you never use the visa. Buy tickets after approval."
+        },
+        {
+          "ru": "Сумму сбора и полный список пунктов въезда мы на открытых страницах портала не нашли.",
+          "en": "We did not find the fee or the full list of entry points on the portal's open pages."
+        }
+      ]
+    },
+    "checked": "2026-11-24",
+    "sources": 4
+  },
+  {
     "slug": "ombudsman-complaint-foreigners-kyrgyzstan-2026",
     "date": "2026-11-23",
     "category": "life",

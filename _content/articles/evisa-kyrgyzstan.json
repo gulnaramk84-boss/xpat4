@@ -1,0 +1,163 @@
+{
+  "slug": "evisa-kyrgyzstan",
+  "date": "2026-11-24",
+  "checked": "2026-11-24",
+  "category": "visa",
+  "title": {
+    "ru": "Моей стране нужна виза: как получить электронную визу в Кыргызстан",
+    "en": "My country needs a visa: how to get a Kyrgyzstan e-visa"
+  },
+  "summary": {
+    "ru": "Кому нужна виза, как подать заявку на портале МИД, сколько её рассматривают и что делать, если заявку вернули. По официальному порталу evisa.e-gov.kg.",
+    "en": "Who needs a visa, how to apply on the Foreign Ministry portal, how long review takes and what to do if the application is sent back. Based on the official evisa.e-gov.kg portal."
+  },
+  "guide": {
+    "num": 12,
+    "group": "stay",
+    "status": "in_force",
+    "situation": {
+      "ru": "Моей стране нужна виза в Кыргызстан",
+      "en": "My country needs a visa for Kyrgyzstan"
+    },
+    "who": {
+      "ru": "Тем, у кого нет безвиза, и тем, кому безвизового срока мало.",
+      "en": "For anyone without visa-free entry, and anyone for whom the visa-free period is too short."
+    },
+    "short": [
+      {
+        "ru": "Заявку подают только на официальном портале МИД evisa.e-gov.kg, на английском языке. Электронная виза даёт то же право на въезд, что и виза в паспорте.",
+        "en": "Apply only on the Foreign Ministry portal evisa.e-gov.kg, in English. An e-visa gives the same right of entry as a visa sticker in the passport."
+      },
+      {
+        "ru": "Рассмотрение — 5 рабочих дней с момента, когда поданы все документы. При подаче можно выбрать рассмотрение за 2 рабочих дня.",
+        "en": "Review takes 5 working days from the moment all documents are in. When applying you can choose review within 2 working days."
+      },
+      {
+        "ru": "Деньги не возвращают ни при отказе, ни если виза не пригодилась. Билеты лучше покупать после одобрения.",
+        "en": "The fee is not refunded after a refusal or if you never use the visa. Buy tickets after approval."
+      },
+      {
+        "ru": "Сумму сбора и полный список пунктов въезда мы на открытых страницах портала не нашли.",
+        "en": "We did not find the fee or the full list of entry points on the portal's open pages."
+      }
+    ]
+  },
+  "blocks": [
+    { "h2": { "ru": "Нужна ли вам виза", "en": "Do you need a visa" } },
+    {
+      "p": {
+        "ru": "Сначала проверьте, нужна ли виза вообще. Гражданам многих стран можно въехать без неё: сроки по странам собраны в [таблице](/visa-free-and-registration-days-by-country-2026). Официально это проверяют на портале: раздел «Информация» → «Информация по странам», там выбирают страну, выдавшую паспорт.",
+        "en": "First check whether you need a visa at all. Citizens of many countries can enter without one: periods by country are in our [table](/visa-free-and-registration-days-by-country-2026). The official check is on the portal: Information → Country information, then pick the country that issued your passport."
+      }
+    },
+    {
+      "p": {
+        "ru": "Виза нужна, если безвиза для вашей страны нет. Например, гражданам Китая с обычным паспортом вне туристической группы. Чтобы остаться дольше безвизового срока, тоже нужна виза или другой документ, например вид на жительство. Визаран срок не обнуляет.",
+        "en": "You need a visa if your country has no visa-free entry, for example Chinese citizens with an ordinary passport travelling outside a tour group. To stay longer than the visa-free period you also need a visa or another document, such as a residence permit. A visa run does not reset the count."
+      }
+    },
+    {
+      "p": {
+        "ru": "Если вы летите транзитом и не выходите из транзитной зоны аэропорта, виза не нужна. Так написано в ответах на вопросы на портале.",
+        "en": "If you fly through and do not leave the airport transit area, you do not need a visa. The portal's FAQ says so."
+      }
+    },
+    { "h2": { "ru": "Какая виза подходит", "en": "Which visa fits" } },
+    {
+      "p": {
+        "ru": "На портале описано больше десятка типов виз. Для поездок чаще всего нужны эти:",
+        "en": "The portal describes more than a dozen visa types. For trips these are the most common:"
+      }
+    },
+    {
+      "ul": [
+        { "ru": "Туристическая (тип TS): для туризма, на срок до 30 дней.", "en": "Tourist (type TS): for tourism, for up to 30 days." },
+        { "ru": "Деловая (тип B): до 90 дней для переговоров, конференций, спортивных мероприятий и лечения по приглашению организации. Работать и вести бизнес по ней нельзя.", "en": "Business (type B): up to 90 days for meetings, conferences, sports events and medical treatment at an organisation's invitation. It does not allow work or running a business." },
+        { "ru": "Транзитная (тип TR): до 3 дней, чтобы проехать через Кыргызстан в другую страну.", "en": "Transit (type TR): up to 3 days to travel through Kyrgyzstan to another country." },
+        { "ru": "Для работы нужна не виза, а Единое разрешение: оно объединяет трудовую визу и разрешение на работу. Подробно в [гайде о работе](/work-permit-foreigners-kyrgyzstan-2026).", "en": "To work you need the Uniform permit rather than a visa: it combines the work visa and the work permit. See the [work guide](/work-permit-foreigners-kyrgyzstan-2026)." }
+      ]
+    },
+    {
+      "p": {
+        "ru": "Есть и другие типы: учебная, для посещения родственников, «Цифровой кочевник» ([гайд](/digital-nomad-status-kyrgyzstan-2026)), для членов семьи иностранца. Их условия описаны на портале в разделе «Информация по категориям и типам виз».",
+        "en": "There are other types too: study, visiting relatives, Digital nomad ([guide](/digital-nomad-status-kyrgyzstan-2026)), and for family members of a foreigner. Their terms are on the portal under Information on visa categories and types."
+      }
+    },
+    { "h2": { "ru": "Как подать заявку", "en": "How to apply" } },
+    {
+      "ol": [
+        { "ru": "Откройте evisa.e-gov.kg и выберите «Подать заявку». Укажите страну паспорта, тип паспорта и тип услуги: стандартная или рассмотрение за 2 рабочих дня.", "en": "Open evisa.e-gov.kg and choose Apply for a visa. Enter the country of your passport, the passport type and the service: standard, or review within 2 working days." },
+        { "ru": "Заполните анкету на английском. Нужны действующий паспорт, фотография и банковская карта. В зависимости от типа визы могут понадобиться другие документы. Их переводят на кыргызский или русский.", "en": "Fill in the form in English. You need a valid passport, a photo and a bank card. Depending on the visa type, other documents may be needed; they must be translated into Kyrgyz or Russian." },
+        { "ru": "Подтвердите заявку кодом из письма в течение 72 часов. Иначе её аннулируют, и придётся начинать заново. Если письма нет, проверьте спам.", "en": "Confirm the application with the code from the email within 72 hours, or it is cancelled and you start again. If no email arrives, check spam." },
+        { "ru": "Проверьте данные на шаге предварительного просмотра. После оплаты исправить уже ничего нельзя.", "en": "Check everything at the preview step. Nothing can be changed after payment." },
+        { "ru": "Оплатите картой. Карта не обязательно должна быть на ваше имя, но должна быть открыта для международных платежей.", "en": "Pay by card. It does not have to be in your name, but it must be enabled for international payments." }
+      ]
+    },
+    {
+      "p": {
+        "ru": "Визу оформляют на каждого человека отдельно, в том числе на детей, даже если они вписаны в паспорт родителей.",
+        "en": "Each traveller needs their own e-visa, including children, even if they are entered in a parent's passport."
+      }
+    },
+    { "h2": { "ru": "Сроки и деньги", "en": "Timing and money" } },
+    {
+      "p": {
+        "ru": "Заявку рассматривают 5 рабочих дней. Отсчёт идёт с момента, когда поданы все нужные документы. Сколько стоит виза, на портале сказано так: «зависит от категории, сроков и кратности». Сумму видно при подаче заявки.",
+        "en": "Review takes 5 working days, counted from the moment all required documents are in. On the price the portal says only that it depends on the category, length and number of entries; you see the amount when you apply."
+      }
+    },
+    {
+      "p": {
+        "ru": "Оплату не возвращают ни при отказе, ни при ошибке в ваших данных, ни если вы не воспользовались визой. Ошибки в анкете — причина отказа, поэтому сверяйте всё с паспортом. Авиабилеты портал советует покупать только после одобрения.",
+        "en": "Payment is not refunded after a refusal, after a mistake in your details, or if you never use the visa. Mistakes in the form lead to refusal, so check everything against your passport. The portal advises buying flights only after approval."
+      }
+    },
+    {
+      "p": {
+        "ru": "Срок действия визы и срок пребывания — разные вещи. Срок действия — это дни, когда можно въехать. Срок пребывания — сколько дней можно провести в стране за это время.",
+        "en": "Visa validity and length of stay are different things. Validity is the window in which you can enter. Length of stay is how many days you may spend in the country within it."
+      }
+    },
+    { "h2": { "ru": "Если заявку вернули", "en": "If the application is sent back" } },
+    {
+      "p": {
+        "ru": "Если нужно что-то исправить, добавить документы или доплатить, придёт письмо. Зайдите на портал, выберите «Проверить статус» и введите номер заявки. Строки с ошибками отмечены красным: исправьте их и нажмите «Submit». Пять рабочих дней начнут считаться заново, когда всё будет подано.",
+        "en": "If something needs fixing, more documents or a further payment, you get an email. Go to the portal, choose Check status and enter your reference number. Fields to fix are marked red: correct them and press Submit. The 5 working days restart once everything is in."
+      }
+    },
+    {
+      "p": {
+        "ru": "Телефоны поддержки портала: +996 703 428 865 и +996 999 312 002.",
+        "en": "Portal support phones: +996 703 428 865 and +996 999 312 002."
+      }
+    },
+    {
+      "note": {
+        "ru": "Если срок пребывания уже вышел, для выезда оформляют выездную визу (тип L) на срок до 10 дней. Что делать при просрочке, читайте в [гайде](/overstay-kyrgyzstan-2026).",
+        "en": "If your stay has already run out, an exit visa (type L) for up to 10 days is issued so you can leave. See the [overstay guide](/overstay-kyrgyzstan-2026)."
+      }
+    },
+    { "h2": { "ru": "Чего мы не нашли", "en": "What we did not find" } },
+    {
+      "ul": [
+        { "ru": "Сумму сбора. На открытых страницах портала её нет. Цифры на сайтах посредников расходятся, и это цены их услуг, а не госсбор.", "en": "The fee. It is not on the portal's open pages. Figures on agency sites differ, and they are the agencies' prices, not the state fee." },
+        { "ru": "Актуальный список пунктов въезда по электронной визе. В 2017 году МИД называл три: аэропорты «Манас» и «Ош» и «Ак-Жол» на границе с Казахстаном. Свежий список на сайте МИД мы открыть не смогли. Если едете по земле, уточните пункт заранее.", "en": "A current list of entry points for e-visa holders. In 2017 the Foreign Ministry named three: Manas and Osh airports and Ak-Zhol on the Kazakh border. We could not open a newer list on the ministry's site. If you travel overland, check your crossing in advance." },
+        { "ru": "Можно ли продлить электронную визу внутри страны. На портале об этом ничего не сказано.", "en": "Whether an e-visa can be extended inside the country. The portal says nothing about it." },
+        { "ru": "Нужно ли распечатывать визу. В ответах на вопросы на портале об этом нет.", "en": "Whether you need to print the visa. The portal's FAQ does not say." }
+      ]
+    }
+  ],
+  "sources": [
+    { "title": "Портал электронной визы МИД КР: о системе", "url": "https://www.evisa.e-gov.kg/index.php?lng=ru" },
+    { "title": "Портал электронной визы: полезная информация (важная информация, вопросы и ответы, категории и типы виз, информация по странам)", "url": "https://www.evisa.e-gov.kg/get_information.php?lng=ru" },
+    { "title": "Портал электронной визы: подача заявки (тип услуги)", "url": "https://www.evisa.e-gov.kg/step_1.php?lng=ru" },
+    { "title": "24.kg: МИД разъясняет, как работает электронная виза (10.08.2017)", "url": "https://24.kg/obschestvo/59822_elektronnaya_viza_ili_obyichnaya_mid_kyirgyizstana_razyyasnyaet_/", "note": "пункты въезда на момент запуска системы" }
+  ],
+  "changes": [
+    {
+      "date": "2026-11-24",
+      "ru": "Статья переписана по официальному порталу: убраны непроверенные цены, сроки и список пунктов пропуска.",
+      "en": "Rewritten from the official portal: unverified prices, timings and checkpoint list removed."
+    }
+  ]
+}
