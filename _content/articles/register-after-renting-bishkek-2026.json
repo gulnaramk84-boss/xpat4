@@ -57,6 +57,13 @@
       }
     },
     {
+      "note": {
+        "ru": "С 1 января 2027 года регистрацию иностранцев на пробный год передают Минтруда (указ № 395). Пока министерство не наладит работу, регистрацию оформляют там же, где сейчас.",
+        "en": "From 1 January 2027 registration of foreigners moves to the Labour Ministry for a trial year (Decree No. 395). Until the ministry is up and running, you register in the same places as now.",
+        "zh": "自2027年1月1日起，外国人登记移交劳动部试行一年（第395号总统令）。在劳动部正式运作之前，仍在现有地点办理登记。"
+      }
+    },
+    {
       "p": {
         "ru": "Регистрируют по адресу, где вы на самом деле живёте. Документы можно подать лично или онлайн. Для первой регистрации нужен паспорт, с которым вы въехали.",
         "en": "You are registered at the address where you actually live. You can file the documents in person or online. For the first registration you need the passport you entered with.",
@@ -162,6 +169,10 @@
       "title": "AKIpress: Kyrgyzstan changes rules for registration of foreign nationals (22 сентября 2026)",
       "url": "https://akipress.com/news:920432:Kyrgyzstan_changes_rules_for_registration_of_foreign_nationals/",
       "note": "полный текст за платным доступом"
+    },
+    {
+      "title": "Kaktus.media: вопросы миграции и гражданства на год передаются одному госоргану (25.11.2026)",
+      "url": "https://kaktus.media/doc/557431_voprosy_migracii_i_grajdanstva_na_god_peredautsia_odnomy_gosorgany.html"
     }
   ],
   "guide": {
@@ -200,5 +211,13 @@
         "zh": "离境30天或以上，登记即失效。"
       }
     ]
-  }
+  },
+  "changes": [
+    {
+      "date": "2026-11-25",
+      "ru": "Добавили, что с 1 января 2027 года регистрацию на пробный год передают Минтруда.",
+      "en": "Added that registration moves to the Labour Ministry for a trial year from 1 January 2027.",
+      "zh": "补充说明自2027年1月1日起登记移交劳动部试行一年。"
+    }
+  ]
 }
