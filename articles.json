@@ -193,56 +193,6 @@
     "sources": 4
   },
   {
-    "slug": "work-permit-foreigners-kyrgyzstan-2026",
-    "date": "2026-11-19",
-    "category": "work",
-    "title_ru": "Хочу работать в Кыргызстане: кто выдаёт разрешение и что известно о правилах",
-    "title_en": "I want to work in Kyrgyzstan: who issues the permit and what we know",
-    "summary_ru": "Разрешения на работу сейчас оформляет МИД по временному порядку до конца 2026 года, потом дело переходит к Минтруда. Что подтверждено, а чего в открытых источниках нет.",
-    "summary_en": "Work permits are currently issued by the Foreign Ministry under a temporary procedure until the end of 2026, then move to the Labour Ministry. What is confirmed and what the open sources do not say.",
-    "title_zh": "我想在吉尔吉斯斯坦工作：谁发放许可，目前已知什么",
-    "summary_zh": "目前工作许可由外交部按临时程序发放，有效到2026年底，之后移交劳动部。哪些已经确认，哪些公开来源没有说明。",
-    "guide": {
-      "num": 5,
-      "group": "work",
-      "status": "soon",
-      "situation": {
-        "ru": "Я хочу работать в Кыргызстане",
-        "en": "I want to work in Kyrgyzstan",
-        "zh": "我想在吉尔吉斯斯坦工作"
-      },
-      "who": {
-        "ru": "Иностранцам, которые ищут работу, и работодателям, которые их нанимают.",
-        "en": "For foreigners looking for work and the employers hiring them.",
-        "zh": "适合找工作的外国人和雇用外国人的雇主。"
-      },
-      "short": [
-        {
-          "ru": "До 31 декабря 2026 года документы для работы иностранцев оформляет МИД по временному порядку.",
-          "en": "Until 31 December 2026 the Foreign Ministry issues work documents under a temporary procedure.",
-          "zh": "2026年12月31日前，工作相关文件由外交部按临时程序办理。"
-        },
-        {
-          "ru": "Указом от 28 сентября функции передают Минтруда, дату перехода не назвали.",
-          "en": "A 28 September decree moves the functions to the Labour Ministry; no date was named.",
-          "zh": "9月28日的总统令将这些职能移交劳动部；没有说明具体日期。"
-        },
-        {
-          "ru": "Работа без разрешения — штраф по статье 431 и выдворение, если предписание не выполнено за 30 дней.",
-          "en": "Working without a permit means a fine under Article 431 and expulsion if an order is not carried out within 30 days.",
-          "zh": "无许可工作将按第431条罚款；如在30天内未执行整改要求，将被驱逐出境。"
-        },
-        {
-          "ru": "Обычные сборы и полный список документов мы в открытых источниках не нашли.",
-          "en": "We found no regular fees or a full document list in open sources.",
-          "zh": "公开来源中没有找到常规收费标准和完整的文件清单。"
-        }
-      ]
-    },
-    "checked": "2026-11-19",
-    "sources": 5
-  },
-  {
     "slug": "stay-longer-than-30-days-kyrgyzstan",
     "date": "2026-11-19",
     "category": "visa",
@@ -283,6 +233,56 @@
     },
     "checked": "2026-11-22",
     "sources": 5
+  },
+  {
+    "slug": "work-permit-foreigners-kyrgyzstan-2026",
+    "date": "2026-11-19",
+    "category": "work",
+    "title_ru": "Хочу работать в Кыргызстане: кто выдаёт разрешение и что известно о правилах",
+    "title_en": "I want to work in Kyrgyzstan: who issues the permit and what we know",
+    "summary_ru": "Разрешения на работу сейчас оформляет МИД по временному порядку до конца 2026 года, потом дело переходит к Минтруда. Что подтверждено, а чего в открытых источниках нет.",
+    "summary_en": "Work permits are currently issued by the Foreign Ministry under a temporary procedure until the end of 2026, then move to the Labour Ministry. What is confirmed and what the open sources do not say.",
+    "title_zh": "我想在吉尔吉斯斯坦工作：谁发放许可，目前已知什么",
+    "summary_zh": "目前工作许可由外交部按临时程序发放，有效到2026年底，之后移交劳动部。哪些已经确认，哪些公开来源没有说明。",
+    "guide": {
+      "num": 5,
+      "group": "work",
+      "status": "soon",
+      "situation": {
+        "ru": "Я хочу работать в Кыргызстане",
+        "en": "I want to work in Kyrgyzstan",
+        "zh": "我想在吉尔吉斯斯坦工作"
+      },
+      "who": {
+        "ru": "Иностранцам, которые ищут работу, и работодателям, которые их нанимают.",
+        "en": "For foreigners looking for work and the employers hiring them.",
+        "zh": "适合找工作的外国人和雇用外国人的雇主。"
+      },
+      "short": [
+        {
+          "ru": "До 31 декабря 2026 года документы для работы иностранцев оформляет МИД по временному порядку.",
+          "en": "Until 31 December 2026 the Foreign Ministry issues work documents under a temporary procedure.",
+          "zh": "2026年12月31日前，工作相关文件由外交部按临时程序办理。"
+        },
+        {
+          "ru": "Указ № 395: с 1 января 2027 года разрешения переходят Минтруда в режиме апробации на год.",
+          "en": "Decree No. 395: from 1 January 2027 permits move to the Labour Ministry under a one-year trial regime.",
+          "zh": "第395号总统令：自2027年1月1日起，许可业务移交劳动部，试行一年。"
+        },
+        {
+          "ru": "Работа без разрешения — штраф по статье 431 и выдворение, если предписание не выполнено за 30 дней.",
+          "en": "Working without a permit means a fine under Article 431 and expulsion if an order is not carried out within 30 days.",
+          "zh": "无许可工作将按第431条罚款；如在30天内未执行整改要求，将被驱逐出境。"
+        },
+        {
+          "ru": "Обычные сборы и полный список документов мы в открытых источниках не нашли.",
+          "en": "We found no regular fees or a full document list in open sources.",
+          "zh": "公开来源中没有找到常规收费标准和完整的文件清单。"
+        }
+      ]
+    },
+    "checked": "2026-11-25",
+    "sources": 7
   },
   {
     "slug": "land-under-foreigner-property-2026",
@@ -348,8 +348,8 @@
           "en": "Until 31 December 2026 the Ministry of Foreign Affairs handles documents under a temporary procedure."
         },
         {
-          "ru": "Указом от 28 сентября функции передают Минтруда, но дата перехода не названа.",
-          "en": "A 28 September decree moves the functions to the Ministry of Labour; no transition date has been named."
+          "ru": "Указ № 395: с 1 января 2027 года эти функции переходят Минтруда в режиме апробации на год.",
+          "en": "Decree No. 395: from 1 January 2027 these functions move to the Labour Ministry under a one-year trial regime."
         },
         {
           "ru": "Документ, оформленный сейчас, не привязан к переходному периоду.",
@@ -361,8 +361,8 @@
         }
       ]
     },
-    "checked": "2026-11-09",
-    "sources": 3
+    "checked": "2026-11-25",
+    "sources": 5
   },
   {
     "slug": "heating-season-bishkek-2026",

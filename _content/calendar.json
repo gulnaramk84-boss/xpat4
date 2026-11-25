@@ -1,6 +1,6 @@
 {
   "_readme": "Календарь важных дат (/calendar). Правила в _content/STYLE.md, раздел «Календарь». После правки: node _tools/build-calendar.js",
-  "checked": "2026-11-22",
+  "checked": "2026-11-25",
   "dated": [
     {
       "date": "2026-09-23", "kind": "on", "status": "in_force", "cat": "residence",
@@ -26,9 +26,16 @@
     {
       "date": "2026-12-31", "kind": "last", "status": "in_force", "cat": "work",
       "title": { "ru": "Последний день временного порядка: документы на работу оформляет МИД", "en": "Last day of the temporary procedure: the Foreign Ministry issues work documents", "zh": "临时程序最后一天：工作文件由外交部办理" },
-      "body": { "ru": "Дальше единое разрешение и резидент-карта переходят к Минтруда, но с какой даты подавать туда, не объявлено. Если продлеваете документы в декабре, начните заранее.", "en": "After that the single permit and resident card move to the Labour Ministry, but no date for filing there has been announced. If you renew documents in December, start early.", "zh": "此后统一许可和居民卡移交劳动部，但何时开始向劳动部提交尚未公布。如果在12月续签文件，请尽早开始。" },
+      "body": { "ru": "С 1 января 2027 года единое разрешение и резидент-карта переходят к Минтруда (указ № 395). Если продлеваете документы в декабре, начните заранее.", "en": "From 1 January 2027 the single permit and resident card move to the Labour Ministry (Decree No. 395). If you renew documents in December, start early.", "zh": "自2027年1月1日起，统一许可和居民卡移交劳动部（第395号总统令）。如果在12月续签文件，请尽早开始。" },
       "link": "/temporary-rules-foreigners-kyrgyzstan-2026",
       "source": { "name": "24.kg", "url": "https://24.kg/obschestvo/373450_kyirgyizstan_menyaet_pravila_dlya_inostrantsev_itrudovyih_migrantov/" }
+    },
+    {
+      "date": "2027-01-01", "kind": "on", "status": "soon", "cat": "residence",
+      "title": { "ru": "ВНЖ, регистрация и единое разрешение переходят Минтруда", "en": "Residence permits, registration and the single permit move to the Labour Ministry", "zh": "居留许可、登记和统一许可移交劳动部" },
+      "body": { "ru": "Указ № 395: апробационный режим до 31 декабря 2027 года. Пока новый департамент не заработал, документы оформляют прежние органы.", "en": "Decree No. 395: trial regime until 31 December 2027. Until the new department is running, the current offices keep issuing documents.", "zh": "第395号总统令：试行至2027年12月31日。在新部门运作之前，文件仍由现有机构办理。" },
+      "link": "/temporary-rules-foreigners-kyrgyzstan-2026",
+      "source": { "name": "Economist.kg", "url": "https://economist.kg/society/2026/11/24/migratsiya-novye-pravila-2027/" }
     },
     {
       "date": "2027-01-01", "kind": "on", "status": "in_force", "cat": "tax",
@@ -87,13 +94,6 @@
       "body": { "ru": "Проект Госагентства по развитию туризма вынесен на обсуждение 18 ноября 2026 года. Дата вступления в силу не назначена, пока действует 30 дней в каждые 60.", "en": "The State Tourism Development Agency's draft went up for discussion on 18 November 2026. No date set; 30 days in every 60 still applies.", "zh": "国家旅游发展署的草案于2026年11月18日公布征求意见。生效日期未定，目前仍为每60天内30天。" },
       "link": "/visa-free-and-registration-days-by-country-2026",
       "source": { "name": "Economist.kg", "url": "https://economist.kg/society/2026/11/18/kyrgyzstan-bezviz-18-stran/" }
-    },
-    {
-      "status": "soon", "cat": "residence",
-      "title": { "ru": "ВНЖ, регистрация и разрешения на работу переходят Минтруда", "en": "Residence permits, registration and work permits move to the Labour Ministry", "zh": "居留许可、登记和工作许可移交劳动部" },
-      "body": { "ru": "Указ подписан 28 сентября 2026 года. С какой даты подавать документы в новый орган, не объявлено. Пока обращайтесь туда, куда обращались раньше.", "en": "The decree was signed on 28 September 2026. No date has been announced for filing with the new body. Until then, apply where you applied before.", "zh": "命令于2026年9月28日签署。何时开始向新机构提交文件尚未公布。在此之前，请照旧办理。" },
-      "link": "/work-permit-foreigners-kyrgyzstan-2026",
-      "source": { "name": "Economist.kg", "url": "https://economist.kg/society/2026/09/28/minsotstruda-vnzh-registratsiya-inostrantsev/" }
     },
     {
       "status": "draft", "cat": "business",

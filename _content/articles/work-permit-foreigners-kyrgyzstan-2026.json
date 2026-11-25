@@ -1,7 +1,7 @@
 {
   "slug": "work-permit-foreigners-kyrgyzstan-2026",
   "date": "2026-11-19",
-  "checked": "2026-11-19",
+  "checked": "2026-11-25",
   "category": "work",
   "title": {
     "ru": "Хочу работать в Кыргызстане: кто выдаёт разрешение и что известно о правилах",
@@ -34,9 +34,9 @@
         "zh": "2026年12月31日前，工作相关文件由外交部按临时程序办理。"
       },
       {
-        "ru": "Указом от 28 сентября функции передают Минтруда, дату перехода не назвали.",
-        "en": "A 28 September decree moves the functions to the Labour Ministry; no date was named.",
-        "zh": "9月28日的总统令将这些职能移交劳动部；没有说明具体日期。"
+        "ru": "Указ № 395: с 1 января 2027 года разрешения переходят Минтруда в режиме апробации на год.",
+        "en": "Decree No. 395: from 1 January 2027 permits move to the Labour Ministry under a one-year trial regime.",
+        "zh": "第395号总统令：自2027年1月1日起，许可业务移交劳动部，试行一年。"
       },
       {
         "ru": "Работа без разрешения — штраф по статье 431 и выдворение, если предписание не выполнено за 30 дней.",
@@ -77,6 +77,13 @@
         "ru": "28 сентября 2026 года президент подписал указ: функции по единому разрешению и резидент-карте переходят от МИД к Министерству труда, социального обеспечения и миграции. В министерстве создают департамент по вопросам миграции. Правительству дали два месяца, чтобы привести свои решения в соответствие с указом. Дату, с которой документы нужно подавать в новое ведомство, в публикации не назвали.",
         "en": "On 28 September 2026 the president signed a decree: functions on the single permit and the resident card move from the Foreign Ministry to the Ministry of Labour, Social Welfare and Migration, which is setting up a migration department. The government was given two months to bring its decisions into line. The publication did not name the date from which documents should go to the new body.",
         "zh": "2026年9月28日，总统签署命令：统一许可和居民卡的相关职能从外交部移交给劳动、社会保障和移民部，该部正在设立移民司。政府有两个月时间调整相关决定。报道没有说明从哪一天起应向新机构提交文件。"
+      }
+    },
+    {
+      "p": {
+        "ru": "23 ноября 2026 года вышел указ № 395. С 1 января по 31 декабря 2027 года Минтруда в режиме апробации оформляет единое разрешение и резидент-карты и контролирует привлечение иностранных работников. Пока новый департамент не заработал полностью, документы оформляют действующие органы. Кабмину поручили пересмотреть распределение квот на иностранную рабочую силу и проработать гарантийные взносы работодателей: из них будут оплачивать выдворение нарушителей. Сумм взносов в публикациях нет.",
+        "en": "Decree No. 395 came out on 23 November 2026. From 1 January to 31 December 2027 the Labour Ministry, under a trial regime, issues the single permit and resident cards and controls the hiring of foreign workers. Until the new department is fully running, the current offices keep issuing documents. The Cabinet is told to revise how foreign-worker quotas are allocated and to work out employer guarantee deposits, which would pay for expelling people who break migration rules. The reports give no deposit amounts.",
+        "zh": "2026年11月23日发布第395号总统令。2027年1月1日至12月31日，劳动部在试行制度下办理统一许可和居民卡，并监管外国劳动力的引进。在新的移民司全面运作之前，文件仍由现有机构办理。内阁受命修订外国劳动力配额的分配办法，并研究雇主保证金机制，用于支付对违反移民法者的驱逐费用。报道中没有保证金金额。"
       }
     },
     {
@@ -172,6 +179,14 @@
       "url": "https://economist.kg/society/2026/09/28/minsotstruda-vnzh-registratsiya-inostrantsev/"
     },
     {
+      "title": "Economist.kg: указ № 395 о миграции (24.11.2026)",
+      "url": "https://economist.kg/society/2026/11/24/migratsiya-novye-pravila-2027/"
+    },
+    {
+      "title": "24.kg: департамент по вопросам миграции (25.11.2026)",
+      "url": "https://24.kg/article/v-kyrgyzstane-sozdayut-novyj-departament-po-voprosam-migracii"
+    },
+    {
       "title": "Economist.kg: льготы швейникам и новые визы (26.07.2026)",
       "url": "https://economist.kg/biznes/2026/07/26/visy-inostrancam/"
     },
@@ -186,6 +201,12 @@
     }
   ],
   "changes": [
+    {
+      "date": "2026-11-25",
+      "ru": "Добавили указ № 395: с 1 января 2027 года разрешения оформляет Минтруда в режиме апробации.",
+      "en": "Added Decree No. 395: from 1 January 2027 the Labour Ministry issues permits under a trial regime.",
+      "zh": "新增第395号总统令：自2027年1月1日起由劳动部在试行制度下办理许可。"
+    },
     {
       "date": "2026-11-19",
       "ru": "Первая публикация.",
